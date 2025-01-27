@@ -1,0 +1,742 @@
+CRITICAL - 2025-01-11 01:24:06 --> ArgumentCountError: Too few arguments to function App\Models\DaftarkelasModel::dataKelas(), 0 passed in C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Daftarsiswa.php on line 17 and exactly 1 expected
+[Method: GET, Route: daftar_siswa]
+in APPPATH\Models\DaftarkelasModel.php on line 15.
+ 1 APPPATH\Controllers\Daftarsiswa.php(17): App\Models\DaftarkelasModel->dataKelas()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarsiswa->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarsiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 01:29:32 --> ErrorException: Undefined array key "tahun_ajaran"
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\DaftarkelasModel.php on line 28.
+ 1 APPPATH\Models\DaftarkelasModel.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tahun_ajaran"', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\DaftarkelasModel.php', 28)
+ 2 APPPATH\Controllers\Daftarkelas.php(67): App\Models\DaftarkelasModel->dataKelas('2024')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 01:30:03 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\DaftarkelasModel.php on line 28.
+ 1 APPPATH\Models\DaftarkelasModel.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\DaftarkelasModel.php', 28)
+ 2 APPPATH\Controllers\Daftarkelas.php(67): App\Models\DaftarkelasModel->dataKelas('2024')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 01:45:18 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\DaftarkelasModel.php on line 28.
+ 1 APPPATH\Models\DaftarkelasModel.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\DaftarkelasModel.php', 28)
+ 2 APPPATH\Controllers\Daftarkelas.php(67): App\Models\DaftarkelasModel->dataKelas('2024')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 01:45:56 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRowArray()
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\DaftarkelasModel.php on line 26.
+ 1 APPPATH\Controllers\Daftarkelas.php(67): App\Models\DaftarkelasModel->dataKelas('2024')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 01:46:02 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\DaftarkelasModel.php on line 28.
+ 1 APPPATH\Models\DaftarkelasModel.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\DaftarkelasModel.php', 28)
+ 2 APPPATH\Controllers\Daftarkelas.php(67): App\Models\DaftarkelasModel->dataKelas('2024')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 01:49:05 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\DaftarkelasModel.php on line 25.
+ 1 APPPATH\Models\DaftarkelasModel.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\DaftarkelasModel.php', 25)
+ 2 APPPATH\Controllers\Daftarkelas.php(67): App\Models\DaftarkelasModel->dataKelas('2024')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 01:50:19 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Views\daftar_kelas_isi_view.php on line 46.
+ 1 APPPATH\Views\daftar_kelas_isi_view.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_kelas_isi_view.php', 46)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_kelas_isi_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('daftar_kelas_isi_view', [], true)
+ 5 APPPATH\Controllers\Daftarkelas.php(74): view('daftar_kelas_isi_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 01:51:08 --> Error: Undefined constant "App\Models\hasil"
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\DaftarkelasModel.php on line 27.
+ 1 APPPATH\Controllers\Daftarkelas.php(67): App\Models\DaftarkelasModel->dataKelas('2024')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 01:51:50 --> Error: Undefined constant "App\Controllers\kelas"
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Controllers\Daftarkelas.php on line 73.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 01:53:30 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\DaftarkelasModel.php on line 28.
+ 1 APPPATH\Models\DaftarkelasModel.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\DaftarkelasModel.php', 28)
+ 2 APPPATH\Controllers\Daftarkelas.php(67): App\Models\DaftarkelasModel->dataKelas('2024')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 01:53:41 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\DaftarkelasModel.php on line 28.
+ 1 APPPATH\Models\DaftarkelasModel.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\DaftarkelasModel.php', 28)
+ 2 APPPATH\Controllers\Daftarkelas.php(67): App\Models\DaftarkelasModel->dataKelas('2024')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 01:55:46 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Views\daftar_kelas_isi_view.php on line 46.
+ 1 APPPATH\Views\daftar_kelas_isi_view.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_kelas_isi_view.php', 46)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_kelas_isi_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('daftar_kelas_isi_view', [], true)
+ 5 APPPATH\Controllers\Daftarkelas.php(74): view('daftar_kelas_isi_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 01:55:55 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Views\daftar_kelas_isi_view.php on line 46.
+ 1 APPPATH\Views\daftar_kelas_isi_view.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_kelas_isi_view.php', 46)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_kelas_isi_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('daftar_kelas_isi_view', [], true)
+ 5 APPPATH\Controllers\Daftarkelas.php(74): view('daftar_kelas_isi_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 01:56:44 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Views\daftar_kelas_isi_view.php on line 46.
+ 1 APPPATH\Views\daftar_kelas_isi_view.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_kelas_isi_view.php', 46)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_kelas_isi_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('daftar_kelas_isi_view', [], true)
+ 5 APPPATH\Controllers\Daftarkelas.php(74): view('daftar_kelas_isi_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 02:12:17 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\PeriodeajaranModel.php on line 26.
+ 1 APPPATH\Models\PeriodeajaranModel.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\PeriodeajaranModel.php', 26)
+ 2 APPPATH\Controllers\Daftarkelas.php(71): App\Models\PeriodeajaranModel->tahunPeriode('2024')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 02:40:26 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\PeriodeajaranModel.php on line 26.
+ 1 APPPATH\Models\PeriodeajaranModel.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\PeriodeajaranModel.php', 26)
+ 2 APPPATH\Controllers\Daftarkelas.php(71): App\Models\PeriodeajaranModel->tahunPeriode('2024')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 02:40:37 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\PeriodeajaranModel.php on line 26.
+ 1 APPPATH\Models\PeriodeajaranModel.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\PeriodeajaranModel.php', 26)
+ 2 APPPATH\Controllers\Daftarkelas.php(71): App\Models\PeriodeajaranModel->tahunPeriode('2024')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 02:45:18 --> ErrorException: Cannot use temporary expression in write context
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\PeriodeajaranModel.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-01-11 02:46:32 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\PeriodeajaranModel.php on line 33.
+ 1 APPPATH\Models\PeriodeajaranModel.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\PeriodeajaranModel.php', 33)
+ 2 APPPATH\Controllers\Daftarkelas.php(71): App\Models\PeriodeajaranModel->tahunPeriode('2024')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 02:46:44 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\PeriodeajaranModel.php on line 33.
+ 1 APPPATH\Models\PeriodeajaranModel.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\PeriodeajaranModel.php', 33)
+ 2 APPPATH\Controllers\Daftarkelas.php(71): App\Models\PeriodeajaranModel->tahunPeriode('2024')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 02:46:59 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\PeriodeajaranModel.php on line 33.
+ 1 APPPATH\Models\PeriodeajaranModel.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\PeriodeajaranModel.php', 33)
+ 2 APPPATH\Controllers\Daftarkelas.php(71): App\Models\PeriodeajaranModel->tahunPeriode('2024')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 02:48:13 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\PeriodeajaranModel.php on line 33.
+ 1 APPPATH\Models\PeriodeajaranModel.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\PeriodeajaranModel.php', 33)
+ 2 APPPATH\Controllers\Daftarkelas.php(71): App\Models\PeriodeajaranModel->tahunPeriode('2024')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 02:52:50 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\PeriodeajaranModel.php on line 24.
+ 1 APPPATH\Models\PeriodeajaranModel.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\PeriodeajaranModel.php', 24)
+ 2 APPPATH\Controllers\Daftarkelas.php(71): App\Models\PeriodeajaranModel->tahunPeriode('2024')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 02:54:46 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\PeriodeajaranModel.php on line 23.
+ 1 APPPATH\Models\PeriodeajaranModel.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\PeriodeajaranModel.php', 23)
+ 2 APPPATH\Controllers\Daftarkelas.php(71): App\Models\PeriodeajaranModel->tahunPeriode('2024')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 02:55:48 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\PeriodeajaranModel.php on line 23.
+ 1 APPPATH\Models\PeriodeajaranModel.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\PeriodeajaranModel.php', 23)
+ 2 APPPATH\Controllers\Daftarkelas.php(71): App\Models\PeriodeajaranModel->tahunPeriode('2024')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 02:57:41 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\PeriodeajaranModel.php on line 23.
+ 1 APPPATH\Models\PeriodeajaranModel.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\PeriodeajaranModel.php', 23)
+ 2 APPPATH\Controllers\Daftarkelas.php(71): App\Models\PeriodeajaranModel->tahunPeriode('2024')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 02:58:05 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\PeriodeajaranModel.php on line 23.
+ 1 APPPATH\Models\PeriodeajaranModel.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\PeriodeajaranModel.php', 23)
+ 2 APPPATH\Controllers\Daftarkelas.php(71): App\Models\PeriodeajaranModel->tahunPeriode('2024')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 03:01:19 --> ErrorException: Undefined array key "tahun_ajaran"
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\PeriodeajaranModel.php on line 26.
+ 1 APPPATH\Models\PeriodeajaranModel.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tahun_ajaran"', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\PeriodeajaranModel.php', 26)
+ 2 APPPATH\Controllers\Daftarkelas.php(71): App\Models\PeriodeajaranModel->tahunPeriode('2024')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 03:01:30 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\PeriodeajaranModel.php on line 26.
+ 1 APPPATH\Models\PeriodeajaranModel.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\PeriodeajaranModel.php', 26)
+ 2 APPPATH\Controllers\Daftarkelas.php(71): App\Models\PeriodeajaranModel->tahunPeriode('2024')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 03:02:09 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::getRowArray()
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Models\PeriodeajaranModel.php on line 24.
+ 1 APPPATH\Controllers\Daftarkelas.php(71): App\Models\PeriodeajaranModel->tahunPeriode('2024')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 03:10:25 --> ArgumentCountError: Too few arguments to function App\Models\DaftarkelasModel::dataKelas(), 0 passed in C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Daftarsiswa.php on line 17 and exactly 1 expected
+[Method: GET, Route: daftar_siswa]
+in APPPATH\Models\DaftarkelasModel.php on line 15.
+ 1 APPPATH\Controllers\Daftarsiswa.php(17): App\Models\DaftarkelasModel->dataKelas()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarsiswa->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarsiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 03:11:27 --> ArgumentCountError: Too few arguments to function App\Models\DaftarkelasModel::dataKelas(), 0 passed in C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Daftarsiswa.php on line 17 and exactly 1 expected
+[Method: GET, Route: daftar_siswa]
+in APPPATH\Models\DaftarkelasModel.php on line 15.
+ 1 APPPATH\Controllers\Daftarsiswa.php(17): App\Models\DaftarkelasModel->dataKelas()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarsiswa->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarsiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 03:11:35 --> ArgumentCountError: Too few arguments to function App\Models\DaftarkelasModel::dataKelas(), 0 passed in C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Daftarsiswa.php on line 17 and exactly 1 expected
+[Method: GET, Route: daftar_siswa]
+in APPPATH\Models\DaftarkelasModel.php on line 15.
+ 1 APPPATH\Controllers\Daftarsiswa.php(17): App\Models\DaftarkelasModel->dataKelas()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarsiswa->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarsiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 03:29:10 --> ErrorException: Undefined array key "id_periode"
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Views\daftar_kelas_isi_view.php on line 116.
+ 1 APPPATH\Views\daftar_kelas_isi_view.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_periode"', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_kelas_isi_view.php', 116)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_kelas_isi_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('daftar_kelas_isi_view', [], true)
+ 5 APPPATH\Controllers\Daftarkelas.php(76): view('daftar_kelas_isi_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 03:35:26 --> ParseError: syntax error, unexpected single-quoted string "id_periode", expecting "]"
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Controllers\Daftarkelas.php on line 73.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarkelas.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Daftarkelas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Daftarkelas')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Daftarkelas', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-01-11 03:36:15 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`manajemen_nilai`.`dt_kelas`, CONSTRAINT `dt_kelas_ibfk_2` FOREIGN KEY (`id_periode`) REFERENCES `dt_periode_ajaran` (`id_periode`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `dt...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dt...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dt...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dt...', Array, false)
+#4 C:\xampp\htdocs\si_manajemen_nilai\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\si_manajemen_nilai\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\si_manajemen_nilai\app\Models\DaftarkelasModel.php(46): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Daftarkelas.php(36): App\Models\DaftarkelasModel->tambahDataKelas('KE001', '1', 'X', '4')
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Daftarkelas->tambah()
+#10 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+#11 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2025-01-11 03:36:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`manajemen_nilai`.`dt_kelas`, CONSTRAINT `dt_kelas_ibfk_2` FOREIGN KEY (`id_periode`) REFERENCES `dt_periode_ajaran` (`id_periode`) ON DELETE CASCADE ON UPDATE CASCADE)
+[Method: POST, Route: daftar_kelas/tambah]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (:kd_kelas:, :id_jurusan:, :kelas:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\DaftarkelasModel.php(46): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Daftarkelas.php(36): App\Models\DaftarkelasModel->tambahDataKelas('KE001', '1', 'X', '4')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->tambah()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 03:36:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`manajemen_nilai`.`dt_kelas`, CONSTRAINT `dt_kelas_ibfk_2` FOREIGN KEY (`id_periode`) REFERENCES `dt_periode_ajaran` (`id_periode`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (\'KE001\', \'1\', \'X\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (\'KE001\', \'1\', \'X\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (:kd_kelas:, :id_jurusan:, :kelas:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\DaftarkelasModel.php(46): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\Daftarkelas.php(36): App\Models\DaftarkelasModel->tambahDataKelas('KE001', '1', 'X', '4')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->tambah()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 03:36:15 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`manajemen_nilai`.`dt_kelas`, CONSTRAINT `dt_kelas_ibfk_2` FOREIGN KEY (`id_periode`) REFERENCES `dt_periode_ajaran` (`id_periode`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (\'KE001\', \'1\', \'X\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (\'KE001\', \'1\', \'X\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (\'KE001\', \'1\', \'X\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (:kd_kelas:, :id_jurusan:, :kelas:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\DaftarkelasModel.php(46): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Daftarkelas.php(36): App\Models\DaftarkelasModel->tambahDataKelas('KE001', '1', 'X', '4')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->tambah()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-01-11 03:39:35 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`manajemen_nilai`.`dt_kelas`, CONSTRAINT `dt_kelas_ibfk_2` FOREIGN KEY (`id_periode`) REFERENCES `dt_periode_ajaran` (`id_periode`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `dt...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dt...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dt...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dt...', Array, false)
+#4 C:\xampp\htdocs\si_manajemen_nilai\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\si_manajemen_nilai\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\si_manajemen_nilai\app\Models\DaftarkelasModel.php(46): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Daftarkelas.php(36): App\Models\DaftarkelasModel->tambahDataKelas('KE001', '1', 'X', '4')
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Daftarkelas->tambah()
+#10 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+#11 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2025-01-11 03:39:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`manajemen_nilai`.`dt_kelas`, CONSTRAINT `dt_kelas_ibfk_2` FOREIGN KEY (`id_periode`) REFERENCES `dt_periode_ajaran` (`id_periode`) ON DELETE CASCADE ON UPDATE CASCADE)
+[Method: POST, Route: daftar_kelas/tambah]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (:kd_kelas:, :id_jurusan:, :kelas:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\DaftarkelasModel.php(46): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Daftarkelas.php(36): App\Models\DaftarkelasModel->tambahDataKelas('KE001', '1', 'X', '4')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->tambah()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 03:39:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`manajemen_nilai`.`dt_kelas`, CONSTRAINT `dt_kelas_ibfk_2` FOREIGN KEY (`id_periode`) REFERENCES `dt_periode_ajaran` (`id_periode`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (\'KE001\', \'1\', \'X\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (\'KE001\', \'1\', \'X\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (:kd_kelas:, :id_jurusan:, :kelas:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\DaftarkelasModel.php(46): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\Daftarkelas.php(36): App\Models\DaftarkelasModel->tambahDataKelas('KE001', '1', 'X', '4')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->tambah()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 03:39:35 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`manajemen_nilai`.`dt_kelas`, CONSTRAINT `dt_kelas_ibfk_2` FOREIGN KEY (`id_periode`) REFERENCES `dt_periode_ajaran` (`id_periode`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (\'KE001\', \'1\', \'X\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (\'KE001\', \'1\', \'X\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (\'KE001\', \'1\', \'X\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (:kd_kelas:, :id_jurusan:, :kelas:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\DaftarkelasModel.php(46): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Daftarkelas.php(36): App\Models\DaftarkelasModel->tambahDataKelas('KE001', '1', 'X', '4')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->tambah()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-01-11 03:40:20 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`manajemen_nilai`.`dt_kelas`, CONSTRAINT `dt_kelas_ibfk_2` FOREIGN KEY (`id_periode`) REFERENCES `dt_periode_ajaran` (`id_periode`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `dt...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dt...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dt...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dt...', Array, false)
+#4 C:\xampp\htdocs\si_manajemen_nilai\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\si_manajemen_nilai\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\si_manajemen_nilai\app\Models\DaftarkelasModel.php(46): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Daftarkelas.php(36): App\Models\DaftarkelasModel->tambahDataKelas('KE001', '1', 'X', '4')
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Daftarkelas->tambah()
+#10 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+#11 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2025-01-11 03:40:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`manajemen_nilai`.`dt_kelas`, CONSTRAINT `dt_kelas_ibfk_2` FOREIGN KEY (`id_periode`) REFERENCES `dt_periode_ajaran` (`id_periode`) ON DELETE CASCADE ON UPDATE CASCADE)
+[Method: POST, Route: daftar_kelas/tambah]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (:kd_kelas:, :id_jurusan:, :kelas:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Models\DaftarkelasModel.php(46): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Daftarkelas.php(36): App\Models\DaftarkelasModel->tambahDataKelas('KE001', '1', 'X', '4')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->tambah()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 03:40:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`manajemen_nilai`.`dt_kelas`, CONSTRAINT `dt_kelas_ibfk_2` FOREIGN KEY (`id_periode`) REFERENCES `dt_periode_ajaran` (`id_periode`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (\'KE001\', \'1\', \'X\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (\'KE001\', \'1\', \'X\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (:kd_kelas:, :id_jurusan:, :kelas:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Models\DaftarkelasModel.php(46): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\Daftarkelas.php(36): App\Models\DaftarkelasModel->tambahDataKelas('KE001', '1', 'X', '4')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->tambah()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 03:40:20 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`manajemen_nilai`.`dt_kelas`, CONSTRAINT `dt_kelas_ibfk_2` FOREIGN KEY (`id_periode`) REFERENCES `dt_periode_ajaran` (`id_periode`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (\'KE001\', \'1\', \'X\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (\'KE001\', \'1\', \'X\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (\'KE001\', \'1\', \'X\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `dt_kelas` (`kd_kelas`, `id_jurusan`, `kelas`) VALUES (:kd_kelas:, :id_jurusan:, :kelas:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Models\DaftarkelasModel.php(46): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Daftarkelas.php(36): App\Models\DaftarkelasModel->tambahDataKelas('KE001', '1', 'X', '4')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->tambah()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 03:41:27 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "(:any)"
+[Method: GET, Route: daftar_kelas/periode_kelas/%28:any%29]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('daftar_kelas/periode_kelas/(:any)')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('daftar_kelas/periode_kelas/(:any)')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-01-11 03:48:54 --> mysqli_sql_exception: Column 'id_periode' in where clause is ambiguous in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `dt_kela...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kela...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kela...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kela...', Array, false)
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Models\DaftarkelasModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Daftarkelas.php(68): App\Models\DaftarkelasModel->dataKelas('4')
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('4')
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-01-11 03:48:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_periode' in where clause is ambiguous
+[Method: GET, Route: daftar_kelas/periode_kelas/4]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode_ajaran`.`id_periode`, `dt_periode_ajaran`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode_ajaran` ON `dt_kelas`.`id_periode` = `dt_periode_ajaran`.`id_periode`
+WHERE `id_periode` = :id_periode:', [...], false)
+ 2 APPPATH\Models\DaftarkelasModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Daftarkelas.php(68): App\Models\DaftarkelasModel->dataKelas('4')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('4')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 03:48:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_periode' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode_ajaran`.`id_periode`, `dt_periode_ajaran`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode_ajaran` ON `dt_kelas`.`id_periode` = `dt_periode_ajaran`.`id_periode`
+WHERE `id_periode` = \'4\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode_ajaran`.`id_periode`, `dt_periode_ajaran`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode_ajaran` ON `dt_kelas`.`id_periode` = `dt_periode_ajaran`.`id_periode`
+WHERE `id_periode` = \'4\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode_ajaran`.`id_periode`, `dt_periode_ajaran`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode_ajaran` ON `dt_kelas`.`id_periode` = `dt_periode_ajaran`.`id_periode`
+WHERE `id_periode` = :id_periode:', [...], false)
+ 4 APPPATH\Models\DaftarkelasModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Daftarkelas.php(68): App\Models\DaftarkelasModel->dataKelas('4')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-11 03:48:54 --> [Caused by] mysqli_sql_exception: Column 'id_periode' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode_ajaran`.`id_periode`, `dt_periode_ajaran`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode_ajaran` ON `dt_kelas`.`id_periode` = `dt_periode_ajaran`.`id_periode`
+WHERE `id_periode` = \'4\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode_ajaran`.`id_periode`, `dt_periode_ajaran`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode_ajaran` ON `dt_kelas`.`id_periode` = `dt_periode_ajaran`.`id_periode`
+WHERE `id_periode` = \'4\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode_ajaran`.`id_periode`, `dt_periode_ajaran`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode_ajaran` ON `dt_kelas`.`id_periode` = `dt_periode_ajaran`.`id_periode`
+WHERE `id_periode` = \'4\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode_ajaran`.`id_periode`, `dt_periode_ajaran`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode_ajaran` ON `dt_kelas`.`id_periode` = `dt_periode_ajaran`.`id_periode`
+WHERE `id_periode` = :id_periode:', [...], false)
+ 5 APPPATH\Models\DaftarkelasModel.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Daftarkelas.php(68): App\Models\DaftarkelasModel->dataKelas('4')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('4')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')

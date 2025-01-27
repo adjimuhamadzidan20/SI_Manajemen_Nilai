@@ -1,0 +1,28 @@
+CRITICAL - 2025-01-05 03:17:49 --> ErrorException: Undefined variable $kode
+[Method: GET, Route: daftar_siswa/siswa/X/RPL%201]
+in APPPATH\Views\daftar_murid_isi_view.php on line 76.
+ 1 APPPATH\Views\daftar_murid_isi_view.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_murid_isi_view.php', 76)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_murid_isi_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('daftar_murid_isi_view', [], true)
+ 5 APPPATH\Controllers\Daftarsiswa.php(41): view('daftar_murid_isi_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarsiswa->siswa('X', 'RPL 1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarsiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-05 07:23:55 --> ParseError: syntax error, unexpected token "=>", expecting "]"
+[Method: GET, Route: daftar_siswa/siswa/X/RPL%201]
+in APPPATH\Models\DaftarsiswaModel.php on line 37.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\DaftarsiswaModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\DaftarsiswaModel')
+ 3 APPPATH\Controllers\Daftarsiswa.php(26): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\DaftarsiswaModel')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarsiswa->siswa('X', 'RPL 1')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarsiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')

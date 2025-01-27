@@ -1,0 +1,54 @@
+CRITICAL - 2025-01-15 12:33:43 --> ErrorException: Undefined array key "kelas"
+[Method: GET, Route: daftar_siswa/rinci_siswa/4/13/1]
+in APPPATH\Views\daftar_murid_isi_view.php on line 121.
+ 1 APPPATH\Views\daftar_murid_isi_view.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kelas"', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_murid_isi_view.php', 121)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_murid_isi_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('daftar_murid_isi_view', [], true)
+ 5 APPPATH\Controllers\Daftarsiswa.php(54): view('daftar_murid_isi_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarsiswa->rinci_siswa('4', '13', '1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarsiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-15 12:34:06 --> ErrorException: Undefined array key "id_kelas"
+[Method: GET, Route: daftar_siswa/rinci_siswa/4/13/1]
+in APPPATH\Views\daftar_murid_isi_view.php on line 121.
+ 1 APPPATH\Views\daftar_murid_isi_view.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_kelas"', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_murid_isi_view.php', 121)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_murid_isi_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('daftar_murid_isi_view', [], true)
+ 5 APPPATH\Controllers\Daftarsiswa.php(54): view('daftar_murid_isi_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarsiswa->rinci_siswa('4', '13', '1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarsiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-15 13:32:14 --> ParseError: syntax error, unexpected identifier "SELECT"
+[Method: GET, Route: daftar_siswa/rinci_kelas/2024/2025]
+in APPPATH\Models\DaftarkelasModel.php on line 44.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\DaftarkelasModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\DaftarkelasModel')
+ 3 APPPATH\Controllers\Daftarsiswa.php(26): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\DaftarkelasModel')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarsiswa->rinci_kelas('2024', '2025')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarsiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-15 13:35:56 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Result::getRowCount()
+[Method: GET, Route: daftar_siswa/rinci_kelas/2024/2025]
+in APPPATH\Models\DaftarkelasModel.php on line 38.
+ 1 APPPATH\Controllers\Daftarsiswa.php(31): App\Models\DaftarkelasModel->jumlahDataKelas('2024')
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarsiswa->rinci_kelas('2024', '2025')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarsiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')

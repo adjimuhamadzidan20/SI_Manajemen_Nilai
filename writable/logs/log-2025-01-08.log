@@ -1,0 +1,680 @@
+ERROR - 2025-01-08 12:27:51 --> mysqli_sql_exception: Unknown column 'dt_kelas.tahun_ajaran' in 'field list' in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `dt_kela...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kela...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kela...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kela...', Array, false)
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Models\DaftarkelasModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-01-08 12:27:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dt_kelas.tahun_ajaran' in 'field list'
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = :tahun_ajaran:', [...], false)
+ 2 APPPATH\Models\DaftarkelasModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-08 12:27:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dt_kelas.tahun_ajaran' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = \'2024\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = \'2024\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = :tahun_ajaran:', [...], false)
+ 4 APPPATH\Models\DaftarkelasModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-08 12:27:52 --> [Caused by] mysqli_sql_exception: Unknown column 'dt_kelas.tahun_ajaran' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = \'2024\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = \'2024\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = \'2024\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = :tahun_ajaran:', [...], false)
+ 5 APPPATH\Models\DaftarkelasModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-01-08 12:28:41 --> mysqli_sql_exception: Unknown column 'dt_kelas.tahun_ajaran' in 'field list' in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `dt_kela...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kela...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kela...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kela...', Array, false)
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Models\DaftarkelasModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-01-08 12:28:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dt_kelas.tahun_ajaran' in 'field list'
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = :tahun_ajaran:', [...], false)
+ 2 APPPATH\Models\DaftarkelasModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-08 12:28:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dt_kelas.tahun_ajaran' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = \'2024\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = \'2024\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = :tahun_ajaran:', [...], false)
+ 4 APPPATH\Models\DaftarkelasModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-08 12:28:42 --> [Caused by] mysqli_sql_exception: Unknown column 'dt_kelas.tahun_ajaran' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = \'2024\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = \'2024\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = \'2024\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = :tahun_ajaran:', [...], false)
+ 5 APPPATH\Models\DaftarkelasModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-01-08 12:29:37 --> mysqli_sql_exception: Unknown column 'dt_kelas.id_ajaran' in 'field list' in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `dt_kela...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kela...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kela...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kela...', Array, false)
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Models\DaftarkelasModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-01-08 12:29:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dt_kelas.id_ajaran' in 'field list'
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`id_ajaran`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = :tahun_ajaran:', [...], false)
+ 2 APPPATH\Models\DaftarkelasModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-08 12:29:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dt_kelas.id_ajaran' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`id_ajaran`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = \'2024\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`id_ajaran`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = \'2024\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`id_ajaran`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = :tahun_ajaran:', [...], false)
+ 4 APPPATH\Models\DaftarkelasModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-08 12:29:37 --> [Caused by] mysqli_sql_exception: Unknown column 'dt_kelas.id_ajaran' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`id_ajaran`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = \'2024\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`id_ajaran`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = \'2024\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`id_ajaran`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = \'2024\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_kelas`.`id_ajaran`, `dt_kelas`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+WHERE `tahun_ajaran` = :tahun_ajaran:', [...], false)
+ 5 APPPATH\Models\DaftarkelasModel.php(24): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-01-08 12:31:11 --> mysqli_sql_exception: Table 'manajemen_nilai.dt_periode' doesn't exist in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `dt_kela...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kela...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kela...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kela...', Array, false)
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Models\DaftarkelasModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-01-08 12:31:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'manajemen_nilai.dt_periode' doesn't exist
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = :tahun_ajaran:', [...], false)
+ 2 APPPATH\Models\DaftarkelasModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-08 12:31:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'manajemen_nilai.dt_periode' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = \'2024\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = \'2024\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = :tahun_ajaran:', [...], false)
+ 4 APPPATH\Models\DaftarkelasModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-08 12:31:11 --> [Caused by] mysqli_sql_exception: Table 'manajemen_nilai.dt_periode' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = \'2024\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = \'2024\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = \'2024\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = :tahun_ajaran:', [...], false)
+ 5 APPPATH\Models\DaftarkelasModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-01-08 12:33:10 --> mysqli_sql_exception: Table 'manajemen_nilai.dt_periode' doesn't exist in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `dt_kela...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kela...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kela...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kela...', Array, false)
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Models\DaftarkelasModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-01-08 12:33:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'manajemen_nilai.dt_periode' doesn't exist
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = :tahun_ajaran:', [...], false)
+ 2 APPPATH\Models\DaftarkelasModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-08 12:33:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'manajemen_nilai.dt_periode' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = \'2024\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = \'2024\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = :tahun_ajaran:', [...], false)
+ 4 APPPATH\Models\DaftarkelasModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-08 12:33:11 --> [Caused by] mysqli_sql_exception: Table 'manajemen_nilai.dt_periode' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = \'2024\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = \'2024\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = \'2024\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = :tahun_ajaran:', [...], false)
+ 5 APPPATH\Models\DaftarkelasModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-01-08 12:33:51 --> mysqli_sql_exception: Table 'manajemen_nilai.dt_periode' doesn't exist in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `dt_kela...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kela...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kela...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kela...', Array, false)
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Models\DaftarkelasModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-01-08 12:33:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'manajemen_nilai.dt_periode' doesn't exist
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = :tahun_ajaran:', [...], false)
+ 2 APPPATH\Models\DaftarkelasModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-08 12:33:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'manajemen_nilai.dt_periode' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = \'2024\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = \'2024\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = :tahun_ajaran:', [...], false)
+ 4 APPPATH\Models\DaftarkelasModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-08 12:33:51 --> [Caused by] mysqli_sql_exception: Table 'manajemen_nilai.dt_periode' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = \'2024\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = \'2024\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = \'2024\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode`.`id_ajaran`, `dt_periode`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode` ON `dt_kelas`.`id_ajaran` = `dt_periode`.`id_ajaran`
+WHERE `tahun_ajaran` = :tahun_ajaran:', [...], false)
+ 5 APPPATH\Models\DaftarkelasModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-01-08 12:34:45 --> mysqli_sql_exception: Unknown column 'dt_periode_ajaran.id_ajaran' in 'field list' in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `dt_kela...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kela...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kela...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kela...', Array, false)
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Models\DaftarkelasModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2025-01-08 12:34:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dt_periode_ajaran.id_ajaran' in 'field list'
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode_ajaran`.`id_ajaran`, `dt_periode_ajaran`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode_ajaran` ON `dt_kelas`.`id_ajaran` = `dt_periode_ajaran`.`id_ajaran`
+WHERE `tahun_ajaran` = :tahun_ajaran:', [...], false)
+ 2 APPPATH\Models\DaftarkelasModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-08 12:34:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dt_periode_ajaran.id_ajaran' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode_ajaran`.`id_ajaran`, `dt_periode_ajaran`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode_ajaran` ON `dt_kelas`.`id_ajaran` = `dt_periode_ajaran`.`id_ajaran`
+WHERE `tahun_ajaran` = \'2024\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode_ajaran`.`id_ajaran`, `dt_periode_ajaran`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode_ajaran` ON `dt_kelas`.`id_ajaran` = `dt_periode_ajaran`.`id_ajaran`
+WHERE `tahun_ajaran` = \'2024\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode_ajaran`.`id_ajaran`, `dt_periode_ajaran`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode_ajaran` ON `dt_kelas`.`id_ajaran` = `dt_periode_ajaran`.`id_ajaran`
+WHERE `tahun_ajaran` = :tahun_ajaran:', [...], false)
+ 4 APPPATH\Models\DaftarkelasModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-08 12:34:45 --> [Caused by] mysqli_sql_exception: Unknown column 'dt_periode_ajaran.id_ajaran' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode_ajaran`.`id_ajaran`, `dt_periode_ajaran`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode_ajaran` ON `dt_kelas`.`id_ajaran` = `dt_periode_ajaran`.`id_ajaran`
+WHERE `tahun_ajaran` = \'2024\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode_ajaran`.`id_ajaran`, `dt_periode_ajaran`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode_ajaran` ON `dt_kelas`.`id_ajaran` = `dt_periode_ajaran`.`id_ajaran`
+WHERE `tahun_ajaran` = \'2024\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode_ajaran`.`id_ajaran`, `dt_periode_ajaran`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode_ajaran` ON `dt_kelas`.`id_ajaran` = `dt_periode_ajaran`.`id_ajaran`
+WHERE `tahun_ajaran` = \'2024\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `dt_kelas`.`id_kelas`, `dt_kelas`.`kd_kelas`, `dt_kelas`.`id_jurusan`, `dt_jurusan`.`nama_jurusan`, `dt_jurusan`.`nama_panjang`, `dt_kelas`.`kelas`, `dt_kelas`.`id_periode`, `dt_periode_ajaran`.`id_ajaran`, `dt_periode_ajaran`.`tahun_ajaran`
+FROM `dt_kelas`
+JOIN `dt_jurusan` ON `dt_kelas`.`id_jurusan` = `dt_jurusan`.`id_jurusan`
+JOIN `dt_periode_ajaran` ON `dt_kelas`.`id_ajaran` = `dt_periode_ajaran`.`id_ajaran`
+WHERE `tahun_ajaran` = :tahun_ajaran:', [...], false)
+ 5 APPPATH\Models\DaftarkelasModel.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Daftarkelas.php(65): App\Models\DaftarkelasModel->dataKelas('2024')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-08 12:35:11 --> ErrorException: Undefined variable $jurusanModel
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Controllers\Daftarkelas.php on line 66.
+ 1 APPPATH\Controllers\Daftarkelas.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jurusanModel', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarkelas.php', 66)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-08 12:35:21 --> ErrorException: Undefined variable $jurusanModel
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Controllers\Daftarkelas.php on line 66.
+ 1 APPPATH\Controllers\Daftarkelas.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jurusanModel', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarkelas.php', 66)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-08 12:36:02 --> ErrorException: Undefined variable $periodeModel
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Controllers\Daftarkelas.php on line 69.
+ 1 APPPATH\Controllers\Daftarkelas.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $periodeModel', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarkelas.php', 69)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-08 12:37:21 --> ErrorException: Undefined array key "tahun_ajaran"
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Views\daftar_kelas_isi_view.php on line 13.
+ 1 APPPATH\Views\daftar_kelas_isi_view.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tahun_ajaran"', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_kelas_isi_view.php', 13)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_kelas_isi_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('daftar_kelas_isi_view', [], true)
+ 5 APPPATH\Controllers\Daftarkelas.php(74): view('daftar_kelas_isi_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-08 12:37:48 --> ErrorException: Undefined array key "tahun_ajaran"
+[Method: GET, Route: daftar_kelas/periode_kelas/2024/2025]
+in APPPATH\Views\daftar_kelas_isi_view.php on line 13.
+ 1 APPPATH\Views\daftar_kelas_isi_view.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tahun_ajaran"', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_kelas_isi_view.php', 13)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_kelas_isi_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('daftar_kelas_isi_view', [], true)
+ 5 APPPATH\Controllers\Daftarkelas.php(74): view('daftar_kelas_isi_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('2024', '2025')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-08 12:47:14 --> ArgumentCountError: Too few arguments to function App\Models\DaftarkelasModel::dataKelas(), 0 passed in C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Daftarsiswa.php on line 17 and exactly 1 expected
+[Method: GET, Route: daftar_siswa]
+in APPPATH\Models\DaftarkelasModel.php on line 15.
+ 1 APPPATH\Controllers\Daftarsiswa.php(17): App\Models\DaftarkelasModel->dataKelas()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarsiswa->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarsiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')

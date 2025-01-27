@@ -1,0 +1,11 @@
+CRITICAL - 2025-01-09 08:37:42 --> ArgumentCountError: Too few arguments to function App\Models\DaftarkelasModel::dataKelas(), 0 passed in C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Daftarsiswa.php on line 17 and exactly 1 expected
+[Method: GET, Route: daftar_siswa]
+in APPPATH\Models\DaftarkelasModel.php on line 15.
+ 1 APPPATH\Controllers\Daftarsiswa.php(17): App\Models\DaftarkelasModel->dataKelas()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarsiswa->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarsiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
