@@ -29,6 +29,7 @@
                                         <th>KD Mapel</th>
                                         <th>Nama Mapel</th>
                                         <th>Kelas</th>
+                                        <th>Jurusan</th>
                                         <th>Guru Mapel</th>
                                         <th>Opsi</th>
                                     </tr>
@@ -44,6 +45,7 @@
                                             <td><?= $data['kd_mapel']; ?></td>
                                             <td><?= $data['nama_mapel']; ?></td>
                                             <td><?= $data['kelas']; ?></td>
+                                            <td><?= $data['nama_jurusan']; ?></td>
                                             <td><?= $data['guru']; ?></td>
                                             <td>
                                                 <button type="button" class="btn btn-primary btn-sm" 
@@ -53,6 +55,7 @@
                                                 data-kdmapel="<?= $data['kd_mapel']; ?>"
                                                 data-mapel="<?= $data['nama_mapel']; ?>"
                                                 data-kelas="<?= $data['kelas']; ?>"
+                                                data-jurusan="<?= $data['id_jurusan']; ?>"
                                                 data-guru="<?= $data['guru']; ?>">
                                                 Ubah</button>
                                                 <a href="/daftar_mapel/hapus/<?= $data['id_mapel']; ?>" class="btn btn-primary btn-sm" onclick="return confirm('Anda ingin menghapusnya?')">Hapus</a> 
@@ -91,6 +94,19 @@
                             <option value="X">X</option>
                             <option value="XI">XI</option>
                             <option value="XII">XII</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputJurusan" class="form-label">Jurusan</label>
+                        <select class="form-select" aria-label="Default select example" name="jurusan" id="exampleInputJurusan" required>
+                            <option selected>-- Pilih Jurusan --</option>
+                            <?php 
+                                foreach($jurusan as $data) : 
+                            ?>
+                                <option value="<?= $data['id_jurusan']; ?>"><?= $data['nama_jurusan']; ?></option>
+                            <?php  
+                                endforeach;
+                            ?>
                         </select>
                       </div>
                       <div class="mb-3">

@@ -723,3 +723,145 @@ in APPPATH\Models\PeriodeajaranModel.php on line 23.
  7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-01-27 14:19:04 --> mysqli_sql_exception: Column 'id_periode' in where clause is ambiguous in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT dt_nilai...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT dt_nilai...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT dt_nilai...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\app\Models\DaftarnilaitugasModel.php(33): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai...')
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Daftarnilai.php(101): App\Models\DaftarnilaitugasModel->dataNilai('Ganjil', '4')
+#5 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Daftarnilai->peserta_didik('13', '1', 'Informatika', '9', '4', 'Ganjil')
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai))
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-01-27 14:19:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_periode' in where clause is ambiguous
+[Method: GET, Route: daftar_nilai/peserta_didik/13/1/Informatika/9/4/Ganjil]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\DaftarnilaitugasModel.php(33): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai_tugas.id_tugas, dt_nilai_tugas.id_siswa, dt_siswa.nama_siswa, dt_nilai_tugas.id_mapel, 
+        dt_mapel.nama_mapel, dt_nilai_tugas.id_kelas, dt_kelas.kelas, dt_nilai_tugas.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_tugas.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_tugas.semester, dt_nilai_tugas.nilai_1, 
+        dt_nilai_tugas.nilai_2, dt_nilai_tugas.nilai_3, dt_nilai_tugas.nilai_4, dt_nilai_tugas.nilai_5, dt_nilai_tugas.nilai_6,
+        dt_nilai_tugas.nilai_7, dt_nilai_tugas.nilai_8, dt_nilai_tugas.nilai_9, dt_nilai_tugas.na_materi, dt_nilai_tugas.LM_1, 
+        dt_nilai_tugas.LM_2, dt_nilai_tugas.LM_3, dt_nilai_tugas.na_sumatif FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai_tugas.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_tugas.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_kelas ON dt_nilai_tugas.id_kelas = dt_kelas.id_kelas 
+        INNER JOIN dt_jurusan ON dt_nilai_tugas.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_tugas.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND id_periode = 4')
+ 2 APPPATH\Controllers\Daftarnilai.php(101): App\Models\DaftarnilaitugasModel->dataNilai('Ganjil', '4')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai->peserta_didik('13', '1', 'Informatika', '9', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-27 14:19:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'id_periode' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT dt_nilai_tugas.id_tugas, dt_nilai_tugas.id_siswa, dt_siswa.nama_siswa, dt_nilai_tugas.id_mapel, 
+        dt_mapel.nama_mapel, dt_nilai_tugas.id_kelas, dt_kelas.kelas, dt_nilai_tugas.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_tugas.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_tugas.semester, dt_nilai_tugas.nilai_1, 
+        dt_nilai_tugas.nilai_2, dt_nilai_tugas.nilai_3, dt_nilai_tugas.nilai_4, dt_nilai_tugas.nilai_5, dt_nilai_tugas.nilai_6,
+        dt_nilai_tugas.nilai_7, dt_nilai_tugas.nilai_8, dt_nilai_tugas.nilai_9, dt_nilai_tugas.na_materi, dt_nilai_tugas.LM_1, 
+        dt_nilai_tugas.LM_2, dt_nilai_tugas.LM_3, dt_nilai_tugas.na_sumatif FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai_tugas.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_tugas.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_kelas ON dt_nilai_tugas.id_kelas = dt_kelas.id_kelas 
+        INNER JOIN dt_jurusan ON dt_nilai_tugas.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_tugas.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND id_periode = 4')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT dt_nilai_tugas.id_tugas, dt_nilai_tugas.id_siswa, dt_siswa.nama_siswa, dt_nilai_tugas.id_mapel, 
+        dt_mapel.nama_mapel, dt_nilai_tugas.id_kelas, dt_kelas.kelas, dt_nilai_tugas.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_tugas.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_tugas.semester, dt_nilai_tugas.nilai_1, 
+        dt_nilai_tugas.nilai_2, dt_nilai_tugas.nilai_3, dt_nilai_tugas.nilai_4, dt_nilai_tugas.nilai_5, dt_nilai_tugas.nilai_6,
+        dt_nilai_tugas.nilai_7, dt_nilai_tugas.nilai_8, dt_nilai_tugas.nilai_9, dt_nilai_tugas.na_materi, dt_nilai_tugas.LM_1, 
+        dt_nilai_tugas.LM_2, dt_nilai_tugas.LM_3, dt_nilai_tugas.na_sumatif FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai_tugas.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_tugas.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_kelas ON dt_nilai_tugas.id_kelas = dt_kelas.id_kelas 
+        INNER JOIN dt_jurusan ON dt_nilai_tugas.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_tugas.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND id_periode = 4')
+ 3 APPPATH\Models\DaftarnilaitugasModel.php(33): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai_tugas.id_tugas, dt_nilai_tugas.id_siswa, dt_siswa.nama_siswa, dt_nilai_tugas.id_mapel, 
+        dt_mapel.nama_mapel, dt_nilai_tugas.id_kelas, dt_kelas.kelas, dt_nilai_tugas.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_tugas.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_tugas.semester, dt_nilai_tugas.nilai_1, 
+        dt_nilai_tugas.nilai_2, dt_nilai_tugas.nilai_3, dt_nilai_tugas.nilai_4, dt_nilai_tugas.nilai_5, dt_nilai_tugas.nilai_6,
+        dt_nilai_tugas.nilai_7, dt_nilai_tugas.nilai_8, dt_nilai_tugas.nilai_9, dt_nilai_tugas.na_materi, dt_nilai_tugas.LM_1, 
+        dt_nilai_tugas.LM_2, dt_nilai_tugas.LM_3, dt_nilai_tugas.na_sumatif FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai_tugas.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_tugas.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_kelas ON dt_nilai_tugas.id_kelas = dt_kelas.id_kelas 
+        INNER JOIN dt_jurusan ON dt_nilai_tugas.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_tugas.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND id_periode = 4')
+ 4 APPPATH\Controllers\Daftarnilai.php(101): App\Models\DaftarnilaitugasModel->dataNilai('Ganjil', '4')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai->peserta_didik('13', '1', 'Informatika', '9', '4', 'Ganjil')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-27 14:19:05 --> [Caused by] mysqli_sql_exception: Column 'id_periode' in where clause is ambiguous
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT dt_nilai_tugas.id_tugas, dt_nilai_tugas.id_siswa, dt_siswa.nama_siswa, dt_nilai_tugas.id_mapel, 
+        dt_mapel.nama_mapel, dt_nilai_tugas.id_kelas, dt_kelas.kelas, dt_nilai_tugas.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_tugas.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_tugas.semester, dt_nilai_tugas.nilai_1, 
+        dt_nilai_tugas.nilai_2, dt_nilai_tugas.nilai_3, dt_nilai_tugas.nilai_4, dt_nilai_tugas.nilai_5, dt_nilai_tugas.nilai_6,
+        dt_nilai_tugas.nilai_7, dt_nilai_tugas.nilai_8, dt_nilai_tugas.nilai_9, dt_nilai_tugas.na_materi, dt_nilai_tugas.LM_1, 
+        dt_nilai_tugas.LM_2, dt_nilai_tugas.LM_3, dt_nilai_tugas.na_sumatif FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai_tugas.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_tugas.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_kelas ON dt_nilai_tugas.id_kelas = dt_kelas.id_kelas 
+        INNER JOIN dt_jurusan ON dt_nilai_tugas.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_tugas.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND id_periode = 4', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT dt_nilai_tugas.id_tugas, dt_nilai_tugas.id_siswa, dt_siswa.nama_siswa, dt_nilai_tugas.id_mapel, 
+        dt_mapel.nama_mapel, dt_nilai_tugas.id_kelas, dt_kelas.kelas, dt_nilai_tugas.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_tugas.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_tugas.semester, dt_nilai_tugas.nilai_1, 
+        dt_nilai_tugas.nilai_2, dt_nilai_tugas.nilai_3, dt_nilai_tugas.nilai_4, dt_nilai_tugas.nilai_5, dt_nilai_tugas.nilai_6,
+        dt_nilai_tugas.nilai_7, dt_nilai_tugas.nilai_8, dt_nilai_tugas.nilai_9, dt_nilai_tugas.na_materi, dt_nilai_tugas.LM_1, 
+        dt_nilai_tugas.LM_2, dt_nilai_tugas.LM_3, dt_nilai_tugas.na_sumatif FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai_tugas.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_tugas.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_kelas ON dt_nilai_tugas.id_kelas = dt_kelas.id_kelas 
+        INNER JOIN dt_jurusan ON dt_nilai_tugas.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_tugas.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND id_periode = 4')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT dt_nilai_tugas.id_tugas, dt_nilai_tugas.id_siswa, dt_siswa.nama_siswa, dt_nilai_tugas.id_mapel, 
+        dt_mapel.nama_mapel, dt_nilai_tugas.id_kelas, dt_kelas.kelas, dt_nilai_tugas.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_tugas.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_tugas.semester, dt_nilai_tugas.nilai_1, 
+        dt_nilai_tugas.nilai_2, dt_nilai_tugas.nilai_3, dt_nilai_tugas.nilai_4, dt_nilai_tugas.nilai_5, dt_nilai_tugas.nilai_6,
+        dt_nilai_tugas.nilai_7, dt_nilai_tugas.nilai_8, dt_nilai_tugas.nilai_9, dt_nilai_tugas.na_materi, dt_nilai_tugas.LM_1, 
+        dt_nilai_tugas.LM_2, dt_nilai_tugas.LM_3, dt_nilai_tugas.na_sumatif FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai_tugas.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_tugas.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_kelas ON dt_nilai_tugas.id_kelas = dt_kelas.id_kelas 
+        INNER JOIN dt_jurusan ON dt_nilai_tugas.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_tugas.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND id_periode = 4')
+ 4 APPPATH\Models\DaftarnilaitugasModel.php(33): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai_tugas.id_tugas, dt_nilai_tugas.id_siswa, dt_siswa.nama_siswa, dt_nilai_tugas.id_mapel, 
+        dt_mapel.nama_mapel, dt_nilai_tugas.id_kelas, dt_kelas.kelas, dt_nilai_tugas.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_tugas.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_tugas.semester, dt_nilai_tugas.nilai_1, 
+        dt_nilai_tugas.nilai_2, dt_nilai_tugas.nilai_3, dt_nilai_tugas.nilai_4, dt_nilai_tugas.nilai_5, dt_nilai_tugas.nilai_6,
+        dt_nilai_tugas.nilai_7, dt_nilai_tugas.nilai_8, dt_nilai_tugas.nilai_9, dt_nilai_tugas.na_materi, dt_nilai_tugas.LM_1, 
+        dt_nilai_tugas.LM_2, dt_nilai_tugas.LM_3, dt_nilai_tugas.na_sumatif FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai_tugas.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_tugas.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_kelas ON dt_nilai_tugas.id_kelas = dt_kelas.id_kelas 
+        INNER JOIN dt_jurusan ON dt_nilai_tugas.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_tugas.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND id_periode = 4')
+ 5 APPPATH\Controllers\Daftarnilai.php(101): App\Models\DaftarnilaitugasModel->dataNilai('Ganjil', '4')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai->peserta_didik('13', '1', 'Informatika', '9', '4', 'Ganjil')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')

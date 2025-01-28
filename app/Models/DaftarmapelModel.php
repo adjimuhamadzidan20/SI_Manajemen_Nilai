@@ -8,12 +8,18 @@ class DaftarmapelModel extends Model
 {
     protected $table      = 'dt_mapel';
     protected $primaryKey = 'id_mapel';
-    protected $allowedFields = ['kd_mapel', 'nama_mapel', 'kelas', 'guru'];
+    protected $allowedFields = ['kd_mapel', 'nama_mapel', 'kelas', 'id_jurusan', 'guru'];
     protected $useAutoIncrement = true;
     protected $protectFields    = true;
 
     public function dataMapel() {
-        return $this->findAll();
+        $db = db_connect();
+        $query = "SELECT dt_mapel.id_mapel, dt_mapel.kd_mapel, dt_mapel.nama_mapel, dt_mapel.kelas, dt_mapel.id_jurusan, 
+        dt_jurusan.nama_jurusan, dt_mapel.guru FROM dt_mapel INNER JOIN dt_jurusan ON dt_mapel.id_jurusan = dt_jurusan.id_jurusan";
+
+        $sql = $db->query($query);
+        $hasil = $sql->getResultArray();
+        return $hasil;
     }
 
     public function dataMapelDetail($mapel) {
@@ -41,11 +47,12 @@ class DaftarmapelModel extends Model
         return $hasil['kode']; 
     }
 
-    public function tambahDataMapel($kode, $namaMapel, $kelas, $guruMapel) {
+    public function tambahDataMapel($kode, $namaMapel, $kelas, $jurusan, $guruMapel) {
         $data = $this->insert([
             'kd_mapel' => $kode,
             'nama_mapel' => $namaMapel,
             'kelas' => $kelas,
+            'id_jurusan' => $jurusan,
             'guru' => $guruMapel
         ]);
 

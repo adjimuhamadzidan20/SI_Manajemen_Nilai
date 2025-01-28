@@ -26,7 +26,7 @@
                                 <div class="card mb-2">
                                   <div class="card-body d-flex justify-content-between align-items-center">
                                     <?= $data['kd_ajaran']; ?> - Tahun Ajaran <?= $data['tahun_ajaran']; ?>
-                                    <a href="/daftar_kelas/periode_kelas/<?= $data['tahun_ajaran']; ?>" class="btn btn-primary btn-sm">Lihat Kelas</a>
+                                    <a href="/daftar_kelas/periode_kelas/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm">Lihat Kelas</a>
                                   </div>
                                 </div>
                             <?php  

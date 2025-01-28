@@ -29,6 +29,8 @@
                                         <th>No</th>
                                         <th>KD Mapel</th>
                                         <th>Nama Mapel</th>
+                                        <th>Kelas</th>
+                                        <th>Jurusan</th>
                                         <th>Guru</th>
                                         <th>Opsi</th>
                                     </tr>
@@ -43,9 +45,13 @@
                                             <td><?= $no; ?></td>
                                             <td><?= $data['kd_mapel']; ?></td>
                                             <td><?= $data['nama_mapel']; ?></td>
+                                            <td><?= $data['kelas']; ?></td>
+                                            <td><?= $data['nama_jurusan']; ?></td>
                                             <td><?= $data['guru']; ?></td>
                                             <td>
-                                                <a href="/daftar_nilai/mapel_nilai/<?= $data['kelas']; ?>/<?= $data['nama_mapel']; ?>/<?= $data['id_mapel']; ?>" class="btn btn-primary btn-sm">Lihat Kelas</a> 
+                                                <a href="/daftar_nilai/peserta_didik/<?= $data['kelas']; ?>/<?= $data['id_jurusan']; ?>/<?= $data['nama_mapel']; ?>/<?= $data['id_mapel']; ?>/<?= $id_periode; ?>/Ganjil" class="btn btn-primary btn-sm">Semester Ganjil</a> 
+
+                                                <a href="/daftar_nilai/peserta_didik/<?= $data['kelas']; ?>/<?= $data['id_jurusan']; ?>/<?= $data['nama_mapel']; ?>/<?= $data['id_mapel']; ?>/<?= $id_periode; ?>/Genap" class="btn btn-primary btn-sm">Semester Genap</a> 
                                             </td>
                                         </tr>
                                     <?php endforeach; ?>

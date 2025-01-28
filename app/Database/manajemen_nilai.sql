@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 27 Jan 2025 pada 14.45
+-- Waktu pembuatan: 28 Jan 2025 pada 10.14
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.1.31
 
@@ -58,10 +58,7 @@ INSERT INTO `dt_jurusan` (`id_jurusan`, `kd_jurusan`, `nama_jurusan`, `nama_panj
 (1, 'JU001', 'RPL 1', 'Rekayasa Perangkat Lunak'),
 (2, 'JU002', 'AFPP 1', 'Airflame Power Plant'),
 (6, 'JU003', 'AFPP 2', 'Airflame Power Plant'),
-(7, 'JU004', 'TKR 1', 'Teknik Kendaraan Ringan'),
-(8, 'JU005', 'Hotel 1', 'Hotel & Pariwisata'),
-(9, 'JU006', 'TP 1', 'Teknik Permesinan'),
-(10, 'JU007', 'TITL', 'Teknik Listrik');
+(7, 'JU004', 'TKR 1', 'Teknik Kendaraan Ringan');
 
 -- --------------------------------------------------------
 
@@ -98,6 +95,7 @@ CREATE TABLE `dt_mapel` (
   `kd_mapel` varchar(30) NOT NULL,
   `nama_mapel` varchar(50) NOT NULL,
   `kelas` varchar(20) NOT NULL,
+  `id_jurusan` int(20) NOT NULL,
   `guru` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -105,10 +103,12 @@ CREATE TABLE `dt_mapel` (
 -- Dumping data untuk tabel `dt_mapel`
 --
 
-INSERT INTO `dt_mapel` (`id_mapel`, `kd_mapel`, `nama_mapel`, `kelas`, `guru`) VALUES
-(9, 'MA001', 'Informatika', 'X', 'Adji Muhamad Zidan S.Kom'),
-(10, 'MA002', 'Dasar Program Keahlian', 'X', 'Adji Muhamad Zidan S.Kom'),
-(11, 'MA003', 'Basis Data', 'XI', 'Adji Muhamad Zidan S.Kom');
+INSERT INTO `dt_mapel` (`id_mapel`, `kd_mapel`, `nama_mapel`, `kelas`, `id_jurusan`, `guru`) VALUES
+(22, 'MA001', 'Informatika', 'X', 1, 'Adji Muhamad Zidan S.Kom'),
+(23, 'MA002', 'Informatika', 'X', 7, 'Adji Muhamad Zidan S.Kom'),
+(24, 'MA003', 'Informatika', 'X', 2, 'Adji Muhamad Zidan S.Kom'),
+(25, 'MA004', 'Basis Data', 'XI', 1, 'Adji Muhamad Zidan S.Kom'),
+(26, 'MA005', 'Dasar Program Keahlian (DPK)', 'X', 1, 'Adji Muhamad Zidan S.Kom');
 
 -- --------------------------------------------------------
 
@@ -148,7 +148,7 @@ CREATE TABLE `dt_nilai_tugas` (
   `id_tugas` int(20) NOT NULL,
   `id_siswa` int(20) NOT NULL,
   `id_mapel` int(20) NOT NULL,
-  `id_kelas` int(20) NOT NULL,
+  `kelas` varchar(20) NOT NULL,
   `id_jurusan` int(20) NOT NULL,
   `id_periode` int(20) NOT NULL,
   `semester` varchar(30) NOT NULL,
@@ -172,10 +172,12 @@ CREATE TABLE `dt_nilai_tugas` (
 -- Dumping data untuk tabel `dt_nilai_tugas`
 --
 
-INSERT INTO `dt_nilai_tugas` (`id_tugas`, `id_siswa`, `id_mapel`, `id_kelas`, `id_jurusan`, `id_periode`, `semester`, `nilai_1`, `nilai_2`, `nilai_3`, `nilai_4`, `nilai_5`, `nilai_6`, `nilai_7`, `nilai_8`, `nilai_9`, `na_materi`, `LM_1`, `LM_2`, `LM_3`, `na_sumatif`) VALUES
-(9, 3, 9, 13, 1, 4, 'Ganjil', 0, 0, 0, 80, 80, 85, 80, 75, 85, 81, 0, 82, 80, 81),
-(10, 4, 9, 13, 1, 4, 'Ganjil', 0, 0, 0, 80, 78, 77, 82, 75, 77, 78, 0, 78, 78, 78),
-(11, 6, 9, 13, 1, 4, 'Ganjil', 75, 80, 78, 80, 78, 88, 80, 75, 77, 79, 82, 82, 77, 80);
+INSERT INTO `dt_nilai_tugas` (`id_tugas`, `id_siswa`, `id_mapel`, `kelas`, `id_jurusan`, `id_periode`, `semester`, `nilai_1`, `nilai_2`, `nilai_3`, `nilai_4`, `nilai_5`, `nilai_6`, `nilai_7`, `nilai_8`, `nilai_9`, `na_materi`, `LM_1`, `LM_2`, `LM_3`, `na_sumatif`) VALUES
+(12, 3, 22, 'X', 1, 4, 'Ganjil', 75, 80, 78, 80, 78, 88, 80, 75, 90, 80, 82, 82, 82, 82),
+(13, 4, 22, 'X', 1, 4, 'Ganjil', 75, 80, 75, 80, 78, 88, 80, 77, 77, 79, 82, 82, 78, 81),
+(14, 6, 22, 'X', 1, 4, 'Ganjil', 79, 80, 75, 80, 78, 80, 80, 77, 77, 78, 79, 79, 78, 79),
+(15, 7, 22, 'X', 1, 4, 'Ganjil', 0, 0, 0, 80, 78, 78, 80, 77, 77, 78, 0, 79, 78, 78),
+(16, 3, 22, 'X', 1, 4, 'Genap', 0, 0, 0, 80, 78, 78, 80, 77, 77, 78, 0, 79, 78, 78);
 
 -- --------------------------------------------------------
 
@@ -255,7 +257,8 @@ ALTER TABLE `dt_kelas`
 -- Indeks untuk tabel `dt_mapel`
 --
 ALTER TABLE `dt_mapel`
-  ADD PRIMARY KEY (`id_mapel`);
+  ADD PRIMARY KEY (`id_mapel`),
+  ADD KEY `id_jurusan` (`id_jurusan`);
 
 --
 -- Indeks untuk tabel `dt_nilai_pas`
@@ -280,7 +283,6 @@ ALTER TABLE `dt_nilai_tugas`
   ADD PRIMARY KEY (`id_tugas`),
   ADD KEY `id_siswa` (`id_siswa`,`id_mapel`),
   ADD KEY `id_mapel` (`id_mapel`),
-  ADD KEY `id_kelas` (`id_kelas`,`id_jurusan`),
   ADD KEY `id_jurusan` (`id_jurusan`),
   ADD KEY `id_periode` (`id_periode`);
 
@@ -325,7 +327,7 @@ ALTER TABLE `dt_kelas`
 -- AUTO_INCREMENT untuk tabel `dt_mapel`
 --
 ALTER TABLE `dt_mapel`
-  MODIFY `id_mapel` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_mapel` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT untuk tabel `dt_nilai_pas`
@@ -343,7 +345,7 @@ ALTER TABLE `dt_nilai_pts`
 -- AUTO_INCREMENT untuk tabel `dt_nilai_tugas`
 --
 ALTER TABLE `dt_nilai_tugas`
-  MODIFY `id_tugas` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_tugas` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT untuk tabel `dt_periode_ajaran`
@@ -369,6 +371,12 @@ ALTER TABLE `dt_kelas`
   ADD CONSTRAINT `dt_kelas_ibfk_2` FOREIGN KEY (`id_periode`) REFERENCES `dt_periode_ajaran` (`id_periode`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
+-- Ketidakleluasaan untuk tabel `dt_mapel`
+--
+ALTER TABLE `dt_mapel`
+  ADD CONSTRAINT `dt_mapel_ibfk_1` FOREIGN KEY (`id_jurusan`) REFERENCES `dt_jurusan` (`id_jurusan`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
 -- Ketidakleluasaan untuk tabel `dt_nilai_pas`
 --
 ALTER TABLE `dt_nilai_pas`
@@ -388,7 +396,6 @@ ALTER TABLE `dt_nilai_pts`
 ALTER TABLE `dt_nilai_tugas`
   ADD CONSTRAINT `dt_nilai_tugas_ibfk_1` FOREIGN KEY (`id_siswa`) REFERENCES `dt_siswa` (`id_siswa`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `dt_nilai_tugas_ibfk_2` FOREIGN KEY (`id_mapel`) REFERENCES `dt_mapel` (`id_mapel`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `dt_nilai_tugas_ibfk_3` FOREIGN KEY (`id_kelas`) REFERENCES `dt_kelas` (`id_kelas`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `dt_nilai_tugas_ibfk_4` FOREIGN KEY (`id_jurusan`) REFERENCES `dt_jurusan` (`id_jurusan`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `dt_nilai_tugas_ibfk_5` FOREIGN KEY (`id_periode`) REFERENCES `dt_periode_ajaran` (`id_periode`) ON DELETE CASCADE ON UPDATE CASCADE;
 

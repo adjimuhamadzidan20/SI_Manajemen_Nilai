@@ -40,7 +40,7 @@
                                             <td><?= $data['kd_ajaran']; ?></td>
                                             <td><?= $data['tahun_ajaran']; ?></td>
                                             <td>
-                                                <a href="/daftar_siswa/rinci_kelas/<?= $data['tahun_ajaran']; ?>" class="btn btn-primary btn-sm">Daftar Siswa
+                                                <a href="/daftar_siswa/rinci_kelas/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm">Daftar Siswa
                                                 </a>
                                             </td>
                                         </tr>

@@ -18,7 +18,7 @@ class DaftarkelasModel extends Model
 
    public  function kelas($kelas) {
       $db = db_connect();
-      $query = "SELECT kelas FROM dt_kelas WHERE id_kelas = $kelas";
+      $query = "SELECT kelas FROM dt_kelas WHERE kelas = '$kelas'";
 
       $sql = $db->query($query);
       $hasil = $sql->getRowArray();
@@ -39,7 +39,7 @@ class DaftarkelasModel extends Model
       $query = "SELECT dt_kelas.id_kelas, dt_kelas.kd_kelas, dt_kelas.id_jurusan, dt_jurusan.nama_jurusan, dt_kelas.kelas, 
       dt_periode_ajaran.id_periode, dt_periode_ajaran.tahun_ajaran FROM dt_kelas INNER JOIN dt_jurusan ON dt_kelas.id_jurusan 
       = dt_jurusan.id_jurusan INNER JOIN dt_periode_ajaran ON dt_kelas.id_periode = dt_periode_ajaran.id_periode WHERE 
-      dt_periode_ajaran.tahun_ajaran = $thn_ajaran";
+      dt_kelas.id_periode = $thn_ajaran";
 
       $sql = $db->query($query);
       $hasil = $sql->getResultArray();
@@ -61,8 +61,8 @@ class DaftarkelasModel extends Model
    public function jumlahDataKelas($thn_ajaran) {
       $db = db_connect();
       $query = "SELECT dt_kelas.id_kelas, dt_kelas.kd_kelas, dt_kelas.id_jurusan, dt_kelas.kelas, dt_periode_ajaran.id_periode, 
-      dt_periode_ajaran.tahun_ajaran FROM dt_kelas INNER JOIN dt_periode_ajaran ON dt_kelas.id_periode = dt_periode_ajaran.id_periode 
-      WHERE dt_periode_ajaran.tahun_ajaran = $thn_ajaran";
+      dt_periode_ajaran.tahun_ajaran FROM dt_kelas INNER JOIN dt_periode_ajaran ON dt_kelas.id_periode = 
+      dt_periode_ajaran.id_periode  WHERE dt_periode_ajaran.id_periode = $thn_ajaran";
 
       $sql = $db->query($query);
       $hasil = $sql->getNumRows();

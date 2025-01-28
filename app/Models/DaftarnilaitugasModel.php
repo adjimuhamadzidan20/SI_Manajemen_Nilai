@@ -8,27 +8,27 @@ class DaftarnilaitugasModel extends Model
 {
     protected $table      = 'dt_nilai_tugas';
     protected $primaryKey = 'id_tugas';
-    protected $allowedFields = ['id_siswa', 'id_mapel', 'id_kelas', 'id_jurusan', 'id_periode', 'semester', 'nilai_1', 'nilai_2', 
+    protected $allowedFields = ['id_siswa', 'id_mapel', 'kelas', 'id_jurusan', 'id_periode', 'semester', 'nilai_1', 'nilai_2', 
     'nilai_3', 'nilai_4', 'nilai_5', 'nilai_6', 'nilai_7', 'nilai_8', 'nilai_9', 'na_materi', 'LM_1', 'LM_2', 'LM_3', 
     'na_sumatif'];
     
     protected $useAutoIncrement = true;
     protected $protectFields    = true;
 
-    public function dataNilai($semester) {
+    public function dataNilai($semester, $idPeriode, $kelas, $idJurusan, $idMapel) {
         $db = db_connect();
-        $query = "SELECT dt_nilai_tugas.id_tugas, dt_nilai_tugas.id_siswa, dt_siswa.nama_siswa, dt_nilai_tugas.id_mapel, 
-        dt_mapel.nama_mapel, dt_nilai_tugas.id_kelas, dt_kelas.kelas, dt_nilai_tugas.id_jurusan, dt_jurusan.nama_jurusan, 
+        $query = "SELECT dt_nilai_tugas.id_tugas, dt_nilai_tugas.id_siswa, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai_tugas.id_mapel, dt_mapel.nama_mapel, dt_nilai_tugas.kelas, dt_nilai_tugas.id_jurusan, dt_jurusan.nama_jurusan, 
         dt_nilai_tugas.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_tugas.semester, dt_nilai_tugas.nilai_1, 
         dt_nilai_tugas.nilai_2, dt_nilai_tugas.nilai_3, dt_nilai_tugas.nilai_4, dt_nilai_tugas.nilai_5, dt_nilai_tugas.nilai_6,
         dt_nilai_tugas.nilai_7, dt_nilai_tugas.nilai_8, dt_nilai_tugas.nilai_9, dt_nilai_tugas.na_materi, dt_nilai_tugas.LM_1, 
         dt_nilai_tugas.LM_2, dt_nilai_tugas.LM_3, dt_nilai_tugas.na_sumatif FROM dt_nilai_tugas 
         INNER JOIN dt_siswa ON dt_nilai_tugas.id_siswa = dt_siswa.id_siswa 
         INNER JOIN dt_mapel ON dt_nilai_tugas.id_mapel = dt_mapel.id_mapel 
-        INNER JOIN dt_kelas ON dt_nilai_tugas.id_kelas = dt_kelas.id_kelas 
         INNER JOIN dt_jurusan ON dt_nilai_tugas.id_jurusan = dt_jurusan.id_jurusan 
         INNER JOIN dt_periode_ajaran ON dt_nilai_tugas.id_periode = dt_periode_ajaran.id_periode 
-        WHERE semester = '$semester'";
+        WHERE semester = '$semester' AND dt_nilai_tugas.id_periode = $idPeriode AND dt_nilai_tugas.kelas = '$kelas'
+        AND dt_nilai_tugas.id_jurusan = $idJurusan AND dt_nilai_tugas.id_mapel = $idMapel";
 
         $sql = $db->query($query);
         $hasil = $sql->getResultArray();
@@ -104,7 +104,7 @@ class DaftarnilaitugasModel extends Model
         $data = $this->insert([
             'id_siswa' => $pesertaDidik,
             'id_mapel' => $namaMapel,
-            'id_kelas' => $kelas,
+            'kelas' => $kelas,
             'id_jurusan' => $jurusan,
             'id_periode' => $periodeAjaran,
             'semester' => $semester,
@@ -193,7 +193,7 @@ class DaftarnilaitugasModel extends Model
             'id_tugas' => $id,
             'id_siswa' => $pesertaDidik,
             'id_mapel' => $namaMapel,
-            'id_kelas' => $kelas,
+            'kelas' => $kelas,
             'id_jurusan' => $jurusan,
             'id_periode' => $periodeAjaran,
             'semester' => $semester,

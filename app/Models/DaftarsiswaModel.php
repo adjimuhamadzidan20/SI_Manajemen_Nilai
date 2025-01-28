@@ -27,11 +27,11 @@ class DaftarsiswaModel extends Model
 
     public function pesertaDidik($kelas, $jurusan) {
         $db = db_connect();
-        $query = "SELECT dt_siswa.id_siswa, dt_siswa.kd_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, dt_siswa.id_kelas, 
-        dt_kelas.kelas, dt_jurusan.id_jurusan, dt_jurusan.nama_jurusan, dt_siswa.id_periode, dt_periode_ajaran.tahun_ajaran FROM
-        dt_siswa INNER JOIN dt_periode_ajaran ON dt_siswa.id_periode = dt_periode_ajaran.id_periode INNER JOIN dt_kelas ON 
-        dt_siswa.id_kelas = dt_kelas.id_kelas INNER JOIN dt_jurusan ON dt_siswa.id_jurusan = dt_jurusan.id_jurusan WHERE
-        dt_kelas.id_kelas = $kelas AND dt_kelas.id_kelas = $kelas AND dt_jurusan.id_jurusan = $jurusan";
+        $query = "SELECT dt_siswa.id_siswa, dt_siswa.kd_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_siswa.id_kelas, dt_kelas.kelas, dt_jurusan.id_jurusan, dt_jurusan.nama_jurusan, dt_siswa.id_periode, 
+        dt_periode_ajaran.tahun_ajaran FROM dt_siswa INNER JOIN dt_periode_ajaran ON dt_siswa.id_periode = 
+        dt_periode_ajaran.id_periode INNER JOIN dt_kelas ON dt_siswa.id_kelas = dt_kelas.id_kelas INNER JOIN dt_jurusan 
+        ON dt_siswa.id_jurusan = dt_jurusan.id_jurusan WHERE dt_kelas.kelas = '$kelas' AND dt_jurusan.id_jurusan = $jurusan";
 
         $sql = $db->query($query);
         $hasil = $sql->getResultArray();

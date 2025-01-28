@@ -11,6 +11,7 @@
             <main>
                 <div class="container-fluid px-3">
                     <h2 class="mt-3"><?= $kelas; ?> <?= $nama_jurusan; ?> - <?= $nama_mapel; ?></h2>
+                    <h5><?= 'Semester '. $semester; ?></h4>
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
                     </ol>
@@ -27,10 +28,11 @@
                             </div>
                         </div>
                         <div class="card-body table-responsive">
-                            <table class="table table-bordered">
+                            <table class="table table-bordered" id="datatablesSimple">
                                 <thead>
                                     <tr>
                                         <th class="text-center">No</th>
+                                        <th class="text-center">NISN</th>
                                         <th class="text-nowrap">Peserta Didik</th>
                                         <th class="text-nowrap text-center">TP1</th>
                                         <th class="text-nowrap text-center">TP2</th>
@@ -41,10 +43,10 @@
                                         <th class="text-nowrap text-center">TP7</th>
                                         <th class="text-nowrap text-center">TP8</th>
                                         <th class="text-nowrap text-center">TP9</th>
-                                        <th class="text-nowrap text-center">NA(M)</th>
                                         <th class="text-nowrap text-center">LM1</th>
                                         <th class="text-nowrap text-center">LM2</th>
                                         <th class="text-nowrap text-center">LM3</th>
+                                        <th class="text-nowrap text-center">NA(M)</th>
                                         <th class="text-nowrap text-center">NA(S)</th>
                                         <th class="text-nowrap text-center">Opsi</th>
                                     </tr>
@@ -57,6 +59,7 @@
                                     ?>
                                         <tr>
                                             <td class="text-center"><?= $no; ?></td>
+                                            <td><?= $data['nisn']; ?></td>
                                             <td><?= $data['nama_siswa']; ?></td>
                                             <td class="text-center"><?= $data['nilai_1']; ?></td>
                                             <td class="text-center"><?= $data['nilai_2']; ?></td>
@@ -67,10 +70,10 @@
                                             <td class="text-center"><?= $data['nilai_7']; ?></td>
                                             <td class="text-center"><?= $data['nilai_8']; ?></td>
                                             <td class="text-center"><?= $data['nilai_9']; ?></td>
-                                            <td class="text-center"><?= $data['na_materi']; ?></td>
                                             <td class="text-center"><?= $data['LM_1']; ?></td>
                                             <td class="text-center"><?= $data['LM_2']; ?></td>
                                             <td class="text-center"><?= $data['LM_3']; ?></td>
+                                            <td class="text-center"><?= $data['na_materi']; ?></td>
                                             <td class="text-center"><?= $data['na_sumatif']; ?></td>
                                             <td class="text-center">
                                                 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" 
@@ -78,7 +81,7 @@
                                                 data-idtugas="<?= $data['id_tugas']; ?>"
                                                 data-idsiswa="<?= $data['id_siswa']; ?>"
                                                 data-idmapel="<?= $data['id_mapel']; ?>"
-                                                data-idkelas="<?= $data['id_kelas']; ?>"
+                                                data-kelas="<?= $data['kelas']; ?>"
                                                 data-idjurusan="<?= $data['id_jurusan']; ?>"
                                                 data-idperiode="<?= $data['id_periode']; ?>"
                                                 data-semester="<?= $data['semester']; ?>"
@@ -91,7 +94,7 @@
                                                 data-nilai7="<?= $data['nilai_7']; ?>"
                                                 data-nilai8="<?= $data['nilai_8']; ?>"
                                                 data-nilai9="<?= $data['nilai_9']; ?>"
-                                                >Ubah Nilai</button>
+                                                >Ubah</button>
                                             </td>
                                         </tr>
                                     <?php  
@@ -137,7 +140,7 @@
                                         <div class="mb-3">
                                             <label for="exampleInputKelas" class="form-label">Kelas</label>
                                             <select class="form-select" name="kelas" id="exampleInputKelas">
-                                                <option value="<?= $id_kelas; ?>"><?= $kelas; ?></option>
+                                                <option value="<?= $kelas; ?>"><?= $kelas; ?></option>
                                             </select>
                                         </div>
                                         <div class="mb-3">
@@ -249,7 +252,7 @@
                                         <div class="mb-3">
                                             <label for="input_kelasmurid" class="form-label">Kelas</label>
                                             <select class="form-select" name="kelas" id="input_kelasmurid">
-                                                <option value="<?= $id_kelas; ?>"><?= $kelas; ?></option>
+                                                <option value="<?= $kelas; ?>"><?= $kelas; ?></option>
                                             </select>
                                         </div>
                                         <div class="mb-3">

@@ -2,18 +2,21 @@
 
 namespace App\Controllers;
 use App\Models\DaftarmapelModel;
+use App\Models\DaftarjurusanModel;
 
 class Daftarmapel extends BaseController
 {
     public function index()
     {
         $mapelModel = new DaftarmapelModel();
+        $jurusanModel = new DaftarjurusanModel();
 
         $dataKode = $mapelModel->generateKode();
         $noUrut = substr($dataKode, 2, 3);
         $kdSekarang = intval($noUrut) + 1;
 
         $data = [
+            'jurusan' => $jurusanModel->dataJurusan(),
             'mapel' => $mapelModel->dataMapel(),
             'kode' => 'MA'. sprintf('%03s', $kdSekarang)
         ];
@@ -29,9 +32,10 @@ class Daftarmapel extends BaseController
         $kode = $this->request->getPost('kd_mapel');
         $mapel = $this->request->getPost('mapel');
         $kelas = $this->request->getPost('kelas');
+        $jurusan = $this->request->getPost('jurusan');
         $guru = $this->request->getPost('guru');
 
-        $mapelModel->tambahDataMapel($kode, $mapel, $kelas, $guru);
+        $mapelModel->tambahDataMapel($kode, $mapel, $kelas, $jurusan, $guru);
         return redirect()->to('/daftar_mapel');
     }
 

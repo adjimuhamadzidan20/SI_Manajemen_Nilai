@@ -38,11 +38,15 @@ $routes->post('/daftar_siswa/ubah', 'Daftarsiswa::ubah');
 $routes->get('/daftar_siswa/hapus/(:num)', 'Daftarsiswa::hapus/$1');
 
 $routes->get('/daftar_nilai', 'Daftarnilai::index');
-$routes->get('/daftar_nilai/nilai_tugas_periode/(:any)', 'Daftarnilai::nilai_tugas_periode/$1');
-$routes->get('/daftar_nilai/nilai_pts_periode/(:any)', 'Daftarnilai::nilai_pts_periode/$1');
-$routes->get('/daftar_nilai/nilai_pas_periode/(:any)', 'Daftarnilai::nilai_pas_periode/$1');
-$routes->get('/daftar_nilai/mapel_nilai/(:any)', 'Daftarnilai::mapel_nilai/$1');
-$routes->get('/daftar_nilai/peserta_didik/(:any)/(:any)', 'Daftarnilai::peserta_didik/$1/$2');
+$routes->get('/daftar_nilai/nilai_tugas_periode/(:any)', 'Daftarnilai_tugas::nilai_tugas_periode/$1');
+$routes->get('/daftar_nilai/nilai_pts_periode/(:any)', 'Daftarnilai_pts::nilai_pts_periode/$1');
+$routes->get('/daftar_nilai/nilai_pas_periode/(:any)', 'Daftarnilai_pas::nilai_pas_periode/$1');
 
-$routes->post('/daftar_nilai/tambah', 'Daftarnilai::tambah');
-$routes->post('/daftar_nilai/ubah', 'Daftarnilai::ubah');
+$routes->get('/daftar_nilai/mapel_nilai/(:any)', 'Daftarnilai::mapel_nilai/$1');
+
+$routes->get('/daftar_nilai/peserta_didik/(:any)/(:any)', 'Daftarnilai_tugas::peserta_didik/$1/$2');
+$routes->get('/daftar_nilai/peserta_didik/(:any)/(:any)', 'Daftarnilai_pts::peserta_didik/$1/$2');
+$routes->get('/daftar_nilai/peserta_didik/(:any)/(:any)', 'Daftarnilai_pas::peserta_didik/$1/$2');
+
+$routes->post('/daftar_nilai/tambah', 'Daftarnilai_tugas::tambah');
+$routes->post('/daftar_nilai/ubah', 'Daftarnilai_tugas::ubah');

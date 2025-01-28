@@ -57,7 +57,7 @@
 					                    		?>
 													  <li class="list-group-item d-flex justify-content-between">
 													  	<?= $data['kd_ajaran']; ?> - Tahun Ajaran <?= $data['tahun_ajaran']; ?>
-													  	<a href="/daftar_nilai/nilai_pts_periode/<?= $data['tahun_ajaran']; ?>" class="btn btn-primary btn-sm">Lihat Kelas</a></li>
+													  	<a href="/daftar_nilai/nilai_pts_periode/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm">Lihat Kelas</a></li>
 													<?php  
 						                        endforeach;
 						                    	?>
@@ -79,7 +79,7 @@
 					                    		?>
 													  <li class="list-group-item d-flex justify-content-between">
 													  	<?= $data['kd_ajaran']; ?> - Tahun Ajaran <?= $data['tahun_ajaran']; ?>
-													  	<a href="/daftar_nilai/nilai_pas_periode/<?= $data['tahun_ajaran']; ?>" class="btn btn-primary btn-sm">Lihat Kelas</a></li>
+													  	<a href="/daftar_nilai/nilai_pas_periode/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm">Lihat Kelas</a></li>
 													<?php  
 						                        endforeach;
 						                    	?>
