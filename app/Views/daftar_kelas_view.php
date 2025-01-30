@@ -10,14 +10,14 @@
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-3">
-                    <h2 class="mt-3">Daftar Kelas</h2>
+                    <h3 class="mt-3 text-uppercase">Daftar Kelas</h3>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
                         <li class="breadcrumb-item active">Daftar Kelas</li>
                     </ol>
                     <div class="card mb-4">
                         <div class="card-header">
-                            Data Daftar Kelas
+                            Daftar data kelas
                         </div>
                         <div class="card-body">
                             <?php  

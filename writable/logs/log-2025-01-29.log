@@ -1,0 +1,180 @@
+WARNING - 2025-01-29 01:52:55 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Daftarsiswa.php on line 45.
+ 1 APPPATH\Controllers\Daftarsiswa.php(45): substr(null, 2, 3)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarsiswa->rinci_siswa('4', '13', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarsiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+WARNING - 2025-01-29 02:15:39 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Daftarsiswa.php on line 45.
+ 1 APPPATH\Controllers\Daftarsiswa.php(45): substr(null, 2, 3)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarsiswa->rinci_siswa('4', '13', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarsiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-29 02:43:04 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "http://localhost:8080/index.php/daftar_siswa/ubah?" cannot be found.
+[Method: POST, Route: daftar_siswa/ubah]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 64.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost:8080/index.php/daftar_siswa/ubah?')
+ 2 SYSTEMPATH\Common.php(853): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Daftarsiswa.php(87): redirect('http://localhost:8080/index.php/daftar_siswa/ubah?')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarsiswa->ubah()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarsiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-29 02:46:10 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "daftar_siswa/rinci_siswa/13/1/4" cannot be found.
+[Method: POST, Route: daftar_siswa/ubah]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 64.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(64): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('daftar_siswa/rinci_siswa/13/1/4')
+ 2 SYSTEMPATH\Common.php(853): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Daftarsiswa.php(87): redirect('daftar_siswa/rinci_siswa/13/1/4')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarsiswa->ubah()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarsiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-29 02:47:13 --> Error: Call to undefined function App\Controllers\to()
+[Method: POST, Route: daftar_siswa/ubah]
+in APPPATH\Controllers\Daftarsiswa.php on line 87.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarsiswa->ubah()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarsiswa))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-29 03:10:48 --> ParseError: syntax error, unexpected string content ");", expecting ")"
+[Method: GET, Route: daftar_kelas/periode_kelas/4]
+in APPPATH\Controllers\Daftarkelas.php on line 79.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarkelas.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Daftarkelas')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Daftarkelas')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Daftarkelas', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-29 03:11:36 --> ErrorException: Undefined variable $periode
+[Method: GET, Route: daftar_kelas/hapus/19]
+in APPPATH\Controllers\Daftarkelas.php on line 79.
+ 1 APPPATH\Controllers\Daftarkelas.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $periode', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarkelas.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->hapus('19')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-29 07:17:44 --> ErrorException: Undefined variable $idMapel
+[Method: POST, Route: daftar_nilai_tugas/tambah]
+in APPPATH\Controllers\Daftarnilai_tugas.php on line 60.
+ 1 APPPATH\Controllers\Daftarnilai_tugas.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idMapel', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarnilai_tugas.php', 60)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->tambah()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-29 07:21:53 --> ErrorException: Undefined variable $idPeriode
+[Method: POST, Route: daftar_nilai_tugas/tambah]
+in APPPATH\Controllers\Daftarnilai_tugas.php on line 62.
+ 1 APPPATH\Controllers\Daftarnilai_tugas.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idPeriode', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarnilai_tugas.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->tambah()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-29 07:22:38 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: daftar_nilai_tugas/peserta_didik/X/1/22/22/4/Ganjil]
+in APPPATH\Models\DaftarmapelModel.php on line 31.
+ 1 APPPATH\Models\DaftarmapelModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\DaftarmapelModel.php', 31)
+ 2 APPPATH\Controllers\Daftarnilai_tugas.php(111): App\Models\DaftarmapelModel->dataMapelDetail('22')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->peserta_didik('X', '1', '22', '22', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-29 07:26:03 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: daftar_nilai_tugas/peserta_didik/X/1/22/22/4/Ganjil]
+in APPPATH\Models\DaftarmapelModel.php on line 31.
+ 1 APPPATH\Models\DaftarmapelModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\DaftarmapelModel.php', 31)
+ 2 APPPATH\Controllers\Daftarnilai_tugas.php(111): App\Models\DaftarmapelModel->dataMapelDetail('22')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->peserta_didik('X', '1', '22', '22', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-29 07:28:07 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: daftar_nilai_tugas/peserta_didik/X/1/22/22/4/Ganjil]
+in APPPATH\Models\DaftarmapelModel.php on line 31.
+ 1 APPPATH\Models\DaftarmapelModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\DaftarmapelModel.php', 31)
+ 2 APPPATH\Controllers\Daftarnilai_tugas.php(111): App\Models\DaftarmapelModel->dataMapelDetail('22')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->peserta_didik('X', '1', '22', '22', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-29 10:53:11 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: daftar_nilai_tugas/peserta_didik/X/1/22/22/4/Ganjil]
+in APPPATH\Models\DaftarmapelModel.php on line 31.
+ 1 APPPATH\Models\DaftarmapelModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\DaftarmapelModel.php', 31)
+ 2 APPPATH\Controllers\Daftarnilai_tugas.php(109): App\Models\DaftarmapelModel->dataMapelDetail('22')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->peserta_didik('X', '1', '22', '22', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-29 11:05:55 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: daftar_nilai_tugas/peserta_didik/X/1/22/22/4/Ganjil]
+in APPPATH\Models\DaftarmapelModel.php on line 31.
+ 1 APPPATH\Models\DaftarmapelModel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\DaftarmapelModel.php', 31)
+ 2 APPPATH\Controllers\Daftarnilai_tugas.php(111): App\Models\DaftarmapelModel->dataMapelDetail('22')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->peserta_didik('X', '1', '22', '22', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-29 14:53:24 --> Error: Class "App\Controllers\DaftarnilaitugasModel" not found
+[Method: GET, Route: daftar_nilai_pas/peserta_didik/X/1/Informatika/22/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_pas.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pas->peserta_didik('X', '1', 'Informatika', '22', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-29 14:54:46 --> Error: Class "App\Models\DaftarnilaipasModel" not found
+[Method: GET, Route: daftar_nilai_pas/peserta_didik/X/1/Informatika/22/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_pas.php on line 78.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pas->peserta_didik('X', '1', 'Informatika', '22', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')

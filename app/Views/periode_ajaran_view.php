@@ -10,10 +10,10 @@
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-3">
-                    <h2 class="mt-3">Periode Tahun Ajaran</h2>
+                    <h3 class="mt-3 text-uppercase">Periode Tahun Ajaran</h3>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                        <li class="breadcrumb-item active">Periode Ajaran</li>
+                        <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
+                        <li class="breadcrumb-item active">Periode Tahun Ajaran</li>
                     </ol>
                     <div class="card mb-4">
                         <div class="card-header">

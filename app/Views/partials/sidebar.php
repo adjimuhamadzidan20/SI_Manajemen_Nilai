@@ -2,12 +2,12 @@
     <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
         <div class="sb-sidenav-menu">
             <div class="nav">
-                <div class="sb-sidenav-menu-heading">Core</div>
-                <a class="nav-link" href="/">
+                <div class="sb-sidenav-menu-heading">Beranda</div>
+                <a class="nav-link" href="/dashboard">
                     <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                     Dashboard
                 </a>
-                <div class="sb-sidenav-menu-heading">Interface</div>
+                <div class="sb-sidenav-menu-heading">Master Menu</div>
                 <a class="nav-link" href="/periode_ajar">
                     <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                     Periode Ajaran
@@ -26,7 +26,7 @@
                 </a>
                 <a class="nav-link" href="/daftar_siswa">
                     <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                    Daftar Murid
+                    Daftar Peserta Didik
                 </a>
                  <a class="nav-link" href="/daftar_nilai">
                     <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>

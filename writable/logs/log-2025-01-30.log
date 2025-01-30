@@ -1,0 +1,56 @@
+CRITICAL - 2025-01-30 12:11:31 --> ErrorException: Undefined array key "nilai_pts"
+[Method: GET, Route: daftar_nilai_pas/peserta_didik/X/1/Informatika/22/4/Ganjil]
+in APPPATH\Views\nilaipas_siswa.php on line 51.
+ 1 APPPATH\Views\nilaipas_siswa.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nilai_pts"', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\nilaipas_siswa.php', 51)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\nilaipas_siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('nilaipas_siswa', [], true)
+ 5 APPPATH\Controllers\Daftarnilai_pas.php(101): view('nilaipas_siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pas->peserta_didik('X', '1', 'Informatika', '22', '4', 'Ganjil')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-30 12:57:56 --> ErrorException: Undefined variable $tahun_ajaran
+[Method: GET, Route: daftar_siswa/rinci_siswa/4/13/1]
+in APPPATH\Views\daftar_murid_isi_view.php on line 24.
+ 1 APPPATH\Views\daftar_murid_isi_view.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tahun_ajaran', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_murid_isi_view.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_murid_isi_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('daftar_murid_isi_view', [], true)
+ 5 APPPATH\Controllers\Daftarsiswa.php(55): view('daftar_murid_isi_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarsiswa->rinci_siswa('4', '13', '1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarsiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-30 12:58:31 --> ErrorException: Undefined variable $tahun_ajaran
+[Method: GET, Route: daftar_siswa/rinci_siswa/4/13/1]
+in APPPATH\Views\daftar_murid_isi_view.php on line 24.
+ 1 APPPATH\Views\daftar_murid_isi_view.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tahun_ajaran', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_murid_isi_view.php', 24)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\daftar_murid_isi_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('daftar_murid_isi_view', [], true)
+ 5 APPPATH\Controllers\Daftarsiswa.php(55): view('daftar_murid_isi_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarsiswa->rinci_siswa('4', '13', '1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarsiswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-30 13:41:12 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "Dasar Program Keahlian (DPK)"
+[Method: GET, Route: daftar_nilai_tugas/peserta_didik/X/1/Dasar%20Program%20Keahlian%20%28DPK%29/26/4/Ganjil]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('daftar_nilai_tugas/peserta_didik/X/1/Dasar Program Keahlian (DPK)/26/4/Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('daftar_nilai_tugas/peserta_didik/X/1/Dasar Program Keahlian (DPK)/26/4/Ganjil')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')

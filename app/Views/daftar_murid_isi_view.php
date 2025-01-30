@@ -13,18 +13,33 @@
                     <?php  
                       foreach ($kelas as $data) :
                     ?>
-                    <h2 class="mt-3">Daftar Peserta Didik - <?= $data['kelas'] ?> <?= $data['nama_jurusan'] ?> (<?= $data['tahun_ajaran'] ?>)</h2>
+                      <h3 class="mt-3 text-uppercase">Daftar Peserta Didik</h3>
+                      <p class="text-uppercase mb-2"><?= $data['kelas']; ?> <?= $data['nama_jurusan']; ?> - t.a <?= $data['tahun_ajaran']; ?></p>
                     <?php  
                       endforeach;
                     ?>
                     <ol class="breadcrumb mb-4">
                       <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                      <li class="breadcrumb-item active">Daftar Murid</li>
+                      <li class="breadcrumb-item"><a href="/daftar_siswa">Daftar Peserta Didik</a></li>
+                      <?php  
+                        foreach ($kelas as $data) :
+                      ?>
+                        <li class="breadcrumb-item"><a href="/daftar_kelas/rinci_kelas/<?= $data['id_periode']; ?>">Tahun Ajaran <?= $data['tahun_ajaran']; ?></a></li>
+                        <li class="breadcrumb-item active">Peserta Didik <?= $data['kelas']; ?> <?= $data['nama_jurusan']; ?></li>
+                      <?php  
+                        endforeach;
+                      ?>
                     </ol>
                     <div class="card mb-4">
                         <div class="card-header d-flex justify-content-between">
                           <div>
-                            <a href="/daftar_siswa" class="btn btn-primary btn-sm">Kembali</a>
+                            <?php  
+                              foreach ($kelas as $data) :
+                            ?>
+                              <a href="/daftar_siswa/rinci_kelas/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm">Kembali</a>
+                            <?php  
+                              endforeach;
+                            ?>
                           </div>
                           <div>
                             <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambah_murid">Tambah</button>

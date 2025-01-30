@@ -10,15 +10,18 @@
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-3">
-                    <h2 class="mt-3"><?= $kelas; ?> <?= $nama_jurusan; ?> - <?= $nama_mapel; ?></h2>
-                    <h5><?= 'Semester '. $semester; ?></h4>
+                    <h3 class="mt-3 text-uppercase"><?= $kelas; ?> <?= $nama_jurusan; ?> - <?= $nama_mapel; ?></h3>
+                    <p class="text-uppercase mb-2"><?= 'Semester '. $semester; ?></p>
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="/daftar_nilai">Daftar Nilai</a></li>
+                        <li class="breadcrumb-item"><a href="/daftar_nilai/nilai_tugas_periode/<?= $id_periode; ?>">Nilai Tugas T.A <?= $tahun_ajaran; ?></a></li>
+                        <li class="breadcrumb-item active"><?= $kelas; ?> <?= $nama_jurusan; ?> <?= $nama_mapel; ?> - <?= $semester; ?></li>
                     </ol>
                     <div class="card">
                         <div class="card-header d-flex justify-content-between">
                             <div>
-                                <a href="/daftar_nilai" class="btn btn-primary btn-sm">Kembali</a>
+                                <a href="/daftar_nilai/nilai_tugas_periode/<?= $id_periode; ?>" class="btn btn-primary btn-sm">Kembali</a>
                             </div>
                             <div>
                                 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" 
@@ -115,7 +118,7 @@
                             <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Data Nilai</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <form action="/daftar_nilai/tambah" method="post">  
+                        <form action="/daftar_nilai_tugas/tambah" method="post">  
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col">
@@ -133,6 +136,7 @@
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleInputMapel" class="form-label">Mata Pelajaran</label>
+                                            <input type="text" class="form-control" name="id_mapel" value="<?= $id_mapel; ?>" hidden>
                                             <select class="form-select" name="mapel" id="exampleInputMapel">
                                                 <option value="<?= $id_mapel; ?>"><?= $nama_mapel; ?></option>
                                             </select>
@@ -226,7 +230,7 @@
                             <h1 class="modal-title fs-5" id="exampleModalLabel">Ubah Data Nilai</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <form action="/daftar_nilai/ubah" method="post">  
+                        <form action="/daftar_nilai_tugas/ubah" method="post">  
                             <div class="modal-body">
                                 <div class="row">
                                     <div class="col">
@@ -245,6 +249,7 @@
                                         </div>
                                         <div class="mb-3">
                                             <label for="input_namamapel" class="form-label">Mata Pelajaran</label>
+                                            <input type="text" class="form-control" name="id_mapel" value="<?= $id_mapel; ?>"
                                             <select class="form-select" name="mapel" id="input_namamapel">
                                                 <option value="<?= $id_mapel; ?>"><?= $nama_mapel; ?></option>
                                             </select>

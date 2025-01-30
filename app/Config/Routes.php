@@ -8,6 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->setAutoRoute(true);
 
 $routes->get('/', 'Dashboard::index');
+$routes->get('/dashboard', 'Dashboard::index');
 
 $routes->get('/periode_ajar', 'Periodeajaran::index');
 $routes->post('/periode_ajar/tambah', 'Periodeajaran::tambah');
@@ -42,11 +43,15 @@ $routes->get('/daftar_nilai/nilai_tugas_periode/(:any)', 'Daftarnilai_tugas::nil
 $routes->get('/daftar_nilai/nilai_pts_periode/(:any)', 'Daftarnilai_pts::nilai_pts_periode/$1');
 $routes->get('/daftar_nilai/nilai_pas_periode/(:any)', 'Daftarnilai_pas::nilai_pas_periode/$1');
 
-$routes->get('/daftar_nilai/mapel_nilai/(:any)', 'Daftarnilai::mapel_nilai/$1');
+$routes->get('/daftar_nilai_tugas/peserta_didik/(:any)/(:any)/(:any)/(:any)/(:any)/(:any)', 
+'Daftarnilai_tugas::peserta_didik/$1/$2/$3/$4/$5/$6');
+$routes->post('/daftar_nilai_tugas/tambah', 'Daftarnilai_tugas::tambah');
+$routes->post('/daftar_nilai_tugas/ubah', 'Daftarnilai_tugas::ubah');
 
-$routes->get('/daftar_nilai/peserta_didik/(:any)/(:any)', 'Daftarnilai_tugas::peserta_didik/$1/$2');
-$routes->get('/daftar_nilai/peserta_didik/(:any)/(:any)', 'Daftarnilai_pts::peserta_didik/$1/$2');
-$routes->get('/daftar_nilai/peserta_didik/(:any)/(:any)', 'Daftarnilai_pas::peserta_didik/$1/$2');
+$routes->get('/daftar_nilai_pts/peserta_didik/(:any)/(:any)', 'Daftarnilai_pts::peserta_didik/$1/$2');
+$routes->post('/daftar_nilai_pts/tambah', 'Daftarnilai_pts::tambah');
+$routes->post('/daftar_nilai_pts/ubah', 'Daftarnilai_pts::ubah');
 
-$routes->post('/daftar_nilai/tambah', 'Daftarnilai_tugas::tambah');
-$routes->post('/daftar_nilai/ubah', 'Daftarnilai_tugas::ubah');
+$routes->get('/daftar_nilai_pas/peserta_didik/(:any)/(:any)', 'Daftarnilai_pas::peserta_didik/$1/$2');
+$routes->post('/daftar_nilai_pas/tambah', 'Daftarnilai_pas::tambah');
+$routes->post('/daftar_nilai_pas/ubah', 'Daftarnilai_pas::ubah');

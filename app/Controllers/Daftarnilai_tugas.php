@@ -38,6 +38,7 @@ class Daftarnilai_tugas extends BaseController
     public function tambah() {
         $nilaiTugasModel = new DaftarnilaitugasModel();
 
+        $idMapel = $this->request->getPost('id_mapel');
         $pesertaDidik = $this->request->getPost('peserta_didik');
         $namaMapel = $this->request->getPost('mapel');
         $kelas = $this->request->getPost('kelas');
@@ -57,12 +58,14 @@ class Daftarnilai_tugas extends BaseController
         $nilaiTugasModel->tambahDataNilaiTugas($pesertaDidik, $namaMapel, $kelas, $jurusan, $periodeAjaran, 
         $semester, $nilai_1, $nilai_2, $nilai_3, $nilai_4, $nilai_5, $nilai_6, $nilai_7, $nilai_8, $nilai_9);
 
-        return redirect()->to('/daftar_nilai');
+        return redirect()->to('/daftar_nilai_tugas/peserta_didik/'.$kelas.'/'.$jurusan.'/'.$namaMapel.'/'.$idMapel.'/'.
+        $periodeAjaran.'/'.$semester);
     }
 
      public function ubah() {
         $nilaiTugasModel = new DaftarnilaitugasModel();
 
+        $idMapel = $this->request->getPost('id_mapel');
         $id = $this->request->getPost('id');
         $pesertaDidik = $this->request->getPost('peserta_didik');
         $namaMapel = $this->request->getPost('mapel');
@@ -83,7 +86,8 @@ class Daftarnilai_tugas extends BaseController
         $nilaiTugasModel->ubahDataNilaiTugas($id, $pesertaDidik, $namaMapel, $kelas, $jurusan, $periodeAjaran, 
         $semester, $nilai_1, $nilai_2, $nilai_3, $nilai_4, $nilai_5, $nilai_6, $nilai_7, $nilai_8, $nilai_9);
 
-        return redirect()->to('/daftar_nilai');
+        return redirect()->to('/daftar_nilai_tugas/peserta_didik/'.$kelas.'/'.$jurusan.'/'.$namaMapel.'/'.$idMapel.'/'.
+        $periodeAjaran.'/'.$semester);
     }
 
     public function peserta_didik($kelas, $jurusan, $namaMapel, $idMapel, $idPeriode, $semester) {
@@ -117,30 +121,4 @@ class Daftarnilai_tugas extends BaseController
         echo view('nilaitugas_siswa', $data);
         echo view('partials/footer');
     }
-
-    public function mapel_nilai($kelas, $namaMapel = "", $idMapel = "") {
-        $kelasModel = new DaftarkelasModel();
-        $jurusanModel = new DaftarjurusanModel();
-        $periodeModel = new PeriodeajaranModel();
-        $mapelModel = new DaftarmapelModel();
-
-        $dataKode = $kelasModel->generateKode();
-        $noUrut = substr($dataKode, 2, 3);
-        $kdSekarang = intval($noUrut) + 1;
-
-        $data = [
-            'kelas' => $kelasModel->dataKelasDetail($kelas),
-            'jurusan' => $jurusanModel->dataJurusan(),
-            'kode' => 'KE'. sprintf('%03s', $kdSekarang),
-            'periode' => $periodeModel->dataPeriode(), 
-            'mapel' => $mapelModel->dataMapel(),
-            'nama_mapel' => $mapelModel->dataMapelDetail($namaMapel),
-            'id_mapel' => $mapelModel->dataMapelDetailID($idMapel),
-        ];
-
-        echo view('partials/header');   
-        echo view('nilaitugas_kelas', $data);
-        echo view('partials/footer');
-    }
-
 }

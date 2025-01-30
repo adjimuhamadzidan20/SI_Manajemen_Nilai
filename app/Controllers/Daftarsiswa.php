@@ -68,7 +68,7 @@ class Daftarsiswa extends BaseController
         $tahunAjaran = $this->request->getPost('tahun');
 
         $siswaModel->tambahDataSiswa($kode, $nis, $nisn, $namaMurid, $kelas, $jurusan, $tahunAjaran);
-        return redirect()->to('/daftar_siswa');
+        return redirect()->to('/daftar_siswa/rinci_siswa/'.$tahunAjaran.'/'.$kelas.'/'.$jurusan);
     }
 
     public function ubah() {
@@ -84,7 +84,7 @@ class Daftarsiswa extends BaseController
         $tahunAjaran = $this->request->getPost('tahun');
 
         $siswaModel->ubahDataSiswa($id, $kode, $nis, $nisn, $namaMurid, $kelas, $jurusan, $tahunAjaran);
-        return redirect()->to('/daftar_siswa');
+        return redirect()->to('/daftar_siswa/rinci_siswa/'.$tahunAjaran.'/'.$kelas.'/'.$jurusan);
     }
 
     public function hapus($id) {

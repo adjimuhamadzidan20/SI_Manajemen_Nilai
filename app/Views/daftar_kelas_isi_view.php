@@ -10,11 +10,12 @@
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-3">
-                    <h2 class="mt-3">Daftar Kelas - Tahun Ajaran <?= $tahun_ajaran; ?></h2>
+                    <h3 class="mt-3 text-uppercase">Daftar Kelas</h3>
+                    <p class="text-uppercase mb-2">Tahun Ajaran <?= $tahun_ajaran; ?></p>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                        <li class="breadcrumb-item active">Daftar Kelas</li>
-                        <li class="breadcrumb-item active">Daftar Kelas Tahun Ajaran <?= $tahun_ajaran; ?></li>
+                        <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="/daftar_kelas">Daftar Kelas</a></li>
+                        <li class="breadcrumb-item active">Tahun Ajaran <?= $tahun_ajaran; ?></li>
                     </ol>
                     <div class="card">
                         <div class="card-header d-flex justify-content-between">
@@ -36,7 +37,7 @@
                                         <th>KD Kelas</th>
                                         <th>Program Keahlian</th>
                                         <th>Kelas</th>
-                                        <th>T.A</th>
+                                        <th>Tahun Ajaran</th>
                                         <th>Opsi</th>
                                     </tr>
                                 </thead>

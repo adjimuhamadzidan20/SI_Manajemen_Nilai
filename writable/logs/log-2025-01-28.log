@@ -1887,3 +1887,73 @@ in APPPATH\Controllers\Daftarnilai_pts.php on line 29.
  6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-28 15:53:02 --> ErrorException: Undefined array key "nilai_pts"
+[Method: GET, Route: daftar_nilai_pts/peserta_didik/X/1/Informatika/22/4/Ganjil]
+in APPPATH\Views\nilaipts_siswa.php on line 51.
+ 1 APPPATH\Views\nilaipts_siswa.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nilai_pts"', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\nilaipts_siswa.php', 51)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\nilaipts_siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('nilaipts_siswa', [], true)
+ 5 APPPATH\Controllers\Daftarnilai_pts.php(109): view('nilaipts_siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->peserta_didik('X', '1', 'Informatika', '22', '4', 'Ganjil')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-28 15:54:05 --> ErrorException: Undefined array key "nilai_pts"
+[Method: GET, Route: daftar_nilai_pts/peserta_didik/X/1/Informatika/22/4/Ganjil]
+in APPPATH\Views\nilaipts_siswa.php on line 51.
+ 1 APPPATH\Views\nilaipts_siswa.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nilai_pts"', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\nilaipts_siswa.php', 51)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\nilaipts_siswa.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('nilaipts_siswa', [], true)
+ 5 APPPATH\Controllers\Daftarnilai_pts.php(109): view('nilaipts_siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->peserta_didik('X', '1', 'Informatika', '22', '4', 'Ganjil')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-28 15:57:30 --> Error: Class "App\Controllers\DaftarnilaitugasModel" not found
+[Method: GET, Route: daftar_nilai_pts/peserta_didik/X/1/Informatika/22/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_pts.php on line 86.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->peserta_didik('X', '1', 'Informatika', '22', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-28 15:57:43 --> Error: Class "App\Models\DaftarnilaiptsModel" not found
+[Method: GET, Route: daftar_nilai_pts/peserta_didik/X/1/Informatika/22/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_pts.php on line 86.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->peserta_didik('X', '1', 'Informatika', '22', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-28 15:59:24 --> Error: Class "App\Models\DaftarnilaiptsModel" not found
+[Method: GET, Route: daftar_nilai_pts/peserta_didik/X/1/Informatika/22/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_pts.php on line 86.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->peserta_didik('X', '1', 'Informatika', '22', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-01-28 16:01:05 --> Error: Class "App\Models\DaftarnilaiptsModel" not found
+[Method: GET, Route: daftar_nilai_pts/peserta_didik/X/1/Informatika/22/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_pts.php on line 86.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->peserta_didik('X', '1', 'Informatika', '22', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')

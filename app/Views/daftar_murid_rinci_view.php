@@ -10,13 +10,13 @@
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-3">
-                    <h2 class="mt-3">Daftar Peserta Didik Periode <?= $tahun_ajaran; ?></h2>
-
+                    <h3 class="mt-3 text-uppercase">Daftar Peserta Didik</h3>
+                    <p class="text-uppercase mb-2">Periode <?= $tahun_ajaran; ?></p>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                        <li class="breadcrumb-item active">Daftar Murid</li>
+                        <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="/daftar_siswa">Daftar Peserta Didik</a></li>
+                        <li class="breadcrumb-item active">Tahun Ajaran <?= $tahun_ajaran; ?></li>
                     </ol>
-
                     <div class="card">
                       <div class="card-header">
                         <div class="d-flex justify-content-between">
@@ -36,7 +36,7 @@
                                 <div class="fw-normal"><?= $data['kd_kelas']; ?> - <?= $data['kelas']; ?>
                                 <?= $data['nama_jurusan']; ?></div>
                               </div>
-                              <a href="/daftar_siswa/rinci_siswa/<?= $data['id_periode']; ?>/<?= $data['id_kelas']; ?>/<?= $data['id_jurusan']; ?>" class="btn btn-primary btn-sm">Lihat Murid</a>
+                              <a href="/daftar_siswa/rinci_siswa/<?= $data['id_periode']; ?>/<?= $data['id_kelas']; ?>/<?= $data['id_jurusan']; ?>" class="btn btn-primary btn-sm">Lihat Peserta Didik</a>
                             </li>
                           <?php  
                               endforeach;
@@ -44,7 +44,7 @@
                           ?>
                             <li class="list-group-item align-items-center">
                               <div class="ms-2 me-auto">
-                                <div class="fw-normal text-center">Daftar kelas belumm tersedia..</div>
+                                <div class="fw-normal text-center">Daftar kelas tidak tersedia..</div>
                               </div>
                             </li>
                           <?php  

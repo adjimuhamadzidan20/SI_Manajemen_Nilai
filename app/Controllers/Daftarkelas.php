@@ -57,7 +57,7 @@ class Daftarkelas extends BaseController
         $periode = $this->request->getPost('tahun');
 
         $kelasModel->tambahDataKelas($kode, $keahlian, $kelas, $periode);
-        return redirect()->to('/daftar_kelas');
+        return redirect()->to('/daftar_kelas/periode_kelas/'. $periode);
     }
 
     public function ubah() {
@@ -70,7 +70,7 @@ class Daftarkelas extends BaseController
         $periode = $this->request->getPost('tahun');
 
         $kelasModel->ubahDataKelas($id, $kode, $keahlian, $kelas, $periode);
-        return redirect()->to('/daftar_kelas');
+        return redirect()->to('/daftar_kelas/periode_kelas/'. $periode);
     }
 
     public function hapus($id) {

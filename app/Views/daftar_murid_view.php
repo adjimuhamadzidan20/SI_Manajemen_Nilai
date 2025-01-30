@@ -10,9 +10,9 @@
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-3">
-                    <h2 class="mt-3">Daftar Peserta Didik</h2>
+                    <h3 class="mt-3 text-uppercase">Daftar Peserta Didik</h3>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
                         <li class="breadcrumb-item active">Daftar Peserta Didik</li>
                     </ol>
                     <div class="card mb-4">
@@ -40,7 +40,7 @@
                                             <td><?= $data['kd_ajaran']; ?></td>
                                             <td><?= $data['tahun_ajaran']; ?></td>
                                             <td>
-                                                <a href="/daftar_siswa/rinci_kelas/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm">Daftar Siswa
+                                                <a href="/daftar_siswa/rinci_kelas/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm">Daftar Kelas
                                                 </a>
                                             </td>
                                         </tr>

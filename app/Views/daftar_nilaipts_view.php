@@ -10,11 +10,12 @@
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-3">
-                    <h2 class="mt-3">Nilai PTS <?= $tahun_ajaran; ?></h2>
+                    <h3 class="text-uppercase mt-3">Nilai PTS</h3>
+                    <p class="text-uppercase mb-2">Tahun Ajaran <?= $tahun_ajaran; ?></p>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                        <li class="breadcrumb-item active">Daftar Nilai</li>
-                        <li class="breadcrumb-item active">Nilai PTS <?= $tahun_ajaran; ?></li>
+                        <li class="breadcrumb-item"><a href="/dasboard">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="/daftar_nilai">Daftar Nilai</a></li>
+                        <li class="breadcrumb-item active">Nilai PTS T.A <?= $tahun_ajaran; ?></li>
                     </ol>
                     <div class="card">
                         <div class="card-header d-flex justify-content-between">
@@ -32,7 +33,7 @@
                                         <th>Kelas</th>
                                         <th>Jurusan</th>
                                         <th>Guru</th>
-                                        <th>Opsi</th>
+                                        <th>Semester</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -49,9 +50,9 @@
                                             <td><?= $data['nama_jurusan']; ?></td>
                                             <td><?= $data['guru']; ?></td>
                                             <td>
-                                                <a href="/daftar_nilai/peserta_didik/<?= $data['kelas']; ?>/<?= $data['id_jurusan']; ?>/<?= $data['nama_mapel']; ?>/<?= $data['id_mapel']; ?>/<?= $id_periode; ?>/Ganjil" class="btn btn-primary btn-sm">Semester Ganjil</a> 
+                                                <a href="/daftar_nilai_pts/peserta_didik/<?= $data['kelas']; ?>/<?= $data['id_jurusan']; ?>/<?= $data['nama_mapel']; ?>/<?= $data['id_mapel']; ?>/<?= $id_periode; ?>/Ganjil" class="btn btn-primary btn-sm">Ganjil</a> 
 
-                                                <a href="/daftar_nilai/peserta_didik/<?= $data['kelas']; ?>/<?= $data['id_jurusan']; ?>/<?= $data['nama_mapel']; ?>/<?= $data['id_mapel']; ?>/<?= $id_periode; ?>/Genap" class="btn btn-primary btn-sm">Semester Genap</a> 
+                                                <a href="/daftar_nilai_pts/peserta_didik/<?= $data['kelas']; ?>/<?= $data['id_jurusan']; ?>/<?= $data['nama_mapel']; ?>/<?= $data['id_mapel']; ?>/<?= $id_periode; ?>/Genap" class="btn btn-primary btn-sm">Genap</a> 
                                             </td>
                                         </tr>
                                     <?php endforeach; ?>
