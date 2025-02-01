@@ -27,7 +27,7 @@ class Daftarnilai_tugas extends BaseController
             'periode' => $periodeModel->dataPeriode(), 
             'tahun_ajaran' => $periodeModel->tahunPeriode($thn_ajaran),
             'id_periode' => $periodeModel->idPeriode($thn_ajaran),
-            'mapel' => $mapelModel->dataMapel()
+            'mapel' => $mapelModel->dataMapel($thn_ajaran)
         ];
 
         echo view('partials/header');   
@@ -38,9 +38,9 @@ class Daftarnilai_tugas extends BaseController
     public function tambah() {
         $nilaiTugasModel = new DaftarnilaitugasModel();
 
-        $idMapel = $this->request->getPost('id_mapel');
+        $namaMapel = $this->request->getPost('nama_mapel');
         $pesertaDidik = $this->request->getPost('peserta_didik');
-        $namaMapel = $this->request->getPost('mapel');
+        $idMapel = $this->request->getPost('id_mapel');
         $kelas = $this->request->getPost('kelas');
         $jurusan = $this->request->getPost('jurusan');
         $periodeAjaran = $this->request->getPost('periode');
@@ -55,7 +55,7 @@ class Daftarnilai_tugas extends BaseController
         $nilai_8 = $this->request->getPost('tp_8');
         $nilai_9 = $this->request->getPost('tp_9');
 
-        $nilaiTugasModel->tambahDataNilaiTugas($pesertaDidik, $namaMapel, $kelas, $jurusan, $periodeAjaran, 
+        $nilaiTugasModel->tambahDataNilaiTugas($pesertaDidik, $idMapel, $kelas, $jurusan, $periodeAjaran, 
         $semester, $nilai_1, $nilai_2, $nilai_3, $nilai_4, $nilai_5, $nilai_6, $nilai_7, $nilai_8, $nilai_9);
 
         return redirect()->to('/daftar_nilai_tugas/peserta_didik/'.$kelas.'/'.$jurusan.'/'.$namaMapel.'/'.$idMapel.'/'.
@@ -65,10 +65,10 @@ class Daftarnilai_tugas extends BaseController
      public function ubah() {
         $nilaiTugasModel = new DaftarnilaitugasModel();
 
-        $idMapel = $this->request->getPost('id_mapel');
+        $namaMapel = $this->request->getPost('nama_mapel');
         $id = $this->request->getPost('id');
         $pesertaDidik = $this->request->getPost('peserta_didik');
-        $namaMapel = $this->request->getPost('mapel');
+        $idMapel = $this->request->getPost('id_mapel');
         $kelas = $this->request->getPost('kelas');
         $jurusan = $this->request->getPost('jurusan');
         $periodeAjaran = $this->request->getPost('periode');
@@ -83,7 +83,7 @@ class Daftarnilai_tugas extends BaseController
         $nilai_8 = $this->request->getPost('tp_8');
         $nilai_9 = $this->request->getPost('tp_9');
 
-        $nilaiTugasModel->ubahDataNilaiTugas($id, $pesertaDidik, $namaMapel, $kelas, $jurusan, $periodeAjaran, 
+        $nilaiTugasModel->ubahDataNilaiTugas($id, $pesertaDidik, $idMapel, $kelas, $jurusan, $periodeAjaran, 
         $semester, $nilai_1, $nilai_2, $nilai_3, $nilai_4, $nilai_5, $nilai_6, $nilai_7, $nilai_8, $nilai_9);
 
         return redirect()->to('/daftar_nilai_tugas/peserta_didik/'.$kelas.'/'.$jurusan.'/'.$namaMapel.'/'.$idMapel.'/'.

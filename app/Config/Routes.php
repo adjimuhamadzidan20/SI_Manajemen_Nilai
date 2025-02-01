@@ -30,6 +30,7 @@ $routes->get('/daftar_mapel', 'Daftarmapel::index');
 $routes->post('/daftar_mapel/tambah', 'Daftarmapel::tambah');
 $routes->post('/daftar_mapel/ubah', 'Daftarmapel::ubah');
 $routes->get('/daftar_mapel/hapus/(:num)', 'Daftarmapel::hapus/$1');
+$routes->get('/daftar_mapel/periode_mapel/(:any)', 'Daftarmapel::periode/$1');
 
 $routes->get('/daftar_siswa', 'Daftarsiswa::index');
 $routes->get('/daftar_siswa/rinci_kelas/(:any)', 'Daftarsiswa::rinci_kelas/$1');

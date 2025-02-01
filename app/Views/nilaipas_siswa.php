@@ -36,7 +36,8 @@
                                     <tr>
                                         <th class="text-center">No</th>
                                         <th class="text-center">NISN</th>
-                                        <th class="text-nowrap">Peserta Didik</th>
+                                        <th class="text-nowrap">Nama Peserta Didik</th>
+                                        <th class="text-nowrap">Mata Pelajaran</th>
                                         <th class="text-nowrap">Nilai PAS</th>
                                         <th class="text-nowrap text-center">Opsi</th>
                                     </tr>
@@ -51,7 +52,8 @@
                                             <td class="text-center"><?= $no; ?></td>
                                             <td><?= $data['nisn']; ?></td>
                                             <td><?= $data['nama_siswa']; ?></td>
-                                            <td class="text-center"><?= $data['nilai_pas']; ?></td>
+                                            <td><?= $data['nama_mapel']; ?></td>
+                                            <td><?= $data['nilai_pas']; ?></td>
                                             <td class="text-center">
                                                 <button type="button" class="btn btn-primary btn-sm" 
                                                 data-bs-toggle="modal" 
@@ -63,8 +65,8 @@
                                                 data-idjurusan="<?= $data['id_jurusan']; ?>"
                                                 data-idperiode="<?= $data['id_periode']; ?>"
                                                 data-semester="<?= $data['semester']; ?>"
-                                                data-nilaipas="<?= $data['nilai_pas']; ?>""
-                                                >Ubah</button>
+                                                data-nilaipas="<?= $data['nilai_pas']; ?>"
+                                                >Ubah Nilai</button>
                                             </td>
                                         </tr>
                                     <?php  
@@ -103,7 +105,9 @@
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleInputMapel" class="form-label">Mata Pelajaran</label>
-                                            <select class="form-select" name="mapel" id="exampleInputMapel">
+                                            <input type="text" class="form-control" name="nama_mapel" value="<?= $nama_mapel; ?>"
+                                            hidden>
+                                            <select class="form-select" name="id_mapel" id="exampleInputMapel">
                                                 <option value="<?= $id_mapel; ?>"><?= $nama_mapel; ?></option>
                                             </select>
                                         </div>
@@ -175,7 +179,9 @@
                                         </div>
                                         <div class="mb-3">
                                             <label for="input_namamapel" class="form-label">Mata Pelajaran</label>
-                                            <select class="form-select" name="mapel" id="input_namamapel">
+                                            <input type="text" class="form-control" name="nama_mapel" value="<?= $nama_mapel; ?>"
+                                            hidden>
+                                            <select class="form-select" name="id_mapel" id="input_namamapel">
                                                 <option value="<?= $id_mapel; ?>"><?= $nama_mapel; ?></option>
                                             </select>
                                         </div>

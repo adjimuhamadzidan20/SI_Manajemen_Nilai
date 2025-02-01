@@ -8,14 +8,16 @@ class DaftarmapelModel extends Model
 {
     protected $table      = 'dt_mapel';
     protected $primaryKey = 'id_mapel';
-    protected $allowedFields = ['kd_mapel', 'nama_mapel', 'kelas', 'id_jurusan', 'guru'];
+    protected $allowedFields = ['kd_mapel', 'nama_mapel', 'kelas', 'id_jurusan', 'id_periode', 'guru'];
     protected $useAutoIncrement = true;
     protected $protectFields    = true;
 
-    public function dataMapel() {
+    public function dataMapel($thn_ajaran) {
         $db = db_connect();
         $query = "SELECT dt_mapel.id_mapel, dt_mapel.kd_mapel, dt_mapel.nama_mapel, dt_mapel.kelas, dt_mapel.id_jurusan, 
-        dt_jurusan.nama_jurusan, dt_mapel.guru FROM dt_mapel INNER JOIN dt_jurusan ON dt_mapel.id_jurusan = dt_jurusan.id_jurusan";
+        dt_jurusan.nama_jurusan, dt_mapel.id_periode, dt_periode_ajaran.tahun_ajaran, dt_mapel.guru FROM dt_mapel 
+        INNER JOIN dt_jurusan ON dt_mapel.id_jurusan = dt_jurusan.id_jurusan INNER JOIN dt_periode_ajaran ON 
+        dt_mapel.id_periode = dt_periode_ajaran.id_periode WHERE dt_periode_ajaran.id_periode = $thn_ajaran";
 
         $sql = $db->query($query);
         $hasil = $sql->getResultArray();
@@ -47,12 +49,13 @@ class DaftarmapelModel extends Model
         return $hasil['kode']; 
     }
 
-    public function tambahDataMapel($kode, $namaMapel, $kelas, $jurusan, $guruMapel) {
+    public function tambahDataMapel($kode, $namaMapel, $kelas, $jurusan, $tahunAjaran, $guruMapel) {
         $data = $this->insert([
             'kd_mapel' => $kode,
             'nama_mapel' => $namaMapel,
             'kelas' => $kelas,
             'id_jurusan' => $jurusan,
+            'id_periode' => $tahunAjaran,
             'guru' => $guruMapel
         ]);
 
@@ -65,6 +68,8 @@ class DaftarmapelModel extends Model
             'kd_mapel' => $kode,
             'nama_mapel' => $namaMapel,
             'kelas' => $kelas,
+            'id_jurusan' => $jurusan,
+            'id_periode' => $tahunAjaran,
             'guru' => $guruMapel
         ];
 

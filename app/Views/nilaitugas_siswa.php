@@ -31,27 +31,33 @@
                             </div>
                         </div>
                         <div class="card-body table-responsive">
-                            <table class="table table-bordered" id="datatablesSimple">
+                            <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th class="text-center">No</th>
-                                        <th class="text-center">NISN</th>
-                                        <th class="text-nowrap">Peserta Didik</th>
-                                        <th class="text-nowrap text-center">TP1</th>
-                                        <th class="text-nowrap text-center">TP2</th>
-                                        <th class="text-nowrap text-center">TP3</th>
-                                        <th class="text-nowrap text-center">TP4</th>
-                                        <th class="text-nowrap text-center">TP5</th>
-                                        <th class="text-nowrap text-center">TP6</th>
-                                        <th class="text-nowrap text-center">TP7</th>
-                                        <th class="text-nowrap text-center">TP8</th>
-                                        <th class="text-nowrap text-center">TP9</th>
-                                        <th class="text-nowrap text-center">LM1</th>
-                                        <th class="text-nowrap text-center">LM2</th>
-                                        <th class="text-nowrap text-center">LM3</th>
-                                        <th class="text-nowrap text-center">NA(M)</th>
-                                        <th class="text-nowrap text-center">NA(S)</th>
-                                        <th class="text-nowrap text-center">Opsi</th>
+                                        <th class="text-center align-middle" style="font-size: 14px;" rowspan="2">No</th>
+                                        <th class="text-center align-middle" style="font-size: 14px;" rowspan="2">NISN</th>
+                                        <th class="text-center align-middle" style="font-size: 14px;" rowspan="2">Nama Peserta Didik</th>
+                                        <th class="text-nowrap text-center" style="font-size: 14px;" colspan="3">Lingkup Materi 1</th>
+                                        <th class="text-nowrap text-center" style="font-size: 14px;" colspan="3">Lingkup Materi 2</th>
+                                        <th class="text-nowrap text-center" style="font-size: 14px;" colspan="3">Lingkup Materi 3</th>
+                                       
+                                         <th class="text-nowrap text-center align-middle" style="font-size: 14px;" rowspan="2">NA(M)</th>
+                                        <th class="text-nowrap text-center align-middle" style="font-size: 14px;" rowspan="2">LM1</th>
+                                        <th class="text-nowrap text-center align-middle" style="font-size: 14px;" rowspan="2">LM2</th>
+                                        <th class="text-nowrap text-center align-middle" style="font-size: 14px;" rowspan="2">LM3</th>
+                                        <th class="text-nowrap text-center align-middle" style="font-size: 14px;" rowspan="2">NA(S)</th>
+                                        <th class="text-nowrap text-center align-middle" style="font-size: 14px;" rowspan="2">Opsi</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-nowrap text-center" style="font-size: 14px;">TP1</th>
+                                        <th class="text-nowrap text-center" style="font-size: 14px;">TP2</th>
+                                        <th class="text-nowrap text-center" style="font-size: 14px;">TP3</th>
+                                        <th class="text-nowrap text-center" style="font-size: 14px;">TP1</th>
+                                        <th class="text-nowrap text-center" style="font-size: 14px;">TP2</th>
+                                        <th class="text-nowrap text-center" style="font-size: 14px;">TP3</th>
+                                        <th class="text-nowrap text-center" style="font-size: 14px;">TP1</th>
+                                        <th class="text-nowrap text-center" style="font-size: 14px;">TP2</th>
+                                        <th class="text-nowrap text-center" style="font-size: 14px;">TP3</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -62,7 +68,7 @@
                                     ?>
                                         <tr>
                                             <td class="text-center"><?= $no; ?></td>
-                                            <td><?= $data['nisn']; ?></td>
+                                            <td class="text-center"><?= $data['nisn']; ?></td>
                                             <td><?= $data['nama_siswa']; ?></td>
                                             <td class="text-center"><?= $data['nilai_1']; ?></td>
                                             <td class="text-center"><?= $data['nilai_2']; ?></td>
@@ -73,10 +79,10 @@
                                             <td class="text-center"><?= $data['nilai_7']; ?></td>
                                             <td class="text-center"><?= $data['nilai_8']; ?></td>
                                             <td class="text-center"><?= $data['nilai_9']; ?></td>
+                                            <td class="text-center"><?= $data['na_materi']; ?></td>
                                             <td class="text-center"><?= $data['LM_1']; ?></td>
                                             <td class="text-center"><?= $data['LM_2']; ?></td>
                                             <td class="text-center"><?= $data['LM_3']; ?></td>
-                                            <td class="text-center"><?= $data['na_materi']; ?></td>
                                             <td class="text-center"><?= $data['na_sumatif']; ?></td>
                                             <td class="text-center">
                                                 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" 
@@ -97,7 +103,7 @@
                                                 data-nilai7="<?= $data['nilai_7']; ?>"
                                                 data-nilai8="<?= $data['nilai_8']; ?>"
                                                 data-nilai9="<?= $data['nilai_9']; ?>"
-                                                >Ubah</button>
+                                                >Ubah Nilai</button>
                                             </td>
                                         </tr>
                                     <?php  
@@ -136,8 +142,9 @@
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleInputMapel" class="form-label">Mata Pelajaran</label>
-                                            <input type="text" class="form-control" name="id_mapel" value="<?= $id_mapel; ?>" hidden>
-                                            <select class="form-select" name="mapel" id="exampleInputMapel">
+                                            <input type="text" class="form-control" name="nama_mapel" value="<?= $nama_mapel; ?>"
+                                            hidden>
+                                            <select class="form-select" name="id_mapel" id="exampleInputMapel">
                                                 <option value="<?= $id_mapel; ?>"><?= $nama_mapel; ?></option>
                                             </select>
                                         </div>
@@ -249,8 +256,9 @@
                                         </div>
                                         <div class="mb-3">
                                             <label for="input_namamapel" class="form-label">Mata Pelajaran</label>
-                                            <input type="text" class="form-control" name="id_mapel" value="<?= $id_mapel; ?>"
-                                            <select class="form-select" name="mapel" id="input_namamapel">
+                                            <input type="text" class="form-control" name="nama_mapel" value="<?= $nama_mapel; ?>"
+                                            hidden>
+                                            <select class="form-select" name="id_mapel" id="input_namamapel">
                                                 <option value="<?= $id_mapel; ?>"><?= $nama_mapel; ?></option>
                                             </select>
                                         </div>

@@ -3,26 +3,43 @@
 namespace App\Controllers;
 use App\Models\DaftarmapelModel;
 use App\Models\DaftarjurusanModel;
+use App\Models\PeriodeajaranModel;
 
 class Daftarmapel extends BaseController
 {
     public function index()
     {
-        $mapelModel = new DaftarmapelModel();
+        $periodeModel = new PeriodeajaranModel();
+
+        $data = [
+            'periode' => $periodeModel->dataPeriode() 
+        ];
+        
+        echo view('partials/header');
+        echo view('daftar_mapel_view', $data);
+        echo view('partials/footer');
+    }
+
+    public function periode($thn_ajaran) {
         $jurusanModel = new DaftarjurusanModel();
+        $periodeModel = new PeriodeajaranModel();
+        $mapelModel = new DaftarmapelModel();
 
         $dataKode = $mapelModel->generateKode();
         $noUrut = substr($dataKode, 2, 3);
         $kdSekarang = intval($noUrut) + 1;
 
         $data = [
+            'mapel' => $mapelModel->dataMapel($thn_ajaran),
             'jurusan' => $jurusanModel->dataJurusan(),
-            'mapel' => $mapelModel->dataMapel(),
-            'kode' => 'MA'. sprintf('%03s', $kdSekarang)
+            'kode' => 'MA'. sprintf('%03s', $kdSekarang),
+            'periode' => $periodeModel->dataPeriode(), 
+            'tahun_ajaran' => $periodeModel->tahunPeriode($thn_ajaran),
+            'id_periode' => $periodeModel->idPeriode($thn_ajaran)
         ];
-        
-        echo view('partials/header');
-        echo view('daftar_mapel_view', $data);
+
+        echo view('partials/header');   
+        echo view('daftar_mapel_isi_view', $data);
         echo view('partials/footer');
     }
 
@@ -33,10 +50,11 @@ class Daftarmapel extends BaseController
         $mapel = $this->request->getPost('mapel');
         $kelas = $this->request->getPost('kelas');
         $jurusan = $this->request->getPost('jurusan');
+        $tahunAjaran = $this->request->getPost('periode');
         $guru = $this->request->getPost('guru');
 
-        $mapelModel->tambahDataMapel($kode, $mapel, $kelas, $jurusan, $guru);
-        return redirect()->to('/daftar_mapel');
+        $mapelModel->tambahDataMapel($kode, $mapel, $kelas, $jurusan, $tahunAjaran, $guru);
+        return redirect()->to('/daftar_mapel/periode_mapel/'. $tahunAjaran);
     }
 
     public function ubah() {
@@ -46,10 +64,12 @@ class Daftarmapel extends BaseController
         $kode = $this->request->getPost('kd_mapel');
         $mapel = $this->request->getPost('mapel');
         $kelas = $this->request->getPost('kelas');
+        $jurusan = $this->request->getPost('jurusan');
+        $tahunAjaran = $this->request->getPost('periode');
         $guru = $this->request->getPost('guru');
 
-        $mapelModel->ubahDataMapel($id, $kode, $mapel, $kelas, $guru);
-        return redirect()->to('/daftar_mapel');
+        $mapelModel->ubahDataMapel($id, $kode, $mapel, $kelas, $jurusan, $tahunAjaran, $guru);
+        return redirect()->to('/daftar_mapel/periode_mapel/'. $tahunAjaran);
     }
 
     public function hapus($id) {

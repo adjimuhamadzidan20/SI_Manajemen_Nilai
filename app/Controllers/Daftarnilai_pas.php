@@ -27,7 +27,7 @@ class Daftarnilai_pas extends BaseController
             'periode' => $periodeModel->dataPeriode(), 
             'tahun_ajaran' => $periodeModel->tahunPeriode($thn_ajaran),
             'id_periode' => $periodeModel->idPeriode($thn_ajaran),
-            'mapel' => $mapelModel->dataMapel()
+            'mapel' => $mapelModel->dataMapel($thn_ajaran)
         ];
 
         echo view('partials/header');   
@@ -38,36 +38,40 @@ class Daftarnilai_pas extends BaseController
     public function tambah() {
         $nilaiPasModel = new DaftarnilaipasModel();
 
+        $namaMapel = $this->request->getPost('nama_mapel');
         $pesertaDidik = $this->request->getPost('peserta_didik');
-        $namaMapel = $this->request->getPost('mapel');
+        $idMapel = $this->request->getPost('id_mapel');
         $kelas = $this->request->getPost('kelas');
         $jurusan = $this->request->getPost('jurusan');
         $periodeAjaran = $this->request->getPost('periode');
         $semester = $this->request->getPost('semester');
         $nilaiPas = $this->request->getPost('nilai_pas');
 
-        $nilaiPasModel->tambahDataNilaiPas($pesertaDidik, $namaMapel, $kelas, $jurusan, 
+        $nilaiPasModel->tambahDataNilaiPas($pesertaDidik, $idMapel, $kelas, $jurusan, 
         $periodeAjaran, $semester, $nilaiPas);
 
-        return redirect()->to('/daftar_nilai');
+        return redirect()->to('/daftar_nilai_pas/peserta_didik/'.$kelas.'/'.$jurusan.'/'.$namaMapel.'/'.$idMapel.'/'.
+        $periodeAjaran.'/'.$semester);
     }
 
      public function ubah() {
         $nilaiPasModel = new DaftarnilaipasModel();
 
+        $namaMapel = $this->request->getPost('nama_mapel');
         $id = $this->request->getPost('id');
         $pesertaDidik = $this->request->getPost('peserta_didik');
-        $namaMapel = $this->request->getPost('mapel');
+        $idMapel = $this->request->getPost('id_mapel');
         $kelas = $this->request->getPost('kelas');
         $jurusan = $this->request->getPost('jurusan');
         $periodeAjaran = $this->request->getPost('periode');
         $semester = $this->request->getPost('semester');
         $nilaiPas = $this->request->getPost('nilai_pas');
 
-        $nilaiPasModel->ubahDataNilaiPas($id, $pesertaDidik, $namaMapel, $kelas, $jurusan, 
+        $nilaiPasModel->ubahDataNilaiPas($id, $pesertaDidik, $idMapel, $kelas, $jurusan, 
         $periodeAjaran, $semester, $nilaiPas);
 
-        return redirect()->to('/daftar_nilai');
+        return redirect()->to('/daftar_nilai_pas/peserta_didik/'.$kelas.'/'.$jurusan.'/'.$namaMapel.'/'.$idMapel.'/'.
+        $periodeAjaran.'/'.$semester);
     }
 
     public function peserta_didik($kelas, $jurusan, $namaMapel, $idMapel, $idPeriode, $semester) {

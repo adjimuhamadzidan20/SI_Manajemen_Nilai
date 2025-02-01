@@ -82,6 +82,8 @@
                 let kd_mapel = button.data('kdmapel')
                 let mapel = button.data('mapel')
                 let kelas = button.data('kelas')
+                let jurusan = button.data('jurusan')
+                let periode = button.data('periode')
                 let guru = button.data('guru')
 
                 let modal = $(this)
@@ -90,6 +92,8 @@
                 modal.find('#input_kdmapel').val(kd_mapel)
                 modal.find('#input_mapel').val(mapel)
                 modal.find('#input_kelas').val(kelas)
+                modal.find('#input_jurusan').val(jurusan)
+                modal.find('#input_periode').val(periode)
                 modal.find('#input_guru').val(guru)
             })
 

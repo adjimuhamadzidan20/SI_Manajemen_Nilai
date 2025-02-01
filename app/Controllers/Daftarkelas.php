@@ -11,12 +11,7 @@ class Daftarkelas extends BaseController
     {   
         $periodeModel = new PeriodeajaranModel();
 
-        $dataKode = $periodeModel->generateKode();
-        $noUrut = substr($dataKode, 2, 3);
-        $kdSekarang = intval($noUrut) + 1;
-
         $data = [
-            'kode' => 'KE'. sprintf('%03s', $kdSekarang),
             'periode' => $periodeModel->dataPeriode() 
         ];
 
