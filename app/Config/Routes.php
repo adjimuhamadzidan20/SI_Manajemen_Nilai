@@ -7,6 +7,9 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->setAutoRoute(true);
 
+$routes->get('/login', 'Loginadmin::index');
+$routes->post('/login/masuk', 'Loginadmin::masuk');
+
 $routes->get('/', 'Dashboard::index');
 $routes->get('/dashboard', 'Dashboard::index');
 

@@ -19,10 +19,9 @@
                     </ol>
                     <div class="card">
                       <div class="card-header">
-                        <div class="d-flex justify-content-between">
-                          <div>
-                            <a href="/daftar_siswa" class="btn btn-primary btn-sm">Kembali</a>
-                          </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <a href="/daftar_siswa" class="btn btn-primary btn-sm">Kembali</a>
+                          Daftar kelas tahun <?= $tahun_ajaran; ?>
                         </div>
                       </div>
                       <div class="card-body">

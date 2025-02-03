@@ -16,19 +16,22 @@
                         <li class="breadcrumb-item active">Daftar Jurusan</li>
                     </ol>
                     <div class="card mb-4">
-                        <div class="card-header">
-                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambah_jurusan">Tambah</button>
-                            <button type="button" class="btn btn-primary btn-sm">Cetak PDF</button>
-                            <button type="button" class="btn btn-primary btn-sm">Cetak Excel</button>
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <div>
+                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambah_jurusan">Tambah</button>
+                                <button type="button" class="btn btn-primary btn-sm">Cetak PDF</button>
+                                <button type="button" class="btn btn-primary btn-sm">Cetak Excel</button>
+                            </div>
+                            <div>Data daftar jurusan</div>
                         </div>
                         <div class="card-body">
                             <table id="datatablesSimple">
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>KD Jurusan</th>
+                                        <th>Kode</th>
                                         <th>Nama Jurusan</th>
-                                        <th>Nama Kepanjangan</th>
+                                        <th>Nama Detail</th>
                                         <th>Opsi</th>
                                     </tr>
                                 </thead>
@@ -74,16 +77,16 @@
                   <form action="/daftar_jurusan/tambah" method="post">
                     <div class="modal-body">
                       <div class="mb-3">
-                        <label for="exampleInputKdJurusan" class="form-label">KD Jurusan</label>
+                        <label for="exampleInputKdJurusan" class="form-label">Kode</label>
                         <input type="text" class="form-control" id="exampleInputKdJurusan" name="kd_jurusan" value="<?= $kode; ?>"readonly>
                       </div>
                       <div class="mb-3">
                         <label for="exampleInputNamaJur" class="form-label">Nama Jurusan</label>
-                        <input type="text" class="form-control" id="exampleInputNamaJur" placeholder="Masukkan Nama Jurusan" name="nama_jurusan">
+                        <input type="text" class="form-control" id="exampleInputNamaJur" placeholder="Masukkan Nama Jurusan" name="nama_jurusan" required>
                       </div>
                       <div class="mb-3">
-                        <label for="exampleInputNamaPanjang" class="form-label">Nama Kepanjangan</label>
-                        <input type="text" class="form-control" id="exampleInputNamaPanjang" placeholder="Masukkan Nama Panjang" name="nama_panjang">
+                        <label for="exampleInputNamaPanjang" class="form-label">Nama Detail</label>
+                        <input type="text" class="form-control" id="exampleInputNamaPanjang" placeholder="Masukkan Nama Detail Jurusan" name="nama_panjang" required>
                       </div>
                     </div>
                     <div class="modal-footer">
@@ -107,16 +110,16 @@
                     <div class="modal-body">
                         <input type="text" class="form-control" name="id" id="id" hidden>
                         <div class="mb-3">
-                            <label for="kd_jur_edit" class="form-label">KD Jurusan</label>
+                            <label for="kd_jur_edit" class="form-label">Kode</label>
                             <input type="text" class="form-control" id="kd_jur_edit" name="kd_jurusan" readonly>
                         </div>
                         <div class="mb-3">
                             <label for="jurusan_edit" class="form-label">Nama Jurusan</label>
-                            <input type="text" class="form-control" id="jurusan_edit" name="nama_jurusan">
+                            <input type="text" class="form-control" id="jurusan_edit" name="nama_jurusan" required>
                         </div>
                         <div class="mb-3">
-                            <label for="panjangjurusan_edit" class="form-label">Nama Kepanjangan</label>
-                            <input type="text" class="form-control" id="panjangjurusan_edit" name="nama_panjang">
+                            <label for="panjangjurusan_edit" class="form-label">Nama Detail</label>
+                            <input type="text" class="form-control" id="panjangjurusan_edit" name="nama_panjang" required>
                         </div>
                       </div>
                     <div class="modal-footer">

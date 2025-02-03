@@ -1,0 +1,1220 @@
+CRITICAL - 2025-02-02 11:02:58 --> ErrorException: Undefined variable $pesan
+[Method: GET, Route: login]
+in APPPATH\Views\login_admin_view.php on line 26.
+ 1 APPPATH\Views\login_admin_view.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pesan', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\login_admin_view.php', 26)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\login_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('login_admin_view', [], true)
+ 5 APPPATH\Controllers\Loginadmin.php(10): view('login_admin_view')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:04:22 --> ErrorException: Undefined variable $pesan
+[Method: GET, Route: login]
+in APPPATH\Views\login_admin_view.php on line 26.
+ 1 APPPATH\Views\login_admin_view.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pesan', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\login_admin_view.php', 26)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\login_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('login_admin_view', [], true)
+ 5 APPPATH\Controllers\Loginadmin.php(10): view('login_admin_view')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:04:37 --> ErrorException: Undefined variable $info
+[Method: GET, Route: login]
+in APPPATH\Views\login_admin_view.php on line 26.
+ 1 APPPATH\Views\login_admin_view.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $info', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\login_admin_view.php', 26)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Views\\login_admin_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('login_admin_view', [], true)
+ 5 APPPATH\Controllers\Loginadmin.php(10): view('login_admin_view')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:12:29 --> Error: Class "App\Models\LoginadminModel" not found
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-02-02 11:13:22 --> mysqli_sql_exception: Unknown column 'admin123' in 'where clause' in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM d...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM d...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM d...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\app\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM d...')
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+#5 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-02-02 11:13:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+[Method: POST, Route: login/masuk]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 2 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:13:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 3 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 4 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:13:22 --> [Caused by] mysqli_sql_exception: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 4 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 5 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-02-02 11:13:47 --> mysqli_sql_exception: Unknown column 'admin123' in 'where clause' in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM d...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM d...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM d...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\app\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM d...')
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+#5 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-02-02 11:13:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+[Method: POST, Route: login/masuk]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 2 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:13:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 3 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 4 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:13:47 --> [Caused by] mysqli_sql_exception: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 4 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 5 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-02-02 11:14:31 --> mysqli_sql_exception: Unknown column 'admin123' in 'where clause' in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM d...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM d...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM d...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\app\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM d...')
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+#5 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-02-02 11:14:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+[Method: POST, Route: login/masuk]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 2 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:14:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 3 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 4 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:14:31 --> [Caused by] mysqli_sql_exception: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 4 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 5 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-02-02 11:15:31 --> mysqli_sql_exception: Unknown column 'admin123' in 'where clause' in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM d...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM d...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM d...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\app\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM d...')
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Loginadmin.php(20): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+#5 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-02-02 11:15:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+[Method: POST, Route: login/masuk]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 2 APPPATH\Controllers\Loginadmin.php(20): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:15:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 3 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 4 APPPATH\Controllers\Loginadmin.php(20): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:15:31 --> [Caused by] mysqli_sql_exception: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 4 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 5 APPPATH\Controllers\Loginadmin.php(20): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-02-02 11:17:55 --> mysqli_sql_exception: Unknown column 'admin123' in 'where clause' in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM d...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM d...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM d...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\app\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM d...')
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Loginadmin.php(20): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+#5 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-02-02 11:17:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+[Method: POST, Route: login/masuk]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 2 APPPATH\Controllers\Loginadmin.php(20): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:17:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 3 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 4 APPPATH\Controllers\Loginadmin.php(20): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:17:55 --> [Caused by] mysqli_sql_exception: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 4 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 5 APPPATH\Controllers\Loginadmin.php(20): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-02-02 11:18:06 --> mysqli_sql_exception: Unknown column 'admin123' in 'where clause' in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM d...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM d...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM d...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\app\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM d...')
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Loginadmin.php(20): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+#5 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-02-02 11:18:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+[Method: POST, Route: login/masuk]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 2 APPPATH\Controllers\Loginadmin.php(20): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:18:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 3 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 4 APPPATH\Controllers\Loginadmin.php(20): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:18:06 --> [Caused by] mysqli_sql_exception: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 4 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 5 APPPATH\Controllers\Loginadmin.php(20): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:18:40 --> ParseError: syntax error, unexpected token "{", expecting ")"
+[Method: POST, Route: login/masuk]
+in APPPATH\Models\LoginadminModel.php on line 16.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Models\\LoginadminModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\LoginadminModel')
+ 3 APPPATH\Controllers\Loginadmin.php(14): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\LoginadminModel')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-02-02 11:18:55 --> mysqli_sql_exception: Unknown column 'admin123' in 'where clause' in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM d...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM d...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM d...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\app\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM d...')
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Loginadmin.php(20): App\Models\LoginadminModel->masukAdmin('admin123')
+#5 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-02-02 11:18:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+[Method: POST, Route: login/masuk]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = admin123')
+ 2 APPPATH\Controllers\Loginadmin.php(20): App\Models\LoginadminModel->masukAdmin('admin123')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:18:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = admin123')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = admin123')
+ 3 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = admin123')
+ 4 APPPATH\Controllers\Loginadmin.php(20): App\Models\LoginadminModel->masukAdmin('admin123')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:18:55 --> [Caused by] mysqli_sql_exception: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM dt_admin WHERE username = admin123', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = admin123')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = admin123')
+ 4 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = admin123')
+ 5 APPPATH\Controllers\Loginadmin.php(20): App\Models\LoginadminModel->masukAdmin('admin123')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-02-02 11:19:07 --> mysqli_sql_exception: Unknown column 'admin123' in 'where clause' in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM d...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM d...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM d...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\app\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM d...')
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Loginadmin.php(20): App\Models\LoginadminModel->masukAdmin('admin123')
+#5 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-02-02 11:19:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+[Method: POST, Route: login/masuk]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = admin123')
+ 2 APPPATH\Controllers\Loginadmin.php(20): App\Models\LoginadminModel->masukAdmin('admin123')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:19:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = admin123')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = admin123')
+ 3 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = admin123')
+ 4 APPPATH\Controllers\Loginadmin.php(20): App\Models\LoginadminModel->masukAdmin('admin123')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:19:07 --> [Caused by] mysqli_sql_exception: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM dt_admin WHERE username = admin123', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = admin123')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = admin123')
+ 4 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = admin123')
+ 5 APPPATH\Controllers\Loginadmin.php(20): App\Models\LoginadminModel->masukAdmin('admin123')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:19:36 --> ErrorException: Undefined variable $data_admin
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 23.
+ 1 APPPATH\Controllers\Loginadmin.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_admin', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:20:14 --> ParseError: syntax error, unexpected token "if"
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Loginadmin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Loginadmin')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Loginadmin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:20:45 --> ErrorException: Undefined array key "username"
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 21.
+ 1 APPPATH\Controllers\Loginadmin.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:21:43 --> ErrorException: Undefined array key "username"
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 21.
+ 1 APPPATH\Controllers\Loginadmin.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:22:51 --> ErrorException: Undefined array key "username"
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 21.
+ 1 APPPATH\Controllers\Loginadmin.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:24:11 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 21.
+ 1 APPPATH\Controllers\Loginadmin.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:24:23 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 21.
+ 1 APPPATH\Controllers\Loginadmin.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 11:25:08 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 21.
+ 1 APPPATH\Controllers\Loginadmin.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:12:18 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 21.
+ 1 APPPATH\Controllers\Loginadmin.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:13:12 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 21.
+ 1 APPPATH\Controllers\Loginadmin.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:13:23 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 21.
+ 1 APPPATH\Controllers\Loginadmin.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:14:23 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 21.
+ 1 APPPATH\Controllers\Loginadmin.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:15:14 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 21.
+ 1 APPPATH\Controllers\Loginadmin.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:15:40 --> ErrorException: Undefined array key "username"
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 21.
+ 1 APPPATH\Controllers\Loginadmin.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:31:18 --> ErrorException: Undefined array key "username"
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 21.
+ 1 APPPATH\Controllers\Loginadmin.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:34:30 --> ErrorException: Undefined array key "username"
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 21.
+ 1 APPPATH\Controllers\Loginadmin.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:34:58 --> ErrorException: Undefined array key "username"
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 21.
+ 1 APPPATH\Controllers\Loginadmin.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "username"', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-02-02 12:44:19 --> mysqli_sql_exception: Unknown column 'admin123' in 'where clause' in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM d...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM d...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM d...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\app\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM d...')
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin', 'admin123')
+#5 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-02-02 12:44:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+[Method: POST, Route: login/masuk]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin\' AND password = admin123')
+ 2 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin', 'admin123')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:44:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = \'admin\' AND password = admin123')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = \'admin\' AND password = admin123')
+ 3 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin\' AND password = admin123')
+ 4 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin', 'admin123')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:44:19 --> [Caused by] mysqli_sql_exception: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM dt_admin WHERE username = \'admin\' AND password = admin123', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = \'admin\' AND password = admin123')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = \'admin\' AND password = admin123')
+ 4 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin\' AND password = admin123')
+ 5 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin', 'admin123')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-02-02 12:44:41 --> mysqli_sql_exception: Unknown column 'admin123' in 'where clause' in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM d...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM d...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM d...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\app\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM d...')
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+#5 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-02-02 12:44:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+[Method: POST, Route: login/masuk]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 2 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:44:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 3 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 4 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:44:41 --> [Caused by] mysqli_sql_exception: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 4 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 5 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-02-02 12:45:19 --> mysqli_sql_exception: Unknown column 'admin123' in 'where clause' in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM d...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM d...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM d...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\app\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM d...')
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+#5 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-02-02 12:45:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+[Method: POST, Route: login/masuk]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 2 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:45:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 3 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 4 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:45:19 --> [Caused by] mysqli_sql_exception: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 4 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = admin123 AND password = admin123')
+ 5 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-02-02 12:45:31 --> mysqli_sql_exception: Unknown column 'admin123' in 'where clause' in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM d...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM d...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM d...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\app\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM d...')
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+#5 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-02-02 12:45:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+[Method: POST, Route: login/masuk]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 2 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:45:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 3 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 4 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:45:31 --> [Caused by] mysqli_sql_exception: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 4 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 5 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-02-02 12:45:53 --> mysqli_sql_exception: Unknown column 'admin123' in 'where clause' in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM d...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM d...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM d...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\app\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM d...')
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+#5 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-02-02 12:45:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+[Method: POST, Route: login/masuk]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 2 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:45:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 3 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 4 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:45:53 --> [Caused by] mysqli_sql_exception: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 4 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 5 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-02-02 12:47:00 --> mysqli_sql_exception: Unknown column 'admin123' in 'where clause' in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM d...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM d...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM d...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\app\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM d...')
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+#5 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-02-02 12:47:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+[Method: POST, Route: login/masuk]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 2 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:47:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 3 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 4 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:47:00 --> [Caused by] mysqli_sql_exception: Unknown column 'admin123' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 4 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin123')
+ 5 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin123')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:49:18 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 21.
+ 1 APPPATH\Controllers\Loginadmin.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:51:37 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 28.
+ 1 APPPATH\Controllers\Loginadmin.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:52:18 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 28.
+ 1 APPPATH\Controllers\Loginadmin.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:52:28 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 28.
+ 1 APPPATH\Controllers\Loginadmin.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:53:19 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 28.
+ 1 APPPATH\Controllers\Loginadmin.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 12:53:28 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 28.
+ 1 APPPATH\Controllers\Loginadmin.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 14:58:10 --> ErrorException: Trying to access array offset on value of type null
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 28.
+ 1 APPPATH\Controllers\Loginadmin.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 28)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+ERROR - 2025-02-02 14:58:38 --> mysqli_sql_exception: Unknown column 'admin' in 'where clause' in C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\si_manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM d...', 0)
+#1 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM d...')
+#2 C:\xampp\htdocs\si_manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM d...')
+#3 C:\xampp\htdocs\si_manajemen_nilai\app\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM d...')
+#4 C:\xampp\htdocs\si_manajemen_nilai\app\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin')
+#5 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+#6 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+#7 C:\xampp\htdocs\si_manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\si_manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\si_manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\si_manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-02-02 14:58:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin' in 'where clause'
+[Method: POST, Route: login/masuk]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin')
+ 2 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 14:58:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'admin' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin')
+ 3 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin')
+ 4 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 14:58:38 --> [Caused by] mysqli_sql_exception: Unknown column 'admin' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin')
+ 4 APPPATH\Models\LoginadminModel.php(19): CodeIgniter\Database\BaseConnection->query('SELECT * FROM dt_admin WHERE username = \'admin123\' AND password = admin')
+ 5 APPPATH\Controllers\Loginadmin.php(19): App\Models\LoginadminModel->masukAdmin('admin123', 'admin')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 15:00:21 --> ErrorException: Undefined property: App\Controllers\Loginadmin::$adminModel
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 19.
+ 1 APPPATH\Controllers\Loginadmin.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Loginadmin::$adminModel', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 15:01:35 --> ErrorException: Undefined property: App\Controllers\Loginadmin::$adminModel
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 19.
+ 1 APPPATH\Controllers\Loginadmin.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Loginadmin::$adminModel', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 15:03:06 --> ErrorException: Undefined property: App\Controllers\Loginadmin::$adminModel
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 19.
+ 1 APPPATH\Controllers\Loginadmin.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Loginadmin::$adminModel', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 15:05:45 --> ErrorException: Undefined property: App\Controllers\Loginadmin::$adminModel
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 19.
+ 1 APPPATH\Controllers\Loginadmin.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Loginadmin::$adminModel', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 15:05:58 --> ErrorException: Undefined property: App\Controllers\Loginadmin::$adminModel
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 19.
+ 1 APPPATH\Controllers\Loginadmin.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Loginadmin::$adminModel', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 15:08:37 --> Error: Call to undefined method App\Controllers\Loginadmin::where()
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-02 15:11:13 --> ErrorException: Undefined property: App\Controllers\Loginadmin::$adminModel
+[Method: POST, Route: login/masuk]
+in APPPATH\Controllers\Loginadmin.php on line 19.
+ 1 APPPATH\Controllers\Loginadmin.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Loginadmin::$adminModel', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Loginadmin.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')

@@ -33,7 +33,7 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>KD Mapel</th>
+                                        <th>Kode</th>
                                         <th>Nama Mapel</th>
                                         <th>Kelas</th>
                                         <th>Jurusan</th>
@@ -81,7 +81,7 @@
 
             <!-- Modal tambah -->
             <div class="modal fade" id="tambah_mapel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Data Mapel</h1>
@@ -89,45 +89,51 @@
                   </div>
                   <form action="/daftar_mapel/tambah" method="post">
                     <div class="modal-body">
-                      <div class="mb-3">
-                        <label for="exampleInputKdMapel" class="form-label">KD Mapel</label>
-                        <input type="text" class="form-control" id="exampleInputKdMapel" name="kd_mapel" value="<?= $kode; ?>" readonly>
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputMapel" class="form-label">Nama Mapel</label>
-                        <input type="text" class="form-control" id="exampleInputMapel" name="mapel" placeholder="Masukkan Nama Mapel" required>
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputKelas" class="form-label">Kelas</label>
-                        <select class="form-select" aria-label="Default select example" name="kelas" id="exampleInputKelas" required>
-                            <option selected>-- Pilih Kelas --</option>
-                            <option value="X">X</option>
-                            <option value="XI">XI</option>
-                            <option value="XII">XII</option>
-                        </select>
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputJurusan" class="form-label">Jurusan</label>
-                        <select class="form-select" aria-label="Default select example" name="jurusan" id="exampleInputJurusan" required>
-                            <option selected>-- Pilih Jurusan --</option>
-                            <?php 
-                                foreach($jurusan as $data) : 
-                            ?>
-                                <option value="<?= $data['id_jurusan']; ?>"><?= $data['nama_jurusan']; ?></option>
-                            <?php  
-                                endforeach;
-                            ?>
-                        </select>
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPeriode" class="form-label">Tahun Ajaran</label>
-                        <select class="form-select" aria-label="Default select example" name="periode" id="exampleInputPeriode" required>
-                            <option value="<?= $id_periode; ?>"><?= $tahun_ajaran; ?></option>
-                        </select>
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputGuru" class="form-label">Guru Mapel</label>
-                        <input type="text" class="form-control" id="exampleInputGuru" name="guru" placeholder="Masukkan Nama Guru Mapel" required>
+                      <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="exampleInputKdMapel" class="form-label">Kode</label>
+                                <input type="text" class="form-control" id="exampleInputKdMapel" name="kd_mapel" value="<?= $kode; ?>" readonly>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputMapel" class="form-label">Nama Mata Pelajaran</label>
+                                <input type="text" class="form-control" id="exampleInputMapel" name="mapel" placeholder="Masukkan Nama Mapel" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputKelas" class="form-label">Kelas</label>
+                                <select class="form-select" aria-label="Default select example" name="kelas" id="exampleInputKelas" required>
+                                    <option selected>-- Pilih Kelas --</option>
+                                    <option value="X">X</option>
+                                    <option value="XI">XI</option>
+                                    <option value="XII">XII</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="exampleInputJurusan" class="form-label">Jurusan</label>
+                                <select class="form-select" aria-label="Default select example" name="jurusan" id="exampleInputJurusan" required>
+                                    <option selected>-- Pilih Jurusan --</option>
+                                    <?php 
+                                        foreach($jurusan as $data) : 
+                                    ?>
+                                        <option value="<?= $data['id_jurusan']; ?>"><?= $data['nama_jurusan']; ?></option>
+                                    <?php  
+                                        endforeach;
+                                    ?>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPeriode" class="form-label">Tahun Ajaran</label>
+                                <select class="form-select" aria-label="Default select example" name="periode" id="exampleInputPeriode" required>
+                                    <option value="<?= $id_periode; ?>"><?= $tahun_ajaran; ?></option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputGuru" class="form-label">Guru Mapel</label>
+                                <input type="text" class="form-control" id="exampleInputGuru" name="guru" placeholder="Masukkan Nama Guru Mapel" required>
+                            </div>
+                        </div>
                       </div>
                     </div>
                     <div class="modal-footer">
@@ -141,7 +147,7 @@
 
             <!-- Modal ubah -->
             <div class="modal fade" id="ubah_mapel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Ubah Data Mapel</h1>
@@ -149,46 +155,52 @@
                   </div>
                   <form action="/daftar_mapel/ubah" method="post">
                     <div class="modal-body">
-                      <input type="text" class="form-control" name="id" id="id" hidden>
-                      <div class="mb-3">
-                        <label for="input_kdmapel" class="form-label">KD Mapel</label>
-                        <input type="text" class="form-control" id="input_kdmapel" name="kd_mapel" readonly>
-                      </div>
-                      <div class="mb-3">
-                        <label for="input_mapel" class="form-label">Nama Mapel</label>
-                        <input type="text" class="form-control" id="input_mapel" name="mapel" required>
-                      </div>
-                      <div class="mb-3">
-                        <label for="input_kelas" class="form-label">Kelas</label>
-                        <select class="form-select" aria-label="Default select example" name="kelas" id="input_kelas" required>
-                            <option value="X">X</option>
-                            <option value="XI">XI</option>
-                            <option value="XII">XII</option>
-                        </select>
-                      </div>
-                      <div class="mb-3">
-                        <label for="input_jurusan" class="form-label">Jurusan</label>
-                        <select class="form-select" aria-label="Default select example" name="jurusan" id="input_jurusan" required>
-                            <option selected>-- Pilih Jurusan --</option>
-                            <?php 
-                                foreach($jurusan as $data) : 
-                            ?>
-                                <option value="<?= $data['id_jurusan']; ?>"><?= $data['nama_jurusan']; ?></option>
-                            <?php  
-                                endforeach;
-                            ?>
-                        </select>
-                      </div>
-                      <div class="mb-3">
-                        <label for="input_periode" class="form-label">Tahun Ajaran</label>
-                        <select class="form-select" aria-label="Default select example" name="periode" id="input_periode" required>
-                            <option value="<?= $id_periode; ?>"><?= $tahun_ajaran; ?></option>
-                        </select>
-                      </div>
-                      <div class="mb-3">
-                        <label for="input_guru" class="form-label">Guru Mapel</label>
-                        <input type="text" class="form-control" id="input_guru" name="guru" required>
-                      </div>
+                        <div class="row">
+                            <div class="col">
+                              <input type="text" class="form-control" name="id" id="id" hidden>
+                              <div class="mb-3">
+                                <label for="input_kdmapel" class="form-label">Kode</label>
+                                <input type="text" class="form-control" id="input_kdmapel" name="kd_mapel" readonly>
+                              </div>
+                              <div class="mb-3">
+                                <label for="input_mapel" class="form-label">Nama Mata Pelajaran</label>
+                                <input type="text" class="form-control" id="input_mapel" name="mapel" required>
+                              </div>
+                              <div class="mb-3">
+                                <label for="input_kelas" class="form-label">Kelas</label>
+                                <select class="form-select" aria-label="Default select example" name="kelas" id="input_kelas" required>
+                                    <option value="X">X</option>
+                                    <option value="XI">XI</option>
+                                    <option value="XII">XII</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="mb-3">
+                                <label for="input_jurusan" class="form-label">Jurusan</label>
+                                <select class="form-select" aria-label="Default select example" name="jurusan" id="input_jurusan" required>
+                                    <option selected>-- Pilih Jurusan --</option>
+                                    <?php 
+                                        foreach($jurusan as $data) : 
+                                    ?>
+                                        <option value="<?= $data['id_jurusan']; ?>"><?= $data['nama_jurusan']; ?></option>
+                                    <?php  
+                                        endforeach;
+                                    ?>
+                                </select>
+                              </div>
+                              <div class="mb-3">
+                                <label for="input_periode" class="form-label">Tahun Ajaran</label>
+                                <select class="form-select" aria-label="Default select example" name="periode" id="input_periode" required>
+                                    <option value="<?= $id_periode; ?>"><?= $tahun_ajaran; ?></option>
+                                </select>
+                              </div>
+                              <div class="mb-3">
+                                <label for="input_guru" class="form-label">Guru Mapel</label>
+                                <input type="text" class="form-control" id="input_guru" name="guru" required>
+                              </div>  
+                            </div>
+                        </div>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>

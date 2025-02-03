@@ -24,7 +24,7 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>KD Ajaran</th>
+                                        <th>Kode</th>
                                         <th>Tahun Ajaran</th>
                                         <th>Opsi</th>
                                     </tr>

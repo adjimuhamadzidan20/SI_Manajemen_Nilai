@@ -14,7 +14,7 @@
                       foreach ($kelas as $data) :
                     ?>
                       <h3 class="mt-3 text-uppercase">Daftar Peserta Didik</h3>
-                      <p class="text-uppercase mb-2"><?= $data['kelas']; ?> <?= $data['nama_jurusan']; ?> - t.a <?= $data['tahun_ajaran']; ?></p>
+                      <p class="text-uppercase mb-2"><?= $data['kelas']; ?> <?= $data['nama_jurusan']; ?> - tahun ajaran <?= $data['tahun_ajaran']; ?></p>
                     <?php  
                       endforeach;
                     ?>
@@ -52,12 +52,11 @@
                             <thead>
                               <tr>
                                 <th>No</th>
-                                <th>KD Siswa</th>
+                                <th>Kode</th>
                                 <th>NIS</th>
                                 <th>NISN</th>
-                                <th>Nama Siswa</th>
+                                <th>Nama Peserta Didik</th>
                                 <th>Kelas</th>
-                                <th>Jurusan</th>
                                 <th>Tahun Ajaran</th>
                                 <th>Opsi</th>
                               </tr>
@@ -74,8 +73,7 @@
                                   <td><?= $data['nis']; ?></td>
                                   <td><?= $data['nisn']; ?></td>
                                   <td><?= $data['nama_siswa']; ?></td>
-                                  <td><?= $data['kelas']; ?></td>
-                                  <td><?= $data['nama_jurusan']; ?></td>
+                                  <td><?= $data['kelas']; ?> <?= $data['nama_jurusan']; ?></td>
                                   <td><?= $data['tahun_ajaran']; ?></td>
                                   <td>
                                     <button type="button" class="btn btn-primary btn-sm" 
@@ -115,7 +113,7 @@
                       <div class="row">
                         <div class="col">
                           <div class="mb-3">
-                            <label for="exampleInputKdsiswa" class="form-label">KD Siswa</label>
+                            <label for="exampleInputKdsiswa" class="form-label">Kode</label>
                             <input type="text" class="form-control" id="exampleInputKdsiswa" name="kd_siswa" value="<?= $kode; ?>" readonly>
                           </div>
                           <div class="mb-3">
@@ -146,7 +144,7 @@
                           </div>
                           <div class="mb-3">
                             <label for="exampleInputJurusan" class="form-label">Jurusan</label>
-                            <select class="form-select" aria-label="Default select example" name="jurusan" id="exampleInputJurusan">
+                            <select class="form-select" aria-label="Default select example" name="jurusan" id="exampleInputJurusan" required>
                               <?php  
                                 foreach ($kelas as $data) :
                               ?>
@@ -158,7 +156,7 @@
                           </div>
                           <div class="mb-3">
                             <label for="exampleInputTahun" class="form-label">Tahun Ajaran</label>
-                            <select class="form-select" aria-label="Default select example" name="tahun" id="exampleInputTahun">
+                            <select class="form-select" aria-label="Default select example" name="tahun" id="exampleInputTahun" required>
                               <?php  
                                 foreach ($kelas as $data) :
                               ?>
@@ -194,7 +192,7 @@
                         <div class="col">
                           <input type="text" class="form-control" name="id" id="id" hidden>
                           <div class="mb-3">
-                            <label for="input_kdsiswa" class="form-label">KD Siswa</label>
+                            <label for="input_kdsiswa" class="form-label">Kode</label>
                             <input type="text" class="form-control" id="input_kdsiswa" name="kd_siswa" value="<?= $kode; ?>" 
                             readonly>
                           </div>
@@ -226,7 +224,7 @@
                           </div>
                           <div class="mb-3">
                             <label for="input_jurusan" class="form-label">Jurusan</label>
-                            <select class="form-select" aria-label="Default select example" name="jurusan" id="input_jurusan">
+                            <select class="form-select" aria-label="Default select example" name="jurusan" id="input_jurusan" required>
                               <?php  
                                 foreach ($kelas as $data) :
                               ?>
@@ -238,7 +236,7 @@
                           </div>
                           <div class="mb-3">
                             <label for="input_tahun" class="form-label">Tahun Ajaran</label>
-                            <select class="form-select" aria-label="Default select example" name="tahun" id="input_tahun">
+                            <select class="form-select" aria-label="Default select example" name="tahun" id="input_tahun" required>
                               <?php  
                                 foreach ($kelas as $data) :
                               ?>
