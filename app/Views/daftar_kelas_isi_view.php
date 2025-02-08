@@ -30,15 +30,15 @@
               </div>
             </div>
             <div class="card-body">
-              <table id="datatablesSimple">
+              <table id="datatablesSimple" class="table table-bordered" style="width:100%">
                 <thead>
                   <tr>
-                    <th>No</th>
-                    <th>Kode</th>
-                    <th>Program Keahlian</th>
-                    <th>Kelas</th>
-                    <th>Tahun Ajaran</th>
-                    <th>Opsi</th>
+                    <th class="text-start">No</th>
+                    <th class="text-start">Kode</th>
+                    <th class="text-start">Program Keahlian</th>
+                    <th class="text-start">Kelas</th>
+                    <th class="text-start">Tahun Ajaran</th>
+                    <th class="text-center">Opsi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -48,12 +48,12 @@
                     $no++;
                   ?>
                     <tr>
-                      <td><?= $no; ?></td>
-                      <td><?= $data['kd_kelas']; ?></td>
-                      <td><?= $data['nama_jurusan']; ?></td>
-                      <td><?= $data['kelas']; ?></td>
-                      <td><?= $data['tahun_ajaran']; ?></td>
-                      <td>
+                      <td class="text-start"><?= $no; ?></td>
+                      <td class="text-start"><?= $data['kd_kelas']; ?></td>
+                      <td class="text-start"><?= $data['nama_jurusan']; ?></td>
+                      <td class="text-start"><?= $data['kelas']; ?></td>
+                      <td class="text-start"><?= $data['tahun_ajaran']; ?></td>
+                      <td class="text-center">
                         <button type="button" class="btn btn-primary btn-sm" 
                         data-bs-toggle="modal" 
                         data-bs-target="#ubah_kelas"
@@ -61,10 +61,30 @@
                         data-kdkelas="<?= $data['kd_kelas']; ?>"
                         data-jurusan="<?= $data['id_jurusan']; ?>"
                         data-kelas="<?= $data['kelas']; ?>"
-                        data-tahun="<?= $data['id_periode']; ?>">
-                        Ubah</button>
-                        <a href="/daftar_kelas/hapus/<?= $data['id_kelas']; ?>" class="btn btn-primary btn-sm" 
-                        onclick="return confirm('Anda ingin menghapusnya?')">Hapus</a> 
+                        data-tahun="<?= $data['id_periode']; ?>">Ubah</button>
+
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="modal" 
+                        data-bs-target="#hapus_kelas_<?= $data['id_kelas']; ?>">Hapus</button> 
+
+                        <!-- modal hapus -->
+                        <div class="modal fade" tabindex="-1" id="hapus_kelas_<?= $data['id_kelas']; ?>">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title">Hapus Data Kelas</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body text-start">
+                                <p>Anda yakin ingin menghapus <?= $data['kelas']; ?> <?= $data['nama_jurusan']; ?>?</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
+                                <a href="/daftar_kelas/hapus/<?= $data['id_kelas']; ?>" class="btn btn-primary">Hapus</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
                       </td>
                     </tr>
                   <?php endforeach; ?>

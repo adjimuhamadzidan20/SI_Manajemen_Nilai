@@ -19,19 +19,31 @@ class Loginadmin extends BaseController
 
         if ($admin) {
             if ($admin['password'] == md5($password)) {
+                $data = [
+                    'nama_admin' => $admin['nama_admin'],
+                    'status' => $admin['status'],
+                    'alamat' => $admin['alamat'],
+                    'email' => $admin['email']
+                ];
+
+                session()->set($data);
                 return redirect()->to('/dashboard');
             } 
             else {
+                $info = 'Password anda salah!';
+                session()->setFlashData('alert', $info);
                 return redirect()->to('/login');
             }
         }
         else {
+            $info = 'Username atau password anda tidak sesuai!';
+            session()->setFlashData('alert', $info);
             return redirect()->to('/login');
         }
-
     }
 
-    // public function keluar() {
-
-    // }
+    public function keluar() {
+        session()->destroy();
+        return redirect()->to('/login');
+    }   
 }

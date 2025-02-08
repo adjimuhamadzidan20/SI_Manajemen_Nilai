@@ -25,14 +25,14 @@
                             <div>Data daftar jurusan</div>
                         </div>
                         <div class="card-body">
-                            <table id="datatablesSimple">
+                            <table id="datatablesSimple" class="table table-bordered" style="width:100%">
                                 <thead>
                                     <tr>
-                                        <th>No</th>
-                                        <th>Kode</th>
-                                        <th>Nama Jurusan</th>
-                                        <th>Nama Detail</th>
-                                        <th>Opsi</th>
+                                        <th class="text-start">No</th>
+                                        <th class="text-start">Kode</th>
+                                        <th class="text-start">Nama Jurusan</th>
+                                        <th class="text-start">Nama Detail</th>
+                                        <th class="text-center">Opsi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -42,11 +42,11 @@
                                         $no++;
                                     ?>
                                         <tr>
-                                            <td><?= $no; ?></td>
-                                            <td><?= $data['kd_jurusan']; ?></td>
-                                            <td><?= $data['nama_jurusan']; ?></td>
-                                            <td><?= $data['nama_panjang']; ?></td>
-                                            <td>
+                                            <td class="text-start"><?= $no; ?></td>
+                                            <td class="text-start"><?= $data['kd_jurusan']; ?></td>
+                                            <td class="text-start"><?= $data['nama_jurusan']; ?></td>
+                                            <td class="text-start"><?= $data['nama_panjang']; ?></td>
+                                            <td class="text-center">
                                                 <button type="button" class="btn btn-primary btn-sm" 
                                                 data-bs-toggle="modal" 
                                                 data-bs-target="#ubah_jurusan"
@@ -55,7 +55,29 @@
                                                 data-namajurusan="<?= $data['nama_jurusan']; ?>"
                                                 data-namapanjang="<?= $data['nama_panjang']; ?>">
                                                 Ubah</button>
-                                                <a href="/daftar_jurusan/hapus/<?= $data['id_jurusan']; ?>" class="btn btn-primary btn-sm" onclick="return confirm('Anda ingin menghapusnya?')">Hapus</a> 
+
+                                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" 
+                                                data-bs-target="#hapus_jurusan_<?= $data['id_jurusan']; ?>">Hapus</button> 
+
+                                                <!-- modal hapus -->
+                                                <div class="modal fade" tabindex="-1" id="hapus_jurusan_<?= $data['id_jurusan']; ?>">
+                                                    <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h5 class="modal-title">Hapus Data Jurusan</h5>
+                                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body text-start">
+                                                          <p>Anda yakin ingin menghapus <?= $data['nama_jurusan']; ?>?</p>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
+                                                          <a href="/daftar_jurusan/hapus/<?= $data['id_jurusan']; ?>" class="btn btn-primary">Hapus</a>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                </div>
+
                                             </td>
                                         </tr>
                                     <?php endforeach; ?>

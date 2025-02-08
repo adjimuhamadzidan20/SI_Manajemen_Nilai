@@ -15,7 +15,8 @@ class Daftarnilai extends BaseController
         $periodeModel = new PeriodeajaranModel();
 
         $data = [
-            'periode' => $periodeModel->dataPeriode()
+            'periode' => $periodeModel->dataPeriode(),
+            'linkActive' => 'daftar_nilai' 
         ];
 
         echo view('partials/header');

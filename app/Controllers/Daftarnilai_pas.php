@@ -27,7 +27,8 @@ class Daftarnilai_pas extends BaseController
             'periode' => $periodeModel->dataPeriode(), 
             'tahun_ajaran' => $periodeModel->tahunPeriode($thn_ajaran),
             'id_periode' => $periodeModel->idPeriode($thn_ajaran),
-            'mapel' => $mapelModel->dataMapel($thn_ajaran)
+            'mapel' => $mapelModel->dataMapel($thn_ajaran),
+            'linkActive' => 'daftar_nilai' 
         ];
 
         echo view('partials/header');   
@@ -47,8 +48,17 @@ class Daftarnilai_pas extends BaseController
         $semester = $this->request->getPost('semester');
         $nilaiPas = $this->request->getPost('nilai_pas');
 
-        $nilaiPasModel->tambahDataNilaiPas($pesertaDidik, $idMapel, $kelas, $jurusan, 
+        $return = $nilaiPasModel->tambahDataNilaiPas($pesertaDidik, $idMapel, $kelas, $jurusan, 
         $periodeAjaran, $semester, $nilaiPas);
+
+        if ($return) {
+            $pesan = 'Nilai PAS berhasil ditambahkan!';
+            session()->setFlashData('success', $pesan);
+        } 
+        else {
+            $pesan = 'Nilai PAS gagal ditambahkan!';
+            session()->setFlashData('error', $pesan);
+        }
 
         return redirect()->to('/daftar_nilai_pas/peserta_didik/'.$kelas.'/'.$jurusan.'/'.$namaMapel.'/'.$idMapel.'/'.
         $periodeAjaran.'/'.$semester);
@@ -67,8 +77,17 @@ class Daftarnilai_pas extends BaseController
         $semester = $this->request->getPost('semester');
         $nilaiPas = $this->request->getPost('nilai_pas');
 
-        $nilaiPasModel->ubahDataNilaiPas($id, $pesertaDidik, $idMapel, $kelas, $jurusan, 
+        $return = $nilaiPasModel->ubahDataNilaiPas($id, $pesertaDidik, $idMapel, $kelas, $jurusan, 
         $periodeAjaran, $semester, $nilaiPas);
+
+        if ($return) {
+            $pesan = 'Nilai PAS berhasil diubah!';
+            session()->setFlashData('success', $pesan);
+        } 
+        else {
+            $pesan = 'Nilai PAS gagal diubah!';
+            session()->setFlashData('error', $pesan);
+        }
 
         return redirect()->to('/daftar_nilai_pas/peserta_didik/'.$kelas.'/'.$jurusan.'/'.$namaMapel.'/'.$idMapel.'/'.
         $periodeAjaran.'/'.$semester);
@@ -98,7 +117,8 @@ class Daftarnilai_pas extends BaseController
             'id_periode' => $periodeModel->idPeriode($idPeriode),
 
             'semester' => $semester,
-            'nilai' => $nilaiPasModel->dataNilai($semester, $idPeriode, $kelas, $jurusan, $idMapel), 
+            'nilai' => $nilaiPasModel->dataNilai($semester, $idPeriode, $kelas, $jurusan, $idMapel),
+            'linkActive' => 'daftar_nilai' 
         ];
 
         echo view('partials/header');

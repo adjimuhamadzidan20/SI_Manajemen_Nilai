@@ -27,7 +27,8 @@ class Daftarnilai_tugas extends BaseController
             'periode' => $periodeModel->dataPeriode(), 
             'tahun_ajaran' => $periodeModel->tahunPeriode($thn_ajaran),
             'id_periode' => $periodeModel->idPeriode($thn_ajaran),
-            'mapel' => $mapelModel->dataMapel($thn_ajaran)
+            'mapel' => $mapelModel->dataMapel($thn_ajaran),
+            'linkActive' => 'daftar_nilai' 
         ];
 
         echo view('partials/header');   
@@ -55,8 +56,17 @@ class Daftarnilai_tugas extends BaseController
         $nilai_8 = $this->request->getPost('tp_8');
         $nilai_9 = $this->request->getPost('tp_9');
 
-        $nilaiTugasModel->tambahDataNilaiTugas($pesertaDidik, $idMapel, $kelas, $jurusan, $periodeAjaran, 
+        $return = $nilaiTugasModel->tambahDataNilaiTugas($pesertaDidik, $idMapel, $kelas, $jurusan, $periodeAjaran, 
         $semester, $nilai_1, $nilai_2, $nilai_3, $nilai_4, $nilai_5, $nilai_6, $nilai_7, $nilai_8, $nilai_9);
+
+        if ($return) {
+            $pesan = 'Nilai tugas berhasil ditambahkan!';
+            session()->setFlashData('success', $pesan);
+        } 
+        else {
+            $pesan = 'Nilai tugas gagal ditambahkan!';
+            session()->setFlashData('error', $pesan);
+        }
 
         return redirect()->to('/daftar_nilai_tugas/peserta_didik/'.$kelas.'/'.$jurusan.'/'.$namaMapel.'/'.$idMapel.'/'.
         $periodeAjaran.'/'.$semester);
@@ -83,8 +93,17 @@ class Daftarnilai_tugas extends BaseController
         $nilai_8 = $this->request->getPost('tp_8');
         $nilai_9 = $this->request->getPost('tp_9');
 
-        $nilaiTugasModel->ubahDataNilaiTugas($id, $pesertaDidik, $idMapel, $kelas, $jurusan, $periodeAjaran, 
+        $return = $nilaiTugasModel->ubahDataNilaiTugas($id, $pesertaDidik, $idMapel, $kelas, $jurusan, $periodeAjaran, 
         $semester, $nilai_1, $nilai_2, $nilai_3, $nilai_4, $nilai_5, $nilai_6, $nilai_7, $nilai_8, $nilai_9);
+
+        if ($return) {
+            $pesan = 'Nilai tugas berhasil diubah!';
+            session()->setFlashData('success', $pesan);
+        } 
+        else {
+            $pesan = 'Nilai tugas gagal diubah!';
+            session()->setFlashData('error', $pesan);
+        }
 
         return redirect()->to('/daftar_nilai_tugas/peserta_didik/'.$kelas.'/'.$jurusan.'/'.$namaMapel.'/'.$idMapel.'/'.
         $periodeAjaran.'/'.$semester);
@@ -115,6 +134,7 @@ class Daftarnilai_tugas extends BaseController
 
             'semester' => $semester,
             'nilai' => $nilaiTugasModel->dataNilai($semester, $idPeriode, $kelas, $jurusan, $idMapel), 
+            'linkActive' => 'daftar_nilai'
         ];
 
         echo view('partials/header');

@@ -20,13 +20,13 @@
                             Data Daftar Peserta Didik
                         </div>
                         <div class="card-body">
-                            <table id="datatablesSimple">
+                            <table id="datatablesSimple" class="table table-bordered" style="width:100%">
                                 <thead>
                                     <tr>
-                                        <th>No</th>
-                                        <th>Kode</th>
-                                        <th>Tahun Ajaran</th>
-                                        <th>Opsi</th>
+                                        <th class="text-start">No</th>
+                                        <th class="text-start">Kode</th>
+                                        <th class="text-start">Tahun Ajaran</th>
+                                        <th class="text-center">Opsi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -36,10 +36,10 @@
                                         $no++;
                                     ?>
                                         <tr>
-                                            <td><?= $no; ?></td>
-                                            <td><?= $data['kd_ajaran']; ?></td>
-                                            <td><?= $data['tahun_ajaran']; ?></td>
-                                            <td>
+                                            <td class="text-start"><?= $no; ?></td>
+                                            <td class="text-start"><?= $data['kd_ajaran']; ?></td>
+                                            <td class="text-start"><?= $data['tahun_ajaran']; ?></td>
+                                            <td class="text-center">
                                                 <a href="/daftar_siswa/rinci_kelas/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm">Daftar Kelas
                                                 </a>
                                             </td>

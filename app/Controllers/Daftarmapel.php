@@ -12,7 +12,8 @@ class Daftarmapel extends BaseController
         $periodeModel = new PeriodeajaranModel();
 
         $data = [
-            'periode' => $periodeModel->dataPeriode() 
+            'periode' => $periodeModel->dataPeriode(),
+            'linkActive' => 'daftar_mapel'  
         ];
         
         echo view('partials/header');
@@ -35,7 +36,8 @@ class Daftarmapel extends BaseController
             'kode' => 'MA'. sprintf('%03s', $kdSekarang),
             'periode' => $periodeModel->dataPeriode(), 
             'tahun_ajaran' => $periodeModel->tahunPeriode($thn_ajaran),
-            'id_periode' => $periodeModel->idPeriode($thn_ajaran)
+            'id_periode' => $periodeModel->idPeriode($thn_ajaran),
+            'linkActive' => 'daftar_mapel'
         ];
 
         echo view('partials/header');   
@@ -52,8 +54,17 @@ class Daftarmapel extends BaseController
         $jurusan = $this->request->getPost('jurusan');
         $tahunAjaran = $this->request->getPost('periode');
         $guru = $this->request->getPost('guru');
+        $return = $mapelModel->tambahDataMapel($kode, $mapel, $kelas, $jurusan, $tahunAjaran, $guru);
 
-        $mapelModel->tambahDataMapel($kode, $mapel, $kelas, $jurusan, $tahunAjaran, $guru);
+        if ($return) {
+            $pesan = 'Mata pelajaran berhasil ditambahkan!';
+            session()->setFlashData('success', $pesan);
+        } 
+        else {
+            $pesan = 'Mata pelajaran gagal ditambahkan!';
+            session()->setFlashData('error', $pesan);
+        }
+
         return redirect()->to('/daftar_mapel/periode_mapel/'. $tahunAjaran);
     }
 
@@ -67,14 +78,33 @@ class Daftarmapel extends BaseController
         $jurusan = $this->request->getPost('jurusan');
         $tahunAjaran = $this->request->getPost('periode');
         $guru = $this->request->getPost('guru');
+        $return = $mapelModel->ubahDataMapel($id, $kode, $mapel, $kelas, $jurusan, $tahunAjaran, $guru);
 
-        $mapelModel->ubahDataMapel($id, $kode, $mapel, $kelas, $jurusan, $tahunAjaran, $guru);
+        if ($return) {
+            $pesan = 'Mata pelajaran berhasil diubah!';
+            session()->setFlashData('success', $pesan);
+        } 
+        else {
+            $pesan = 'Mata pelajaran gagal diubah!';
+            session()->setFlashData('error', $pesan);
+        }
+
         return redirect()->to('/daftar_mapel/periode_mapel/'. $tahunAjaran);
     }
 
     public function hapus($id) {
         $mapelModel = new DaftarmapelModel();
-        $mapelModel->hapusDataMapel($id);
+        $return = $mapelModel->hapusDataMapel($id);
+
+        if ($return) {
+            $pesan = 'Mata pelajaran berhasil terhapus!';
+            session()->setFlashData('success', $pesan);
+        } 
+        else {
+            $pesan = 'Mata pelajaran gagal terhapus!';
+            session()->setFlashData('error', $pesan);
+        }
+
         return redirect()->to('/daftar_mapel');
     }
 }

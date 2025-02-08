@@ -19,11 +19,8 @@ class LoginadminModel extends Model
         $sql = $db->query($query);
         $hasil = $sql->getRowArray();
 
-    	// return $this->where('username', $username)->first();
         return $hasil;
     }
-
-
 }
 
 ?>

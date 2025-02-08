@@ -8,7 +8,8 @@
         <meta name="author" content="" />
         <title>SI Manajemen Nilai | Dashboard</title>
 
-        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
         <link href="<?= base_url('assets'); ?>/css/styles.css" rel="stylesheet" />
+        <link href="<?= base_url('assets'); ?>/plugin/toastr/toastr.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap4.css">
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>

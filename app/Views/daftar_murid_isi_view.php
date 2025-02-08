@@ -48,17 +48,17 @@
                           </div>
                         </div>
                         <div class="card-body">
-                          <table id="datatablesSimple">
+                          <table id="datatablesSimple" class="table table-bordered" style="width:100%">
                             <thead>
                               <tr>
-                                <th>No</th>
-                                <th>Kode</th>
-                                <th>NIS</th>
-                                <th>NISN</th>
-                                <th>Nama Peserta Didik</th>
-                                <th>Kelas</th>
-                                <th>Tahun Ajaran</th>
-                                <th>Opsi</th>
+                                <th class="text-start">No</th>
+                                <th class="text-start">Kode</th>
+                                <th class="text-start">NIS</th>
+                                <th class="text-start">NISN</th>
+                                <th class="text-start">Nama Peserta Didik</th>
+                                <th class="text-start">Kelas</th>
+                                <th class="text-start">Tahun Ajaran</th>
+                                <th class="text-center">Opsi</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -68,14 +68,14 @@
                                 $no++;
                               ?>
                                 <tr>
-                                  <td><?= $no; ?></td>
-                                  <td><?= $data['kd_siswa']; ?></td>
-                                  <td><?= $data['nis']; ?></td>
-                                  <td><?= $data['nisn']; ?></td>
-                                  <td><?= $data['nama_siswa']; ?></td>
-                                  <td><?= $data['kelas']; ?> <?= $data['nama_jurusan']; ?></td>
-                                  <td><?= $data['tahun_ajaran']; ?></td>
-                                  <td>
+                                  <td class="text-start"><?= $no; ?></td>
+                                  <td class="text-start"><?= $data['kd_siswa']; ?></td>
+                                  <td class="text-start"><?= $data['nis']; ?></td>
+                                  <td class="text-start"><?= $data['nisn']; ?></td>
+                                  <td class="text-start"><?= $data['nama_siswa']; ?></td>
+                                  <td class="text-start"><?= $data['kelas']; ?> <?= $data['nama_jurusan']; ?></td>
+                                  <td class="text-start"><?= $data['tahun_ajaran']; ?></td>
+                                  <td class="text-center">
                                     <button type="button" class="btn btn-primary btn-sm" 
                                     data-bs-toggle="modal" 
                                     data-bs-target="#ubah_murid"
@@ -88,8 +88,29 @@
                                     data-jurusan="<?= $data['id_jurusan']; ?>"
                                     data-periode="<?= $data['id_periode']; ?>">
                                     Ubah</button>
-                                    <a href="/daftar_siswa/hapus/<?= $data['id_siswa']; ?>" class="btn btn-primary btn-sm" 
-                                    onclick="return confirm('Anda ingin menghapusnya?')">Hapus</a> 
+                                
+                                    <button class="btn btn-primary btn-sm" data-bs-toggle="modal" 
+                                    data-bs-target="#hapus_siswa_<?= $data['id_siswa']; ?>">Hapus</button> 
+
+                                    <!-- modal hapus -->
+                                    <div class="modal fade" tabindex="-1" id="hapus_siswa_<?= $data['id_siswa']; ?>">
+                                      <div class="modal-dialog">
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                            <h5 class="modal-title">Hapus Data Murid</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                          </div>
+                                          <div class="modal-body text-start">
+                                            <p>Anda yakin ingin menghapus <?= $data['nama_siswa']; ?>?</p>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
+                                            <a href="/daftar_siswa/hapus/<?= $data['id_siswa']; ?>" class="btn btn-primary">Hapus</a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    
                                   </td>
                                 </tr>
                               <?php endforeach; ?>

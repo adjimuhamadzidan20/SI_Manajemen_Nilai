@@ -12,8 +12,8 @@
           <div class="container-fluid px-3">
             <h3 class="mt-3 text-uppercase">Periode Tahun Ajaran</h3>
             <ol class="breadcrumb mb-4">
-                <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
-                <li class="breadcrumb-item active">Periode Tahun Ajaran</li>
+              <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
+              <li class="breadcrumb-item active">Periode Tahun Ajaran</li>
             </ol>
             <div class="card mb-4">
               <div class="card-header d-flex justify-content-between align-items-center">
@@ -21,15 +21,15 @@
                 <div>Data periode tahun ajaran</div>
               </div>
               <div class="card-body">
-                <table id="datatablesSimple">
+                <table id="datatablesSimple" class="table table-bordered" style="width:100%">
                   <thead>
                     <tr>
-                      <th>No</th>
-                      <th>Kode</th>
-                      <th>Semester Pertama</th>
-                      <th>Semester Kedua</th>
-                      <th>Tahun Ajaran</th>
-                      <th>Opsi</th>
+                      <th class="text-start">No</th>
+                      <th class="text-start">Kode</th>
+                      <th class="text-start">Semester Pertama</th>
+                      <th class="text-start">Semester Kedua</th>
+                      <th class="text-start">Tahun Ajaran</th>
+                      <th class="text-center">Opsi</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -39,12 +39,12 @@
                       $no++;
                     ?>
                       <tr>
-                        <td><?= $no; ?></td>
-                        <td><?= $data['kd_ajaran']; ?></td>
-                        <td><?= $data['semester_pertama']; ?></td>
-                        <td><?= $data['semester_kedua']; ?></td>
-                        <td><?= $data['tahun_ajaran']; ?></td>
-                        <td>
+                        <td class="text-start"><?= $no; ?></td>
+                        <td class="text-start"><?= $data['kd_ajaran']; ?></td>
+                        <td class="text-start"><?= $data['semester_pertama']; ?></td>
+                        <td class="text-start"><?= $data['semester_kedua']; ?></td>
+                        <td class="text-start"><?= $data['tahun_ajaran']; ?></td>
+                        <td class="text-center">
                           <button type="button" class="btn btn-primary btn-sm" 
                           data-bs-toggle="modal" 
                           data-bs-target="#ubah_periode"
@@ -54,8 +54,29 @@
                           data-semester2="<?= $data['semester_kedua']; ?>"
                           data-tahunajaran="<?= $data['tahun_ajaran']; ?>">
                           Ubah</button>
-                          <a href="/periode_ajar/hapus/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm" 
-                          onclick="return confirm('Anda ingin menghapusnya?')">Hapus</a> 
+
+                          <button class="btn btn-primary btn-sm" data-bs-toggle="modal" 
+                          data-bs-target="#hapus_periode_<?= $data['id_periode']; ?>">Hapus</button> 
+
+                          <!-- modal hapus -->
+                          <div class="modal fade" tabindex="-1" id="hapus_periode_<?= $data['id_periode']; ?>">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title">Hapus Data Periode Ajaran</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-start">
+                                  <p>Anda yakin ingin menghapus <?= $data['tahun_ajaran']; ?>?</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
+                                  <a href="/periode_ajar/hapus/<?= $data['id_periode']; ?>" class="btn btn-primary">Hapus</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
                         </td>
                       </tr>
                     <?php endforeach; ?>

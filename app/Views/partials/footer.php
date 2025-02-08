@@ -12,17 +12,60 @@
                 </footer>
             </div>
         </div>
+
+        <!-- modal logout -->
+        <div class="modal fade" tabindex="-1" id="logout">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Keluar dari dashboard</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-start">
+                        <p>Anda yakin ingin keluar dari dashboard?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
+                        <a href="/login/keluar" class="btn btn-primary">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="<?= base_url('assets'); ?>/js/scripts.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <!-- <script src="assets/demo/chart-area-demo.js"></script> -->
-        <!-- <script src="assets/demo/chart-bar-demo.js"></script> -->
-        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
-        <script src="<?= base_url('assets'); ?>/js/datatables-simple-demo.js"></script>
         <script src="<?= base_url('assets'); ?>/js/jquery-3.6.0.js"></script>
+        <script src="<?= base_url('assets'); ?>/plugin/toastr/toastr.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
+        <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap4.js"></script>
+
+        <!-- alert ketika berhasil (success) -->
+        <?php  
+            if (session()->getFlashData('success')) :
+        ?>
+            <script type="text/javascript">
+                toastr.success("<?= session()->getFlashData('success'); ?>")
+            </script>
+        <?php  
+            endif;
+        ?>
+
+        <!-- alert ketika gagal (error) -->
+        <?php  
+            if (session()->getFlashData('error')) :
+        ?>
+            <script type="text/javascript">
+                toastr.danger("<?= session()->getFlashData('error'); ?>")
+            </script>
+        <?php  
+            endif;
+        ?>
 
         <script type="text/javascript">
+            new DataTable('#datatablesSimple');
+
             $('#ubah_periode').on('show.bs.modal', function(event) {
                 let button = $(event.relatedTarget)
 
@@ -159,7 +202,6 @@
                 modal.find('#input_tp_8').val(nilai8)
                 modal.find('#input_tp_9').val(nilai9)
             })
-
         </script>
     </body>
 </html>

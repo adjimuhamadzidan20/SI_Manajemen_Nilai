@@ -12,7 +12,8 @@ class Daftarkelas extends BaseController
         $periodeModel = new PeriodeajaranModel();
 
         $data = [
-            'periode' => $periodeModel->dataPeriode() 
+            'periode' => $periodeModel->dataPeriode(),
+            'linkActive' => 'daftar_kelas' 
         ];
 
         echo view('partials/header');   
@@ -35,7 +36,8 @@ class Daftarkelas extends BaseController
             'kode' => 'KE'. sprintf('%03s', $kdSekarang),
             'periode' => $periodeModel->dataPeriode(), 
             'tahun_ajaran' => $periodeModel->tahunPeriode($thn_ajaran),
-            'id_periode' => $periodeModel->idPeriode($thn_ajaran)
+            'id_periode' => $periodeModel->idPeriode($thn_ajaran),
+            'linkActive' => 'daftar_kelas'
         ];
 
         echo view('partials/header');   
@@ -50,8 +52,17 @@ class Daftarkelas extends BaseController
         $keahlian = $this->request->getPost('keahlian');
         $kelas = $this->request->getPost('kelas');
         $periode = $this->request->getPost('tahun');
+        $return = $kelasModel->tambahDataKelas($kode, $keahlian, $kelas, $periode);
 
-        $kelasModel->tambahDataKelas($kode, $keahlian, $kelas, $periode);
+        if ($return) {
+            $pesan = 'Data kelas berhasil ditambahkan!';
+            session()->setFlashData('success', $pesan);
+        } 
+        else {
+            $pesan = 'Data kelas gagal ditambahkan!';
+            session()->setFlashData('error', $pesan);
+        }
+
         return redirect()->to('/daftar_kelas/periode_kelas/'. $periode);
     }
 
@@ -63,14 +74,33 @@ class Daftarkelas extends BaseController
         $keahlian = $this->request->getPost('keahlian');
         $kelas = $this->request->getPost('kelas');
         $periode = $this->request->getPost('tahun');
+        $return = $kelasModel->ubahDataKelas($id, $kode, $keahlian, $kelas, $periode);
 
-        $kelasModel->ubahDataKelas($id, $kode, $keahlian, $kelas, $periode);
+        if ($return) {
+            $pesan = 'Data kelas berhasil diubah!';
+            session()->setFlashData('success', $pesan);
+        } 
+        else {
+            $pesan = 'Data kelas gagal diubah!';
+            session()->setFlashData('error', $pesan);
+        }
+
         return redirect()->to('/daftar_kelas/periode_kelas/'. $periode);
     }
 
     public function hapus($id) {
         $kelasModel = new DaftarkelasModel();
-        $kelasModel->hapusDataKelas($id);
+        $return = $kelasModel->hapusDataKelas($id);
+
+        if ($return) {
+            $pesan = 'Data kelas berhasil terhapus!';
+            session()->setFlashData('success', $pesan);
+        } 
+        else {
+            $pesan = 'Data kelas gagal terhapus!';
+            session()->setFlashData('error', $pesan);
+        }
+
         return redirect()->to('/daftar_kelas');
     }
 

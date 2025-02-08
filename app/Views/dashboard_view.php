@@ -17,7 +17,7 @@
                     <div class="row">
                         <div class="col-xl-3 col-md-6">
                             <div class="card bg-primary text-white mb-4 rounded-0">
-                                <div class="card-body">Data Jurusan</div>
+                                <div class="card-body"><i class="fas fa-list me-1"></i> Data Jurusan</div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
                                     <a class="small text-white stretched-link" href="/daftar_jurusan">View Details</a>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -26,7 +26,7 @@
                         </div>
                         <div class="col-xl-3 col-md-6">
                             <div class="card bg-primary text-white mb-4 rounded-0">
-                                <div class="card-body">Data Kelas</div>
+                                <div class="card-body"><i class="fas fa-list me-1"></i> Data Kelas</div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
                                     <a class="small text-white stretched-link" href="/daftar_kelas">View Details</a>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -35,7 +35,7 @@
                         </div>
                         <div class="col-xl-3 col-md-6">
                             <div class="card bg-primary text-white mb-4 rounded-0">
-                                <div class="card-body">Data Mata Pelajaran</div>
+                                <div class="card-body"><i class="fas fa-list me-1"></i> Data Mata Pelajaran</div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
                                     <a class="small text-white stretched-link" href="/daftar_mapel">View Details</a>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -44,7 +44,7 @@
                         </div>
                         <div class="col-xl-3 col-md-6">
                             <div class="card bg-primary text-white mb-4 rounded-0">
-                                <div class="card-body">Data Peserta Didik</div>
+                                <div class="card-body"><i class="fas fa-users me-1"></i> Data Peserta Didik</div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
                                     <a class="small text-white stretched-link" href="/daftar_siswa">View Details</a>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>

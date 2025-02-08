@@ -15,6 +15,7 @@ class Daftarsiswa extends BaseController
         $data = [
             'periode' => $periodeModel->dataPeriode(),
             'kelas' => $kelasModel->dataKelasAll(),
+            'linkActive' => 'daftar_siswa' 
         ];
 
         echo view('partials/header');
@@ -29,7 +30,8 @@ class Daftarsiswa extends BaseController
         $data = [
             'kelas' => $kelasModel->dataKelas($thn_ajaran),
             'jumlah' => $kelasModel->jumlahDataKelas($thn_ajaran),
-            'tahun_ajaran' => $periodeModel->tahunPeriode($thn_ajaran)
+            'tahun_ajaran' => $periodeModel->tahunPeriode($thn_ajaran),
+            'linkActive' => 'daftar_siswa'
         ];
 
         echo view('partials/header');
@@ -48,7 +50,8 @@ class Daftarsiswa extends BaseController
         $data = [
             'siswa' => $siswaModel->dataSiswa($thn_ajaran, $kelas, $jurusan),
             'kelas' => $kelasModel->detailKelas($thn_ajaran, $kelas, $jurusan),
-            'kode' => 'PD'. sprintf('%03s', $kdSekarang)
+            'kode' => 'PD'. sprintf('%03s', $kdSekarang),
+            'linkActive' => 'daftar_siswa'
         ];
 
         echo view('partials/header');
@@ -66,8 +69,17 @@ class Daftarsiswa extends BaseController
         $kelas = $this->request->getPost('kelas');
         $jurusan = $this->request->getPost('jurusan');
         $tahunAjaran = $this->request->getPost('tahun');
+        $return = $siswaModel->tambahDataSiswa($kode, $nis, $nisn, $namaMurid, $kelas, $jurusan, $tahunAjaran);
 
-        $siswaModel->tambahDataSiswa($kode, $nis, $nisn, $namaMurid, $kelas, $jurusan, $tahunAjaran);
+        if ($return) {
+            $pesan = 'Peserta didik berhasil ditambahkan!';
+            session()->setFlashData('success', $pesan);
+        } 
+        else {
+            $pesan = 'Peserta didik gagal ditambahkan!';
+            session()->setFlashData('error', $pesan);
+        }
+
         return redirect()->to('/daftar_siswa/rinci_siswa/'.$tahunAjaran.'/'.$kelas.'/'.$jurusan);
     }
 
@@ -82,14 +94,33 @@ class Daftarsiswa extends BaseController
         $kelas = $this->request->getPost('kelas');
         $jurusan = $this->request->getPost('jurusan');
         $tahunAjaran = $this->request->getPost('tahun');
+        $return = $siswaModel->ubahDataSiswa($id, $kode, $nis, $nisn, $namaMurid, $kelas, $jurusan, $tahunAjaran);
 
-        $siswaModel->ubahDataSiswa($id, $kode, $nis, $nisn, $namaMurid, $kelas, $jurusan, $tahunAjaran);
+        if ($return) {
+            $pesan = 'Peserta didik berhasil diubah!';
+            session()->setFlashData('success', $pesan);
+        } 
+        else {
+            $pesan = 'Peserta didik gagal diubah!';
+            session()->setFlashData('error', $pesan);
+        }
+
         return redirect()->to('/daftar_siswa/rinci_siswa/'.$tahunAjaran.'/'.$kelas.'/'.$jurusan);
     }
 
     public function hapus($id) {
         $siswaModel = new DaftarsiswaModel();
-        $siswaModel->hapusDataSiswa($id);
+        $return = $siswaModel->hapusDataSiswa($id);
+
+        if ($return) {
+            $pesan = 'Peserta didik berhasil terhapus!';
+            session()->setFlashData('success', $pesan);
+        } 
+        else {
+            $pesan = 'Peserta didik gagal terhapus!';
+            session()->setFlashData('error', $pesan);
+        }
+
         return redirect()->to('/daftar_siswa');
     }
 

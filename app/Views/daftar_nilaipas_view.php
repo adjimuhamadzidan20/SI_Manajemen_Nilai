@@ -24,15 +24,15 @@
                           </div>
                         </div>
                         <div class="card-body">
-                            <table id="datatablesSimple">
+                            <table id="datatablesSimple" class="table table-bordered" style="width:100%">
                                 <thead>
                                     <tr>
-                                        <th>No</th>
-                                        <th>Kode</th>
-                                        <th>Mata Pelajaran</th>
-                                        <th>Kelas</th>
-                                        <th>Guru</th>
-                                        <th>Semester</th>
+                                        <th class="text-start">No</th>
+                                        <th class="text-start">Kode</th>
+                                        <th class="text-start">Mata Pelajaran</th>
+                                        <th class="text-start">Kelas</th>
+                                        <th class="text-start">Guru</th>
+                                        <th class="text-center">Semester</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -42,12 +42,12 @@
                                         $no++;
                                     ?>
                                         <tr>
-                                            <td><?= $no; ?></td>
-                                            <td><?= $data['kd_mapel']; ?></td>
-                                            <td><?= $data['nama_mapel']; ?></td>
-                                            <td><?= $data['kelas']; ?> <?= $data['nama_jurusan']; ?></td>
-                                            <td><?= $data['guru']; ?></td>
-                                            <td>
+                                            <td class="text-start"><?= $no; ?></td>
+                                            <td class="text-start"><?= $data['kd_mapel']; ?></td>
+                                            <td class="text-start"><?= $data['nama_mapel']; ?></td>
+                                            <td class="text-start"><?= $data['kelas']; ?> <?= $data['nama_jurusan']; ?></td>
+                                            <td class="text-start"><?= $data['guru']; ?></td>
+                                            <td class="text-center">
                                                 <a href="/daftar_nilai_pas/peserta_didik/<?= $data['kelas']; ?>/<?= $data['id_jurusan']; ?>/<?= $data['nama_mapel']; ?>/<?= $data['id_mapel']; ?>/<?= $id_periode; ?>/Ganjil" class="btn btn-primary btn-sm">Ganjil</a> 
 
                                                 <a href="/daftar_nilai_pas/peserta_didik/<?= $data['kelas']; ?>/<?= $data['id_jurusan']; ?>/<?= $data['nama_mapel']; ?>/<?= $data['id_mapel']; ?>/<?= $id_periode; ?>/Genap" class="btn btn-primary btn-sm">Genap</a> 

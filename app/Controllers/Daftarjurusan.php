@@ -15,7 +15,8 @@ class Daftarjurusan extends BaseController
 
         $data = [
             'jurusan' => $jurusanModel->dataJurusan(),
-            'kode' => 'JU'. sprintf('%03s', $kdSekarang) 
+            'kode' => 'JU'. sprintf('%03s', $kdSekarang),
+            'linkActive' => 'daftar_jurusan'  
         ];
 
         echo view('partials/header');   
@@ -29,8 +30,17 @@ class Daftarjurusan extends BaseController
         $kode = $this->request->getPost('kd_jurusan');
         $jurusan = $this->request->getPost('nama_jurusan');
         $namaPanjang = $this->request->getPost('nama_panjang');
+        $return = $jurusanModel->tambahDataJurusan($kode, $jurusan, $namaPanjang);
 
-        $jurusanModel->tambahDataJurusan($kode, $jurusan, $namaPanjang);
+        if ($return) {
+            $pesan = 'Data jurusan berhasil ditambahkan!';
+            session()->setFlashData('success', $pesan);
+        } 
+        else {
+            $pesan = 'Data jurusan gagal ditambahkan!';
+            session()->setFlashData('error', $pesan);
+        }
+
         return redirect()->to('/daftar_jurusan');
     }
 
@@ -41,14 +51,33 @@ class Daftarjurusan extends BaseController
         $kode = $this->request->getPost('kd_jurusan');
         $jurusan = $this->request->getPost('nama_jurusan');
         $namaPanjang = $this->request->getPost('nama_panjang');
+        $return = $jurusanModel->ubahDataJurusan($id, $kode, $jurusan, $namaPanjang);
 
-        $jurusanModel->ubahDataJurusan($id, $kode, $jurusan, $namaPanjang);
+        if ($return) {
+            $pesan = 'Data jurusan berhasil diubah!';
+            session()->setFlashData('success', $pesan);
+        } 
+        else {
+            $pesan = 'Data jurusan gagal diubah!';
+            session()->setFlashData('error', $pesan);
+        }
+
         return redirect()->to('/daftar_jurusan');
     }
 
     public function hapus($id) {
         $jurusanModel = new DaftarjurusanModel();
-        $jurusanModel->hapusDataJurusan($id);
+        $return = $jurusanModel->hapusDataJurusan($id);
+
+        if ($return) {
+            $pesan = 'Data jurusan berhasil terhapus!';
+            session()->setFlashData('success', $pesan);
+        } 
+        else {
+            $pesan = 'Data jurusan gagal terhapus!';
+            session()->setFlashData('error', $pesan);
+        }
+
         return redirect()->to('/daftar_jurusan');
     }
 }

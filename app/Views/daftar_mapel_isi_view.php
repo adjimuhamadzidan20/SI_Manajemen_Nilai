@@ -29,17 +29,17 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <table id="datatablesSimple">
+                            <table id="datatablesSimple" class="table table-bordered" style="width:100%">
                                 <thead>
                                     <tr>
-                                        <th>No</th>
-                                        <th>Kode</th>
-                                        <th>Nama Mapel</th>
-                                        <th>Kelas</th>
-                                        <th>Jurusan</th>
-                                        <th>Tahun Ajaran</th>
-                                        <th>Guru Mapel</th>
-                                        <th>Opsi</th>
+                                        <th class="text-start">No</th>
+                                        <th class="text-start">Kode</th>
+                                        <th class="text-start">Nama Mapel</th>
+                                        <th class="text-start">Kelas</th>
+                                        <th class="text-start">Jurusan</th>
+                                        <th class="text-start">Tahun Ajaran</th>
+                                        <th class="text-start">Guru Mapel</th>
+                                        <th class="text-center">Opsi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -49,14 +49,14 @@
                                         $no++;
                                     ?>
                                         <tr>
-                                            <td><?= $no; ?></td>
-                                            <td><?= $data['kd_mapel']; ?></td>
-                                            <td><?= $data['nama_mapel']; ?></td>
-                                            <td><?= $data['kelas']; ?></td>
-                                            <td><?= $data['nama_jurusan']; ?></td>
-                                            <td><?= $data['tahun_ajaran']; ?></td>
-                                            <td><?= $data['guru']; ?></td>
-                                            <td>
+                                            <td class="text-start"><?= $no; ?></td>
+                                            <td class="text-start"><?= $data['kd_mapel']; ?></td>
+                                            <td class="text-start"><?= $data['nama_mapel']; ?></td>
+                                            <td class="text-start"><?= $data['kelas']; ?></td>
+                                            <td class="text-start"><?= $data['nama_jurusan']; ?></td>
+                                            <td class="text-start"><?= $data['tahun_ajaran']; ?></td>
+                                            <td class="text-start"><?= $data['guru']; ?></td>
+                                            <td class="text-center">
                                                 <button type="button" class="btn btn-primary btn-sm" 
                                                 data-bs-toggle="modal" 
                                                 data-bs-target="#ubah_mapel"
@@ -68,7 +68,29 @@
                                                 data-periode="<?= $data['id_periode']; ?>"
                                                 data-guru="<?= $data['guru']; ?>">
                                                 Ubah</button>
-                                                <a href="/daftar_mapel/hapus/<?= $data['id_mapel']; ?>" class="btn btn-primary btn-sm" onclick="return confirm('Anda ingin menghapusnya?')">Hapus</a> 
+
+                                                <button class="btn btn-primary btn-sm" data-bs-toggle="modal" 
+                                                data-bs-target="#hapus_mapel_<?= $data['id_mapel']; ?>">Hapus</button> 
+
+                                                <!-- modal hapus -->
+                                                <div class="modal fade" tabindex="-1" id="hapus_mapel_<?= $data['id_mapel']; ?>">
+                                                  <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                      <div class="modal-header">
+                                                        <h5 class="modal-title">Hapus Data Mapel</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                      </div>
+                                                      <div class="modal-body text-start">
+                                                        <p>Anda yakin ingin menghapus <?= $data['nama_mapel']; ?> <?= $data['kelas']; ?> <?= $data['nama_jurusan']; ?>?</p>
+                                                      </div>
+                                                      <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
+                                                        <a href="/daftar_mapel/hapus/<?= $data['id_mapel']; ?>" class="btn btn-primary">Hapus</a>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
                                             </td>
                                         </tr>
                                     <?php endforeach; ?>

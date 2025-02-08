@@ -27,7 +27,8 @@ class Daftarnilai_pts extends BaseController
             'periode' => $periodeModel->dataPeriode(), 
             'tahun_ajaran' => $periodeModel->tahunPeriode($thn_ajaran),
             'id_periode' => $periodeModel->idPeriode($thn_ajaran),
-            'mapel' => $mapelModel->dataMapel($thn_ajaran)
+            'mapel' => $mapelModel->dataMapel($thn_ajaran),
+            'linkActive' => 'daftar_nilai' 
         ];
 
         echo view('partials/header');   
@@ -47,8 +48,17 @@ class Daftarnilai_pts extends BaseController
         $semester = $this->request->getPost('semester');
         $nilaiPts = $this->request->getPost('nilai_pts');
 
-        $nilaiPtsModel->tambahDataNilaiPts($pesertaDidik, $idMapel, $kelas, $jurusan, 
+        $return = $nilaiPtsModel->tambahDataNilaiPts($pesertaDidik, $idMapel, $kelas, $jurusan, 
         $periodeAjaran, $semester, $nilaiPts);
+
+        if ($return) {
+            $pesan = 'Nilai PTS berhasil ditambahkan!';
+            session()->setFlashData('success', $pesan);
+        } 
+        else {
+            $pesan = 'Nilai PTS gagal ditambahkan!';
+            session()->setFlashData('error', $pesan);
+        }
 
         return redirect()->to('/daftar_nilai_pts/peserta_didik/'.$kelas.'/'.$jurusan.'/'.$namaMapel.'/'.$idMapel.'/'.
         $periodeAjaran.'/'.$semester);
@@ -67,8 +77,17 @@ class Daftarnilai_pts extends BaseController
         $semester = $this->request->getPost('semester');
         $nilaiPts = $this->request->getPost('nilai_pts');
 
-        $nilaiPtsModel->ubahDataNilaiPts($id, $pesertaDidik, $idMapel, $kelas, $jurusan, 
+        $return = $nilaiPtsModel->ubahDataNilaiPts($id, $pesertaDidik, $idMapel, $kelas, $jurusan, 
         $periodeAjaran, $semester, $nilaiPts);
+
+        if ($return) {
+            $pesan = 'Nilai PTS berhasil diubah!';
+            session()->setFlashData('success', $pesan);
+        } 
+        else {
+            $pesan = 'Nilai PTS gagal diubah!';
+            session()->setFlashData('error', $pesan);
+        }
 
         return redirect()->to('/daftar_nilai_pts/peserta_didik/'.$kelas.'/'.$jurusan.'/'.$namaMapel.'/'.$idMapel.'/'.
         $periodeAjaran.'/'.$semester);
@@ -99,6 +118,7 @@ class Daftarnilai_pts extends BaseController
 
             'semester' => $semester,
             'nilai' => $nilaiPtsModel->dataNilai($semester, $idPeriode, $kelas, $jurusan, $idMapel), 
+            'linkActive' => 'daftar_nilai'
         ];
 
         echo view('partials/header');
