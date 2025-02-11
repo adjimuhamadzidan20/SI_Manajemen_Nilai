@@ -24,7 +24,7 @@
 									  <div class="accordion-item">
 									    <h2 class="accordion-header">
 									      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-									      	Nilai Tugas
+									      <i class="far fa-file-text me-2"></i> Nilai Tugas
 									      </button>
 									    </h2>
 									    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -35,7 +35,7 @@
 					                    		?>
 													  <li class="list-group-item d-flex justify-content-between">
 													  	<?= $data['kd_ajaran']; ?> - Tahun Ajaran <?= $data['tahun_ajaran']; ?>
-													  	<a href="/daftar_nilai/nilai_tugas_periode/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm">Lihat Mapel</a></li>
+													  	<a href="/daftar_nilai/nilai_tugas_periode/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Lihat Mapel</a></li>
 													<?php  
 						                        endforeach;
 						                    	?>
@@ -46,7 +46,7 @@
 									  <div class="accordion-item">
 									    <h2 class="accordion-header">
 									      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-									        Nilai PTS
+									      <i class="far fa-file-text me-2"></i> Nilai PTS
 									      </button>
 									    </h2>
 									    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -57,7 +57,7 @@
 					                    		?>
 													  <li class="list-group-item d-flex justify-content-between">
 													  	<?= $data['kd_ajaran']; ?> - Tahun Ajaran <?= $data['tahun_ajaran']; ?>
-													  	<a href="/daftar_nilai/nilai_pts_periode/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm">Lihat Mapel</a></li>
+													  	<a href="/daftar_nilai/nilai_pts_periode/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Lihat Mapel</a></li>
 													<?php  
 						                        endforeach;
 						                    	?>
@@ -68,7 +68,7 @@
 									  <div class="accordion-item">
 									    <h2 class="accordion-header">
 									      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-									        Nilai PAS
+									      <i class="far fa-file-text me-2"></i> Nilai PAS
 									      </button>
 									    </h2>
 									    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -79,7 +79,29 @@
 					                    		?>
 													  <li class="list-group-item d-flex justify-content-between">
 													  	<?= $data['kd_ajaran']; ?> - Tahun Ajaran <?= $data['tahun_ajaran']; ?>
-													  	<a href="/daftar_nilai/nilai_pas_periode/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm">Lihat Mapel</a></li>
+													  	<a href="/daftar_nilai/nilai_pas_periode/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Lihat Mapel</a></li>
+													<?php  
+						                        endforeach;
+						                    	?>
+												</ul>
+									      </div>
+									    </div>
+									  </div>
+									  <div class="accordion-item">
+									    <h2 class="accordion-header">
+									      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+									      <i class="far fa-file-text me-2"></i> Semua Nilai
+									      </button>
+									    </h2>
+									    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+									      <div class="accordion-body">
+									        	<ul class="list-group list-group-flush">
+					                    		<?php  
+					                        	foreach ($periode as $data) :
+					                    		?>
+													  <li class="list-group-item d-flex justify-content-between">
+													  	<?= $data['kd_ajaran']; ?> - Tahun Ajaran <?= $data['tahun_ajaran']; ?>
+													  	<a href="/daftar_nilai/nilai_pas_periode/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Lihat Mapel</a></li>
 													<?php  
 						                        endforeach;
 						                    	?>

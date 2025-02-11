@@ -20,7 +20,9 @@ class Loginadmin extends BaseController
         if ($admin) {
             if ($admin['password'] == md5($password)) {
                 $data = [
+                    'id' => $admin['id'],
                     'nama_admin' => $admin['nama_admin'],
+                    'username' => $admin['username'],
                     'status' => $admin['status'],
                     'alamat' => $admin['alamat'],
                     'email' => $admin['email']

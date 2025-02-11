@@ -69,3 +69,10 @@ $routes->get('/daftar_nilai_pas/peserta_didik/(:any)/(:any)', 'Daftarnilai_pas::
 
 $routes->post('/daftar_nilai_pas/tambah', 'Daftarnilai_pas::tambah', ['filter' => 'nonadministrator']);
 $routes->post('/daftar_nilai_pas/ubah', 'Daftarnilai_pas::ubah', ['filter' => 'nonadministrator']);
+
+$routes->get('/profil_admin', 'Profiladmin::index', ['filter' => 'nonadministrator']);
+$routes->post('/profil_admin/ubah_pass', 'Profiladmin::ubah_pass', ['filter' => 'nonadministrator']);
+$routes->post('/profil_admin/ubah_username', 'Profiladmin::ubah_user', ['filter' => 'nonadministrator']);
+$routes->post('/profil_admin/ubah_nama', 'Profiladmin::ubah_nama', ['filter' => 'nonadministrator']);
+$routes->post('/profil_admin/ubah_alamat', 'Profiladmin::ubah_alamat', ['filter' => 'nonadministrator']);
+$routes->post('/profil_admin/ubah_email', 'Profiladmin::ubah_email', ['filter' => 'nonadministrator']);

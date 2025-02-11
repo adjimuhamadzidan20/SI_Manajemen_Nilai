@@ -25,9 +25,9 @@
                             </div>
                             <div>
                                 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" 
-                                data-bs-target="#tambah_nilai">Tambah</button>
-                                <button type="button" class="btn btn-primary btn-sm">Cetak PDF</button>
-                                <button type="button" class="btn btn-primary btn-sm">Cetak Excel</button>
+                                data-bs-target="#tambah_nilai"><i class="fas fa-plus"></i> Tambah</button>
+                                <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> Cetak PDF</button>
+                                <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-file-excel"></i> Cetak Excel</button>
                             </div>
                         </div>
                         <div class="card-body table-responsive">
@@ -103,7 +103,7 @@
                                                 data-nilai7="<?= $data['nilai_7']; ?>"
                                                 data-nilai8="<?= $data['nilai_8']; ?>"
                                                 data-nilai9="<?= $data['nilai_9']; ?>"
-                                                >Ubah Nilai</button>
+                                                title="Ubah nilai"><i class="fas fa-edit"></i></button>
                                             </td>
                                         </tr>
                                     <?php  

@@ -35,7 +35,7 @@
                                 <div class="fw-normal"><?= $data['kd_kelas']; ?> - <?= $data['kelas']; ?>
                                 <?= $data['nama_jurusan']; ?></div>
                               </div>
-                              <a href="/daftar_siswa/rinci_siswa/<?= $data['id_periode']; ?>/<?= $data['id_kelas']; ?>/<?= $data['id_jurusan']; ?>" class="btn btn-primary btn-sm">Lihat Peserta Didik</a>
+                              <a href="/daftar_siswa/rinci_siswa/<?= $data['id_periode']; ?>/<?= $data['id_kelas']; ?>/<?= $data['id_jurusan']; ?>" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Lihat Peserta Didik</a>
                             </li>
                           <?php  
                               endforeach;
@@ -43,7 +43,7 @@
                           ?>
                             <li class="list-group-item align-items-center">
                               <div class="ms-2 me-auto">
-                                <div class="fw-normal text-center">Daftar kelas tidak tersedia..</div>
+                                <div class="fw-normal text-center">Daftar kelas belum tersedia..</div>
                               </div>
                             </li>
                           <?php  

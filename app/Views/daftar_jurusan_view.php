@@ -18,9 +18,9 @@
                     <div class="card mb-4">
                         <div class="card-header d-flex justify-content-between align-items-center">
                             <div>
-                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambah_jurusan">Tambah</button>
-                                <button type="button" class="btn btn-primary btn-sm">Cetak PDF</button>
-                                <button type="button" class="btn btn-primary btn-sm">Cetak Excel</button>
+                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambah_jurusan"><i class="fas fa-plus"></i> Tambah</button>
+                                <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> Cetak PDF</button>
+                                <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-file-excel"></i> Cetak Excel</button>
                             </div>
                             <div>Data daftar jurusan</div>
                         </div>
@@ -53,11 +53,12 @@
                                                 data-id="<?= $data['id_jurusan']; ?>"
                                                 data-kdjurusan="<?= $data['kd_jurusan']; ?>"
                                                 data-namajurusan="<?= $data['nama_jurusan']; ?>"
-                                                data-namapanjang="<?= $data['nama_panjang']; ?>">
-                                                Ubah</button>
+                                                data-namapanjang="<?= $data['nama_panjang']; ?>"
+                                                title="Ubah"><i class="fas fa-edit"></i></button>
 
                                                 <button class="btn btn-primary btn-sm" data-bs-toggle="modal" 
-                                                data-bs-target="#hapus_jurusan_<?= $data['id_jurusan']; ?>">Hapus</button> 
+                                                data-bs-target="#hapus_jurusan_<?= $data['id_jurusan']; ?>"
+                                                title="Hapus"><i class="fas fa-trash"></i></button> 
 
                                                 <!-- modal hapus -->
                                                 <div class="modal fade" tabindex="-1" id="hapus_jurusan_<?= $data['id_jurusan']; ?>">

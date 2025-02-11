@@ -24,9 +24,9 @@
               </div>
               <div>
                 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" 
-                data-bs-target="#tambah_kelas">Tambah</button>
-                <button type="button" class="btn btn-primary btn-sm">Cetak PDF</button>
-                <button type="button" class="btn btn-primary btn-sm">Cetak Excel</button>
+                data-bs-target="#tambah_kelas"><i class="fas fa-plus"></i> Tambah</button>
+                <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> Cetak PDF</button>
+                <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-file-excel"></i> Cetak Excel</button>
               </div>
             </div>
             <div class="card-body">
@@ -61,10 +61,12 @@
                         data-kdkelas="<?= $data['kd_kelas']; ?>"
                         data-jurusan="<?= $data['id_jurusan']; ?>"
                         data-kelas="<?= $data['kelas']; ?>"
-                        data-tahun="<?= $data['id_periode']; ?>">Ubah</button>
+                        data-tahun="<?= $data['id_periode']; ?>"
+                        title="Ubah"><i class="fas fa-edit"></i></button>
 
                         <button class="btn btn-primary btn-sm" data-bs-toggle="modal" 
-                        data-bs-target="#hapus_kelas_<?= $data['id_kelas']; ?>">Hapus</button> 
+                        data-bs-target="#hapus_kelas_<?= $data['id_kelas']; ?>"
+                        title="Hapus"><i class="fas fa-trash"></i></button> 
 
                         <!-- modal hapus -->
                         <div class="modal fade" tabindex="-1" id="hapus_kelas_<?= $data['id_kelas']; ?>">

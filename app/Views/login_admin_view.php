@@ -49,7 +49,7 @@
                                                 <label class="form-check-label" for="inputRememberPassword">Remember Password</label>
                                             </div>
                                             <div class="d-flex flex-column mb-0">
-                                                <button type="submit" class="btn btn-primary mb-3" href="index.html">Masuk</button>
+                                                <button type="submit" class="btn btn-primary mb-3">Masuk</button>
                                                 <a class="small text-center" href="">Forgot Password?</a>
                                             </div>
                                         </form>

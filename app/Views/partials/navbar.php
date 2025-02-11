@@ -13,7 +13,8 @@
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#"><i class="far fa-user me-1"></i> Profile</a></li>
+            <li><a class="dropdown-item" href="/profil_admin"><i class="far fa-user me-1"></i> Profil</a></li>
+            <li><hr class="dropdown-divider" /></li>
             <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#logout" style="cursor: pointer;"><i class="fas fa-sign-out me-1"></i> Logout</a></li>
         </ul>
     </li>

@@ -23,9 +23,9 @@
                                 <a href="/daftar_mapel" class="btn btn-primary btn-sm">Kembali</a>
                             </div>
                             <div>
-                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambah_mapel">Tambah</button>
-                                <button type="button" class="btn btn-primary btn-sm">Cetak PDF</button>
-                                <button type="button" class="btn btn-primary btn-sm">Cetak Excel</button>
+                                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambah_mapel"><i class="fas fa-plus"></i> Tambah</button>
+                                <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> Cetak PDF</button>
+                                <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-file-excel"></i> Cetak Excel</button>
                             </div>
                         </div>
                         <div class="card-body">
@@ -66,11 +66,13 @@
                                                 data-kelas="<?= $data['kelas']; ?>"
                                                 data-jurusan="<?= $data['id_jurusan']; ?>"
                                                 data-periode="<?= $data['id_periode']; ?>"
-                                                data-guru="<?= $data['guru']; ?>">
-                                                Ubah</button>
+                                                data-guru="<?= $data['guru']; ?>"
+                                                title="Ubah">
+                                                <i class="fas fa-edit"></i></button>
 
                                                 <button class="btn btn-primary btn-sm" data-bs-toggle="modal" 
-                                                data-bs-target="#hapus_mapel_<?= $data['id_mapel']; ?>">Hapus</button> 
+                                                data-bs-target="#hapus_mapel_<?= $data['id_mapel']; ?>"
+                                                title="Hapus"><i class="fas fa-trash"></i></button> 
 
                                                 <!-- modal hapus -->
                                                 <div class="modal fade" tabindex="-1" id="hapus_mapel_<?= $data['id_mapel']; ?>">

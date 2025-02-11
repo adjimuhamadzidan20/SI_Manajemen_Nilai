@@ -40,7 +40,7 @@
                                             <td class="text-start"><?= $data['kd_ajaran']; ?></td>
                                             <td class="text-start"><?= $data['tahun_ajaran']; ?></td>
                                             <td class="text-center">
-                                                <a href="/daftar_siswa/rinci_kelas/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm">Daftar Kelas
+                                                <a href="/daftar_siswa/rinci_kelas/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm"><i class="fas fa-list"></i> Daftar Kelas
                                                 </a>
                                             </td>
                                         </tr>

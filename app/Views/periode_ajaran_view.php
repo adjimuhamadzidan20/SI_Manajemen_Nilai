@@ -17,7 +17,7 @@
             </ol>
             <div class="card mb-4">
               <div class="card-header d-flex justify-content-between align-items-center">
-                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambah_periode">Tambah</button>
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambah_periode"><i class="fas fa-plus"></i> Tambah</button>
                 <div>Data periode tahun ajaran</div>
               </div>
               <div class="card-body">
@@ -52,11 +52,11 @@
                           data-kdajaran="<?= $data['kd_ajaran']; ?>"
                           data-semester1="<?= $data['semester_pertama']; ?>"
                           data-semester2="<?= $data['semester_kedua']; ?>"
-                          data-tahunajaran="<?= $data['tahun_ajaran']; ?>">
-                          Ubah</button>
+                          data-tahunajaran="<?= $data['tahun_ajaran']; ?>"
+                          title="Ubah"><i class="fas fa-edit"></i></button>
 
                           <button class="btn btn-primary btn-sm" data-bs-toggle="modal" 
-                          data-bs-target="#hapus_periode_<?= $data['id_periode']; ?>">Hapus</button> 
+                          data-bs-target="#hapus_periode_<?= $data['id_periode']; ?>" title="Hapus"><i class="fas fa-trash"></i></button> 
 
                           <!-- modal hapus -->
                           <div class="modal fade" tabindex="-1" id="hapus_periode_<?= $data['id_periode']; ?>">
