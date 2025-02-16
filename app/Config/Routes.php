@@ -29,12 +29,16 @@ $routes->post('/daftar_kelas/tambah', 'Daftarkelas::tambah', ['filter' => 'nonad
 $routes->post('/daftar_kelas/ubah', 'Daftarkelas::ubah', ['filter' => 'nonadministrator']);
 $routes->get('/daftar_kelas/hapus/(:num)', 'Daftarkelas::hapus/$1', ['filter' => 'nonadministrator']);
 $routes->get('/daftar_kelas/periode_kelas/(:any)', 'Daftarkelas::periode/$1', ['filter' => 'nonadministrator']);
+$routes->get('/daftar_kelas/cetak_kelas_pdf/(:any)', 'Daftarkelas::cetakPDF/$1', ['filter' => 'nonadministrator']);
+$routes->get('/daftar_kelas/cetak_kelas_excel/(:any)', 'Daftarkelas::cetakExcel/$1', ['filter' => 'nonadministrator']);
 
 $routes->get('/daftar_mapel', 'Daftarmapel::index', ['filter' => 'nonadministrator']);
 $routes->post('/daftar_mapel/tambah', 'Daftarmapel::tambah', ['filter' => 'nonadministrator']);
 $routes->post('/daftar_mapel/ubah', 'Daftarmapel::ubah', ['filter' => 'nonadministrator']);
 $routes->get('/daftar_mapel/hapus/(:num)', 'Daftarmapel::hapus/$1', ['filter' => 'nonadministrator']);
 $routes->get('/daftar_mapel/periode_mapel/(:any)', 'Daftarmapel::periode/$1', ['filter' => 'nonadministrator']);
+$routes->get('/daftar_mapel/cetak_mapel_pdf/(:any)', 'Daftarmapel::cetakPDF/$1', ['filter' => 'nonadministrator']);
+$routes->get('/daftar_mapel/cetak_mapel_excel/(:any)', 'Daftarmapel::cetakExcel/$1', ['filter' => 'nonadministrator']);
 
 $routes->get('/daftar_siswa', 'Daftarsiswa::index', ['filter' => 'nonadministrator']);
 $routes->get('/daftar_siswa/rinci_kelas/(:any)', 'Daftarsiswa::rinci_kelas/$1', ['filter' => 'nonadministrator']);
@@ -44,6 +48,10 @@ $routes->get('/daftar_siswa/rinci_siswa/(:any)/(:any)/(:any)', 'Daftarsiswa::rin
 $routes->post('/daftar_siswa/tambah', 'Daftarsiswa::tambah', ['filter' => 'nonadministrator']);
 $routes->post('/daftar_siswa/ubah', 'Daftarsiswa::ubah', ['filter' => 'nonadministrator']);
 $routes->get('/daftar_siswa/hapus/(:num)', 'Daftarsiswa::hapus/$1', ['filter' => 'nonadministrator']);
+$routes->get('/daftar_siswa/cetak_siswa_pdf/(:any)/(:any)/(:any)', 'Daftarsiswa::cetakPDF/$1/$2/$3', 
+['filter' => 'nonadministrator']);
+$routes->get('/daftar_siswa/cetak_siswa_excel/(:any)/(:any)/(:any)', 'Daftarsiswa::cetakExcel/$1/$2/$3', 
+['filter' => 'nonadministrator']);
 
 $routes->get('/daftar_nilai', 'Daftarnilai::index', ['filter' => 'nonadministrator']);
 $routes->get('/daftar_nilai/nilai_tugas_periode/(:any)', 'Daftarnilai_tugas::nilai_tugas_periode/$1', 
@@ -54,6 +62,11 @@ $routes->get('/daftar_nilai/nilai_pas_periode/(:any)', 'Daftarnilai_pas::nilai_p
 
 $routes->get('/daftar_nilai_tugas/peserta_didik/(:any)/(:any)/(:any)/(:any)/(:any)/(:any)', 
 'Daftarnilai_tugas::peserta_didik/$1/$2/$3/$4/$5/$6', ['filter' => 'nonadministrator']);
+
+$routes->get('/daftar_nilai_tugas/cetak_nilai_tugas_pdf/(:any)/(:any)/(:any)/(:any)/(:any)/(:any)', 
+'Daftarnilai_tugas::cetakPDF/$1/$2/$3/$4/$5/$6', ['filter' => 'nonadministrator']);
+$routes->get('/daftar_nilai_tugas/cetak_nilai_tugas_excel/(:any)/(:any)/(:any)/(:any)/(:any)/(:any)', 
+'Daftarnilai_tugas::cetakExcel/$1/$2/$3/$4/$5/$6', ['filter' => 'nonadministrator']);
 
 $routes->post('/daftar_nilai_tugas/tambah', 'Daftarnilai_tugas::tambah', ['filter' => 'nonadministrator']);
 $routes->post('/daftar_nilai_tugas/ubah', 'Daftarnilai_tugas::ubah', ['filter' => 'nonadministrator']);

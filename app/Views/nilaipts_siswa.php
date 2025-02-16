@@ -11,7 +11,7 @@
             <main>
                 <div class="container-fluid px-3">
                     <h3 class="mt-3 text-uppercase"><?= $kelas; ?> <?= $nama_jurusan; ?> - <?= $nama_mapel; ?></h3>
-                    <p class="text-uppercase mb-2"><?= 'Semester '. $semester; ?></p>
+                    <p class="text-uppercase mb-2">Nilai PTS | <?= 'Semester '. $semester; ?></p>
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
                         <li class="breadcrumb-item"><a href="/daftar_nilai">Daftar Nilai</a></li>
@@ -30,16 +30,17 @@
                                 <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-file-excel"></i> Cetak Excel</button>
                             </div>
                         </div>
-                        <div class="card-body table-responsive">
-                            <table class="table table-bordered" style="width:100%">
+                        <div class="card-body">
+                            <table class="table table-bordered" style="width:100%" id="tabel_pts">
                                 <thead>
                                     <tr>
-                                        <th class="text-center">No</th>
-                                        <th class="text-center">NISN</th>
-                                        <th class="text-nowrap">Nama Peserta Didik</th>
-                                        <th class="text-nowrap">Mata Pelajaran</th>
-                                        <th class="text-nowrap">Nilai PTS</th>
-                                        <th class="text-nowrap text-center">Opsi</th>
+                                        <th class="text-start">No</th>
+                                        <th class="text-start">NIS</th>
+                                        <th class="text-start">NISN</th>
+                                        <th class="text-start">Nama Peserta Didik</th>
+                                        <th class="text-start">Mata Pelajaran</th>
+                                        <th class="text-start">Nilai PTS</th>
+                                        <th class="text-center">Opsi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -49,11 +50,12 @@
                                         $no++;
                                     ?>
                                         <tr>
-                                            <td class="text-center"><?= $no; ?></td>
-                                            <td><?= $data['nisn']; ?></td>
-                                            <td><?= $data['nama_siswa']; ?></td>
-                                            <td><?= $data['nama_mapel']; ?></td>
-                                            <td><?= $data['nilai_pts']; ?></td>
+                                            <td class="text-start"><?= $no; ?></td>
+                                            <td class="text-start"><?= $data['nis']; ?></td>
+                                            <td class="text-start"><?= $data['nisn']; ?></td>
+                                            <td class="text-start"><?= $data['nama_siswa']; ?></td>
+                                            <td class="text-start"><?= $data['nama_mapel']; ?></td>
+                                            <td class="text-start"><?= $data['nilai_pts']; ?></td>
                                             <td class="text-center">
                                                 <button type="button" class="btn btn-primary btn-sm" 
                                                 data-bs-toggle="modal" 

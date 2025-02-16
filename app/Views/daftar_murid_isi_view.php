@@ -43,8 +43,16 @@
                           </div>
                           <div>
                             <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambah_murid"><i class="fas fa-plus"></i> Tambah</button>
-                            <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> Cetak PDF</button>
-                            <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-file-excel"></i> Cetak Excel</button>
+                            <?php  
+                              foreach ($kelas as $data) :
+                            ?>
+                              <a href="/daftar_siswa/cetak_siswa_pdf/<?= $data['id_periode']; ?>/<?= $data['id_kelas']; ?>/<?= $data['id_jurusan']; ?>" class="btn btn-primary btn-sm">
+                              <i class="fas fa-file-pdf"></i> Cetak PDF</a>
+                              <a href="/daftar_siswa/cetak_siswa_excel/<?= $data['id_periode']; ?>/<?= $data['id_kelas']; ?>/<?= $data['id_jurusan']; ?>" class="btn btn-primary btn-sm">
+                              <i class="fas fa-file-excel"></i> Cetak Excel</a>
+                            <?php  
+                              endforeach;
+                            ?>
                           </div>
                         </div>
                         <div class="card-body">

@@ -11,7 +11,7 @@
             <main>
                 <div class="container-fluid px-3">
                     <h3 class="mt-3 text-uppercase"><?= $kelas; ?> <?= $nama_jurusan; ?> - <?= $nama_mapel; ?></h3>
-                    <p class="text-uppercase mb-2"><?= 'Semester '. $semester; ?></p>
+                    <p class="text-uppercase mb-2">Nilai Tugas | <?= 'Semester '. $semester; ?></p>
                     <ol class="breadcrumb mb-4">
                         <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
                         <li class="breadcrumb-item"><a href="/daftar_nilai">Daftar Nilai</a></li>
@@ -26,22 +26,25 @@
                             <div>
                                 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" 
                                 data-bs-target="#tambah_nilai"><i class="fas fa-plus"></i> Tambah</button>
-                                <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> Cetak PDF</button>
-                                <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-file-excel"></i> Cetak Excel</button>
+                                <a href="/daftar_nilai_tugas/cetak_nilai_tugas_pdf/<?= $kelas; ?>/<?= $id_jurusan; ?>/<?= $nama_mapel; ?>/<?= $id_mapel; ?>/<?= $id_periode; ?>/<?= $semester; ?>" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> Cetak PDF</a>
+                                
+                                <a href="/daftar_nilai_tugas/cetak_nilai_tugas_excel/<?= $kelas; ?>/<?= $id_jurusan; ?>/<?= $nama_mapel; ?>/<?= $id_mapel; ?>/<?= $id_periode; ?>/<?= $semester; ?>" class="btn btn-primary btn-sm"><i class="fas fa-file-excel"></i> Cetak Excel</a>
                             </div>
                         </div>
-                        <div class="card-body table-responsive">
-                            <table class="table table-bordered" style="width:100%">
+                        <div class="card-body">
+                            <table class="table table-bordered" style="width:100%" id="tabel_tugas">
                                 <thead>
                                     <tr>
                                         <th class="text-center align-middle" style="font-size: 14px;" rowspan="2">No</th>
+                                        <th class="text-center align-middle" style="font-size: 14px;" rowspan="2">NIS</th>
                                         <th class="text-center align-middle" style="font-size: 14px;" rowspan="2">NISN</th>
                                         <th class="text-center align-middle" style="font-size: 14px;" rowspan="2">Nama Peserta Didik</th>
+                                        
                                         <th class="text-nowrap text-center" style="font-size: 14px;" colspan="3">Lingkup Materi 1</th>
                                         <th class="text-nowrap text-center" style="font-size: 14px;" colspan="3">Lingkup Materi 2</th>
                                         <th class="text-nowrap text-center" style="font-size: 14px;" colspan="3">Lingkup Materi 3</th>
                                        
-                                         <th class="text-nowrap text-center align-middle" style="font-size: 14px;" rowspan="2">NA(M)</th>
+                                        <th class="text-nowrap text-center align-middle" style="font-size: 14px;" rowspan="2">NA(M)</th>
                                         <th class="text-nowrap text-center align-middle" style="font-size: 14px;" rowspan="2">LM1</th>
                                         <th class="text-nowrap text-center align-middle" style="font-size: 14px;" rowspan="2">LM2</th>
                                         <th class="text-nowrap text-center align-middle" style="font-size: 14px;" rowspan="2">LM3</th>
@@ -68,6 +71,7 @@
                                     ?>
                                         <tr>
                                             <td class="text-center"><?= $no; ?></td>
+                                            <td class="text-center"><?= $data['nis']; ?></td>
                                             <td class="text-center"><?= $data['nisn']; ?></td>
                                             <td><?= $data['nama_siswa']; ?></td>
                                             <td class="text-center"><?= $data['nilai_1']; ?></td>

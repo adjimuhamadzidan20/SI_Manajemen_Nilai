@@ -9,7 +9,7 @@
 
     <div id="layoutSidenav_content">
       <main>
-        <div class="container-fluid px-3">
+        <div class="container-fluid px-3">  
           <h3 class="mt-3 text-uppercase">Daftar Kelas</h3>
           <p class="text-uppercase mb-2">Tahun Ajaran <?= $tahun_ajaran; ?></p>
           <ol class="breadcrumb mb-4">
@@ -25,8 +25,10 @@
               <div>
                 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" 
                 data-bs-target="#tambah_kelas"><i class="fas fa-plus"></i> Tambah</button>
-                <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> Cetak PDF</button>
-                <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-file-excel"></i> Cetak Excel</button>
+                <a href="/daftar_kelas/cetak_kelas_pdf/<?= $id_periode; ?>" class="btn btn-primary btn-sm">
+                <i class="fas fa-file-pdf"></i> Cetak PDF</a>
+                <a href="/daftar_kelas/cetak_kelas_excel/<?= $id_periode; ?>" class="btn btn-primary btn-sm">
+                <i class="fas fa-file-excel"></i> Cetak Excel</a>
               </div>
             </div>
             <div class="card-body">

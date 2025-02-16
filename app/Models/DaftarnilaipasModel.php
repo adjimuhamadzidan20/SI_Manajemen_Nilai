@@ -15,7 +15,7 @@ class DaftarnilaipasModel extends Model
 
     public function dataNilai($semester, $idPeriode, $kelas, $idJurusan, $idMapel) {
         $db = db_connect();
-        $query = "SELECT dt_nilai_pas.id_pas, dt_nilai_pas.id_siswa, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        $query = "SELECT dt_nilai_pas.id_pas, dt_nilai_pas.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
         dt_nilai_pas.id_mapel, dt_mapel.nama_mapel, dt_nilai_pas.kelas, dt_nilai_pas.id_jurusan, dt_jurusan.nama_jurusan, 
         dt_nilai_pas.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_pas.semester, dt_nilai_pas.nilai_pas FROM 
         dt_nilai_pas INNER JOIN dt_siswa ON dt_nilai_pas.id_siswa = dt_siswa.id_siswa INNER JOIN dt_mapel ON 
@@ -61,37 +61,4 @@ class DaftarnilaipasModel extends Model
 
         return $data;
     }
-
-    // public function dataMapelDetail($mapel) {
-    //     $db = db_connect();
-    //     $query = "SELECT nama_mapel FROM dt_mapel WHERE nama_mapel = '$mapel'";
-
-    //     $sql = $db->query($query);
-    //     $hasil = $sql->getRowArray();
-    //     return $hasil['nama_mapel'];
-    // }      
-
-    // public function generateKode() {
-    //     $db = db_connect();
-    //     $sql = $db->query("SELECT MAX(kd_mapel) AS kode FROM dt_mapel");
-    //     $hasil = $sql->getRowArray();
-    //     return $hasil['kode']; 
-    // }
-
-
-    // public function ubahDataMapel($id, $kode, $namaMapel, $kelas, $guruMapel) {
-    //     $data = [
-    //         'id_mapel' => $id,
-    //         'kd_mapel' => $kode,
-    //         'nama_mapel' => $namaMapel,
-    //         'kelas' => $kelas,
-    //         'guru' => $guruMapel
-    //     ];
-
-    //     return $this->update($id, $data);
-    // }
-
-    // public function hapusDataMapel($id) {
-    //     return $this->delete($id);
-    // }
 }

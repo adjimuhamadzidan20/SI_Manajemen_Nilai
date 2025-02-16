@@ -24,8 +24,10 @@
                             </div>
                             <div>
                                 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambah_mapel"><i class="fas fa-plus"></i> Tambah</button>
-                                <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> Cetak PDF</button>
-                                <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-file-excel"></i> Cetak Excel</button>
+                                <a href="/daftar_mapel/cetak_mapel_pdf/<?= $id_periode; ?>" class="btn btn-primary btn-sm">
+                                <i class="fas fa-file-pdf"></i> Cetak PDF</a>
+                                <a href="/daftar_mapel/cetak_mapel_excel/<?= $id_periode; ?>" class="btn btn-primary btn-sm">
+                                <i class="fas fa-file-excel"></i> Cetak Excel</a>
                             </div>
                         </div>
                         <div class="card-body">

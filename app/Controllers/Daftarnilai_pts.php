@@ -125,4 +125,8 @@ class Daftarnilai_pts extends BaseController
         echo view('nilaipts_siswa', $data);
         echo view('partials/footer');
     }
+
+    public function cetakPDF() {
+        
+    }
 }

@@ -66,6 +66,36 @@
         <script type="text/javascript">
             new DataTable('#datatablesSimple');
 
+            $('#tabel_tugas').DataTable({
+                "paging": true,
+                "lengthChange": true,
+                "searching": true,
+                "ordering": false,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+
+            $('#tabel_pts').DataTable({
+                "paging": true,
+                "lengthChange": true,
+                "searching": true,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+
+            $('#tabel_pas').DataTable({
+                "paging": true,
+                "lengthChange": true,
+                "searching": true,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+                "responsive": true,
+            });
+
             $('#ubah_periode').on('show.bs.modal', function(event) {
                 let button = $(event.relatedTarget)
 

@@ -125,4 +125,8 @@ class Daftarnilai_pas extends BaseController
         echo view('nilaipas_siswa', $data);
         echo view('partials/footer');
     }
+
+    public function cetakPDF() {
+        
+    }
 }

@@ -4,6 +4,11 @@ namespace App\Controllers;
 use App\Models\DaftarkelasModel;
 use App\Models\DaftarjurusanModel;
 use App\Models\PeriodeajaranModel;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
+use PhpOffice\PhpSpreadsheet\Style\Border;
+use PhpOffice\PhpSpreadsheet\Style\Alignment;
+use Mpdf\Mpdf;
 
 class Daftarkelas extends BaseController
 {   
@@ -104,5 +109,159 @@ class Daftarkelas extends BaseController
         return redirect()->to('/daftar_kelas');
     }
 
+    public function cetakPDF($idPeriode) {
+        setlocale(LC_ALL, 'id-ID', 'id_ID');
+        $tglHead = strftime("%A, %d %B %Y | %T");
+        $tglFoot = strftime("%d %B %Y");
 
+        $kelasModel = new DaftarkelasModel();
+        $periodeModel = new PeriodeajaranModel();
+
+        $dataKelas = $kelasModel->cetakDataKelas($idPeriode);
+        $tahunAjaran = $periodeModel->tahunPeriode($idPeriode);
+
+         // Create an instance of the class:
+        $mpdf = new Mpdf();
+
+        $header = '<div style="border-bottom: 1px solid black; padding-bottom: 5px;">
+                    <h1 style="font-size: 24px;">SI Manajemen Nilai</h1>      
+                </div>';
+
+        $text = '<p><b>Daftar Kelas '. $tahunAjaran .'</b></p>';
+        $waktu = '<p>'. $tglHead .'</p>';
+
+        $table = '<table border="1" cellspacing="0" cellpadding="3" style="width: 100%; text-align: center; font-size: 13px;">
+                        <tr>
+                            <th>No</th>
+                            <th>Kode</th>
+                            <th>Program Keahlian</th>
+                            <th>Kelas</th>
+                            <th>Tahun Ajaran</th>
+                        </tr>';
+
+                        $no = 0;
+                        foreach ($dataKelas as $data) :
+                        $no++;
+                        $table .= ' <tr>
+                                        <td>'. $no .'</td>
+                                        <td>'. $data['kd_kelas'] .'</td>
+                                        <td>'. $data['nama_jurusan'] .'</td>
+                                        <td>'. $data['kelas'] .'</td>
+                                        <td>'. $data['tahun_ajaran'] .'</td>
+                                    </tr>';
+                        endforeach;
+
+                    $table .= ' 
+                    </table>';
+
+        $date = '<div style="text-align: right; margin-top:50px;">
+                    <p>Jakarta, '. $tglFoot .'</p>
+                    <br><br>
+                    <p>Admin</p>
+                 </div>';
+
+        // $mpdf->SetFooter('Document Title');
+        $mpdf->WriteHTML($header);
+        $mpdf->WriteHTML($text);
+        $mpdf->WriteHTML($waktu);
+        $mpdf->WriteHTML($table);
+        $mpdf->WriteHTML($date);
+        $mpdf->setFooter('SI Manajemen Nilai || {PAGENO}');
+
+        // Output a PDF file directly to the browser
+        $mpdf->Output('Daftar Kelas '. $tahunAjaran .'.pdf', \Mpdf\Output\Destination::DOWNLOAD);
+    }
+
+    public function cetakExcel($idPeriode) {
+        setlocale(LC_ALL, 'id-ID', 'id_ID');
+        $tglHead = strftime("%A, %d %B %Y | %T");
+
+        $spreadsheet = new Spreadsheet();
+        $kelasModel = new DaftarkelasModel();
+        $periodeModel = new PeriodeajaranModel();
+
+        $dataKelas = $kelasModel->cetakDataKelas($idPeriode);
+        $tahunAjaran = $periodeModel->tahunPeriode($idPeriode);
+        $sheetBaris = $spreadsheet->getActiveSheet();
+
+        $header = 'SI Manajemen Nilai';
+        $text = 'Daftar Kelas '. $tahunAjaran;
+        $waktu = $tglHead;
+
+        $sheetBaris->setCellValue('A1', $header);
+        $sheetBaris->setCellValue('A2', $text);
+        $sheetBaris->setCellValue('A3', $waktu);
+
+        $sheetBaris->setCellValue('A5', 'No');
+        $sheetBaris->setCellValue('B5', 'Kode');
+        $sheetBaris->setCellValue('C5', 'Program Keahlian');
+        $sheetBaris->setCellValue('D5', 'Kelas');
+        $sheetBaris->setCellValue('E5', 'Tahun Ajaran');
+
+        $baris = 6;
+        $no = 1;
+        foreach ($dataKelas as $data) :
+            $sheetBaris->setCellValue('A' . $baris, $no++);
+            $sheetBaris->setCellValue('B' . $baris, $data['kd_kelas']);
+            $sheetBaris->setCellValue('C' . $baris, $data['nama_jurusan']);
+            $sheetBaris->setCellValue('D' . $baris, $data['kelas']);
+            $sheetBaris->setCellValue('E' . $baris, $data['tahun_ajaran']);
+            $baris++;
+        endforeach;
+
+        $sheetBaris->getStyle('A1')->applyFromArray([
+            'font' => [
+                'bold' => true,
+                'size' => 15,
+            ],
+            'alignment' => [
+                'horizontal' => Alignment::HORIZONTAL_LEFT,
+                'vertical' => Alignment::VERTICAL_CENTER,
+            ],
+        ]);
+
+        $sheetBaris->getStyle('A5:E5')->applyFromArray([
+            'font' => [
+                'bold' => true,
+            ],
+            'alignment' => [
+                'horizontal' => Alignment::HORIZONTAL_LEFT,
+                'vertical' => Alignment::VERTICAL_CENTER,
+            ],
+        ]);
+
+         // Menentukan batas akhir data
+        $lastRow = $baris - 1;
+
+        // Tambahkan border ke seluruh tabel
+        $sheetBaris->getStyle('A5:E'. $lastRow)->applyFromArray([
+            'borders' => [
+                'allBorders' => [
+                    'borderStyle' => Border::BORDER_THIN,
+                    'color' => ['argb' => '000000'],
+                ],
+            ],
+            'alignment' => [
+                'horizontal' => Alignment::HORIZONTAL_LEFT,
+                'vertical' => Alignment::VERTICAL_CENTER,
+            ],
+        ]);
+
+        // Mengatur ukuran kolom agar otomatis menyesuaikan isi
+        foreach (range('B', 'E') as $col) {
+            $sheetBaris->getColumnDimension($col)->setAutoSize(true);
+        }
+
+        // Set nama file
+        $fileName = 'Daftar Kelas '. $tahunAjaran .'.xlsx';
+        $writer = new Xlsx($spreadsheet);
+
+        // Set header agar browser mengenali file sebagai Excel
+        header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+        header('Content-Disposition: attachment;filename="' . $fileName . '"');
+        header('Cache-Control: max-age=0');
+
+        $writer->save('php://output');
+        exit();
+    }
 }
