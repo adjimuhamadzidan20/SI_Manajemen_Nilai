@@ -74,11 +74,21 @@ $routes->post('/daftar_nilai_tugas/ubah', 'Daftarnilai_tugas::ubah', ['filter' =
 $routes->get('/daftar_nilai_pts/peserta_didik/(:any)/(:any)', 'Daftarnilai_pts::peserta_didik/$1/$2', 
 ['filter' => 'nonadministrator']);
 
+$routes->get('/daftar_nilai_pts/cetak_nilai_pts_pdf/(:any)/(:any)/(:any)/(:any)/(:any)/(:any)', 
+'Daftarnilai_pts::cetakPDF/$1/$2/$3/$4/$5/$6', ['filter' => 'nonadministrator']);
+$routes->get('/daftar_nilai_pts/cetak_nilai_pts_excel/(:any)/(:any)/(:any)/(:any)/(:any)/(:any)', 
+'Daftarnilai_pts::cetakExcel/$1/$2/$3/$4/$5/$6', ['filter' => 'nonadministrator']);
+
 $routes->post('/daftar_nilai_pts/tambah', 'Daftarnilai_pts::tambah', ['filter' => 'nonadministrator']);
 $routes->post('/daftar_nilai_pts/ubah', 'Daftarnilai_pts::ubah', ['filter' => 'nonadministrator']);
 
 $routes->get('/daftar_nilai_pas/peserta_didik/(:any)/(:any)', 'Daftarnilai_pas::peserta_didik/$1/$2', 
 ['filter' => 'nonadministrator']);
+
+$routes->get('/daftar_nilai_pas/cetak_nilai_pas_pdf/(:any)/(:any)/(:any)/(:any)/(:any)/(:any)', 
+'Daftarnilai_pas::cetakPDF/$1/$2/$3/$4/$5/$6', ['filter' => 'nonadministrator']);
+$routes->get('/daftar_nilai_pas/cetak_nilai_pas_excel/(:any)/(:any)/(:any)/(:any)/(:any)/(:any)', 
+'Daftarnilai_pas::cetakExcel/$1/$2/$3/$4/$5/$6', ['filter' => 'nonadministrator']);
 
 $routes->post('/daftar_nilai_pas/tambah', 'Daftarnilai_pas::tambah', ['filter' => 'nonadministrator']);
 $routes->post('/daftar_nilai_pas/ubah', 'Daftarnilai_pas::ubah', ['filter' => 'nonadministrator']);

@@ -241,7 +241,7 @@ class Daftarnilai_tugas extends BaseController
         $mpdf->setFooter('SI Manajemen Nilai || {PAGENO}');
 
         foreach ($dataNilaiTugas as $data) :
-            $fileName = $data['kelas'] .' '. $data['nama_jurusan'] .' '. $data['nama_mapel'] .' '. $data['tahun_ajaran'].'.pdf';
+            $fileName = 'Nilai Tugas '. $data['kelas'] .' '. $data['nama_jurusan'] .' '. $data['nama_mapel'] .' '. $data['tahun_ajaran'].'.pdf';
         endforeach;
 
         // Output a PDF file directly to the browser
@@ -399,7 +399,7 @@ class Daftarnilai_tugas extends BaseController
 
         // Set nama file
         foreach ($dataNilaiTugas as $data) :
-            $fileName = $data['kelas'] .' '. $data['nama_jurusan'] .' '. $data['nama_mapel'] .' '. $data['tahun_ajaran'].'.xlsx';
+            $fileName = 'Nilai Tugas '. $data['kelas'] .' '. $data['nama_jurusan'] .' '. $data['nama_mapel'] .' '. $data['tahun_ajaran'].'.xlsx';
         endforeach;
 
         $writer = new Xlsx($spreadsheet);

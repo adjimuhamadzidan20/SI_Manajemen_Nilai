@@ -189,3 +189,717 @@ INFO - 2025-02-16 02:32:44 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2025-02-16 02:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2025-02-16 02:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2025-02-16 02:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:34:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:42:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:42:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:42:50 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pts.php on line 131.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+WARNING - 2025-02-16 03:42:50 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pts.php on line 132.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-16 03:42:50 --> Error: Class "App\Controllers\Mpdf" not found
+[Method: GET, Route: daftar_nilai_pts/cetak_nilai_pts_pdf/X/1/Informatika/31/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_pts.php on line 138.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:42:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:43:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:43:16 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pts.php on line 136.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+WARNING - 2025-02-16 03:43:16 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pts.php on line 137.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:50:20 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pts.php on line 136.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+WARNING - 2025-02-16 03:50:20 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pts.php on line 137.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:50:25 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pts.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-16 03:50:26 --> ErrorException: Header may not contain more than a single header, new line detected
+[Method: GET, Route: daftar_nilai_pts/cetak_nilai_pts_excel/X/1/Informatika/31/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_pts.php on line 297.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Header may not contain more than a single header, new line detected', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarnilai_pts.php', 297)
+ 2 APPPATH\Controllers\Daftarnilai_pts.php(297): header('Content-Disposition: attachment;filename="Nilai PTS X RPL 1 Informatika 
+            2024/2025.xlsx"')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:50:39 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pts.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-16 03:50:39 --> ErrorException: Header may not contain more than a single header, new line detected
+[Method: GET, Route: daftar_nilai_pts/cetak_nilai_pts_excel/X/1/Informatika/31/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_pts.php on line 297.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Header may not contain more than a single header, new line detected', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarnilai_pts.php', 297)
+ 2 APPPATH\Controllers\Daftarnilai_pts.php(297): header('Content-Disposition: attachment;filename="Nilai PTS X RPL 1 Informatika 
+            2024/2025.xlsx"')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:50:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:51:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:51:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:51:19 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_tugas.php on line 254.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-16 03:51:19 --> ErrorException: Header may not contain more than a single header, new line detected
+[Method: GET, Route: daftar_nilai_tugas/cetak_nilai_tugas_excel/X/1/Informatika/31/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_tugas.php on line 411.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Header may not contain more than a single header, new line detected', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarnilai_tugas.php', 411)
+ 2 APPPATH\Controllers\Daftarnilai_tugas.php(411): header('Content-Disposition: attachment;filename="Nilai Tugas X RPL 1 Informatika 
+            2024/2025.xlsx"')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:51:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:52:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:53:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:53:04 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pts.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-16 03:53:04 --> ErrorException: Header may not contain more than a single header, new line detected
+[Method: GET, Route: daftar_nilai_pts/cetak_nilai_pts_excel/X/1/Informatika/31/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_pts.php on line 297.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Header may not contain more than a single header, new line detected', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarnilai_pts.php', 297)
+ 2 APPPATH\Controllers\Daftarnilai_pts.php(297): header('Content-Disposition: attachment;filename="Nilai PTS X RPL 1 Informatika 
+            2024/2025.xlsx"')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:53:07 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pts.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-16 03:53:07 --> ErrorException: Header may not contain more than a single header, new line detected
+[Method: GET, Route: daftar_nilai_pts/cetak_nilai_pts_excel/X/1/Informatika/31/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_pts.php on line 297.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Header may not contain more than a single header, new line detected', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarnilai_pts.php', 297)
+ 2 APPPATH\Controllers\Daftarnilai_pts.php(297): header('Content-Disposition: attachment;filename="Nilai PTS X RPL 1 Informatika 
+            2024/2025.xlsx"')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:53:13 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pts.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-16 03:53:13 --> ErrorException: Header may not contain more than a single header, new line detected
+[Method: GET, Route: daftar_nilai_pts/cetak_nilai_pts_excel/X/1/Informatika/31/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_pts.php on line 297.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Header may not contain more than a single header, new line detected', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarnilai_pts.php', 297)
+ 2 APPPATH\Controllers\Daftarnilai_pts.php(297): header('Content-Disposition: attachment;filename="Nilai PTS X RPL 1 Informatika 
+            2024/2025.xlsx"')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:53:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:55:26 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pts.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-16 03:55:26 --> ErrorException: Header may not contain more than a single header, new line detected
+[Method: GET, Route: daftar_nilai_pts/cetak_nilai_pts_excel/X/1/Informatika/31/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_pts.php on line 297.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Header may not contain more than a single header, new line detected', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarnilai_pts.php', 297)
+ 2 APPPATH\Controllers\Daftarnilai_pts.php(297): header('Content-Disposition: attachment;filename="Nilai PTS X RPL 1 Informatika 
+            2024/2025.xlsx"')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:55:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:55:28 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pts.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-16 03:55:28 --> ErrorException: Header may not contain more than a single header, new line detected
+[Method: GET, Route: daftar_nilai_pts/cetak_nilai_pts_excel/X/1/Informatika/31/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_pts.php on line 297.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Header may not contain more than a single header, new line detected', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarnilai_pts.php', 297)
+ 2 APPPATH\Controllers\Daftarnilai_pts.php(297): header('Content-Disposition: attachment;filename="Nilai PTS X RPL 1 Informatika 
+            2024/2025.xlsx"')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:55:34 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pts.php on line 207.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-16 03:55:35 --> ErrorException: Header may not contain more than a single header, new line detected
+[Method: GET, Route: daftar_nilai_pts/cetak_nilai_pts_excel/X/1/Informatika/31/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_pts.php on line 297.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Header may not contain more than a single header, new line detected', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarnilai_pts.php', 297)
+ 2 APPPATH\Controllers\Daftarnilai_pts.php(297): header('Content-Disposition: attachment;filename="Nilai PTS X RPL 1 Informatika 
+            2024/2025.xlsx"')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:55:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:55:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:55:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:56:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:56:01 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_tugas.php on line 254.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-16 03:56:01 --> ErrorException: Header may not contain more than a single header, new line detected
+[Method: GET, Route: daftar_nilai_tugas/cetak_nilai_tugas_excel/X/1/Informatika/31/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_tugas.php on line 411.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Header may not contain more than a single header, new line detected', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarnilai_tugas.php', 411)
+ 2 APPPATH\Controllers\Daftarnilai_tugas.php(411): header('Content-Disposition: attachment;filename="Nilai Tugas X RPL 1 Informatika 
+            2024/2025.xlsx"')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:56:03 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_tugas.php on line 254.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-16 03:56:04 --> ErrorException: Header may not contain more than a single header, new line detected
+[Method: GET, Route: daftar_nilai_tugas/cetak_nilai_tugas_excel/X/1/Informatika/31/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_tugas.php on line 411.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Header may not contain more than a single header, new line detected', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarnilai_tugas.php', 411)
+ 2 APPPATH\Controllers\Daftarnilai_tugas.php(411): header('Content-Disposition: attachment;filename="Nilai Tugas X RPL 1 Informatika 
+            2024/2025.xlsx"')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:56:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:56:10 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_tugas.php on line 254.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-16 03:56:10 --> ErrorException: Header may not contain more than a single header, new line detected
+[Method: GET, Route: daftar_nilai_tugas/cetak_nilai_tugas_excel/X/1/Informatika/31/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_tugas.php on line 411.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Header may not contain more than a single header, new line detected', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarnilai_tugas.php', 411)
+ 2 APPPATH\Controllers\Daftarnilai_tugas.php(411): header('Content-Disposition: attachment;filename="Nilai Tugas X RPL 1 Informatika 
+            2024/2025.xlsx"')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:56:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:56:27 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_tugas.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+WARNING - 2025-02-16 03:56:27 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_tugas.php on line 153.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-16 03:56:28 --> ErrorException: Header may not contain more than a single header, new line detected
+[Method: GET, Route: daftar_nilai_tugas/cetak_nilai_tugas_pdf/X/1/Informatika/31/4/Ganjil]
+in VENDORPATH\mpdf\mpdf\src\Mpdf.php on line 9622.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Header may not contain more than a single header, new line detected', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\vendor\\mpdf\\mpdf\\src\\Mpdf.php', 9622)
+ 2 VENDORPATH\mpdf\mpdf\src\Mpdf.php(9622): header('Content-Disposition: attachment; filename="Nilai Tugas X RPL 1 Informatika 
+            2024/2025.pdf"')
+ 3 APPPATH\Controllers\Daftarnilai_tugas.php(249): Mpdf\Mpdf->Output('Nilai Tugas X RPL 1 Informatika 
+            2024/2025.pdf', 'D')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:56:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:56:35 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_tugas.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+WARNING - 2025-02-16 03:56:35 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_tugas.php on line 153.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-16 03:56:37 --> ErrorException: Header may not contain more than a single header, new line detected
+[Method: GET, Route: daftar_nilai_tugas/cetak_nilai_tugas_pdf/X/1/Informatika/31/4/Ganjil]
+in VENDORPATH\mpdf\mpdf\src\Mpdf.php on line 9622.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Header may not contain more than a single header, new line detected', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\vendor\\mpdf\\mpdf\\src\\Mpdf.php', 9622)
+ 2 VENDORPATH\mpdf\mpdf\src\Mpdf.php(9622): header('Content-Disposition: attachment; filename="Nilai Tugas X RPL 1 Informatika 
+            2024/2025.pdf"')
+ 3 APPPATH\Controllers\Daftarnilai_tugas.php(249): Mpdf\Mpdf->Output('Nilai Tugas X RPL 1 Informatika 
+            2024/2025.pdf', 'D')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:57:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:57:02 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pts.php on line 136.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+WARNING - 2025-02-16 03:57:02 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pts.php on line 137.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:57:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:58:02 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarkelas.php on line 114.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->cetakPDF('4')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+WARNING - 2025-02-16 03:58:02 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarkelas.php on line 115.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->cetakPDF('4')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:58:09 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarkelas.php on line 177.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->cetakExcel('4')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:58:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:58:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:58:35 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_tugas.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+WARNING - 2025-02-16 03:58:35 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_tugas.php on line 153.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-16 03:58:36 --> ErrorException: Header may not contain more than a single header, new line detected
+[Method: GET, Route: daftar_nilai_tugas/cetak_nilai_tugas_pdf/X/1/Informatika/31/4/Ganjil]
+in VENDORPATH\mpdf\mpdf\src\Mpdf.php on line 9622.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Header may not contain more than a single header, new line detected', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\vendor\\mpdf\\mpdf\\src\\Mpdf.php', 9622)
+ 2 VENDORPATH\mpdf\mpdf\src\Mpdf.php(9622): header('Content-Disposition: attachment; filename="Nilai Tugas X RPL 1 Informatika 
+            2024/2025.pdf"')
+ 3 APPPATH\Controllers\Daftarnilai_tugas.php(249): Mpdf\Mpdf->Output('Nilai Tugas X RPL 1 Informatika 
+            2024/2025.pdf', 'D')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:58:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:58:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:58:45 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_tugas.php on line 254.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-16 03:58:46 --> ErrorException: Header may not contain more than a single header, new line detected
+[Method: GET, Route: daftar_nilai_tugas/cetak_nilai_tugas_excel/X/1/Informatika/31/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_tugas.php on line 411.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Header may not contain more than a single header, new line detected', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarnilai_tugas.php', 411)
+ 2 APPPATH\Controllers\Daftarnilai_tugas.php(411): header('Content-Disposition: attachment;filename="Nilai Tugas X RPL 1 Informatika 
+            2024/2025.xlsx"')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:58:48 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_tugas.php on line 254.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-16 03:58:49 --> ErrorException: Header may not contain more than a single header, new line detected
+[Method: GET, Route: daftar_nilai_tugas/cetak_nilai_tugas_excel/X/1/Informatika/31/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_tugas.php on line 411.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Header may not contain more than a single header, new line detected', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarnilai_tugas.php', 411)
+ 2 APPPATH\Controllers\Daftarnilai_tugas.php(411): header('Content-Disposition: attachment;filename="Nilai Tugas X RPL 1 Informatika 
+            2024/2025.xlsx"')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:58:55 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_tugas.php on line 254.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-16 03:58:55 --> ErrorException: Header may not contain more than a single header, new line detected
+[Method: GET, Route: daftar_nilai_tugas/cetak_nilai_tugas_excel/X/1/Informatika/31/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_tugas.php on line 411.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Header may not contain more than a single header, new line detected', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarnilai_tugas.php', 411)
+ 2 APPPATH\Controllers\Daftarnilai_tugas.php(411): header('Content-Disposition: attachment;filename="Nilai Tugas X RPL 1 Informatika 
+            2024/2025.xlsx"')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:59:26 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_tugas.php on line 253.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-16 03:59:27 --> ErrorException: Header may not contain more than a single header, new line detected
+[Method: GET, Route: daftar_nilai_tugas/cetak_nilai_tugas_excel/X/1/Informatika/31/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_tugas.php on line 410.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Header may not contain more than a single header, new line detected', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarnilai_tugas.php', 410)
+ 2 APPPATH\Controllers\Daftarnilai_tugas.php(410): header('Content-Disposition: attachment;filename="Nilai Tugas X RPL 1 Informatika 
+            2024/2025.xlsx"')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:59:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 03:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:59:42 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_tugas.php on line 152.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+WARNING - 2025-02-16 03:59:42 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_tugas.php on line 153.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 03:59:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 03:59:48 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_tugas.php on line 253.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_tugas->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_tugas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 04:00:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 04:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 04:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 04:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 04:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 04:00:37 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pts.php on line 136.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+WARNING - 2025-02-16 04:00:37 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pts.php on line 137.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 04:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 04:00:42 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pts.php on line 206.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pts->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pts))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 04:07:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 04:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 04:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 04:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 04:08:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 04:08:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 04:08:10 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pas.php on line 136.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pas->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+WARNING - 2025-02-16 04:08:10 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pas.php on line 137.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pas->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-16 04:08:10 --> ErrorException: Undefined variable $dataNilaiPTS
+[Method: GET, Route: daftar_nilai_pas/cetak_nilai_pas_pdf/X/1/Informatika/31/4/Ganjil]
+in APPPATH\Controllers\Daftarnilai_pas.php on line 167.
+ 1 APPPATH\Controllers\Daftarnilai_pas.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataNilaiPTS', 'C:\\xampp\\htdocs\\si_manajemen_nilai\\app\\Controllers\\Daftarnilai_pas.php', 167)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pas->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pas))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 04:08:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 04:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 04:08:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 04:08:43 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pas.php on line 136.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pas->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+WARNING - 2025-02-16 04:08:43 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pas.php on line 137.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pas->cetakPDF('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 04:08:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-02-16 04:08:48 --> [DEPRECATED] Function strftime() is deprecated in APPPATH\Controllers\Daftarnilai_pas.php on line 206.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_pas->cetakExcel('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_pas))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\si_manajemen_nilai\\public\\index.php')
+INFO - 2025-02-16 04:09:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-16 04:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

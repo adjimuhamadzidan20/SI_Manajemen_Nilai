@@ -26,8 +26,12 @@
                             <div>
                                 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" 
                                 data-bs-target="#tambah_nilai_pas"><i class="fas fa-plus"></i> Tambah</button>
-                                <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-file-pdf"></i> Cetak PDF</button>
-                                <button type="button" class="btn btn-primary btn-sm"><i class="fas fa-file-excel"></i> Cetak Excel</button>
+
+                                <a href="/daftar_nilai_pas/cetak_nilai_pas_pdf/<?= $kelas; ?>/<?= $id_jurusan; ?>/<?= $nama_mapel; ?>/<?= $id_mapel; ?>/<?= $id_periode; ?>/<?= $semester; ?>" class="btn btn-primary btn-sm">
+                                <i class="fas fa-file-pdf"></i> Cetak PDF</a>
+
+                                <a href="/daftar_nilai_pas/cetak_nilai_pas_excel/<?= $kelas; ?>/<?= $id_jurusan; ?>/<?= $nama_mapel; ?>/<?= $id_mapel; ?>/<?= $id_periode; ?>/<?= $semester; ?>" class="btn btn-primary btn-sm">
+                                <i class="fas fa-file-excel"></i> Cetak Excel</a>
                             </div>
                         </div>
                         <div class="card-body">
