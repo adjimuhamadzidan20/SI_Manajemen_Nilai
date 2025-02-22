@@ -37,6 +37,7 @@ class Daftarmapel extends BaseController
 
         $data = [
             'mapel' => $mapelModel->dataMapel($thn_ajaran),
+            'jumlah' => $mapelModel->jumlahData($thn_ajaran),
             'jurusan' => $jurusanModel->dataJurusan(),
             'kode' => 'MA'. sprintf('%03s', $kdSekarang),
             'periode' => $periodeModel->dataPeriode(), 

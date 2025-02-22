@@ -24,10 +24,24 @@
                             </div>
                             <div>
                                 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambah_mapel"><i class="fas fa-plus"></i> Tambah</button>
-                                <a href="/daftar_mapel/cetak_mapel_pdf/<?= $id_periode; ?>" class="btn btn-primary btn-sm">
-                                <i class="fas fa-file-pdf"></i> Cetak PDF</a>
-                                <a href="/daftar_mapel/cetak_mapel_excel/<?= $id_periode; ?>" class="btn btn-primary btn-sm">
-                                <i class="fas fa-file-excel"></i> Cetak Excel</a>
+
+                                <?php  
+                                    if ($jumlah > 0) {
+                                ?>
+                                    <a href="/daftar_mapel/cetak_mapel_pdf/<?= $id_periode; ?>" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-file-pdf"></i> Cetak PDF</a>
+                                    <a href="/daftar_mapel/cetak_mapel_excel/<?= $id_periode; ?>" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-file-excel"></i> Cetak Excel</a>
+                                <?php  
+                                    } else {
+                                ?>
+                                    <button href="/daftar_mapel/cetak_mapel_pdf/<?= $id_periode; ?>" class="btn btn-primary btn-sm" disabled>
+                                    <i class="fas fa-file-pdf"></i> Cetak PDF</button>
+                                    <button href="/daftar_mapel/cetak_mapel_excel/<?= $id_periode; ?>" class="btn btn-primary btn-sm" disabled>
+                                    <i class="fas fa-file-excel"></i> Cetak Excel</button>
+                                <?php  
+                                    }
+                                ?>
                             </div>
                         </div>
                         <div class="card-body">
@@ -107,7 +121,7 @@
 
             <!-- Modal tambah -->
             <div class="modal fade" id="tambah_mapel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg">
+              <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Data Mapel</h1>
@@ -117,6 +131,9 @@
                     <div class="modal-body">
                       <div class="row">
                         <div class="col">
+                            <select class="form-select" aria-label="Default select example" name="periode" hidden>
+                                <option value="<?= $id_periode; ?>"><?= $tahun_ajaran; ?></option>
+                            </select>
                             <div class="mb-3">
                                 <label for="exampleInputKdMapel" class="form-label">Kode</label>
                                 <input type="text" class="form-control" id="exampleInputKdMapel" name="kd_mapel" value="<?= $kode; ?>" readonly>
@@ -134,8 +151,6 @@
                                     <option value="XII">XII</option>
                                 </select>
                             </div>
-                        </div>
-                        <div class="col">
                             <div class="mb-3">
                                 <label for="exampleInputJurusan" class="form-label">Jurusan</label>
                                 <select class="form-select" aria-label="Default select example" name="jurusan" id="exampleInputJurusan" required>
@@ -147,12 +162,6 @@
                                     <?php  
                                         endforeach;
                                     ?>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPeriode" class="form-label">Tahun Ajaran</label>
-                                <select class="form-select" aria-label="Default select example" name="periode" id="exampleInputPeriode" required>
-                                    <option value="<?= $id_periode; ?>"><?= $tahun_ajaran; ?></option>
                                 </select>
                             </div>
                             <div class="mb-3">
@@ -173,7 +182,7 @@
 
             <!-- Modal ubah -->
             <div class="modal fade" id="ubah_mapel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-lg">
+              <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Ubah Data Mapel</h1>
@@ -184,6 +193,9 @@
                         <div class="row">
                             <div class="col">
                               <input type="text" class="form-control" name="id" id="id" hidden>
+                              <select class="form-select" name="periode" id="input_periode" hidden>
+                                <option value="<?= $id_periode; ?>"><?= $tahun_ajaran; ?></option>
+                              </select>
                               <div class="mb-3">
                                 <label for="input_kdmapel" class="form-label">Kode</label>
                                 <input type="text" class="form-control" id="input_kdmapel" name="kd_mapel" readonly>
@@ -200,8 +212,6 @@
                                     <option value="XII">XII</option>
                                 </select>
                               </div>
-                            </div>
-                            <div class="col">
                               <div class="mb-3">
                                 <label for="input_jurusan" class="form-label">Jurusan</label>
                                 <select class="form-select" aria-label="Default select example" name="jurusan" id="input_jurusan" required>
@@ -213,12 +223,6 @@
                                     <?php  
                                         endforeach;
                                     ?>
-                                </select>
-                              </div>
-                              <div class="mb-3">
-                                <label for="input_periode" class="form-label">Tahun Ajaran</label>
-                                <select class="form-select" aria-label="Default select example" name="periode" id="input_periode" required>
-                                    <option value="<?= $id_periode; ?>"><?= $tahun_ajaran; ?></option>
                                 </select>
                               </div>
                               <div class="mb-3">

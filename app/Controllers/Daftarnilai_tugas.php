@@ -124,6 +124,7 @@ class Daftarnilai_tugas extends BaseController
 
         $data = [
             'siswa' => $siswaModel->pesertaDidik($kelas, $jurusan),
+            'siswa_jumlah' => $siswaModel->jumlahPesertaDidik($kelas, $jurusan),
 
             // 'id_kelas' => $kelasModel->idKelas($kelas),
             'kelas' => $kelasModel->kelas($kelas),
@@ -139,6 +140,7 @@ class Daftarnilai_tugas extends BaseController
 
             'semester' => $semester,
             'nilai' => $nilaiTugasModel->dataNilai($semester, $idPeriode, $kelas, $jurusan, $idMapel), 
+            'jumlah' => $nilaiTugasModel->jumlahData($semester, $idPeriode, $kelas, $jurusan, $idMapel), 
             'linkActive' => 'daftar_nilai'
         ];
 

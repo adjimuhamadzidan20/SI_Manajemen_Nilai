@@ -24,6 +24,18 @@ class DaftarmapelModel extends Model
         return $hasil;
     }
 
+    public function jumlahData($thn_ajaran) {
+        $db = db_connect();
+        $query = "SELECT dt_mapel.id_mapel, dt_mapel.kd_mapel, dt_mapel.nama_mapel, dt_mapel.kelas, dt_mapel.id_jurusan, 
+        dt_jurusan.nama_jurusan, dt_mapel.id_periode, dt_periode_ajaran.tahun_ajaran, dt_mapel.guru FROM dt_mapel 
+        INNER JOIN dt_jurusan ON dt_mapel.id_jurusan = dt_jurusan.id_jurusan INNER JOIN dt_periode_ajaran ON 
+        dt_mapel.id_periode = dt_periode_ajaran.id_periode WHERE dt_periode_ajaran.id_periode = $thn_ajaran";
+
+        $sql = $db->query($query);
+        $hasil = $sql->getNumRows();
+        return $hasil;
+    }
+
     public function dataMapelDetail($mapel) {
         $db = db_connect();
         $query = "SELECT nama_mapel FROM dt_mapel WHERE nama_mapel = '$mapel'";
@@ -62,7 +74,7 @@ class DaftarmapelModel extends Model
         return $data;
     }
 
-    public function ubahDataMapel($id, $kode, $namaMapel, $kelas, $guruMapel) {
+    public function ubahDataMapel($id, $kode, $namaMapel, $kelas, $jurusan, $tahunAjaran, $guruMapel) {
         $data = [
             'id_mapel' => $id,
             'kd_mapel' => $kode,

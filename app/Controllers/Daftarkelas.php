@@ -37,6 +37,7 @@ class Daftarkelas extends BaseController
 
         $data = [
             'kelas' => $kelasModel->dataKelas($thn_ajaran),
+            'jumlah' => $kelasModel->jumlahData($thn_ajaran),
             'jurusan' => $jurusanModel->dataJurusan(),
             'kode' => 'KE'. sprintf('%03s', $kdSekarang),
             'periode' => $periodeModel->dataPeriode(), 

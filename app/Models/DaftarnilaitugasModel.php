@@ -35,6 +35,26 @@ class DaftarnilaitugasModel extends Model
         return $hasil;
     }
 
+    public function jumlahData($semester, $idPeriode, $kelas, $idJurusan, $idMapel) {
+        $db = db_connect();
+        $query = "SELECT dt_nilai_tugas.id_tugas, dt_nilai_tugas.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai_tugas.id_mapel, dt_mapel.nama_mapel, dt_nilai_tugas.kelas, dt_nilai_tugas.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_tugas.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_tugas.semester, dt_nilai_tugas.nilai_1, 
+        dt_nilai_tugas.nilai_2, dt_nilai_tugas.nilai_3, dt_nilai_tugas.nilai_4, dt_nilai_tugas.nilai_5, dt_nilai_tugas.nilai_6,
+        dt_nilai_tugas.nilai_7, dt_nilai_tugas.nilai_8, dt_nilai_tugas.nilai_9, dt_nilai_tugas.na_materi, dt_nilai_tugas.LM_1, 
+        dt_nilai_tugas.LM_2, dt_nilai_tugas.LM_3, dt_nilai_tugas.na_sumatif FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai_tugas.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_tugas.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai_tugas.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_tugas.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = '$semester' AND dt_nilai_tugas.id_periode = $idPeriode AND dt_nilai_tugas.kelas = '$kelas'
+        AND dt_nilai_tugas.id_jurusan = $idJurusan AND dt_nilai_tugas.id_mapel = $idMapel";
+
+        $sql = $db->query($query);
+        $hasil = $sql->getNumRows();
+        return $hasil;
+    }
+
     public function tambahDataNilaiTugas($pesertaDidik, $namaMapel, $kelas, $jurusan, $periodeAjaran,
     $semester, $nilai_1, $nilai_2, $nilai_3, $nilai_4, $nilai_5, $nilai_6, $nilai_7, $nilai_8, $nilai_9) {
 

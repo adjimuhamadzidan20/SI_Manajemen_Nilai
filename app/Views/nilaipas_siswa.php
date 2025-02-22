@@ -27,11 +27,25 @@
                                 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" 
                                 data-bs-target="#tambah_nilai_pas"><i class="fas fa-plus"></i> Tambah</button>
 
-                                <a href="/daftar_nilai_pas/cetak_nilai_pas_pdf/<?= $kelas; ?>/<?= $id_jurusan; ?>/<?= $nama_mapel; ?>/<?= $id_mapel; ?>/<?= $id_periode; ?>/<?= $semester; ?>" class="btn btn-primary btn-sm">
-                                <i class="fas fa-file-pdf"></i> Cetak PDF</a>
+                                <?php  
+                                    if ($jumlah > 0) {
+                                ?>
+                                    <a href="/daftar_nilai_pas/cetak_nilai_pas_pdf/<?= $kelas; ?>/<?= $id_jurusan; ?>/<?= $nama_mapel; ?>/<?= $id_mapel; ?>/<?= $id_periode; ?>/<?= $semester; ?>" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-file-pdf"></i> Cetak PDF</a>
 
-                                <a href="/daftar_nilai_pas/cetak_nilai_pas_excel/<?= $kelas; ?>/<?= $id_jurusan; ?>/<?= $nama_mapel; ?>/<?= $id_mapel; ?>/<?= $id_periode; ?>/<?= $semester; ?>" class="btn btn-primary btn-sm">
-                                <i class="fas fa-file-excel"></i> Cetak Excel</a>
+                                    <a href="/daftar_nilai_pas/cetak_nilai_pas_excel/<?= $kelas; ?>/<?= $id_jurusan; ?>/<?= $nama_mapel; ?>/<?= $id_mapel; ?>/<?= $id_periode; ?>/<?= $semester; ?>" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-file-excel"></i> Cetak Excel</a>
+                                <?php  
+                                    } else {
+                                ?>
+                                    <button href="/daftar_nilai_pas/cetak_nilai_pas_pdf/<?= $kelas; ?>/<?= $id_jurusan; ?>/<?= $nama_mapel; ?>/<?= $id_mapel; ?>/<?= $id_periode; ?>/<?= $semester; ?>" class="btn btn-primary btn-sm" disabled>
+                                    <i class="fas fa-file-pdf"></i> Cetak PDF</button>
+
+                                    <button href="/daftar_nilai_pas/cetak_nilai_pas_excel/<?= $kelas; ?>/<?= $id_jurusan; ?>/<?= $nama_mapel; ?>/<?= $id_mapel; ?>/<?= $id_periode; ?>/<?= $semester; ?>" class="btn btn-primary btn-sm" disabled>
+                                    <i class="fas fa-file-excel"></i> Cetak Excel</button>
+                                <?php  
+                                    }
+                                ?>
                             </div>
                         </div>
                         <div class="card-body">
@@ -87,71 +101,84 @@
 
             <!-- Modal tambah -->
             <div class="modal fade" id="tambah_nilai_pas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
+                <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Data Nilai</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Data Nilai PAS</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <form action="/daftar_nilai_pas/tambah" method="post">  
                             <div class="modal-body">
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <h6 class="text-uppercase">
+                                            <?= $kelas; ?> <?= $nama_jurusan; ?> - <?= $nama_mapel; ?> - <?= $semester; ?>    
+                                        </h6>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="col">
+                                        <input type="text" class="form-control" name="nama_mapel" value="<?= $nama_mapel; ?>"
+                                        hidden>
+                                        <select class="form-select" name="id_mapel" id="exampleInputMapel" hidden>
+                                            <option value="<?= $id_mapel; ?>"><?= $nama_mapel; ?></option>
+                                        </select>
+                                        <select class="form-select" name="kelas" id="exampleInputKelas" hidden>
+                                            <option value="<?= $kelas; ?>"><?= $kelas; ?></option>
+                                        </select>
+                                        <select class="form-select" name="jurusan" id="exampleInputJurusan" hidden>
+                                            <option value="<?= $id_jurusan; ?>"><?= $nama_jurusan; ?></option>
+                                        </select>
+                                        <select class="form-select" name="periode" id="exampleInputPeriode" hidden>
+                                            <option value="<?= $id_periode; ?>"><?= $tahun_ajaran; ?></option>
+                                        </select>
+                                        <input type="text" class="form-control" id="exampleInputSemester" name="semester" 
+                                        value="<?= $semester; ?>" hidden>
+
                                         <div class="mb-3">
                                             <label for="exampleInputMurid" class="form-label">Nama Peserta Didik</label>
-                                            <select class="form-select" name="peserta_didik" id="exampleInputMurid">
                                             <?php  
-                                                foreach ($siswa as $data) :
+                                                if ($siswa_jumlah > 0) {
                                             ?>
-                                                <option value="<?= $data['id_siswa']; ?>"><?= $data['kd_siswa']; ?> - <?= $data['nisn']; ?> - <?= $data['nama_siswa']; ?></option>
+                                                <select class="form-select" name="peserta_didik" id="exampleInputMurid" required>
+                                                    <?php  
+                                                        foreach ($siswa as $data) :
+                                                    ?>
+                                                        <option value="<?= $data['id_siswa']; ?>">
+                                                        <?= $data['nisn']; ?> - <?= $data['nama_siswa']; ?>
+                                                        </option>
+                                                    <?php  
+                                                        endforeach;
+                                                    ?>
+                                                </select>
                                             <?php  
-                                                endforeach;
+                                                } else {
                                             ?>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="exampleInputMapel" class="form-label">Mata Pelajaran</label>
-                                            <input type="text" class="form-control" name="nama_mapel" value="<?= $nama_mapel; ?>"
-                                            hidden>
-                                            <select class="form-select" name="id_mapel" id="exampleInputMapel">
-                                                <option value="<?= $id_mapel; ?>"><?= $nama_mapel; ?></option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="exampleInputKelas" class="form-label">Kelas</label>
-                                            <select class="form-select" name="kelas" id="exampleInputKelas">
-                                                <option value="<?= $kelas; ?>"><?= $kelas; ?></option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="exampleInputJurusan" class="form-label">Jurusan</label>
-                                            <select class="form-select" name="jurusan" id="exampleInputJurusan">
-                                                <option value="<?= $id_jurusan; ?>"><?= $nama_jurusan; ?></option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="mb-3">
-                                            <label for="exampleInputPeriode" class="form-label">Periode</label>
-                                            <select class="form-select" name="periode" id="exampleInputPeriode">
-                                                <option value="<?= $id_periode; ?>"><?= $tahun_ajaran; ?></option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="exampleInputSemester" class="form-label">Semester</label>
-                                            <input type="text" class="form-control" id="exampleInputSemester" name="semester" 
-                                            value="<?= $semester; ?>" required>
+                                                <input type="text" class="form-control"  value="Belum ada data peserta didik" disabled>
+                                            <?php  
+                                                }
+                                            ?>
                                         </div>
                                         <div class="mb-3">
                                             <label for="exampleInputPAS" class="form-label">Nilai PAS</label>
-                                            <input type="text" class="form-control" id="exampleInputPAS" name="nilai_pas" placeholder="Masukkan Nilai PTS">
+                                            <input type="text" class="form-control" id="exampleInputPAS" name="nilai_pas" placeholder="Masukkan Nilai PTS" required>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kembali</button>
-                                <button type="submit" class="btn btn-primary">Tambah</button>
+                                <?php  
+                                    if ($siswa_jumlah > 0) {
+                                ?>
+                                    <button type="submit" class="btn btn-primary">Tambah</button>
+                                <?php  
+                                    } else {
+                                ?>
+                                    <button type="submit" class="btn btn-primary" disabled>Tambah</button>
+                                <?php  
+                                    }
+                                ?>
                             </div>
                         </form>
                     </div>
@@ -160,63 +187,67 @@
 
             <!-- Modal ubah -->
             <div class="modal fade" id="ubah_nilai_pas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
+                <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Ubah Data Nilai</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Ubah Data Nilai PAS</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <form action="/daftar_nilai_pas/ubah" method="post">  
                             <div class="modal-body">
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <h6 class="text-uppercase">
+                                            <?= $kelas; ?> <?= $nama_jurusan; ?> - <?= $nama_mapel; ?> - <?= $semester; ?>    
+                                        </h6>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="col">
+                                        <input type="text" class="form-control" name="id" id="id" hidden>
+                                        <input type="text" class="form-control" name="nama_mapel" value="<?= $nama_mapel; ?>"
+                                        hidden>
+                                        <select class="form-select" name="id_mapel" id="input_namamapel" hidden>
+                                            <option value="<?= $id_mapel; ?>"><?= $nama_mapel; ?></option>
+                                        </select>
+                                        <select class="form-select" name="kelas" id="input_kelasmurid" hidden>
+                                            <option value="<?= $kelas; ?>"><?= $kelas; ?></option>
+                                        </select>
+                                        <select class="form-select" name="jurusan" id="input_kelasjurusan" hidden>
+                                            <option value="<?= $id_jurusan; ?>"><?= $nama_jurusan; ?></option>
+                                        </select>
+                                        <select class="form-select" name="periode" id="input_thnperiode" hidden>
+                                            <option value="<?= $id_periode; ?>"><?= $tahun_ajaran; ?></option>
+                                        </select>
+                                        <input type="text" class="form-control" id="input_periodesemester" name="semester" 
+                                        value="<?= $semester; ?>" hidden>
+
                                         <div class="mb-3">
-                                            <input type="text" class="form-control" name="id" id="id" hidden>
                                             <label for="input_pesertadidik" class="form-label">Nama Peserta Didik</label>
-                                            <select class="form-select" name="peserta_didik" id="input_pesertadidik">
-                                                <?php  
-                                                    foreach ($siswa as $data) :
-                                                ?>
-                                                    <option value="<?= $data['id_siswa']; ?>"><?= $data['kd_siswa']; ?> - <?= $data['nisn']; ?> - <?= $data['nama_siswa']; ?></option>
-                                                <?php  
-                                                    endforeach;
-                                                ?>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="input_namamapel" class="form-label">Mata Pelajaran</label>
-                                            <input type="text" class="form-control" name="nama_mapel" value="<?= $nama_mapel; ?>"
-                                            hidden>
-                                            <select class="form-select" name="id_mapel" id="input_namamapel">
-                                                <option value="<?= $id_mapel; ?>"><?= $nama_mapel; ?></option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="input_kelasmurid" class="form-label">Kelas</label>
-                                            <select class="form-select" name="kelas" id="input_kelasmurid">
-                                                <option value="<?= $kelas; ?>"><?= $kelas; ?></option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="input_kelasjurusan" class="form-label">Jurusan</label>
-                                            <select class="form-select" name="jurusan" id="input_kelasjurusan">
-                                                <option value="<?= $id_jurusan; ?>"><?= $nama_jurusan; ?></option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="input_thnperiode" class="form-label">Periode</label>
-                                            <select class="form-select" name="periode" id="input_thnperiode">
-                                                <option value="<?= $id_periode; ?>"><?= $tahun_ajaran; ?></option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="input_periodesemester" class="form-label">Semester</label>
-                                            <input type="text" class="form-control" id="input_periodesemester" name="semester" 
-                                            value="<?= $semester; ?>" required>
+                                            <?php  
+                                                if ($siswa_jumlah > 0) {
+                                            ?>
+                                                <select class="form-select" name="peserta_didik" id="input_pesertadidik" required>
+                                                    <?php  
+                                                        foreach ($siswa as $data) :
+                                                    ?>
+                                                        <option value="<?= $data['id_siswa']; ?>">
+                                                        <?= $data['nisn']; ?> - <?= $data['nama_siswa']; ?></option>
+                                                    <?php  
+                                                        endforeach;
+                                                    ?>
+                                                </select>
+                                            <?php  
+                                                } else {
+                                            ?>
+                                                <input type="text" class="form-control"  value="Belum ada data peserta didik" disabled>
+                                            <?php  
+                                                }
+                                            ?>
                                         </div>
                                         <div class="mb-3">
                                             <label for="input_PAS" class="form-label">Nilai PAS</label>
-                                            <input type="text" class="form-control" id="input_PAS" name="nilai_pas">
+                                            <input type="text" class="form-control" id="input_PAS" name="nilai_pas" required>
                                         </div>
                                     </div>
                                 </div>

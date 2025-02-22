@@ -232,6 +232,52 @@
                 modal.find('#input_tp_8').val(nilai8)
                 modal.find('#input_tp_9').val(nilai9)
             })
+
+            $('#ubah_nilai_pts').on('show.bs.modal', function(event) {
+                let button = $(event.relatedTarget)
+                let idtugas = button.data('idpts')
+                let idsiswa = button.data('idsiswa')
+                let idmapel = button.data('idmapel')
+                let kelas = button.data('kelas')
+                let idjurusan = button.data('idjurusan')
+                let idperiode = button.data('idperiode')
+                let semester = button.data('semester')
+                let nilaipts = button.data('nilaipts')
+
+                let modal = $(this)
+
+                modal.find('#id').val(idtugas)
+                modal.find('#input_pesertadidik').val(idsiswa)
+                modal.find('#input_namamapel').val(idmapel)
+                modal.find('#input_kelasmurid').val(kelas)
+                modal.find('#input_kelasjurusan').val(idjurusan)
+                modal.find('#input_thnperiode').val(idperiode)
+                modal.find('#input_periodesemester').val(semester)
+                modal.find('#input_PTS').val(nilaipts)
+            })
+
+            $('#ubah_nilai_pas').on('show.bs.modal', function(event) {
+                let button = $(event.relatedTarget)
+                let idtugas = button.data('idpas')
+                let idsiswa = button.data('idsiswa')
+                let idmapel = button.data('idmapel')
+                let kelas = button.data('kelas')
+                let idjurusan = button.data('idjurusan')
+                let idperiode = button.data('idperiode')
+                let semester = button.data('semester')
+                let nilaipas = button.data('nilaipas')
+
+                let modal = $(this)
+
+                modal.find('#id').val(idtugas)
+                modal.find('#input_pesertadidik').val(idsiswa)
+                modal.find('#input_namamapel').val(idmapel)
+                modal.find('#input_kelasmurid').val(kelas)
+                modal.find('#input_kelasjurusan').val(idjurusan)
+                modal.find('#input_thnperiode').val(idperiode)
+                modal.find('#input_periodesemester').val(semester)
+                modal.find('#input_PAS').val(nilaipas)
+            })
         </script>
     </body>
 </html>

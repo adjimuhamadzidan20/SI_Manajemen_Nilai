@@ -99,22 +99,16 @@
                 <div class="modal-body">
                   <div class="row">
                     <div class="col">
-                        <div class="mb-3">
-                          <label for="input_kd_ajaran" class="form-label">Kode</label>
-                          <input type="text" class="form-control" id="input_kd_ajaran" name="kd_ajaran" value="<?= $kode; ?>" readonly>
-                        </div>
-                        <div class="mb-3">
-                          <label for="input_semester_1" class="form-label">Semester Pertama</label>
-                          <input type="text" class="form-control" id="input_semester_1" name="semester_1" value="Semester 1 (Ganjil)" readonly>
-                        </div>
-                        <div class="mb-3">
-                          <label for="input_semester_2" class="form-label">Semester Kedua</label>
-                          <input type="text" class="form-control" id="input_semester_2" name="semester_2" value="Semester 2 (Genap)" readonly>
-                        </div>
-                        <div class="mb-3">
-                          <label for="input_ta" class="form-label">Tahun Ajaran</label>
-                          <input type="text" class="form-control" id="input_ta" placeholder="Masukkan Tahun Ajaran (ex: 2024/2025)" name="tahun_ajaran" required>
-                        </div>
+                      <input type="text" class="form-control" name="semester_1" value="Semester 1 (Ganjil)" hidden>
+                      <input type="text" class="form-control" name="semester_2" value="Semester 2 (Genap)" hidden>
+                      <div class="mb-3">
+                        <label for="input_kd_ajaran" class="form-label">Kode</label>
+                        <input type="text" class="form-control" id="input_kd_ajaran" name="kd_ajaran" value="<?= $kode; ?>" readonly>
+                      </div>
+                      <div class="mb-3">
+                        <label for="input_ta" class="form-label">Tahun Ajaran</label>
+                        <input type="text" class="form-control" id="input_ta" placeholder="Masukkan Tahun Ajaran (ex: 2024/2025)" name="tahun_ajaran" required>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -140,17 +134,11 @@
                   <div class="row">
                     <div class="col">
                       <input type="text" class="form-control" name="id" id="id" hidden>
+                      <input type="text" class="form-control" id="semester_1" name="semester_1" value="Semester 1 (Ganjil)" hidden>
+                      <input type="text" class="form-control" id="semester_2" name="semester_2" value="Semester 2 (Genap)" hidden>
                       <div class="mb-3">
                         <label for="kd_ajaran" class="form-label">Kode</label>
                         <input type="text" class="form-control" name="kd_ajaran" id="kd_ajaran" readonly>
-                      </div>
-                      <div class="mb-3">
-                        <label for="semester_1" class="form-label">Semester Pertama</label>
-                        <input type="text" class="form-control" id="semester_1" name="semester_1" value="Semester 1 (Ganjil)" readonly>
-                      </div>
-                      <div class="mb-3">
-                        <label for="semester_2" class="form-label">Semester Kedua</label>
-                        <input type="text" class="form-control" id="semester_2" name="semester_2" value="Semester 2 (Genap)" readonly>
                       </div>
                       <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Tahun Ajaran</label>

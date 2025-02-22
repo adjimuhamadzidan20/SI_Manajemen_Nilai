@@ -108,6 +108,7 @@ class Daftarnilai_pas extends BaseController
 
         $data = [
             'siswa' => $siswaModel->pesertaDidik($kelas, $jurusan),
+            'siswa_jumlah' => $siswaModel->jumlahPesertaDidik($kelas, $jurusan),
 
             // 'id_kelas' => $kelasModel->idKelas($kelas),
             'kelas' => $kelasModel->kelas($kelas),
@@ -123,6 +124,7 @@ class Daftarnilai_pas extends BaseController
 
             'semester' => $semester,
             'nilai' => $nilaiPasModel->dataNilai($semester, $idPeriode, $kelas, $jurusan, $idMapel),
+            'jumlah' => $nilaiPasModel->jumlahData($semester, $idPeriode, $kelas, $jurusan, $idMapel),
             'linkActive' => 'daftar_nilai' 
         ];
 

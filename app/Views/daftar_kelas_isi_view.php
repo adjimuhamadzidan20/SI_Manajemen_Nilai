@@ -25,10 +25,25 @@
               <div>
                 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" 
                 data-bs-target="#tambah_kelas"><i class="fas fa-plus"></i> Tambah</button>
-                <a href="/daftar_kelas/cetak_kelas_pdf/<?= $id_periode; ?>" class="btn btn-primary btn-sm">
-                <i class="fas fa-file-pdf"></i> Cetak PDF</a>
-                <a href="/daftar_kelas/cetak_kelas_excel/<?= $id_periode; ?>" class="btn btn-primary btn-sm">
-                <i class="fas fa-file-excel"></i> Cetak Excel</a>
+
+                <?php  
+                  if ($jumlah > 0) {
+                ?>
+                  <a href="/daftar_kelas/cetak_kelas_pdf/<?= $id_periode; ?>" class="btn btn-primary btn-sm">
+                  <i class="fas fa-file-pdf"></i> Cetak PDF</a>
+                  <a href="/daftar_kelas/cetak_kelas_excel/<?= $id_periode; ?>" class="btn btn-primary btn-sm">
+                  <i class="fas fa-file-excel"></i> Cetak Excel</a>
+                <?php  
+                  } else {
+                ?>
+                  <button href="/daftar_kelas/cetak_kelas_pdf/<?= $id_periode; ?>" class="btn btn-primary btn-sm" disabled>
+                  <i class="fas fa-file-pdf"></i> Cetak PDF</button>
+                  <button href="/daftar_kelas/cetak_kelas_excel/<?= $id_periode; ?>" class="btn btn-primary btn-sm" disabled>
+                  <i class="fas fa-file-excel"></i> Cetak Excel</button>
+                <?php  
+                  }
+                ?>
+              
               </div>
             </div>
             <div class="card-body">
@@ -107,6 +122,7 @@
               <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Data Kelas</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            
             <form action="/daftar_kelas/tambah" method="post">  
               <div class="modal-body">
                 <div class="mb-3">
@@ -205,3 +221,7 @@
           </div>
         </div>
       </div>
+
+      <form method="post">
+        <input type="text" name="id_period" value="<?= $id_periode; ?>" hidden>
+      </form>

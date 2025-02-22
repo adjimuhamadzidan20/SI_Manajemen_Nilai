@@ -43,16 +43,31 @@
                           </div>
                           <div>
                             <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambah_murid"><i class="fas fa-plus"></i> Tambah</button>
+
                             <?php  
                               foreach ($kelas as $data) :
                             ?>
-                              <a href="/daftar_siswa/cetak_siswa_pdf/<?= $data['id_periode']; ?>/<?= $data['id_kelas']; ?>/<?= $data['id_jurusan']; ?>" class="btn btn-primary btn-sm">
-                              <i class="fas fa-file-pdf"></i> Cetak PDF</a>
-                              <a href="/daftar_siswa/cetak_siswa_excel/<?= $data['id_periode']; ?>/<?= $data['id_kelas']; ?>/<?= $data['id_jurusan']; ?>" class="btn btn-primary btn-sm">
-                              <i class="fas fa-file-excel"></i> Cetak Excel</a>
+                              <?php  
+                                if ($jumlah > 0) {
+                              ?>
+                                <a href="/daftar_siswa/cetak_siswa_pdf/<?= $data['id_periode']; ?>/<?= $data['id_kelas']; ?>/<?= $data['id_jurusan']; ?>" class="btn btn-primary btn-sm">
+                                <i class="fas fa-file-pdf"></i> Cetak PDF</a>
+                                <a href="/daftar_siswa/cetak_siswa_excel/<?= $data['id_periode']; ?>/<?= $data['id_kelas']; ?>/<?= $data['id_jurusan']; ?>" class="btn btn-primary btn-sm">
+                                <i class="fas fa-file-excel"></i> Cetak Excel</a>
+                              <?php  
+                                } else {
+                              ?>
+                                <button href="/daftar_siswa/cetak_siswa_pdf/<?= $data['id_periode']; ?>/<?= $data['id_kelas']; ?>/<?= $data['id_jurusan']; ?>" class="btn btn-primary btn-sm" disabled>
+                                <i class="fas fa-file-pdf"></i> Cetak PDF</button>
+                                <button href="/daftar_siswa/cetak_siswa_excel/<?= $data['id_periode']; ?>/<?= $data['id_kelas']; ?>/<?= $data['id_jurusan']; ?>" class="btn btn-primary btn-sm" disabled>
+                                <i class="fas fa-file-excel"></i> Cetak Excel</button>
+                              <?php  
+                                }
+                              ?>
                             <?php  
                               endforeach;
                             ?>
+
                           </div>
                         </div>
                         <div class="card-body">
@@ -140,6 +155,19 @@
                   </div>
                   <form action="/daftar_siswa/tambah" method="post">
                     <div class="modal-body">
+                      <div class="row mb-2">
+                        <div class="col">
+                          <?php  
+                            foreach ($kelas as $data) :
+                          ?>
+                            <h6 class="text-uppercase">
+                              <?= $data['kelas']; ?> <?= $data['nama_jurusan']; ?> - tahun ajaran <?= $data['tahun_ajaran']; ?>   
+                            </h6>
+                          <?php  
+                            endforeach;
+                          ?>
+                        </div>
+                      </div>
                       <div class="row">
                         <div class="col">
                           <div class="mb-3">
@@ -218,6 +246,19 @@
                   </div>
                   <form action="/daftar_siswa/ubah" method="post">
                     <div class="modal-body">
+                      <div class="row mb-2">
+                        <div class="col">
+                          <?php  
+                            foreach ($kelas as $data) :
+                          ?>
+                            <h6 class="text-uppercase">
+                              <?= $data['kelas']; ?> <?= $data['nama_jurusan']; ?> - tahun ajaran <?= $data['tahun_ajaran']; ?>   
+                            </h6>
+                          <?php  
+                            endforeach;
+                          ?>
+                        </div>
+                      </div>
                       <div class="row">
                         <div class="col">
                           <input type="text" class="form-control" name="id" id="id" hidden>

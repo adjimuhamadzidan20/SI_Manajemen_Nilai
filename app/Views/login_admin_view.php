@@ -19,8 +19,7 @@
                             <div class="col-lg-4">
                                 <div class="card shadow-lg border-0 rounded-lg" style="margin-top: 75px;">
                                     <div class="card-header text-center">
-                                        <h5 class="text-center font-weight-light mt-3 mb-2 text-uppercase">SI Manajemen Nilai</h5>
-                                        <h6 class="text-uppercase">Login</h6>
+                                        <h5 class="text-center font-weight-light mt-3 mb-3 text-uppercase">SI Manajemen Nilai</h5>
                                     </div>
                                     <div class="card-body">
 
@@ -46,7 +45,7 @@
                                             </div>
                                             <div class="form-check mb-3">
                                                 <input class="form-check-input" id="inputRememberPassword" type="checkbox" />
-                                                <label class="form-check-label" for="inputRememberPassword">Remember Password</label>
+                                                <label class="form-check-label" for="inputRememberPassword">Remember Me</label>
                                             </div>
                                             <div class="d-flex flex-column mb-0">
                                                 <button type="submit" class="btn btn-primary mb-3">Masuk</button>

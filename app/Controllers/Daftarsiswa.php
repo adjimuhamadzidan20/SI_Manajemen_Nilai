@@ -34,7 +34,7 @@ class Daftarsiswa extends BaseController
 
         $data = [
             'kelas' => $kelasModel->dataKelas($thn_ajaran),
-            'jumlah' => $kelasModel->jumlahDataKelas($thn_ajaran),
+            'jumlah' => $kelasModel->jumlahData($thn_ajaran),
             'tahun_ajaran' => $periodeModel->tahunPeriode($thn_ajaran),
             'linkActive' => 'daftar_siswa'
         ];
@@ -54,6 +54,7 @@ class Daftarsiswa extends BaseController
 
         $data = [
             'siswa' => $siswaModel->dataSiswa($thn_ajaran, $kelas, $jurusan),
+            'jumlah' => $siswaModel->jumlahData($thn_ajaran, $kelas, $jurusan),
             'kelas' => $kelasModel->detailKelas($thn_ajaran, $kelas, $jurusan),
             'kode' => 'PD'. sprintf('%03s', $kdSekarang),
             'linkActive' => 'daftar_siswa'
