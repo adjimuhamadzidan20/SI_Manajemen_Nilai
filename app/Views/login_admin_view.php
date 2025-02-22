@@ -18,8 +18,9 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-4">
                                 <div class="card shadow-lg border-0 rounded-lg" style="margin-top: 75px;">
-                                    <div class="card-header text-center">
-                                        <h5 class="text-center font-weight-light mt-3 mb-3 text-uppercase">SI Manajemen Nilai</h5>
+                                    <div class="card-header text-center pt-3 pb-2">
+                                        <img src="<?= base_url('assets'); ?>/assets/img/smk_angkasa_1.png" alt="" class="w-25 mb-3">
+                                        <h5 class="text-center font-weight-light text-uppercase">SI Manajemen Nilai</h5>
                                     </div>
                                     <div class="card-body">
 
@@ -44,7 +45,7 @@
                                                 <label for="inputPassword">Password</label>
                                             </div>
                                             <div class="form-check mb-3">
-                                                <input class="form-check-input" id="inputRememberPassword" type="checkbox" />
+                                                <input class="form-check-input" id="inputRememberPassword" type="checkbox" name="remember" />
                                                 <label class="form-check-label" for="inputRememberPassword">Remember Me</label>
                                             </div>
                                             <div class="d-flex flex-column mb-0">

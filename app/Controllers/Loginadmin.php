@@ -15,6 +15,7 @@ class Loginadmin extends BaseController
 
         $username = $this->request->getPost('username');
         $password = $this->request->getPost('password');
+        $remember = $this->request->getPost('remember');
         $admin = $adminModel->masukAdmin($username);
 
         if ($admin) {
@@ -27,6 +28,11 @@ class Loginadmin extends BaseController
                     'alamat' => $admin['alamat'],
                     'email' => $admin['email']
                 ];
+
+                if ($remember) {
+                    setcookie('ID', $admin['id'], time()+60, '/');
+                    setcookie('Key', hash('sha256', $admin['username']), time()+60, '/');
+                }
 
                 session()->set($data);
                 return redirect()->to('/dashboard');
@@ -46,6 +52,10 @@ class Loginadmin extends BaseController
 
     public function keluar() {
         session()->destroy();
+
+        setcookie('ID', '', time() - 3600, '/');
+        setcookie('Key', '', time() - 3600, '/');
+        
         return redirect()->to('/login');
     }   
 }
