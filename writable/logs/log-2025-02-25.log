@@ -1,0 +1,54 @@
+INFO - 2025-02-25 14:38:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 14:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 14:41:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 14:41:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-02-25 14:41:21 --> ErrorException: require_once(C:\xampp\htdocs\SI_Manajemen_nilai\app\./vendor/PHPMailer/src/Exception.php): Failed to open stream: No such file or directory
+[Method: POST, Route: forgot_password/ganti_password]
+in APPPATH\Controllers\Lupapassword.php on line 17.
+ 1 APPPATH\Controllers\Lupapassword.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\xampp\\htdocs\\SI_Manajemen_nilai\\app\\./vendor/PHPMailer/src/Exception.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\SI_Manajemen_nilai\\app\\Controllers\\Lupapassword.php', 17)
+ 2 APPPATH\Controllers\Lupapassword.php(17): require_once()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Lupapassword->ganti_password()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lupapassword))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-25 14:41:30 --> ErrorException: require_once(C:\xampp\htdocs\SI_Manajemen_nilai\app\../vendor/PHPMailer/src/Exception.php): Failed to open stream: No such file or directory
+[Method: POST, Route: forgot_password/ganti_password]
+in APPPATH\Controllers\Lupapassword.php on line 17.
+ 1 APPPATH\Controllers\Lupapassword.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\xampp\\htdocs\\SI_Manajemen_nilai\\app\\../vendor/PHPMailer/src/Exception.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\SI_Manajemen_nilai\\app\\Controllers\\Lupapassword.php', 17)
+ 2 APPPATH\Controllers\Lupapassword.php(17): require_once()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Lupapassword->ganti_password()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lupapassword))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-02-25 14:41:51 --> ErrorException: require_once(C:\xampp\htdocs\SI_Manajemen_nilai\app\./vendor/autoload.php): Failed to open stream: No such file or directory
+[Method: POST, Route: forgot_password/ganti_password]
+in APPPATH\Controllers\Lupapassword.php on line 17.
+ 1 APPPATH\Controllers\Lupapassword.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\xampp\\htdocs\\SI_Manajemen_nilai\\app\\./vendor/autoload.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\SI_Manajemen_nilai\\app\\Controllers\\Lupapassword.php', 17)
+ 2 APPPATH\Controllers\Lupapassword.php(17): require_once()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Lupapassword->ganti_password()
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lupapassword))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+INFO - 2025-02-25 14:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 14:46:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 14:46:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 14:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 14:47:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 14:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 14:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 14:47:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 14:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 14:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 14:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 14:47:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 14:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-02-25 14:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

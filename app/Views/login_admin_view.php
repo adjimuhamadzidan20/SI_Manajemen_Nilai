@@ -4,10 +4,12 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta name="description" content="si_manajemen_nilai" />
+        <meta name="author" content="adji_muhamad_zidan" />
         <title>SI Manajemen Nilai | Login</title>
         <link href="<?= base_url('assets'); ?>/css/styles.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="<?= base_url('assets'); ?>/assets/img/smk_angkasa_1.ico">
+
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="bg-primary">
@@ -19,7 +21,8 @@
                             <div class="col-lg-4">
                                 <div class="card shadow-lg border-0 rounded-lg" style="margin-top: 75px;">
                                     <div class="card-header text-center pt-3 pb-2">
-                                        <img src="<?= base_url('assets'); ?>/assets/img/smk_angkasa_1.png" alt="" class="w-25 mb-3">
+                                        <img src="<?= base_url('assets'); ?>/assets/img/smk_angkasa_1.png" alt="smk_angkasa_1" 
+                                        class="w-25 mb-3">
                                         <h5 class="text-center font-weight-light text-uppercase">SI Manajemen Nilai</h5>
                                     </div>
                                     <div class="card-body">
@@ -50,7 +53,7 @@
                                             </div>
                                             <div class="d-flex flex-column mb-0">
                                                 <button type="submit" class="btn btn-primary mb-3">Masuk</button>
-                                                <a class="small text-center" href="">Forgot Password?</a>
+                                                <a class="small text-center" href="/forgot_password">Forgot Password?</a>
                                             </div>
                                         </form>
                                     </div>

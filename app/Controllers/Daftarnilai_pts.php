@@ -145,7 +145,8 @@ class Daftarnilai_pts extends BaseController
         $mpdf = new Mpdf();
 
         $header = '<div style="border-bottom: 1px solid black; padding-bottom: 5px;">
-                    <h1 style="font-size: 24px;">SI Manajemen Nilai</h1>      
+                    <img src="assets/assets/img/smk_angkasa_1.png" style="width: 80px; float: left; margin-right: 12px;">
+                    <h1 style="font-size: 24px; float: left; padding-top: 22px;">SI Manajemen Nilai</h1>      
                 </div>';
 
         foreach ($dataNilaiPTS as $data) :

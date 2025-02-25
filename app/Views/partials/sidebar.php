@@ -2,12 +2,12 @@
     <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
         <div class="sb-sidenav-menu">
             <div class="nav">
-                <div class="sb-sidenav-menu-heading">Beranda</div>
+                <div class="sb-sidenav-menu-heading text-light">Beranda</div>
                 <a class="nav-link <?php if ($linkActive == 'dashboard') { echo 'active'; } ?>" href="/dashboard">
                     <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                     Dashboard
                 </a>
-                <div class="sb-sidenav-menu-heading">Master Menu</div>
+                <div class="sb-sidenav-menu-heading text-light">Master Menu</div>
                 <a class="nav-link <?php if ($linkActive == 'periode') { echo 'active'; } ?>" href="/periode_ajar">
                     <div class="sb-nav-link-icon"><i class="fas fa-calendar"></i></div>
                     Periode Ajaran

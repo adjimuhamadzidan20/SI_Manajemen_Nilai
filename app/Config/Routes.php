@@ -11,6 +11,9 @@ $routes->get('/login', 'Loginadmin::index', ['filter' => 'administrator']);
 $routes->post('/login/masuk', 'Loginadmin::masuk');
 $routes->get('/login/keluar', 'Loginadmin::keluar');
 
+$routes->get('/forgot_password', 'Lupapassword::index');
+$routes->post('/forgot_password/ganti_password', 'Lupapassword::ganti_password');
+
 $routes->get('/', 'Dashboard::index', ['filter' => 'nonadministrator']);
 $routes->get('/dashboard', 'Dashboard::index', ['filter' => 'nonadministrator']);
 
