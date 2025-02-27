@@ -47,18 +47,27 @@ class DaftarnilaiptsModel extends Model
 
     public function tambahDataNilaiPts($pesertaDidik, $namaMapel, $kelas, $jurusan, $periodeAjaran, 
     $semester, $nilaiPts) {
+        $db = db_connect();
+        $query = "SELECT id_siswa FROM dt_nilai_pts WHERE id_siswa = $pesertaDidik";
+        $sql = $db->query($query);
+        $namaPesertaDidik = $sql->getNumRows();
+        
+        if ($namaPesertaDidik) {
+            return false;
+        }
+        else {
+            $data = $this->insert([
+                'id_siswa' => $pesertaDidik,
+                'id_mapel' => $namaMapel,
+                'kelas' => $kelas,
+                'id_jurusan' => $jurusan,
+                'id_periode' => $periodeAjaran,
+                'semester' => $semester,
+                'nilai_pts' => $nilaiPts
+            ]);
 
-        $data = $this->insert([
-            'id_siswa' => $pesertaDidik,
-            'id_mapel' => $namaMapel,
-            'kelas' => $kelas,
-            'id_jurusan' => $jurusan,
-            'id_periode' => $periodeAjaran,
-            'semester' => $semester,
-            'nilai_pts' => $nilaiPts
-        ]);
-
-        return $data;
+            return $data;
+        }
     }
 
     public function ubahDataNilaiPts($id, $pesertaDidik, $namaMapel, $kelas, $jurusan, $periodeAjaran,

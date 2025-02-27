@@ -90,7 +90,7 @@
                           <div class="modal-dialog">
                             <div class="modal-content">
                               <div class="modal-header">
-                                <h5 class="modal-title">Hapus Data Kelas</h5>
+                                <h5 class="modal-title"><i class="fas fa-trash me-2"></i>Hapus data kelas</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <div class="modal-body text-start">
@@ -119,7 +119,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Data Kelas</h1>
+              <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fas fa-plus me-2"></i>Tambah data kelas</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             
@@ -132,7 +132,7 @@
                 <div class="mb-3">
                   <label for="exampleInputKeahlian" class="form-label">Program Keahlian</label>
                   <select class="form-select" aria-label="Default select example" name="keahlian" id="exampleInputKeahlian" required>
-                    <option selected>-- Pilih Program Keahlian --</option>
+                    <option value="" selected>-- Pilih Program Keahlian --</option>
                     <?php  
                         foreach ($jurusan as $data) :
                     ?>
@@ -147,7 +147,7 @@
                 <div class="mb-3">
                   <label for="exampleInputKelas" class="form-label">Kelas</label>
                   <select class="form-select" aria-label="Default select example" name="kelas" id="exampleInputKelas" required>
-                    <option selected>-- Pilih Kelas --</option>
+                    <option value="" selected>-- Pilih Kelas --</option>
                     <option value="X">X</option>
                     <option value="XI">XI</option>
                     <option value="XII">XII</option>
@@ -174,7 +174,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Ubah Data Kelas</h1>
+              <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fas fa-edit me-2"></i>Ubah data kelas</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <form action="/daftar_kelas/ubah" method="post">  

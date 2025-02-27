@@ -31,16 +31,16 @@ class Daftarjurusan extends BaseController
         $jurusan = $this->request->getPost('nama_jurusan');
         $namaPanjang = $this->request->getPost('nama_panjang');
         $return = $jurusanModel->tambahDataJurusan($kode, $jurusan, $namaPanjang);
-
+        
         if ($return) {
             $pesan = 'Data jurusan berhasil ditambahkan!';
             session()->setFlashData('success', $pesan);
         } 
         else {
-            $pesan = 'Data jurusan gagal ditambahkan!';
-            session()->setFlashData('error', $pesan);
+            $pesan = 'Nama jurusan sudah ada!';
+            session()->setFlashData('info', $pesan);
         }
-
+        
         return redirect()->to('/daftar_jurusan');
     }
 

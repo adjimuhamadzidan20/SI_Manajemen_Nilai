@@ -42,16 +42,27 @@ class DaftarjurusanModel extends Model
     }
 
     public function tambahDataJurusan($kode, $namaJurusan, $namaPanjang) {
-        $data = $this->insert([
-            'kd_jurusan' => $kode,
-            'nama_jurusan' => $namaJurusan,
-            'nama_panjang' => $namaPanjang
-        ]);
+        $db = db_connect();
+        $query = "SELECT nama_jurusan FROM dt_jurusan WHERE nama_jurusan = '$namaJurusan'";
+        $sql = $db->query($query);
+        $jurusan = $sql->getRowArray();
 
-        return $data;
+        if ($jurusan) {
+            return false;
+        }
+        else {
+            $data = $this->insert([
+                'kd_jurusan' => $kode,
+                'nama_jurusan' => $namaJurusan,
+                'nama_panjang' => $namaPanjang
+            ]);
+
+            return $data;
+        }
     }
 
     public function ubahDataJurusan($id, $kode, $namaJurusan, $namaPanjang) {
+
         $data = [
             'id_jurusan' => $id,
             'kd_jurusan' => $kode,

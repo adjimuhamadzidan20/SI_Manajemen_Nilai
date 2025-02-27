@@ -39,13 +39,13 @@ class Loginadmin extends BaseController
             } 
             else {
                 $info = 'Password anda salah!';
-                session()->setFlashData('alert', $info);
+                session()->setFlashData('error', $info);
                 return redirect()->to('/login');
             }
         }
         else {
             $info = 'Username atau password anda tidak sesuai!';
-            session()->setFlashData('alert', $info);
+            session()->setFlashData('error', $info);
             return redirect()->to('/login');
         }
     }

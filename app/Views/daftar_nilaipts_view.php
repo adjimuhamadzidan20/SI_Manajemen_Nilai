@@ -13,7 +13,7 @@
                     <h3 class="text-uppercase mt-3">Nilai PTS</h3>
                     <p class="text-uppercase mb-2">Tahun Ajaran <?= $tahun_ajaran; ?></p>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item"><a href="/dasboard">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
                         <li class="breadcrumb-item"><a href="/daftar_nilai">Daftar Nilai</a></li>
                         <li class="breadcrumb-item active">Nilai PTS T.A <?= $tahun_ajaran; ?></li>
                     </ol>

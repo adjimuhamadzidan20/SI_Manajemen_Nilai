@@ -67,8 +67,8 @@ class Daftarmapel extends BaseController
             session()->setFlashData('success', $pesan);
         } 
         else {
-            $pesan = 'Mata pelajaran gagal ditambahkan!';
-            session()->setFlashData('error', $pesan);
+            $pesan = 'Mata pelajaran dan kelas sudah ada!';
+            session()->setFlashData('info', $pesan);
         }
 
         return redirect()->to('/daftar_mapel/periode_mapel/'. $tahunAjaran);

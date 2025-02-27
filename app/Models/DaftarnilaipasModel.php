@@ -47,18 +47,27 @@ class DaftarnilaipasModel extends Model
 
     public function tambahDataNilaiPas($pesertaDidik, $namaMapel, $kelas, $jurusan, $periodeAjaran, 
     $semester, $nilaiPas) {
+        $db = db_connect();
+        $query = "SELECT id_siswa FROM dt_nilai_pas WHERE id_siswa = $pesertaDidik";
+        $sql = $db->query($query);
+        $namaPesertaDidik = $sql->getNumRows();
+        
+        if ($namaPesertaDidik) {
+            return false;
+        }
+        else {
+            $data = $this->insert([
+                'id_siswa' => $pesertaDidik,
+                'id_mapel' => $namaMapel,
+                'kelas' => $kelas,
+                'id_jurusan' => $jurusan,
+                'id_periode' => $periodeAjaran,
+                'semester' => $semester,
+                'nilai_pas' => $nilaiPas
+            ]);
 
-        $data = $this->insert([
-            'id_siswa' => $pesertaDidik,
-            'id_mapel' => $namaMapel,
-            'kelas' => $kelas,
-            'id_jurusan' => $jurusan,
-            'id_periode' => $periodeAjaran,
-            'semester' => $semester,
-            'nilai_pas' => $nilaiPas
-        ]);
-
-        return $data;
+            return $data;
+        }
     }
 
     public function ubahDataNilaiPas($id, $pesertaDidik, $namaMapel, $kelas, $jurusan, $periodeAjaran,

@@ -38,14 +38,23 @@ class PeriodeajaranModel extends Model
       }
 
       public function tambahDataPeriode($kode, $semester_1, $semester_2, $tahunAjar) {
-         $data = $this->insert([
-            'kd_ajaran' => $kode,
-            'semester_pertama' => $semester_1,
-            'semester_kedua' => $semester_2,
-            'tahun_ajaran' => $tahunAjar
-         ]);
+         $db = db_connect();
+         $sql = $db->query("SELECT tahun_ajaran FROM dt_periode_ajaran WHERE tahun_ajaran = '$tahunAjar'");
+         $periode = $sql->getRowArray();
+         
+         if ($periode) {
+            return false;
+         }
+         else {
+            $data = $this->insert([
+               'kd_ajaran' => $kode,
+               'semester_pertama' => $semester_1,
+               'semester_kedua' => $semester_2,
+               'tahun_ajaran' => $tahunAjar
+            ]);
 
-         return $data;
+            return $data;
+         }
       }
 
       public function ubahDataPeriode($id, $kode, $semester_1, $semester_2, $tahunAjar) {

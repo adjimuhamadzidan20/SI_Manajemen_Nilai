@@ -61,8 +61,8 @@ class Daftarnilai_pts extends BaseController
             session()->setFlashData('success', $pesan);
         } 
         else {
-            $pesan = 'Nilai PTS gagal ditambahkan!';
-            session()->setFlashData('error', $pesan);
+            $pesan = 'Nama peserta didik sudah ada!';
+            session()->setFlashData('info', $pesan);
         }
 
         return redirect()->to('/daftar_nilai_pts/peserta_didik/'.$kelas.'/'.$jurusan.'/'.$namaMapel.'/'.$idMapel.'/'.

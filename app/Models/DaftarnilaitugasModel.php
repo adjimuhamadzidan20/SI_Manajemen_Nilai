@@ -120,32 +120,42 @@ class DaftarnilaitugasModel extends Model
         } else {
             $na_sumatif = $jumlahNilaiLM / $totalNilaiLM;
         }
-        
-        $data = $this->insert([
-            'id_siswa' => $pesertaDidik,
-            'id_mapel' => $namaMapel,
-            'kelas' => $kelas,
-            'id_jurusan' => $jurusan,
-            'id_periode' => $periodeAjaran,
-            'semester' => $semester,
-            'nilai_1' => $nilai_1,
-            'nilai_2' => $nilai_2,
-            'nilai_3' => $nilai_3,
-            'nilai_4' => $nilai_4,
-            'nilai_5' => $nilai_5,
-            'nilai_6' => $nilai_6,
-            'nilai_7' => $nilai_7,
-            'nilai_8' => $nilai_8,
-            'nilai_9' => $nilai_9,
-            'nilai_9' => $nilai_9,
-            'na_materi' => round($na_materi),
-            'LM_1' => round($LM1),
-            'LM_2' => round($LM2),
-            'LM_3' => round($LM3),
-            'na_sumatif' => round($na_sumatif),
-        ]);
 
-        return $data;
+        $db = db_connect();
+        $query = "SELECT id_siswa FROM dt_nilai_tugas WHERE id_siswa = $pesertaDidik";
+        $sql = $db->query($query);
+        $namaPesertaDidik = $sql->getNumRows();
+        
+        if ($namaPesertaDidik) {
+            return false;
+        }
+        else {
+            $data = $this->insert([
+                'id_siswa' => $pesertaDidik,
+                'id_mapel' => $namaMapel,
+                'kelas' => $kelas,
+                'id_jurusan' => $jurusan,
+                'id_periode' => $periodeAjaran,
+                'semester' => $semester,
+                'nilai_1' => $nilai_1,
+                'nilai_2' => $nilai_2,
+                'nilai_3' => $nilai_3,
+                'nilai_4' => $nilai_4,
+                'nilai_5' => $nilai_5,
+                'nilai_6' => $nilai_6,
+                'nilai_7' => $nilai_7,
+                'nilai_8' => $nilai_8,
+                'nilai_9' => $nilai_9,
+                'nilai_9' => $nilai_9,
+                'na_materi' => round($na_materi),
+                'LM_1' => round($LM1),
+                'LM_2' => round($LM2),
+                'LM_3' => round($LM3),
+                'na_sumatif' => round($na_sumatif),
+            ]);
+
+            return $data;
+        }
     }
 
     public function ubahDataNilaiTugas($id, $pesertaDidik, $namaMapel, $kelas, $jurusan, $periodeAjaran,

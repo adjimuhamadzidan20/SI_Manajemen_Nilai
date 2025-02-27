@@ -82,8 +82,8 @@ class Daftarsiswa extends BaseController
             session()->setFlashData('success', $pesan);
         } 
         else {
-            $pesan = 'Peserta didik gagal ditambahkan!';
-            session()->setFlashData('error', $pesan);
+            $pesan = 'Peserta didik sudah ada!';
+            session()->setFlashData('info', $pesan);
         }
 
         return redirect()->to('/daftar_siswa/rinci_siswa/'.$tahunAjaran.'/'.$kelas.'/'.$jurusan);

@@ -69,8 +69,8 @@ class Daftarnilai_tugas extends BaseController
             session()->setFlashData('success', $pesan);
         } 
         else {
-            $pesan = 'Nilai tugas gagal ditambahkan!';
-            session()->setFlashData('error', $pesan);
+            $pesan = 'Nama peserta didik sudah ada!';
+            session()->setFlashData('info', $pesan);
         }
 
         return redirect()->to('/daftar_nilai_tugas/peserta_didik/'.$kelas.'/'.$jurusan.'/'.$namaMapel.'/'.$idMapel.'/'.

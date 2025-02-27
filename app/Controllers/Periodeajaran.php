@@ -38,8 +38,8 @@ class Periodeajaran extends BaseController
             session()->setFlashData('success', $pesan);
         } 
         else {
-            $pesan = 'Tahun ajaran gagal ditambahkan!';
-            session()->setFlashData('error', $pesan);
+            $pesan = 'Tahun ajaran sudah ada!';
+            session()->setFlashData('info', $pesan);
         }
         
         return redirect()->to('/periode_ajar');  

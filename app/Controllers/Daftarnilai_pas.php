@@ -61,8 +61,8 @@ class Daftarnilai_pas extends BaseController
             session()->setFlashData('success', $pesan);
         } 
         else {
-            $pesan = 'Nilai PAS gagal ditambahkan!';
-            session()->setFlashData('error', $pesan);
+            $pesan = 'Nama peserta didik sudah ada!';
+            session()->setFlashData('info', $pesan);
         }
 
         return redirect()->to('/daftar_nilai_pas/peserta_didik/'.$kelas.'/'.$jurusan.'/'.$namaMapel.'/'.$idMapel.'/'.

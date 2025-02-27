@@ -26,25 +26,13 @@
                                         <h6 class="text-center font-weight-light text-uppercase">Forgot Password</h6>
                                     </div>
                                     <div class="card-body">
-
-                                        <!-- alert pesan error -->
-                                        <?php  
-                                            if (session()->getFlashData('alert')) :
-                                        ?>
-                                            <div class="alert alert-info small" role="alert" id="pesan">
-                                                <?= session()->getFlashData('alert'); ?>
-                                            </div>
-                                        <?php  
-                                            endif;
-                                        ?>
-                                        
                                         <form action="/forgot_password/ganti_password" method="post">
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" id="inputEmail" type="text" placeholder="Email" 
                                                 name="email" required />
                                                 <label for="inputEmail">Masukkan Email Anda</label>
                                             </div>
-                                            <div class="form-floating mb-3">
+                                            <div class="form-floating mb-4">
                                                 <input class="form-control" id="inputPasswordBaru" type="password" placeholder="Password Baru" name="password_baru" required />
                                                 <label for="inputPasswordBaru">Password Baru</label>
                                             </div>
@@ -83,7 +71,7 @@
             if (notif.style.display = 'block') {
               setTimeout(function() {
                 notif.style.opacity = '0'
-                notif.style.transition = 'opacity 1s ease-in-out';
+                notif.style.transition = 'opacity 2s ease-in-out';
                 setTimeout(function() {
                     notif.style.display = 'none';
                 }, 1000)

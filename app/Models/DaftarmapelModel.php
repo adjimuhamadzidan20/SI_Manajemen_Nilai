@@ -62,16 +62,26 @@ class DaftarmapelModel extends Model
     }
 
     public function tambahDataMapel($kode, $namaMapel, $kelas, $jurusan, $tahunAjaran, $guruMapel) {
-        $data = $this->insert([
-            'kd_mapel' => $kode,
-            'nama_mapel' => $namaMapel,
-            'kelas' => $kelas,
-            'id_jurusan' => $jurusan,
-            'id_periode' => $tahunAjaran,
-            'guru' => $guruMapel
-        ]);
+        $db = db_connect();
+        $query = "SELECT kelas, id_jurusan FROM dt_mapel WHERE kelas = '$kelas' AND id_jurusan = $jurusan";
+        $sql = $db->query($query);
+        $dataMapel = $sql->getRowArray();
 
-        return $data;
+        if ($dataMapel) {
+            return false;
+        }
+        else {
+            $data = $this->insert([
+                'kd_mapel' => $kode,
+                'nama_mapel' => $namaMapel,
+                'kelas' => $kelas,
+                'id_jurusan' => $jurusan,
+                'id_periode' => $tahunAjaran,
+                'guru' => $guruMapel
+            ]);
+
+            return $data;
+        }
     }
 
     public function ubahDataMapel($id, $kode, $namaMapel, $kelas, $jurusan, $tahunAjaran, $guruMapel) {

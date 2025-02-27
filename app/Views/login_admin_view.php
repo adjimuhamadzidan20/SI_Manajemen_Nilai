@@ -27,12 +27,23 @@
                                     </div>
                                     <div class="card-body">
 
+                                        <!-- alert pesan berhasil -->
+                                        <?php  
+                                            if (session()->getFlashData('success')) :
+                                        ?>
+                                            <div class="alert alert-success small" role="alert" id="pesan">
+                                                <?= session()->getFlashData('success'); ?>
+                                            </div>
+                                        <?php  
+                                            endif;
+                                        ?>
+
                                         <!-- alert pesan error -->
                                         <?php  
-                                            if (session()->getFlashData('alert')) :
+                                            if (session()->getFlashData('error')) :
                                         ?>
                                             <div class="alert alert-danger small" role="alert" id="pesan">
-                                                <?= session()->getFlashData('alert'); ?>
+                                                <?= session()->getFlashData('error'); ?>
                                             </div>
                                         <?php  
                                             endif;

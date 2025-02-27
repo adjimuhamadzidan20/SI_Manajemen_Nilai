@@ -18,7 +18,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Keluar dari dashboard</h5>
+                        <h5 class="modal-title"><i class="fas fa-sign-out me-2"></i>Keluar dari dashboard</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body text-start">
@@ -36,7 +36,6 @@
         <script src="<?= base_url('assets'); ?>/js/jquery-3.6.0.js"></script>
         <script src="<?= base_url('assets'); ?>/plugin/toastr/toastr.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
         <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
         <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap4.js"></script>
@@ -52,12 +51,12 @@
             endif;
         ?>
 
-        <!-- alert ketika gagal (error) -->
+        <!-- alert info (info) -->
         <?php  
-            if (session()->getFlashData('error')) :
+            if (session()->getFlashData('info')) :
         ?>
             <script type="text/javascript">
-                toastr.danger("<?= session()->getFlashData('error'); ?>")
+                toastr.info("<?= session()->getFlashData('info'); ?>")
             </script>
         <?php  
             endif;

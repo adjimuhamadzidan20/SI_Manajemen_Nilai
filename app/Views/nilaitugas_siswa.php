@@ -13,7 +13,7 @@
                     <h3 class="mt-3 text-uppercase"><?= $kelas; ?> <?= $nama_jurusan; ?> - <?= $nama_mapel; ?></h3>
                     <p class="text-uppercase mb-2">Nilai Tugas | <?= 'Semester '. $semester; ?></p>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                        <li class="breadcrumb-item"><a href="/dashboard">Dashboard</a></li>
                         <li class="breadcrumb-item"><a href="/daftar_nilai">Daftar Nilai</a></li>
                         <li class="breadcrumb-item"><a href="/daftar_nilai/nilai_tugas_periode/<?= $id_periode; ?>">Nilai Tugas T.A <?= $tahun_ajaran; ?></a></li>
                         <li class="breadcrumb-item active">
@@ -138,7 +138,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Data Nilai Tugas</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fas fa-plus me-2"></i>Tambah data nilai tugas</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <form action="/daftar_nilai_tugas/tambah" method="post">  
@@ -174,6 +174,7 @@
                                                 if ($siswa_jumlah > 0) {
                                             ?>
                                                 <select class="form-select" name="peserta_didik" id="exampleInputMurid" required>
+                                                    <option value="" selected>-- Pilih peserta didik --</option>
                                                     <?php  
                                                         foreach ($siswa as $data) :
                                                     ?>
@@ -256,7 +257,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Ubah Data Nilai Tugas</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fas fa-edit me-2"></i>Ubah data nilai tugas</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <form action="/daftar_nilai_tugas/ubah" method="post">  

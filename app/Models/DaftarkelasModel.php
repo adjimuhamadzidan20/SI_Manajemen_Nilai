@@ -101,14 +101,24 @@ class DaftarkelasModel extends Model
    }
 
    public function tambahDataKelas($kode, $keahlian, $kelas, $periode) {
-      $data = $this->insert([
-         'kd_kelas' => $kode,
-         'id_jurusan' => $keahlian,
-         'kelas' => $kelas,
-         'id_periode' => $periode
-      ]);
+      $db = db_connect();
+      $query = "SELECT id_jurusan, kelas FROM dt_kelas WHERE id_jurusan = $keahlian AND kelas = '$kelas'";
+      $sql = $db->query($query);
+      $dataKelas = $sql->getRowArray();
 
-      return $data;
+      if ($dataKelas) {
+         return false;
+      }
+      else {
+         $data = $this->insert([
+            'kd_kelas' => $kode,
+            'id_jurusan' => $keahlian,
+            'kelas' => $kelas,
+            'id_periode' => $periode
+         ]);
+
+         return $data;
+      }
    }
 
    public function ubahDataKelas($id, $kode, $keahlian, $kelas, $periode) {

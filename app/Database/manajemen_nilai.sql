@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 01 Feb 2025 pada 17.16
+-- Waktu pembuatan: 27 Feb 2025 pada 02.51
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.1.31
 
@@ -37,6 +37,14 @@ CREATE TABLE `dt_admin` (
   `email` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data untuk tabel `dt_admin`
+--
+
+INSERT INTO `dt_admin` (`id`, `username`, `password`, `nama_admin`, `status`, `alamat`, `email`) VALUES
+(1, 'admin123', '0192023a7bbd73250516f069df18b500', 'Adji Muhamad Zidan', 'Administrator', 'Jatirahayu, Kota Bekasi', 'adjimuhamadzidan@gmail.com'),
+(2, 'smkangkasa1', 'bac4c303684f7f67f049674755d47422', 'SMK Angkasa 1', 'Administrator', 'Halim Jakarta Timur', 'smkangkasa1@email.com');
+
 -- --------------------------------------------------------
 
 --
@@ -58,7 +66,8 @@ INSERT INTO `dt_jurusan` (`id_jurusan`, `kd_jurusan`, `nama_jurusan`, `nama_panj
 (1, 'JU001', 'RPL 1', 'Rekayasa Perangkat Lunak'),
 (2, 'JU002', 'AFPP 1', 'Airflame Power Plant'),
 (6, 'JU003', 'AFPP 2', 'Airflame Power Plant'),
-(7, 'JU004', 'TKR 1', 'Teknik Kendaraan Ringan');
+(12, 'JU004', 'TKR', 'Teknik Kendaraan Ringan'),
+(13, 'JU005', 'TP', 'Teknik Permesinan');
 
 -- --------------------------------------------------------
 
@@ -82,8 +91,7 @@ INSERT INTO `dt_kelas` (`id_kelas`, `kd_kelas`, `id_jurusan`, `kelas`, `id_perio
 (13, 'KE001', 1, 'X', 4),
 (15, 'KE002', 2, 'X', 4),
 (16, 'KE003', 6, 'X', 4),
-(18, 'KE004', 1, 'XI', 4),
-(21, 'KE005', 7, 'X', 4);
+(18, 'KE004', 1, 'XI', 4);
 
 -- --------------------------------------------------------
 
@@ -108,7 +116,7 @@ CREATE TABLE `dt_mapel` (
 INSERT INTO `dt_mapel` (`id_mapel`, `kd_mapel`, `nama_mapel`, `kelas`, `id_jurusan`, `id_periode`, `guru`) VALUES
 (31, 'MA001', 'Informatika', 'X', 1, 4, 'Adji Muhamad Zidan S.Kom'),
 (32, 'MA002', 'Informatika', 'X', 2, 4, 'Adji Muhamad Zidan S.Kom'),
-(33, 'MA003', 'Informatika', 'X', 7, 4, 'Adji Muhamad Zidan S.Kom');
+(35, 'MA003', 'Informatika', 'X', 6, 4, 'Adji Muhamad Zidan S.Kom');
 
 -- --------------------------------------------------------
 
@@ -132,7 +140,8 @@ CREATE TABLE `dt_nilai_pas` (
 --
 
 INSERT INTO `dt_nilai_pas` (`id_pas`, `id_siswa`, `id_mapel`, `kelas`, `id_jurusan`, `id_periode`, `semester`, `nilai_pas`) VALUES
-(2, 8, 31, 'X', 1, 4, 'Ganjil', 80);
+(2, 8, 31, 'X', 1, 4, 'Ganjil', 82),
+(3, 9, 31, 'X', 1, 4, 'Ganjil', 80);
 
 -- --------------------------------------------------------
 
@@ -156,8 +165,9 @@ CREATE TABLE `dt_nilai_pts` (
 --
 
 INSERT INTO `dt_nilai_pts` (`id_pts`, `id_siswa`, `id_mapel`, `kelas`, `id_jurusan`, `id_periode`, `semester`, `nilai_pts`) VALUES
-(5, 8, 31, 'X', 1, 4, 'Ganjil', 78),
-(6, 9, 31, 'X', 1, 4, 'Ganjil', 80);
+(5, 8, 31, 'X', 1, 4, 'Ganjil', 79),
+(6, 9, 31, 'X', 1, 4, 'Ganjil', 85),
+(7, 10, 31, 'X', 1, 4, 'Ganjil', 78);
 
 -- --------------------------------------------------------
 
@@ -195,7 +205,9 @@ CREATE TABLE `dt_nilai_tugas` (
 
 INSERT INTO `dt_nilai_tugas` (`id_tugas`, `id_siswa`, `id_mapel`, `kelas`, `id_jurusan`, `id_periode`, `semester`, `nilai_1`, `nilai_2`, `nilai_3`, `nilai_4`, `nilai_5`, `nilai_6`, `nilai_7`, `nilai_8`, `nilai_9`, `na_materi`, `LM_1`, `LM_2`, `LM_3`, `na_sumatif`) VALUES
 (30, 8, 31, 'X', 1, 4, 'Ganjil', 80, 75, 85, 78, 79, 76, 80, 76, 77, 78, 78, 78, 78, 77),
-(31, 9, 31, 'X', 1, 4, 'Ganjil', 80, 78, 85, 78, 78, 76, 80, 76, 77, 79, 77, 77, 78, 77);
+(31, 9, 31, 'X', 1, 4, 'Ganjil', 80, 78, 85, 78, 78, 76, 80, 76, 77, 79, 77, 77, 78, 77),
+(32, 10, 31, 'X', 1, 4, 'Ganjil', 75, 80, 78, 80, 78, 78, 80, 77, 85, 79, 79, 79, 81, 79),
+(33, 11, 31, 'X', 1, 4, 'Ganjil', 76, 80, 78, 80, 80, 76, 75, 78, 77, 78, 79, 79, 77, 77);
 
 -- --------------------------------------------------------
 
@@ -218,7 +230,8 @@ CREATE TABLE `dt_periode_ajaran` (
 INSERT INTO `dt_periode_ajaran` (`id_periode`, `kd_ajaran`, `semester_pertama`, `semester_kedua`, `tahun_ajaran`) VALUES
 (4, 'PA001', 'Semester 1 (Ganjil)', 'Semester 2 (Genap)', '2024/2025'),
 (12, 'PA002', 'Semester 1 (Ganjil)', 'Semester 2 (Genap)', '2025/2026'),
-(13, 'PA003', 'Semester 1 (Ganjil)', 'Semester 2 (Genap)', '2026/2027');
+(25, 'PA003', 'Semester 1 (Ganjil)', 'Semester 2 (Genap)', '2027/2028'),
+(27, 'PA004', 'Semester 1 (Ganjil)', 'Semester 2 (Genap)', '2029/2030');
 
 -- --------------------------------------------------------
 
@@ -249,7 +262,9 @@ INSERT INTO `dt_siswa` (`id_siswa`, `kd_siswa`, `nis`, `nisn`, `nama_siswa`, `id
 (12, 'PD005', 2019005, 2020005, 'Shella Aulia', 13, 1, 4),
 (13, 'PD006', 2019006, 2020006, 'Nurcahyadi', 13, 1, 4),
 (14, 'PD007', 2019007, 2020007, 'Sintia Nurul R', 13, 1, 4),
-(15, 'PD008', 2019008, 2020008, 'Alfis Muhamad', 13, 1, 4);
+(15, 'PD008', 2019008, 2020008, 'Alfis Muhamad', 13, 1, 4),
+(16, 'PD009', 2019008, 2020009, 'Ariani Dewi', 13, 1, 4),
+(17, 'PD010', 2019009, 2020010, 'Mela', 13, 1, 4);
 
 --
 -- Indexes for dumped tables
@@ -336,55 +351,55 @@ ALTER TABLE `dt_siswa`
 -- AUTO_INCREMENT untuk tabel `dt_admin`
 --
 ALTER TABLE `dt_admin`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `dt_jurusan`
 --
 ALTER TABLE `dt_jurusan`
-  MODIFY `id_jurusan` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_jurusan` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT untuk tabel `dt_kelas`
 --
 ALTER TABLE `dt_kelas`
-  MODIFY `id_kelas` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id_kelas` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT untuk tabel `dt_mapel`
 --
 ALTER TABLE `dt_mapel`
-  MODIFY `id_mapel` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id_mapel` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT untuk tabel `dt_nilai_pas`
 --
 ALTER TABLE `dt_nilai_pas`
-  MODIFY `id_pas` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_pas` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `dt_nilai_pts`
 --
 ALTER TABLE `dt_nilai_pts`
-  MODIFY `id_pts` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_pts` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT untuk tabel `dt_nilai_tugas`
 --
 ALTER TABLE `dt_nilai_tugas`
-  MODIFY `id_tugas` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id_tugas` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT untuk tabel `dt_periode_ajaran`
 --
 ALTER TABLE `dt_periode_ajaran`
-  MODIFY `id_periode` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_periode` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT untuk tabel `dt_siswa`
 --
 ALTER TABLE `dt_siswa`
-  MODIFY `id_siswa` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id_siswa` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)

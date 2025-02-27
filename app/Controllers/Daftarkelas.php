@@ -65,8 +65,8 @@ class Daftarkelas extends BaseController
             session()->setFlashData('success', $pesan);
         } 
         else {
-            $pesan = 'Data kelas gagal ditambahkan!';
-            session()->setFlashData('error', $pesan);
+            $pesan = 'Data kelas sudah ada!';
+            session()->setFlashData('info', $pesan);
         }
 
         return redirect()->to('/daftar_kelas/periode_kelas/'. $periode);

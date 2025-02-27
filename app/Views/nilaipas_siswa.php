@@ -104,7 +104,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Data Nilai PAS</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fas fa-plus me-2"></i>Tambah data nilai PAS</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <form action="/daftar_nilai_pas/tambah" method="post">  
@@ -141,6 +141,7 @@
                                                 if ($siswa_jumlah > 0) {
                                             ?>
                                                 <select class="form-select" name="peserta_didik" id="exampleInputMurid" required>
+                                                    <option value="" selected>-- Pilih peserta didik --</option>
                                                     <?php  
                                                         foreach ($siswa as $data) :
                                                     ?>
@@ -190,7 +191,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Ubah Data Nilai PAS</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fas fa-edit me-2"></i>Ubah data nilai PAS</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <form action="/daftar_nilai_pas/ubah" method="post">  

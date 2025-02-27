@@ -72,17 +72,27 @@ class DaftarsiswaModel extends Model
     }
 
     public function tambahDataSiswa($kode, $nis, $nisn, $namaMurid, $kelas, $jurusan, $tahunAjaran) {
-        $data = $this->insert([
-            'kd_siswa' => $kode,
-            'nis' => $nis,
-            'nisn' => $nisn,
-            'nama_siswa' => $namaMurid,
-            'id_kelas' => $kelas,
-            'id_jurusan' => $jurusan,
-            'id_periode' => $tahunAjaran
-        ]);
+        $db = db_connect();
+        $query = "SELECT nis, nisn FROM dt_siswa WHERE nis = $nis AND nisn = $nisn"; 
+        $sql = $db->query($query);
+        $dataPesertaDidik = $sql->getNumRows();
 
-        return $data;
+        if ($dataPesertaDidik) {
+            return false;
+        }
+        else {
+            $data = $this->insert([
+                'kd_siswa' => $kode,
+                'nis' => $nis,
+                'nisn' => $nisn,
+                'nama_siswa' => $namaMurid,
+                'id_kelas' => $kelas,
+                'id_jurusan' => $jurusan,
+                'id_periode' => $tahunAjaran
+            ]);
+
+            return $data;
+        }
     }
 
     public function ubahDataSiswa($id, $kode, $nis, $nisn, $namaMurid, $kelas, $jurusan, $tahunAjaran) {

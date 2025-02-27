@@ -95,7 +95,7 @@
                                                   <div class="modal-dialog">
                                                     <div class="modal-content">
                                                       <div class="modal-header">
-                                                        <h5 class="modal-title">Hapus Data Mapel</h5>
+                                                        <h5 class="modal-title"><i class="fas fa-trash me-2"></i>Hapus data mapel</h5>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                       </div>
                                                       <div class="modal-body text-start">
@@ -124,7 +124,7 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Data Mapel</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fas fa-plus me-2"></i>Tambah data mapel</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <form action="/daftar_mapel/tambah" method="post">
@@ -145,7 +145,7 @@
                             <div class="mb-3">
                                 <label for="exampleInputKelas" class="form-label">Kelas</label>
                                 <select class="form-select" aria-label="Default select example" name="kelas" id="exampleInputKelas" required>
-                                    <option selected>-- Pilih Kelas --</option>
+                                    <option value="" selected>-- Pilih Kelas --</option>
                                     <option value="X">X</option>
                                     <option value="XI">XI</option>
                                     <option value="XII">XII</option>
@@ -154,7 +154,7 @@
                             <div class="mb-3">
                                 <label for="exampleInputJurusan" class="form-label">Jurusan</label>
                                 <select class="form-select" aria-label="Default select example" name="jurusan" id="exampleInputJurusan" required>
-                                    <option selected>-- Pilih Jurusan --</option>
+                                    <option value="" selected>-- Pilih Jurusan --</option>
                                     <?php 
                                         foreach($jurusan as $data) : 
                                     ?>
@@ -185,7 +185,7 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Ubah Data Mapel</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fas fa-edit me-2"></i>Ubah data mapel</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <form action="/daftar_mapel/ubah" method="post">
