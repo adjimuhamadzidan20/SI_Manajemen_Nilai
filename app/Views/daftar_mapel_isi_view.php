@@ -95,7 +95,7 @@
                                                   <div class="modal-dialog">
                                                     <div class="modal-content">
                                                       <div class="modal-header">
-                                                        <h5 class="modal-title"><i class="fas fa-trash me-2"></i>Hapus data mapel</h5>
+                                                        <h5 class="modal-title">Hapus data mapel</h5>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                       </div>
                                                       <div class="modal-body text-start">
@@ -124,7 +124,7 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fas fa-plus me-2"></i>Tambah data mapel</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah data mapel</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <form action="/daftar_mapel/tambah" method="post">
@@ -185,7 +185,7 @@
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fas fa-edit me-2"></i>Ubah data mapel</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Ubah data mapel</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <form action="/daftar_mapel/ubah" method="post">

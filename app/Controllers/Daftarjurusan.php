@@ -27,9 +27,9 @@ class Daftarjurusan extends BaseController
     public function tambah() {
         $jurusanModel = new DaftarjurusanModel();
 
-        $kode = $this->request->getPost('kd_jurusan');
-        $jurusan = $this->request->getPost('nama_jurusan');
-        $namaPanjang = $this->request->getPost('nama_panjang');
+        $kode = htmlspecialchars($this->request->getPost('kd_jurusan'));
+        $jurusan = htmlspecialchars($this->request->getPost('nama_jurusan'));
+        $namaPanjang = htmlspecialchars($this->request->getPost('nama_panjang'));
         $return = $jurusanModel->tambahDataJurusan($kode, $jurusan, $namaPanjang);
         
         if ($return) {
@@ -47,10 +47,10 @@ class Daftarjurusan extends BaseController
     public function ubah() {
         $jurusanModel = new DaftarjurusanModel();
 
-        $id = $this->request->getPost('id');
-        $kode = $this->request->getPost('kd_jurusan');
-        $jurusan = $this->request->getPost('nama_jurusan');
-        $namaPanjang = $this->request->getPost('nama_panjang');
+        $id = htmlspecialchars($this->request->getPost('id'));
+        $kode = htmlspecialchars($this->request->getPost('kd_jurusan'));
+        $jurusan = htmlspecialchars($this->request->getPost('nama_jurusan'));
+        $namaPanjang = htmlspecialchars($this->request->getPost('nama_panjang'));
         $return = $jurusanModel->ubahDataJurusan($id, $kode, $jurusan, $namaPanjang);
 
         if ($return) {

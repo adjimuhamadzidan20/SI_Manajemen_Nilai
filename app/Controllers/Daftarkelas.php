@@ -54,10 +54,10 @@ class Daftarkelas extends BaseController
     public function tambah() {
         $kelasModel = new DaftarkelasModel();
 
-        $kode = $this->request->getPost('kd_kelas');
-        $keahlian = $this->request->getPost('keahlian');
-        $kelas = $this->request->getPost('kelas');
-        $periode = $this->request->getPost('tahun');
+        $kode = htmlspecialchars($this->request->getPost('kd_kelas'));
+        $keahlian = htmlspecialchars($this->request->getPost('keahlian'));
+        $kelas = htmlspecialchars($this->request->getPost('kelas'));
+        $periode = htmlspecialchars($this->request->getPost('tahun'));
         $return = $kelasModel->tambahDataKelas($kode, $keahlian, $kelas, $periode);
 
         if ($return) {
@@ -75,11 +75,11 @@ class Daftarkelas extends BaseController
     public function ubah() {
         $kelasModel = new DaftarkelasModel();
 
-        $id = $this->request->getPost('id');
-        $kode = $this->request->getPost('kd_kelas');
-        $keahlian = $this->request->getPost('keahlian');
-        $kelas = $this->request->getPost('kelas');
-        $periode = $this->request->getPost('tahun');
+        $id = htmlspecialchars($this->request->getPost('id'));
+        $kode = htmlspecialchars($this->request->getPost('kd_kelas'));
+        $keahlian = htmlspecialchars($this->request->getPost('keahlian'));
+        $kelas = htmlspecialchars($this->request->getPost('kelas'));
+        $periode = htmlspecialchars($this->request->getPost('tahun'));
         $return = $kelasModel->ubahDataKelas($id, $kode, $keahlian, $kelas, $periode);
 
         if ($return) {
@@ -121,7 +121,7 @@ class Daftarkelas extends BaseController
         $dataKelas = $kelasModel->cetakDataKelas($idPeriode);
         $tahunAjaran = $periodeModel->tahunPeriode($idPeriode);
 
-         // Create an instance of the class:
+        // Create an instance of the class:
         $mpdf = new Mpdf();
 
         $header = '<div style="border-bottom: 1px solid black; padding-bottom: 5px;">
@@ -232,7 +232,7 @@ class Daftarkelas extends BaseController
             ],
         ]);
 
-         // Menentukan batas akhir data
+        // Menentukan batas akhir data
         $lastRow = $baris - 1;
 
         // Tambahkan border ke seluruh tabel

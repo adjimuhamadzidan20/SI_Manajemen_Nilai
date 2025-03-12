@@ -44,22 +44,22 @@ class Daftarnilai_tugas extends BaseController
     public function tambah() {
         $nilaiTugasModel = new DaftarnilaitugasModel();
 
-        $namaMapel = $this->request->getPost('nama_mapel');
-        $pesertaDidik = $this->request->getPost('peserta_didik');
-        $idMapel = $this->request->getPost('id_mapel');
-        $kelas = $this->request->getPost('kelas');
-        $jurusan = $this->request->getPost('jurusan');
-        $periodeAjaran = $this->request->getPost('periode');
-        $semester = $this->request->getPost('semester');
-        $nilai_1 = $this->request->getPost('tp_1');
-        $nilai_2 = $this->request->getPost('tp_2');
-        $nilai_3 = $this->request->getPost('tp_3');
-        $nilai_4 = $this->request->getPost('tp_4');
-        $nilai_5 = $this->request->getPost('tp_5');
-        $nilai_6 = $this->request->getPost('tp_6');
-        $nilai_7 = $this->request->getPost('tp_7');
-        $nilai_8 = $this->request->getPost('tp_8');
-        $nilai_9 = $this->request->getPost('tp_9');
+        $namaMapel = htmlspecialchars($this->request->getPost('nama_mapel'));
+        $pesertaDidik = htmlspecialchars($this->request->getPost('peserta_didik'));
+        $idMapel = htmlspecialchars($this->request->getPost('id_mapel'));
+        $kelas = htmlspecialchars($this->request->getPost('kelas'));
+        $jurusan = htmlspecialchars($this->request->getPost('jurusan'));
+        $periodeAjaran = htmlspecialchars($this->request->getPost('periode'));
+        $semester = htmlspecialchars($this->request->getPost('semester'));
+        $nilai_1 = htmlspecialchars($this->request->getPost('tp_1'));
+        $nilai_2 = htmlspecialchars($this->request->getPost('tp_2'));
+        $nilai_3 = htmlspecialchars($this->request->getPost('tp_3'));
+        $nilai_4 = htmlspecialchars($this->request->getPost('tp_4'));
+        $nilai_5 = htmlspecialchars($this->request->getPost('tp_5'));
+        $nilai_6 = htmlspecialchars($this->request->getPost('tp_6'));
+        $nilai_7 = htmlspecialchars($this->request->getPost('tp_7'));
+        $nilai_8 = htmlspecialchars($this->request->getPost('tp_8'));
+        $nilai_9 = htmlspecialchars($this->request->getPost('tp_9'));
 
         $return = $nilaiTugasModel->tambahDataNilaiTugas($pesertaDidik, $idMapel, $kelas, $jurusan, $periodeAjaran, 
         $semester, $nilai_1, $nilai_2, $nilai_3, $nilai_4, $nilai_5, $nilai_6, $nilai_7, $nilai_8, $nilai_9);
@@ -80,23 +80,23 @@ class Daftarnilai_tugas extends BaseController
      public function ubah() {
         $nilaiTugasModel = new DaftarnilaitugasModel();
 
-        $namaMapel = $this->request->getPost('nama_mapel');
-        $id = $this->request->getPost('id');
-        $pesertaDidik = $this->request->getPost('peserta_didik');
-        $idMapel = $this->request->getPost('id_mapel');
-        $kelas = $this->request->getPost('kelas');
-        $jurusan = $this->request->getPost('jurusan');
-        $periodeAjaran = $this->request->getPost('periode');
-        $semester = $this->request->getPost('semester');
-        $nilai_1 = $this->request->getPost('tp_1');
-        $nilai_2 = $this->request->getPost('tp_2');
-        $nilai_3 = $this->request->getPost('tp_3');
-        $nilai_4 = $this->request->getPost('tp_4');
-        $nilai_5 = $this->request->getPost('tp_5');
-        $nilai_6 = $this->request->getPost('tp_6');
-        $nilai_7 = $this->request->getPost('tp_7');
-        $nilai_8 = $this->request->getPost('tp_8');
-        $nilai_9 = $this->request->getPost('tp_9');
+        $namaMapel = htmlspecialchars($this->request->getPost('nama_mapel'));
+        $id = htmlspecialchars($this->request->getPost('id'));
+        $pesertaDidik = htmlspecialchars($this->request->getPost('peserta_didik'));
+        $idMapel = htmlspecialchars($this->request->getPost('id_mapel'));
+        $kelas = htmlspecialchars($this->request->getPost('kelas'));
+        $jurusan = htmlspecialchars($this->request->getPost('jurusan'));
+        $periodeAjaran = htmlspecialchars($this->request->getPost('periode'));
+        $semester = htmlspecialchars($this->request->getPost('semester'));
+        $nilai_1 = htmlspecialchars($this->request->getPost('tp_1'));
+        $nilai_2 = htmlspecialchars($this->request->getPost('tp_2'));
+        $nilai_3 = htmlspecialchars($this->request->getPost('tp_3'));
+        $nilai_4 = htmlspecialchars($this->request->getPost('tp_4'));
+        $nilai_5 = htmlspecialchars($this->request->getPost('tp_5'));
+        $nilai_6 = htmlspecialchars($this->request->getPost('tp_6'));
+        $nilai_7 = htmlspecialchars($this->request->getPost('tp_7'));
+        $nilai_8 = htmlspecialchars($this->request->getPost('tp_8'));
+        $nilai_9 = htmlspecialchars($this->request->getPost('tp_9'));
 
         $return = $nilaiTugasModel->ubahDataNilaiTugas($id, $pesertaDidik, $idMapel, $kelas, $jurusan, $periodeAjaran, 
         $semester, $nilai_1, $nilai_2, $nilai_3, $nilai_4, $nilai_5, $nilai_6, $nilai_7, $nilai_8, $nilai_9);
@@ -157,7 +157,7 @@ class Daftarnilai_tugas extends BaseController
         $nilaiTugasModel = new DaftarnilaitugasModel();
         $dataNilaiTugas = $nilaiTugasModel->dataNilai($semester, $idPeriode, $kelas, $jurusan, $idMapel);
 
-         // Create an instance of the class:
+        // Create an instance of the class:
         $mpdf = new Mpdf();
 
         $header = '<div style="border-bottom: 1px solid black; padding-bottom: 5px;">

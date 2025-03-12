@@ -138,7 +138,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fas fa-plus me-2"></i>Tambah data nilai tugas</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah data nilai tugas</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <form action="/daftar_nilai_tugas/tambah" method="post">  
@@ -257,7 +257,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fas fa-edit me-2"></i>Ubah data nilai tugas</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Ubah data nilai tugas</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <form action="/daftar_nilai_tugas/ubah" method="post">  

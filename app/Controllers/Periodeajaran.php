@@ -27,10 +27,10 @@ class Periodeajaran extends BaseController
     public function tambah() {
         $periodeModel = new PeriodeajaranModel();
 
-        $kode = $this->request->getPost('kd_ajaran');
-        $semester1 = $this->request->getPost('semester_1');
-        $semester2 = $this->request->getPost('semester_2');
-        $tahunAjaran = $this->request->getPost('tahun_ajaran');
+        $kode = htmlspecialchars($this->request->getPost('kd_ajaran'));
+        $semester1 = htmlspecialchars($this->request->getPost('semester_1'));
+        $semester2 = htmlspecialchars($this->request->getPost('semester_2'));
+        $tahunAjaran = htmlspecialchars($this->request->getPost('tahun_ajaran'));
         $return = $periodeModel->tambahDataPeriode($kode, $semester1, $semester2, $tahunAjaran);
 
         if ($return) {
@@ -48,11 +48,11 @@ class Periodeajaran extends BaseController
     public function ubah() {
         $periodeModel = new PeriodeajaranModel();
 
-        $id = $this->request->getPost('id');
-        $kode = $this->request->getPost('kd_ajaran');
-        $semester1 = $this->request->getPost('semester_1');
-        $semester2 = $this->request->getPost('semester_2');
-        $tahunAjaran = $this->request->getPost('tahun_ajaran');
+        $id = htmlspecialchars($this->request->getPost('id'));
+        $kode = htmlspecialchars($this->request->getPost('kd_ajaran'));
+        $semester1 = htmlspecialchars($this->request->getPost('semester_1'));
+        $semester2 = htmlspecialchars($this->request->getPost('semester_2'));
+        $tahunAjaran = htmlspecialchars($this->request->getPost('tahun_ajaran'));
         $return = $periodeModel->ubahDataPeriode($id, $kode, $semester1, $semester2, $tahunAjaran);
 
         if ($return) {

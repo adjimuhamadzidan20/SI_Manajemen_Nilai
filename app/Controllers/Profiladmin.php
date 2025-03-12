@@ -23,8 +23,8 @@ class Profiladmin extends BaseController
     public function ubah_pass() {
         $adminModel = new LoginadminModel();
 
-        $id = $this->request->getPost('id');
-        $password = $this->request->getPost('password');
+        $id = htmlspecialchars($this->request->getPost('id'));
+        $password = htmlspecialchars($this->request->getPost('password'));
         $return = $adminModel->ubahPassword($id, $password);
 
         if ($return) {
@@ -42,8 +42,8 @@ class Profiladmin extends BaseController
     public function ubah_user() {
         $adminModel = new LoginadminModel();
 
-        $id = $this->request->getPost('id');
-        $username = $this->request->getPost('username');
+        $id = htmlspecialchars($this->request->getPost('id'));
+        $username = htmlspecialchars($this->request->getPost('username'));
         $return = $adminModel->ubahUsername($id, $username);
 
         if ($return) {
@@ -61,8 +61,8 @@ class Profiladmin extends BaseController
     public function ubah_nama() {
         $adminModel = new LoginadminModel();
 
-        $id = $this->request->getPost('id');
-        $namaAdmin = $this->request->getPost('nama_admin');
+        $id = htmlspecialchars($this->request->getPost('id'));
+        $namaAdmin = htmlspecialchars($this->request->getPost('nama_admin'));
         $return = $adminModel->ubahNamaAdmin($id, $namaAdmin);
 
         if ($return) {
@@ -80,8 +80,8 @@ class Profiladmin extends BaseController
     public function ubah_alamat() {
         $adminModel = new LoginadminModel();
 
-        $id = $this->request->getPost('id');
-        $alamat = $this->request->getPost('alamat');
+        $id = htmlspecialchars($this->request->getPost('id'));
+        $alamat = htmlspecialchars($this->request->getPost('alamat'));
         $return = $adminModel->ubahAlamat($id, $alamat);
 
         if ($return) {
@@ -99,8 +99,8 @@ class Profiladmin extends BaseController
     public function ubah_email() {
         $adminModel = new LoginadminModel();
 
-        $id = $this->request->getPost('id');
-        $email = $this->request->getPost('email');
+        $id = htmlspecialchars($this->request->getPost('id'));
+        $email = htmlspecialchars($this->request->getPost('email'));
         $return = $adminModel->ubahEmail($id, $email);
 
         if ($return) {

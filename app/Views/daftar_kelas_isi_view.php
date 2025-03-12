@@ -90,7 +90,7 @@
                           <div class="modal-dialog">
                             <div class="modal-content">
                               <div class="modal-header">
-                                <h5 class="modal-title"><i class="fas fa-trash me-2"></i>Hapus data kelas</h5>
+                                <h5 class="modal-title">Hapus data kelas</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <div class="modal-body text-start">
@@ -119,7 +119,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fas fa-plus me-2"></i>Tambah data kelas</h1>
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah data kelas</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             
@@ -174,7 +174,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fas fa-edit me-2"></i>Ubah data kelas</h1>
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Ubah data kelas</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <form action="/daftar_kelas/ubah" method="post">  

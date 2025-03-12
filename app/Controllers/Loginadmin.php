@@ -13,9 +13,9 @@ class Loginadmin extends BaseController
     public function masuk() {
         $adminModel = new LoginadminModel();
 
-        $username = $this->request->getPost('username');
-        $password = $this->request->getPost('password');
-        $remember = $this->request->getPost('remember');
+        $username =  htmlspecialchars($this->request->getPost('username'));
+        $password = htmlspecialchars($this->request->getPost('password'));
+        $remember = htmlspecialchars($this->request->getPost('remember'));
         $admin = $adminModel->masukAdmin($username);
 
         if ($admin) {

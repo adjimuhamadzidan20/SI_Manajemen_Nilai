@@ -44,14 +44,14 @@ class Daftarnilai_pas extends BaseController
     public function tambah() {
         $nilaiPasModel = new DaftarnilaipasModel();
 
-        $namaMapel = $this->request->getPost('nama_mapel');
-        $pesertaDidik = $this->request->getPost('peserta_didik');
-        $idMapel = $this->request->getPost('id_mapel');
-        $kelas = $this->request->getPost('kelas');
-        $jurusan = $this->request->getPost('jurusan');
-        $periodeAjaran = $this->request->getPost('periode');
-        $semester = $this->request->getPost('semester');
-        $nilaiPas = $this->request->getPost('nilai_pas');
+        $namaMapel = htmlspecialchars($this->request->getPost('nama_mapel'));
+        $pesertaDidik = htmlspecialchars($this->request->getPost('peserta_didik'));
+        $idMapel = htmlspecialchars($this->request->getPost('id_mapel'));
+        $kelas = htmlspecialchars($this->request->getPost('kelas'));
+        $jurusan = htmlspecialchars($this->request->getPost('jurusan'));
+        $periodeAjaran = htmlspecialchars($this->request->getPost('periode'));
+        $semester = htmlspecialchars($this->request->getPost('semester'));
+        $nilaiPas = htmlspecialchars($this->request->getPost('nilai_pas'));
 
         $return = $nilaiPasModel->tambahDataNilaiPas($pesertaDidik, $idMapel, $kelas, $jurusan, 
         $periodeAjaran, $semester, $nilaiPas);
@@ -72,15 +72,15 @@ class Daftarnilai_pas extends BaseController
      public function ubah() {
         $nilaiPasModel = new DaftarnilaipasModel();
 
-        $namaMapel = $this->request->getPost('nama_mapel');
-        $id = $this->request->getPost('id');
-        $pesertaDidik = $this->request->getPost('peserta_didik');
-        $idMapel = $this->request->getPost('id_mapel');
-        $kelas = $this->request->getPost('kelas');
-        $jurusan = $this->request->getPost('jurusan');
-        $periodeAjaran = $this->request->getPost('periode');
-        $semester = $this->request->getPost('semester');
-        $nilaiPas = $this->request->getPost('nilai_pas');
+        $namaMapel = htmlspecialchars($this->request->getPost('nama_mapel'));
+        $id = htmlspecialchars($this->request->getPost('id'));
+        $pesertaDidik = htmlspecialchars($this->request->getPost('peserta_didik'));
+        $idMapel = htmlspecialchars($this->request->getPost('id_mapel'));
+        $kelas = htmlspecialchars($this->request->getPost('kelas'));
+        $jurusan = htmlspecialchars($this->request->getPost('jurusan'));
+        $periodeAjaran = htmlspecialchars($this->request->getPost('periode'));
+        $semester = htmlspecialchars($this->request->getPost('semester'));
+        $nilaiPas = htmlspecialchars($this->request->getPost('nilai_pas'));
 
         $return = $nilaiPasModel->ubahDataNilaiPas($id, $pesertaDidik, $idMapel, $kelas, $jurusan, 
         $periodeAjaran, $semester, $nilaiPas);
@@ -141,7 +141,7 @@ class Daftarnilai_pas extends BaseController
         $nilaiPasModel = new DaftarnilaipasModel();
         $dataNilaiPAS = $nilaiPasModel->dataNilai($semester, $idPeriode, $kelas, $jurusan, $idMapel);
 
-         // Create an instance of the class:
+        // Create an instance of the class:
         $mpdf = new Mpdf();
 
         $header = '<div style="border-bottom: 1px solid black; padding-bottom: 5px;">
@@ -264,7 +264,7 @@ class Daftarnilai_pas extends BaseController
             ],
         ]);
 
-         // Menentukan batas akhir data
+        // Menentukan batas akhir data
         $lastRow = $baris - 1;
 
         // Tambahkan border ke seluruh tabel

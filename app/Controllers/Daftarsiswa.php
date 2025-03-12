@@ -68,13 +68,13 @@ class Daftarsiswa extends BaseController
     public function tambah() {
         $siswaModel = new DaftarsiswaModel();
 
-        $kode = $this->request->getPost('kd_siswa');
-        $nis = $this->request->getPost('nis');
-        $nisn = $this->request->getPost('nisn');
-        $namaMurid = $this->request->getPost('nama_murid');
-        $kelas = $this->request->getPost('kelas');
-        $jurusan = $this->request->getPost('jurusan');
-        $tahunAjaran = $this->request->getPost('tahun');
+        $kode = htmlspecialchars($this->request->getPost('kd_siswa'));
+        $nis = htmlspecialchars($this->request->getPost('nis'));
+        $nisn = htmlspecialchars($this->request->getPost('nisn'));
+        $namaMurid = htmlspecialchars($this->request->getPost('nama_murid'));
+        $kelas = htmlspecialchars($this->request->getPost('kelas'));
+        $jurusan = htmlspecialchars($this->request->getPost('jurusan'));
+        $tahunAjaran = htmlspecialchars($this->request->getPost('tahun'));
         $return = $siswaModel->tambahDataSiswa($kode, $nis, $nisn, $namaMurid, $kelas, $jurusan, $tahunAjaran);
 
         if ($return) {
@@ -92,14 +92,14 @@ class Daftarsiswa extends BaseController
     public function ubah() {
         $siswaModel = new DaftarsiswaModel();
 
-        $id = $this->request->getPost('id');
-        $kode = $this->request->getPost('kd_siswa');
-        $nis = $this->request->getPost('nis');
-        $nisn = $this->request->getPost('nisn');
-        $namaMurid = $this->request->getPost('nama_murid');
-        $kelas = $this->request->getPost('kelas');
-        $jurusan = $this->request->getPost('jurusan');
-        $tahunAjaran = $this->request->getPost('tahun');
+        $id = htmlspecialchars($this->request->getPost('id'));
+        $kode = htmlspecialchars($this->request->getPost('kd_siswa'));
+        $nis = htmlspecialchars($this->request->getPost('nis'));
+        $nisn = htmlspecialchars($this->request->getPost('nisn'));
+        $namaMurid = htmlspecialchars($this->request->getPost('nama_murid'));
+        $kelas = htmlspecialchars($this->request->getPost('kelas'));
+        $jurusan = htmlspecialchars($this->request->getPost('jurusan'));
+        $tahunAjaran = htmlspecialchars($this->request->getPost('tahun'));
         $return = $siswaModel->ubahDataSiswa($id, $kode, $nis, $nisn, $namaMurid, $kelas, $jurusan, $tahunAjaran);
 
         if ($return) {
@@ -138,7 +138,7 @@ class Daftarsiswa extends BaseController
         $siswaModel = new DaftarsiswaModel();
         $dataSiswa = $siswaModel->dataSiswa($idPeriode, $idKelas, $idJurusan);
 
-         // Create an instance of the class:
+        // Create an instance of the class:
         $mpdf = new Mpdf();
 
         $header = '<div style="border-bottom: 1px solid black; padding-bottom: 5px;">
@@ -264,7 +264,7 @@ class Daftarsiswa extends BaseController
             ],
         ]);
 
-         // Menentukan batas akhir data
+        // Menentukan batas akhir data
         $lastRow = $baris - 1;
 
         // Tambahkan border ke seluruh tabel

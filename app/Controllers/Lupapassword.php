@@ -13,8 +13,8 @@ class Lupapassword extends BaseController
     public function ganti_password() {
         $resetPass = new LupapasswordModel();
 
-        $email = $this->request->getPost('email');
-        $passwordBaru = $this->request->getPost('password_baru');
+        $email = htmlspecialchars($this->request->getPost('email'));
+        $passwordBaru = htmlspecialchars($this->request->getPost('password_baru'));
         $hasil = $resetPass->gantiPass($email, md5($passwordBaru));
         
         if ($hasil) {

@@ -54,12 +54,12 @@ class Daftarmapel extends BaseController
     public function tambah() {
         $mapelModel = new DaftarmapelModel();
 
-        $kode = $this->request->getPost('kd_mapel');
-        $mapel = $this->request->getPost('mapel');
-        $kelas = $this->request->getPost('kelas');
-        $jurusan = $this->request->getPost('jurusan');
-        $tahunAjaran = $this->request->getPost('periode');
-        $guru = $this->request->getPost('guru');
+        $kode = htmlspecialchars($this->request->getPost('kd_mapel'));
+        $mapel = htmlspecialchars($this->request->getPost('mapel'));
+        $kelas = htmlspecialchars($this->request->getPost('kelas'));
+        $jurusan = htmlspecialchars($this->request->getPost('jurusan'));
+        $tahunAjaran = htmlspecialchars($this->request->getPost('periode'));
+        $guru = htmlspecialchars($this->request->getPost('guru'));
         $return = $mapelModel->tambahDataMapel($kode, $mapel, $kelas, $jurusan, $tahunAjaran, $guru);
 
         if ($return) {
@@ -77,13 +77,13 @@ class Daftarmapel extends BaseController
     public function ubah() {
         $mapelModel = new DaftarmapelModel();
 
-        $id = $this->request->getPost('id');
-        $kode = $this->request->getPost('kd_mapel');
-        $mapel = $this->request->getPost('mapel');
-        $kelas = $this->request->getPost('kelas');
-        $jurusan = $this->request->getPost('jurusan');
-        $tahunAjaran = $this->request->getPost('periode');
-        $guru = $this->request->getPost('guru');
+        $id = htmlspecialchars($this->request->getPost('id'));
+        $kode = htmlspecialchars($this->request->getPost('kd_mapel'));
+        $mapel = htmlspecialchars($this->request->getPost('mapel'));
+        $kelas = htmlspecialchars($this->request->getPost('kelas'));
+        $jurusan = htmlspecialchars($this->request->getPost('jurusan'));
+        $tahunAjaran = htmlspecialchars($this->request->getPost('periode'));
+        $guru = htmlspecialchars($this->request->getPost('guru'));
         $return = $mapelModel->ubahDataMapel($id, $kode, $mapel, $kelas, $jurusan, $tahunAjaran, $guru);
 
         if ($return) {
@@ -125,7 +125,7 @@ class Daftarmapel extends BaseController
         $dataMapel = $mapelModel->dataMapel($idPeriode);
         $tahunAjaran = $periodeModel->tahunPeriode($idPeriode);
 
-         // Create an instance of the class:
+        // Create an instance of the class:
         $mpdf = new Mpdf();
 
         $header = '<div style="border-bottom: 1px solid black; padding-bottom: 5px;">
@@ -244,7 +244,7 @@ class Daftarmapel extends BaseController
             ],
         ]);
 
-         // Menentukan batas akhir data
+        // Menentukan batas akhir data
         $lastRow = $baris - 1;
 
         // Tambahkan border ke seluruh tabel
