@@ -28,9 +28,13 @@
                     <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
                     Daftar Peserta Didik
                 </a>
-                 <a class="nav-link <?php if ($linkActive == 'daftar_nilai') { echo 'active'; }?>" href="/daftar_nilai">
+                <a class="nav-link <?php if ($linkActive == 'daftar_nilai') { echo 'active'; }?>" href="/daftar_nilai">
                     <div class="sb-nav-link-icon"><i class="fas fa-bar-chart"></i></div>
                     Daftar Nilai
+                </a>
+                <a class="nav-link <?php if ($linkActive == 'cetak_laporan') { echo 'active'; }?>" href="/cetak_laporan">
+                    <div class="sb-nav-link-icon"><i class="fas fa-print"></i></div>
+                    Cetak Laporan
                 </a>
             </div>
         </div>

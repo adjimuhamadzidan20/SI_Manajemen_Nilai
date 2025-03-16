@@ -16,10 +16,11 @@ class Daftarjurusan extends BaseController
         $data = [
             'jurusan' => $jurusanModel->dataJurusan(),
             'kode' => 'JU'. sprintf('%03s', $kdSekarang),
-            'linkActive' => 'daftar_jurusan'  
+            'linkActive' => 'daftar_jurusan',
+            'tab_name' => 'Daftar Jurusan'  
         ];
 
-        echo view('partials/header');   
+        echo view('partials/header', $data);   
         echo view('daftar_jurusan_view', $data);
         echo view('partials/footer');
     }

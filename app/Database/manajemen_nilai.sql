@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 27 Feb 2025 pada 02.51
+-- Waktu pembuatan: 16 Mar 2025 pada 04.09
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.1.31
 
@@ -121,62 +121,11 @@ INSERT INTO `dt_mapel` (`id_mapel`, `kd_mapel`, `nama_mapel`, `kelas`, `id_jurus
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `dt_nilai_pas`
+-- Struktur dari tabel `dt_nilai_murid`
 --
 
-CREATE TABLE `dt_nilai_pas` (
-  `id_pas` int(20) NOT NULL,
-  `id_siswa` int(20) NOT NULL,
-  `id_mapel` int(20) NOT NULL,
-  `kelas` varchar(20) NOT NULL,
-  `id_jurusan` int(20) NOT NULL,
-  `id_periode` int(20) NOT NULL,
-  `semester` varchar(20) NOT NULL,
-  `nilai_pas` int(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data untuk tabel `dt_nilai_pas`
---
-
-INSERT INTO `dt_nilai_pas` (`id_pas`, `id_siswa`, `id_mapel`, `kelas`, `id_jurusan`, `id_periode`, `semester`, `nilai_pas`) VALUES
-(2, 8, 31, 'X', 1, 4, 'Ganjil', 82),
-(3, 9, 31, 'X', 1, 4, 'Ganjil', 80);
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `dt_nilai_pts`
---
-
-CREATE TABLE `dt_nilai_pts` (
-  `id_pts` int(20) NOT NULL,
-  `id_siswa` int(20) NOT NULL,
-  `id_mapel` int(20) NOT NULL,
-  `kelas` varchar(20) NOT NULL,
-  `id_jurusan` int(20) NOT NULL,
-  `id_periode` int(20) NOT NULL,
-  `semester` varchar(20) NOT NULL,
-  `nilai_pts` int(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data untuk tabel `dt_nilai_pts`
---
-
-INSERT INTO `dt_nilai_pts` (`id_pts`, `id_siswa`, `id_mapel`, `kelas`, `id_jurusan`, `id_periode`, `semester`, `nilai_pts`) VALUES
-(5, 8, 31, 'X', 1, 4, 'Ganjil', 79),
-(6, 9, 31, 'X', 1, 4, 'Ganjil', 85),
-(7, 10, 31, 'X', 1, 4, 'Ganjil', 78);
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `dt_nilai_tugas`
---
-
-CREATE TABLE `dt_nilai_tugas` (
-  `id_tugas` int(20) NOT NULL,
+CREATE TABLE `dt_nilai_murid` (
+  `id_nilai` int(20) NOT NULL,
   `id_siswa` int(20) DEFAULT 0,
   `id_mapel` int(20) DEFAULT 0,
   `kelas` varchar(20) DEFAULT '0',
@@ -196,18 +145,23 @@ CREATE TABLE `dt_nilai_tugas` (
   `LM_1` int(30) DEFAULT 0,
   `LM_2` int(30) DEFAULT 0,
   `LM_3` int(3) DEFAULT 0,
-  `na_sumatif` int(30) DEFAULT 0
+  `na_sumatif` int(30) DEFAULT 0,
+  `pts` int(20) NOT NULL,
+  `pat` int(20) NOT NULL,
+  `nilai_akhir` int(20) NOT NULL,
+  `nilai_rapor` int(20) NOT NULL,
+  `deskripsi` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data untuk tabel `dt_nilai_tugas`
+-- Dumping data untuk tabel `dt_nilai_murid`
 --
 
-INSERT INTO `dt_nilai_tugas` (`id_tugas`, `id_siswa`, `id_mapel`, `kelas`, `id_jurusan`, `id_periode`, `semester`, `nilai_1`, `nilai_2`, `nilai_3`, `nilai_4`, `nilai_5`, `nilai_6`, `nilai_7`, `nilai_8`, `nilai_9`, `na_materi`, `LM_1`, `LM_2`, `LM_3`, `na_sumatif`) VALUES
-(30, 8, 31, 'X', 1, 4, 'Ganjil', 80, 75, 85, 78, 79, 76, 80, 76, 77, 78, 78, 78, 78, 77),
-(31, 9, 31, 'X', 1, 4, 'Ganjil', 80, 78, 85, 78, 78, 76, 80, 76, 77, 79, 77, 77, 78, 77),
-(32, 10, 31, 'X', 1, 4, 'Ganjil', 75, 80, 78, 80, 78, 78, 80, 77, 85, 79, 79, 79, 81, 79),
-(33, 11, 31, 'X', 1, 4, 'Ganjil', 76, 80, 78, 80, 80, 76, 75, 78, 77, 78, 79, 79, 77, 77);
+INSERT INTO `dt_nilai_murid` (`id_nilai`, `id_siswa`, `id_mapel`, `kelas`, `id_jurusan`, `id_periode`, `semester`, `nilai_1`, `nilai_2`, `nilai_3`, `nilai_4`, `nilai_5`, `nilai_6`, `nilai_7`, `nilai_8`, `nilai_9`, `na_materi`, `LM_1`, `LM_2`, `LM_3`, `na_sumatif`, `pts`, `pat`, `nilai_akhir`, `nilai_rapor`, `deskripsi`) VALUES
+(1, 8, 31, 'X', 1, 4, 'Ganjil', 0, 0, 0, 75, 0, 0, 80, 78, 0, 78, 0, 75, 79, 77, 75, 84, 80, 78, 'Cukup dalam pemahaman pada mata pelajaran ini, tingkatkan kembali agar dapat menjadi lebih baik lagi'),
+(2, 9, 31, 'X', 1, 4, 'Ganjil', 0, 0, 0, 78, 0, 0, 80, 80, 0, 79, 0, 78, 80, 79, 78, 92, 85, 81, 'Baik dalam pemahaman pada mata pelajaran ini, tingkatkan kembali agar dapat menjadi lebih baik lagi'),
+(3, 10, 31, 'X', 1, 4, 'Ganjil', 0, 0, 0, 75, 0, 0, 75, 75, 0, 75, 0, 75, 75, 75, 78, 92, 85, 78, 'Baik dalam pemahaman pada mata pelajaran ini, tingkatkan kembali agar dapat menjadi lebih baik lagi'),
+(4, 11, 31, 'X', 1, 4, 'Ganjil', 75, 80, 78, 75, 78, 0, 75, 75, 0, 77, 51, 77, 75, 67, 90, 84, 87, 77, 'Cukup dalam pemahaman pada mata pelajaran ini, tingkatkan kembali agar dapat menjadi lebih baik lagi');
 
 -- --------------------------------------------------------
 
@@ -229,9 +183,7 @@ CREATE TABLE `dt_periode_ajaran` (
 
 INSERT INTO `dt_periode_ajaran` (`id_periode`, `kd_ajaran`, `semester_pertama`, `semester_kedua`, `tahun_ajaran`) VALUES
 (4, 'PA001', 'Semester 1 (Ganjil)', 'Semester 2 (Genap)', '2024/2025'),
-(12, 'PA002', 'Semester 1 (Ganjil)', 'Semester 2 (Genap)', '2025/2026'),
-(25, 'PA003', 'Semester 1 (Ganjil)', 'Semester 2 (Genap)', '2027/2028'),
-(27, 'PA004', 'Semester 1 (Ganjil)', 'Semester 2 (Genap)', '2029/2030');
+(12, 'PA002', 'Semester 1 (Ganjil)', 'Semester 2 (Genap)', '2025/2026');
 
 -- --------------------------------------------------------
 
@@ -299,30 +251,10 @@ ALTER TABLE `dt_mapel`
   ADD KEY `id_periode` (`id_periode`);
 
 --
--- Indeks untuk tabel `dt_nilai_pas`
+-- Indeks untuk tabel `dt_nilai_murid`
 --
-ALTER TABLE `dt_nilai_pas`
-  ADD PRIMARY KEY (`id_pas`),
-  ADD KEY `id_siswa` (`id_siswa`,`id_mapel`),
-  ADD KEY `id_mapel` (`id_mapel`),
-  ADD KEY `id_jurusan` (`id_jurusan`,`id_periode`),
-  ADD KEY `id_periode` (`id_periode`);
-
---
--- Indeks untuk tabel `dt_nilai_pts`
---
-ALTER TABLE `dt_nilai_pts`
-  ADD PRIMARY KEY (`id_pts`),
-  ADD KEY `id_siswa` (`id_siswa`,`id_mapel`),
-  ADD KEY `id_mapel` (`id_mapel`),
-  ADD KEY `id_jurusan` (`id_jurusan`,`id_periode`),
-  ADD KEY `id_periode` (`id_periode`);
-
---
--- Indeks untuk tabel `dt_nilai_tugas`
---
-ALTER TABLE `dt_nilai_tugas`
-  ADD PRIMARY KEY (`id_tugas`),
+ALTER TABLE `dt_nilai_murid`
+  ADD PRIMARY KEY (`id_nilai`),
   ADD KEY `id_siswa` (`id_siswa`,`id_mapel`),
   ADD KEY `id_mapel` (`id_mapel`),
   ADD KEY `id_jurusan` (`id_jurusan`),
@@ -372,22 +304,10 @@ ALTER TABLE `dt_mapel`
   MODIFY `id_mapel` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
--- AUTO_INCREMENT untuk tabel `dt_nilai_pas`
+-- AUTO_INCREMENT untuk tabel `dt_nilai_murid`
 --
-ALTER TABLE `dt_nilai_pas`
-  MODIFY `id_pas` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT untuk tabel `dt_nilai_pts`
---
-ALTER TABLE `dt_nilai_pts`
-  MODIFY `id_pts` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
-
---
--- AUTO_INCREMENT untuk tabel `dt_nilai_tugas`
---
-ALTER TABLE `dt_nilai_tugas`
-  MODIFY `id_tugas` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+ALTER TABLE `dt_nilai_murid`
+  MODIFY `id_nilai` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `dt_periode_ajaran`
@@ -420,31 +340,13 @@ ALTER TABLE `dt_mapel`
   ADD CONSTRAINT `dt_mapel_ibfk_2` FOREIGN KEY (`id_periode`) REFERENCES `dt_periode_ajaran` (`id_periode`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
--- Ketidakleluasaan untuk tabel `dt_nilai_pas`
+-- Ketidakleluasaan untuk tabel `dt_nilai_murid`
 --
-ALTER TABLE `dt_nilai_pas`
-  ADD CONSTRAINT `dt_nilai_pas_ibfk_1` FOREIGN KEY (`id_siswa`) REFERENCES `dt_siswa` (`id_siswa`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `dt_nilai_pas_ibfk_2` FOREIGN KEY (`id_mapel`) REFERENCES `dt_mapel` (`id_mapel`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `dt_nilai_pas_ibfk_3` FOREIGN KEY (`id_jurusan`) REFERENCES `dt_jurusan` (`id_jurusan`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `dt_nilai_pas_ibfk_4` FOREIGN KEY (`id_periode`) REFERENCES `dt_periode_ajaran` (`id_periode`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Ketidakleluasaan untuk tabel `dt_nilai_pts`
---
-ALTER TABLE `dt_nilai_pts`
-  ADD CONSTRAINT `dt_nilai_pts_ibfk_1` FOREIGN KEY (`id_siswa`) REFERENCES `dt_siswa` (`id_siswa`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `dt_nilai_pts_ibfk_2` FOREIGN KEY (`id_mapel`) REFERENCES `dt_mapel` (`id_mapel`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `dt_nilai_pts_ibfk_3` FOREIGN KEY (`id_jurusan`) REFERENCES `dt_jurusan` (`id_jurusan`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `dt_nilai_pts_ibfk_4` FOREIGN KEY (`id_periode`) REFERENCES `dt_periode_ajaran` (`id_periode`) ON DELETE CASCADE ON UPDATE CASCADE;
-
---
--- Ketidakleluasaan untuk tabel `dt_nilai_tugas`
---
-ALTER TABLE `dt_nilai_tugas`
-  ADD CONSTRAINT `dt_nilai_tugas_ibfk_1` FOREIGN KEY (`id_siswa`) REFERENCES `dt_siswa` (`id_siswa`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `dt_nilai_tugas_ibfk_2` FOREIGN KEY (`id_mapel`) REFERENCES `dt_mapel` (`id_mapel`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `dt_nilai_tugas_ibfk_4` FOREIGN KEY (`id_jurusan`) REFERENCES `dt_jurusan` (`id_jurusan`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `dt_nilai_tugas_ibfk_5` FOREIGN KEY (`id_periode`) REFERENCES `dt_periode_ajaran` (`id_periode`) ON DELETE CASCADE ON UPDATE CASCADE;
+ALTER TABLE `dt_nilai_murid`
+  ADD CONSTRAINT `dt_nilai_murid_ibfk_1` FOREIGN KEY (`id_siswa`) REFERENCES `dt_siswa` (`id_siswa`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `dt_nilai_murid_ibfk_2` FOREIGN KEY (`id_mapel`) REFERENCES `dt_mapel` (`id_mapel`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `dt_nilai_murid_ibfk_4` FOREIGN KEY (`id_jurusan`) REFERENCES `dt_jurusan` (`id_jurusan`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `dt_nilai_murid_ibfk_5` FOREIGN KEY (`id_periode`) REFERENCES `dt_periode_ajaran` (`id_periode`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Ketidakleluasaan untuk tabel `dt_siswa`

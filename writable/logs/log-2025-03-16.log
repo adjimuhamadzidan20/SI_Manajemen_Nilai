@@ -1,0 +1,726 @@
+INFO - 2025-03-16 02:22:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-03-16 02:22:32 --> [DEPRECATED] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Loginadmin.php on line 18.
+ 1 APPPATH\Controllers\Loginadmin.php(18): htmlspecialchars(null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+INFO - 2025-03-16 02:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:22:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:22:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:37:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:37:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:37:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:38:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:38:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:38:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:39:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:39:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:39:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:39:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:40:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:41:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:43:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 02:44:57 --> mysqli_sql_exception: Table 'manajemen_nilai.dt_nilai_tugas' doesn't exist in C:\xampp\htdocs\SI_Manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\SI_Manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT dt_nilai...', 0)
+#1 C:\xampp\htdocs\SI_Manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT dt_nilai...')
+#2 C:\xampp\htdocs\SI_Manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT dt_nilai...')
+#3 C:\xampp\htdocs\SI_Manajemen_nilai\app\Models\DaftarnilaisiswaModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai...')
+#4 C:\xampp\htdocs\SI_Manajemen_nilai\app\Controllers\Daftarnilai_siswa.php(184): App\Models\DaftarnilaisiswaModel->dataNilai('Ganjil', '4', 'X', '1', '31')
+#5 C:\xampp\htdocs\SI_Manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Daftarnilai_siswa->peserta_didik('X', '1', 'Informatika', '31', '4', 'Ganjil')
+#6 C:\xampp\htdocs\SI_Manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_siswa))
+#7 C:\xampp\htdocs\SI_Manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SI_Manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\SI_Manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\SI_Manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\SI_Manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-03-16 02:44:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'manajemen_nilai.dt_nilai_tugas' doesn't exist
+[Method: GET, Route: daftar_nilai_siswa/peserta_didik/X/1/Informatika/31/4/Ganjil]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\DaftarnilaisiswaModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31')
+ 2 APPPATH\Controllers\Daftarnilai_siswa.php(184): App\Models\DaftarnilaisiswaModel->dataNilai('Ganjil', '4', 'X', '1', '31')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_siswa->peserta_didik('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_siswa))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-03-16 02:44:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'manajemen_nilai.dt_nilai_tugas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31')
+ 3 APPPATH\Models\DaftarnilaisiswaModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31')
+ 4 APPPATH\Controllers\Daftarnilai_siswa.php(184): App\Models\DaftarnilaisiswaModel->dataNilai('Ganjil', '4', 'X', '1', '31')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_siswa->peserta_didik('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-03-16 02:44:58 --> [Caused by] mysqli_sql_exception: Table 'manajemen_nilai.dt_nilai_tugas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31')
+ 4 APPPATH\Models\DaftarnilaisiswaModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31')
+ 5 APPPATH\Controllers\Daftarnilai_siswa.php(184): App\Models\DaftarnilaisiswaModel->dataNilai('Ganjil', '4', 'X', '1', '31')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_siswa->peserta_didik('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+INFO - 2025-03-16 02:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:46:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 02:46:08 --> mysqli_sql_exception: Table 'manajemen_nilai.dt_nilai_tugas' doesn't exist in C:\xampp\htdocs\SI_Manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\SI_Manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT dt_nilai...', 0)
+#1 C:\xampp\htdocs\SI_Manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT dt_nilai...')
+#2 C:\xampp\htdocs\SI_Manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT dt_nilai...')
+#3 C:\xampp\htdocs\SI_Manajemen_nilai\app\Models\DaftarnilaisiswaModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai...')
+#4 C:\xampp\htdocs\SI_Manajemen_nilai\app\Controllers\Daftarnilai_siswa.php(184): App\Models\DaftarnilaisiswaModel->dataNilai('Ganjil', '4', 'X', '1', '31')
+#5 C:\xampp\htdocs\SI_Manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Daftarnilai_siswa->peserta_didik('X', '1', 'Informatika', '31', '4', 'Ganjil')
+#6 C:\xampp\htdocs\SI_Manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_siswa))
+#7 C:\xampp\htdocs\SI_Manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SI_Manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\SI_Manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\SI_Manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\SI_Manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-03-16 02:46:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'manajemen_nilai.dt_nilai_tugas' doesn't exist
+[Method: GET, Route: daftar_nilai_siswa/peserta_didik/X/1/Informatika/31/4/Ganjil]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\DaftarnilaisiswaModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31')
+ 2 APPPATH\Controllers\Daftarnilai_siswa.php(184): App\Models\DaftarnilaisiswaModel->dataNilai('Ganjil', '4', 'X', '1', '31')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_siswa->peserta_didik('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_siswa))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-03-16 02:46:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'manajemen_nilai.dt_nilai_tugas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31')
+ 3 APPPATH\Models\DaftarnilaisiswaModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31')
+ 4 APPPATH\Controllers\Daftarnilai_siswa.php(184): App\Models\DaftarnilaisiswaModel->dataNilai('Ganjil', '4', 'X', '1', '31')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_siswa->peserta_didik('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-03-16 02:46:08 --> [Caused by] mysqli_sql_exception: Table 'manajemen_nilai.dt_nilai_tugas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31')
+ 4 APPPATH\Models\DaftarnilaisiswaModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai_tugas 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31')
+ 5 APPPATH\Controllers\Daftarnilai_siswa.php(184): App\Models\DaftarnilaisiswaModel->dataNilai('Ganjil', '4', 'X', '1', '31')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_siswa->peserta_didik('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+INFO - 2025-03-16 02:47:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-03-16 02:47:41 --> mysqli_sql_exception: Table 'manajemen_nilai.dt_nilai' doesn't exist in C:\xampp\htdocs\SI_Manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\SI_Manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT dt_nilai...', 0)
+#1 C:\xampp\htdocs\SI_Manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT dt_nilai...')
+#2 C:\xampp\htdocs\SI_Manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT dt_nilai...')
+#3 C:\xampp\htdocs\SI_Manajemen_nilai\app\Models\DaftarnilaisiswaModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai...')
+#4 C:\xampp\htdocs\SI_Manajemen_nilai\app\Controllers\Daftarnilai_siswa.php(184): App\Models\DaftarnilaisiswaModel->dataNilai('Ganjil', '4', 'X', '1', '31')
+#5 C:\xampp\htdocs\SI_Manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Daftarnilai_siswa->peserta_didik('X', '1', 'Informatika', '31', '4', 'Ganjil')
+#6 C:\xampp\htdocs\SI_Manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_siswa))
+#7 C:\xampp\htdocs\SI_Manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SI_Manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\SI_Manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\SI_Manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\SI_Manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-03-16 02:47:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'manajemen_nilai.dt_nilai' doesn't exist
+[Method: GET, Route: daftar_nilai_siswa/peserta_didik/X/1/Informatika/31/4/Ganjil]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\DaftarnilaisiswaModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31')
+ 2 APPPATH\Controllers\Daftarnilai_siswa.php(184): App\Models\DaftarnilaisiswaModel->dataNilai('Ganjil', '4', 'X', '1', '31')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_siswa->peserta_didik('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_siswa))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-03-16 02:47:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'manajemen_nilai.dt_nilai' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31')
+ 3 APPPATH\Models\DaftarnilaisiswaModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31')
+ 4 APPPATH\Controllers\Daftarnilai_siswa.php(184): App\Models\DaftarnilaisiswaModel->dataNilai('Ganjil', '4', 'X', '1', '31')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_siswa->peserta_didik('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-03-16 02:47:41 --> [Caused by] mysqli_sql_exception: Table 'manajemen_nilai.dt_nilai' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31')
+ 4 APPPATH\Models\DaftarnilaisiswaModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai.id_nilai, dt_nilai.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai.id_mapel, dt_mapel.nama_mapel, dt_nilai.kelas, dt_nilai.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai.semester, dt_nilai.nilai_1, 
+        dt_nilai.nilai_2, dt_nilai.nilai_3, dt_nilai.nilai_4, dt_nilai.nilai_5, dt_nilai.nilai_6,
+        dt_nilai.nilai_7, dt_nilai.nilai_8, dt_nilai.nilai_9, dt_nilai.na_materi, dt_nilai.LM_1, 
+        dt_nilai.LM_2, dt_nilai.LM_3, dt_nilai.na_sumatif, dt_nilai.pts, dt_nilai.pat, 
+        dt_nilai.nilai_akhir, dt_nilai.nilai_rapor, dt_nilai.deskripsi FROM dt_nilai 
+        INNER JOIN dt_siswa ON dt_nilai.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai.id_periode = 4 AND dt_nilai.kelas = \'X\'
+        AND dt_nilai.id_jurusan = 1 AND dt_nilai.id_mapel = 31')
+ 5 APPPATH\Controllers\Daftarnilai_siswa.php(184): App\Models\DaftarnilaisiswaModel->dataNilai('Ganjil', '4', 'X', '1', '31')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_siswa->peserta_didik('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+INFO - 2025-03-16 02:50:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-16 02:50:05 --> ErrorException: Undefined array key "id_tugas"
+[Method: GET, Route: daftar_nilai_siswa/peserta_didik/X/1/Informatika/31/4/Ganjil]
+in APPPATH\Views\nilai_siswa_view.php on line 102.
+ 1 APPPATH\Views\nilai_siswa_view.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_tugas"', 'C:\\xampp\\htdocs\\SI_Manajemen_nilai\\app\\Views\\nilai_siswa_view.php', 102)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\app\\Views\\nilai_siswa_view.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('nilai_siswa_view', [], true)
+ 5 APPPATH\Controllers\Daftarnilai_siswa.php(190): view('nilai_siswa_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_siswa->peserta_didik('X', '1', 'Informatika', '31', '4', 'Ganjil')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+INFO - 2025-03-16 02:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:52:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:52:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:52:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:53:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:53:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:54:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:54:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:54:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:56:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:59:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:59:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:59:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 02:59:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:00:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:00:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:00:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:01:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:01:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:02:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:03:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:03:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:03:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:04:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:07:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:07:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:07:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:08:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:08:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:08:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:08:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:13:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:28:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:28:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:28:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:29:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:29:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-16 03:32:49 --> ErrorException: Undefined variable $linkActive
+[Method: GET, Route: dashboard]
+in APPPATH\Views\partials\header.php on line 9.
+ 1 APPPATH\Views\partials\header.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $linkActive', 'C:\\xampp\\htdocs\\SI_Manajemen_nilai\\app\\Views\\partials\\header.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\app\\Views\\partials\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partials/header', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(13): view('partials/header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+INFO - 2025-03-16 03:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:38:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:38:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-16 03:38:37 --> ErrorException: Undefined variable $tab_name
+[Method: GET, Route: daftar_kelas/periode_kelas/4]
+in APPPATH\Views\partials\header.php on line 9.
+ 1 APPPATH\Views\partials\header.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tab_name', 'C:\\xampp\\htdocs\\SI_Manajemen_nilai\\app\\Views\\partials\\header.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\app\\Views\\partials\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partials/header', [], true)
+ 5 APPPATH\Controllers\Daftarkelas.php(51): view('partials/header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarkelas->periode('4')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarkelas))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+INFO - 2025-03-16 03:39:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:40:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:42:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:42:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:42:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:43:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:43:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:43:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-03-16 03:43:29 --> ErrorException: Undefined variable $tab_name
+[Method: GET, Route: cetak_laporan]
+in APPPATH\Views\partials\header.php on line 9.
+ 1 APPPATH\Views\partials\header.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tab_name', 'C:\\xampp\\htdocs\\SI_Manajemen_nilai\\app\\Views\\partials\\header.php', 9)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\app\\Views\\partials\\header.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('partials/header', [], true)
+ 5 APPPATH\Controllers\Cetaklaporan_pts.php(28): view('partials/header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Cetaklaporan_pts->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetaklaporan_pts))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+INFO - 2025-03-16 03:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:48:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:48:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:48:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:48:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:48:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:48:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:49:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:49:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-03-16 03:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

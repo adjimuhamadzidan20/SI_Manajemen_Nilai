@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="si_manajemen_nilai" />
         <meta name="author" content="adji_muhamad_zidan" />
-        <title>SI Manajemen Nilai | Dashboard</title>
+        <title>SI Manajemen Nilai | <?= $tab_name; ?></title>
 
         <link href="<?= base_url('assets'); ?>/css/styles.css" rel="stylesheet" />
         <link href="<?= base_url('assets'); ?>/plugin/toastr/toastr.min.css" rel="stylesheet" />

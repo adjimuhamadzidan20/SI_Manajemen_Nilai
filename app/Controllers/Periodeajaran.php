@@ -16,10 +16,11 @@ class Periodeajaran extends BaseController
         $data = [
             'periode' => $periodeModel->dataPeriode(),
             'kode' => 'PA'. sprintf('%03s', $kdSekarang),
-            'linkActive' => 'periode' 
+            'linkActive' => 'periode',
+            'tab_name' => 'Periode Ajaran' 
         ];
 
-        echo view('partials/header');
+        echo view('partials/header', $data);
         echo view('periode_ajaran_view', $data);
         echo view('partials/footer');
     }

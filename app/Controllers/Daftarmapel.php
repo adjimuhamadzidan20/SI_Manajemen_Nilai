@@ -18,10 +18,11 @@ class Daftarmapel extends BaseController
 
         $data = [
             'periode' => $periodeModel->dataPeriode(),
-            'linkActive' => 'daftar_mapel'  
+            'linkActive' => 'daftar_mapel',   
+            'tab_name' => 'Daftar Mapel'
         ];
         
-        echo view('partials/header');
+        echo view('partials/header', $data);
         echo view('daftar_mapel_view', $data);
         echo view('partials/footer');
     }
@@ -43,10 +44,11 @@ class Daftarmapel extends BaseController
             'periode' => $periodeModel->dataPeriode(), 
             'tahun_ajaran' => $periodeModel->tahunPeriode($thn_ajaran),
             'id_periode' => $periodeModel->idPeriode($thn_ajaran),
-            'linkActive' => 'daftar_mapel'
+            'linkActive' => 'daftar_mapel',
+            'tab_name' => 'Daftar Mapel' 
         ];
 
-        echo view('partials/header');   
+        echo view('partials/header', $data);   
         echo view('daftar_mapel_isi_view', $data);
         echo view('partials/footer');
     }

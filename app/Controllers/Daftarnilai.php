@@ -2,11 +2,6 @@
 
 namespace App\Controllers;
 use App\Models\PeriodeajaranModel;
-use App\Models\DaftarjurusanModel;
-use App\Models\DaftarkelasModel;
-use App\Models\DaftarmapelModel;
-use App\Models\DaftarsiswaModel;
-use App\Models\DaftarnilaitugasModel;
 
 class Daftarnilai extends BaseController
 {
@@ -16,10 +11,11 @@ class Daftarnilai extends BaseController
 
         $data = [
             'periode' => $periodeModel->dataPeriode(),
-            'linkActive' => 'daftar_nilai' 
+            'linkActive' => 'daftar_nilai',
+            'tab_name' => 'Daftar Nilai' 
         ];
 
-        echo view('partials/header');
+        echo view('partials/header', $data);
         echo view('daftar_nilai_view', $data);
         echo view('partials/footer');
     }

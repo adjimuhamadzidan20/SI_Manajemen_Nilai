@@ -18,10 +18,12 @@ class Daftarkelas extends BaseController
 
         $data = [
             'periode' => $periodeModel->dataPeriode(),
-            'linkActive' => 'daftar_kelas' 
+            'linkActive' => 'daftar_kelas',
+            'tab_name' => 'Daftar Kelas' 
+
         ];
 
-        echo view('partials/header');   
+        echo view('partials/header', $data);   
         echo view('daftar_kelas_view', $data);
         echo view('partials/footer');
     }
@@ -43,10 +45,11 @@ class Daftarkelas extends BaseController
             'periode' => $periodeModel->dataPeriode(), 
             'tahun_ajaran' => $periodeModel->tahunPeriode($thn_ajaran),
             'id_periode' => $periodeModel->idPeriode($thn_ajaran),
-            'linkActive' => 'daftar_kelas'
+            'linkActive' => 'daftar_kelas',
+            'tab_name' => 'Daftar Kelas' 
         ];
 
-        echo view('partials/header');   
+        echo view('partials/header', $data);   
         echo view('daftar_kelas_isi_view', $data);
         echo view('partials/footer');
     }

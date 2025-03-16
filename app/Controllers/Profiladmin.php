@@ -12,10 +12,11 @@ class Profiladmin extends BaseController
 
         $data = [
             'dtadmin' => $adminModel->dataAdmin($id),
-            'linkActive' => 'profil' 
+            'linkActive' => 'profil',
+            'tab_name' => 'Profil' 
         ];
 
-        echo view('partials/header');
+        echo view('partials/header', $data);
         echo view('profil_view', $data);
         echo view('partials/footer');
     }

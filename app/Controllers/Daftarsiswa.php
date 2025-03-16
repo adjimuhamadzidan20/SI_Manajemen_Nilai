@@ -20,10 +20,11 @@ class Daftarsiswa extends BaseController
         $data = [
             'periode' => $periodeModel->dataPeriode(),
             'kelas' => $kelasModel->dataKelasAll(),
-            'linkActive' => 'daftar_siswa' 
+            'linkActive' => 'daftar_siswa',
+            'tab_name' => 'Daftar Siswa' 
         ];
 
-        echo view('partials/header');
+        echo view('partials/header', $data);
         echo view('daftar_murid_view', $data);
         echo view('partials/footer');
     }
@@ -36,10 +37,11 @@ class Daftarsiswa extends BaseController
             'kelas' => $kelasModel->dataKelas($thn_ajaran),
             'jumlah' => $kelasModel->jumlahData($thn_ajaran),
             'tahun_ajaran' => $periodeModel->tahunPeriode($thn_ajaran),
-            'linkActive' => 'daftar_siswa'
+            'linkActive' => 'daftar_siswa',
+            'tab_name' => 'Daftar Siswa' 
         ];
 
-        echo view('partials/header');
+        echo view('partials/header', $data);
         echo view('daftar_murid_rinci_view', $data);
         echo view('partials/footer');
     }
@@ -57,10 +59,11 @@ class Daftarsiswa extends BaseController
             'jumlah' => $siswaModel->jumlahData($thn_ajaran, $kelas, $jurusan),
             'kelas' => $kelasModel->detailKelas($thn_ajaran, $kelas, $jurusan),
             'kode' => 'PD'. sprintf('%03s', $kdSekarang),
-            'linkActive' => 'daftar_siswa'
+            'linkActive' => 'daftar_siswa',
+            'tab_name' => 'Daftar Siswa' 
         ];
 
-        echo view('partials/header');
+        echo view('partials/header', $data);
         echo view('daftar_murid_isi_view', $data);
         echo view('partials/footer');
     }

@@ -7,10 +7,11 @@ class Dashboard extends BaseController
     public function index()
     {
         $data = [
-            'linkActive' => 'dashboard'
+            'linkActive' => 'dashboard',
+            'tab_name' => 'Dashboard'
         ];
 
-        echo view('partials/header');
+        echo view('partials/header', $data);
         echo view('dashboard_view', $data);
         echo view('partials/footer');
     }
