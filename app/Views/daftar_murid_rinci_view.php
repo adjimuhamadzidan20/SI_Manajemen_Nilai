@@ -21,7 +21,7 @@
                       <div class="card-header">
                         <div class="d-flex justify-content-between align-items-center">
                           <a href="/daftar_siswa" class="btn btn-primary btn-sm">Kembali</a>
-                          Daftar kelas tahun <?= $tahun_ajaran; ?>
+                          <div class="d-none d-sm-inline">Daftar kelas tahun <?= $tahun_ajaran; ?></div>
                         </div>
                       </div>
                       <div class="card-body">
@@ -30,8 +30,8 @@
                             if ($jumlah > 0) {  
                               foreach ($kelas as $data) :
                           ?>
-                            <li class="list-group-item d-flex justify-content-between align-items-center">
-                              <div class="ms-2 me-auto">
+                            <li class="list-group-item d-block d-sm-flex justify-content-between align-items-center">
+                              <div class="ms-2 me-auto mb-2 mb-sm-0">
                                 <div class="fw-normal">
                                   <?= $data['kd_kelas']; ?> - <?= $data['kelas']; ?> <?= $data['nama_jurusan']; ?> 
                                 </div>

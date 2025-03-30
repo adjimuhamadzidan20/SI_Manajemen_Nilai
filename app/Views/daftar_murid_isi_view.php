@@ -41,7 +41,8 @@
                               endforeach;
                             ?>
                           </div>
-                          <div>
+
+                          <div class="d-none d-sm-inline">
                             <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambah_murid"><i class="fas fa-plus"></i> Tambah</button>
 
                             <?php  
@@ -67,11 +68,40 @@
                             <?php  
                               endforeach;
                             ?>
+                          </div>
 
+                          <div class="d-sm-none">
+                            <div class="dropdown">
+                              <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Opsi</button>
+
+                              <ul class="dropdown-menu">
+                                <li><button type="button" class="btn btn-primary btn-sm dropdown-item" data-bs-toggle="modal" data-bs-target="#tambah_murid"><i class="fas fa-plus"></i> Tambah</button></li>
+
+                                <?php  
+                                  if ($jumlah > 0) {
+                                ?>
+                                  <li>
+                                    <a href="/daftar_siswa/cetak_siswa_pdf/<?= $data['id_periode']; ?>/<?= $data['id_kelas']; ?>/<?= $data['id_jurusan']; ?>" class="btn btn-primary btn-sm dropdown-item"><i class="fas fa-file-pdf"></i> Cetak PDF</a></li>
+                                  <li>
+                                    <a href="/daftar_siswa/cetak_siswa_excel/<?= $data['id_periode']; ?>/<?= $data['id_kelas']; ?>/<?= $data['id_jurusan']; ?>" class="btn btn-primary btn-sm dropdown-item"><i class="fas fa-file-excel"></i> Cetak Excel</a></li>
+                                <?php  
+                                  } else {
+                                ?>
+                                  <li>
+                                    <button href="/daftar_siswa/cetak_siswa_pdf/<?= $data['id_periode']; ?>/<?= $data['id_kelas']; ?>/<?= $data['id_jurusan']; ?>" class="btn btn-primary btn-sm dropdown-item" disabled><i class="fas fa-file-pdf"></i> Cetak PDF</button>
+                                  </li>
+                                  <li>
+                                    <button href="/daftar_siswa/cetak_siswa_excel/<?= $data['id_periode']; ?>/<?= $data['id_kelas']; ?>/<?= $data['id_jurusan']; ?>" class="btn btn-primary btn-sm dropdown-item" disabled><i class="fas fa-file-excel"></i> Cetak Excel</button>
+                                  </li>
+                                <?php  
+                                  }
+                                ?>
+                              </ul>
+                            </div>
                           </div>
                         </div>
                         <div class="card-body">
-                          <table id="datatablesSimple" class="table table-bordered" style="width:100%">
+                          <table id="datatablesSimple" class="display nowrap  table table-bordered" style="width:100%">
                             <thead>
                               <tr>
                                 <th class="text-start">No</th>

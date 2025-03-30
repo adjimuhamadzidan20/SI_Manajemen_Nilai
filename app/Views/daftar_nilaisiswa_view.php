@@ -21,11 +21,11 @@
                         <div class="card-header">
                             <div class="d-flex justify-content-between align-items-center">
                                 <a href="/daftar_nilai" class="btn btn-primary btn-sm">Kembali</a>
-                                Data nilai peserta didik
+                                <div class="d-none d-sm-inline">Data nilai peserta didik</div>
                             </div>
                         </div>
                         <div class="card-body">
-                            <table id="datatablesSimple" class="table table-bordered" style="width:100%">
+                            <table id="datatablesSimple" class="display nowrap table table-bordered" style="width:100%">
                                 <thead>
                                     <tr>
                                         <th class="text-start">No</th>

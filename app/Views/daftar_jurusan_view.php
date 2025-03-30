@@ -21,10 +21,10 @@
                                 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambah_jurusan">
                                 <i class="fas fa-plus"></i> Tambah</button>
                             </div>
-                            <div>Data daftar jurusan</div>
+                            <div class="d-none d-sm-inline">Data daftar jurusan</div>
                         </div>
                         <div class="card-body">
-                            <table id="datatablesSimple" class="table table-bordered" style="width:100%">
+                            <table id="datatablesSimple" class="display nowrap table table-bordered" style="width:100%">
                                 <thead>
                                     <tr>
                                         <th class="text-start">No</th>

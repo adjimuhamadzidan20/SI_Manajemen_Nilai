@@ -18,10 +18,10 @@
             <div class="card mb-4">
               <div class="card-header d-flex justify-content-between align-items-center">
                 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambah_periode"><i class="fas fa-plus"></i> Tambah</button>
-                <div>Data periode tahun ajaran</div>
+                <div class="d-none d-sm-inline">Data periode tahun ajaran</div>
               </div>
               <div class="card-body">
-                <table id="datatablesSimple" class="table table-bordered" style="width:100%">
+                <table id="datatablesSimple" class="display nowrap table table-bordered" style="width:100%">
                   <thead>
                     <tr>
                       <th class="text-start">No</th>

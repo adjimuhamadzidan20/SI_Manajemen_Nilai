@@ -24,8 +24,8 @@
 								<?php
 								foreach ($periode as $data) :
 								?>
-									<li class="list-group-item d-flex justify-content-between">
-										<div>
+									<li class="list-group-item d-block d-sm-flex justify-content-between">
+										<div class="mb-2 mb-sm-0">
 											<i class="far fa-calendar me-2"></i>Tahun Ajaran <?= $data['tahun_ajaran']; ?>
 										</div>
 										<a href="/daftar_nilai/nilai_siswa_periode/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Lihat Mapel</a>

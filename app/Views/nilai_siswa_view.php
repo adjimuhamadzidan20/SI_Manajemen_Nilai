@@ -32,7 +32,7 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <table class="table table-bordered" style="width:100%" id="tabel_tugas">
+                            <table class="table table-bordered display nowrap" style="width:100%" id="tabel_tugas">
                                 <thead>
                                     <tr>
                                         <th class="text-center align-middle" style="font-size: 14px;" rowspan="2">No</th>

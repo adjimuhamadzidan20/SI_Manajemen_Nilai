@@ -22,7 +22,8 @@
                             <div>
                                 <a href="/daftar_mapel" class="btn btn-primary btn-sm">Kembali</a>
                             </div>
-                            <div>
+
+                            <div class="d-none d-sm-inline">
                                 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#tambah_mapel"><i class="fas fa-plus"></i> Tambah</button>
 
                                 <?php  
@@ -35,17 +36,39 @@
                                 <?php  
                                     } else {
                                 ?>
-                                    <button href="/daftar_mapel/cetak_mapel_pdf/<?= $id_periode; ?>" class="btn btn-primary btn-sm" disabled>
-                                    <i class="fas fa-file-pdf"></i> Cetak PDF</button>
-                                    <button href="/daftar_mapel/cetak_mapel_excel/<?= $id_periode; ?>" class="btn btn-primary btn-sm" disabled>
-                                    <i class="fas fa-file-excel"></i> Cetak Excel</button>
+                                    <button href="/daftar_mapel/cetak_mapel_pdf/<?= $id_periode; ?>" class="btn btn-primary btn-sm" disabled><i class="fas fa-file-pdf"></i> Cetak PDF</button>
+                                    <button href="/daftar_mapel/cetak_mapel_excel/<?= $id_periode; ?>" class="btn btn-primary btn-sm" disabled><i class="fas fa-file-excel"></i> Cetak Excel</button>
                                 <?php  
                                     }
                                 ?>
                             </div>
+
+                            <div class="d-sm-none">
+                                <div class="dropdown">
+                                  <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Opsi</button>
+
+                                  <ul class="dropdown-menu">
+                                    <li><button type="button" class="btn btn-primary btn-sm dropdown-item" data-bs-toggle="modal" data-bs-target="#tambah_mapel"><i class="fas fa-plus"></i> Tambah</button></li>
+
+                                    <?php  
+                                      if ($jumlah > 0) {
+                                    ?>
+                                      <li><a href="/daftar_mapel/cetak_mapel_pdf/<?= $id_periode; ?>" class="btn btn-primary btn-sm dropdown-item"><i class="fas fa-file-pdf"></i> Cetak PDF</a></li>
+                                      <li><a href="/daftar_mapel/cetak_mapel_excel/<?= $id_periode; ?>" class="btn btn-primary btn-sm dropdown-item"><i class="fas fa-file-excel"></i> Cetak Excel</a></li>
+                                    <?php  
+                                      } else {
+                                    ?>
+                                      <li><button href="/daftar_mapel/cetak_mapel_pdf/<?= $id_periode; ?>" class="btn btn-primary btn-sm dropdown-item" disabled><i class="fas fa-file-pdf"></i> Cetak PDF</button></li>
+                                      <li><button href="/daftar_mapel/cetak_mapel_excel/<?= $id_periode; ?>" class="btn btn-primary btn-sm dropdown-item" disabled><i class="fas fa-file-excel"></i> Cetak Excel</button></li>
+                                    <?php  
+                                      }
+                                    ?>
+                                  </ul>
+                                </div>
+                            </div>
                         </div>
                         <div class="card-body">
-                            <table id="datatablesSimple" class="table table-bordered" style="width:100%">
+                            <table id="datatablesSimple" class="display nowrap table table-bordered" style="width:100%">
                                 <thead>
                                     <tr>
                                         <th class="text-start">No</th>

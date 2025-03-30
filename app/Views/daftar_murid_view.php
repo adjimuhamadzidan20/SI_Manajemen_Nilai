@@ -20,7 +20,7 @@
                             Data Daftar Peserta Didik
                         </div>
                         <div class="card-body">
-                            <table id="datatablesSimple" class="table table-bordered" style="width:100%">
+                            <table id="datatablesSimple" class="display nowrap table table-bordered" style="width:100%">
                                 <thead>
                                     <tr>
                                         <th class="text-start">No</th>

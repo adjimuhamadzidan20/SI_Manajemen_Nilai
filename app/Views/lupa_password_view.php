@@ -51,13 +51,8 @@
             <div id="layoutAuthentication_footer">
                 <footer class="py-4 bg-transparent mt-auto">
                     <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
+                        <div class="d-flex align-items-center justify-content-center small">
                             <div class="text-white">Copyright &copy; SI Manajemen Nilai <?= date('Y'); ?></div>
-                            <div>
-                                <a href="#" class="text-white">Privacy Policy</a>
-                                &middot;
-                                <a href="#" class="text-white">Terms &amp; Conditions</a>
-                            </div>
                         </div>
                     </div>
                 </footer>

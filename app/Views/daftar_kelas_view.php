@@ -24,8 +24,8 @@
                                 foreach ($periode as $data) :
                             ?>
                                 <div class="card mb-2">
-                                  <div class="card-body d-flex justify-content-between align-items-center">
-                                    <div>
+                                  <div class="card-body d-block d-sm-flex justify-content-between align-items-center">
+                                    <div class="mb-2 mb-sm-0">
                                         <i class="far fa-calendar me-2"></i>Tahun Ajaran 
                                         <?= $data['tahun_ajaran']; ?>
                                     </div>

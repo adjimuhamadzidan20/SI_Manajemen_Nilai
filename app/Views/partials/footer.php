@@ -1,12 +1,7 @@
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
+                        <div class="d-flex align-items-center justify-content-center justify-content-md-start small">
                             <div class="text-muted">Copyright &copy; SI Manajemen Nilai Siswa <?= date("Y"); ?></div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
                         </div>
                     </div>
                 </footer>
@@ -39,6 +34,8 @@
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
                 <script src="https://cdn.datatables.net/2.2.2/js/dataTables.js"></script>
                 <script src="https://cdn.datatables.net/2.2.2/js/dataTables.bootstrap4.js"></script>
+                <script src="https://cdn.datatables.net/responsive/3.0.4/js/dataTables.responsive.js"></script>
+                <script src="https://cdn.datatables.net/responsive/3.0.4/js/responsive.dataTables.js"></script>
 
                 <!-- alert ketika berhasil (success) -->
                 <?php
@@ -63,7 +60,9 @@
                 ?>
 
                 <script type="text/javascript">
-                    new DataTable('#datatablesSimple');
+                    $('#datatablesSimple').DataTable({
+                        "responsive": true
+                    });
 
                     $('#tabel_tugas').DataTable({
                         "paging": true,

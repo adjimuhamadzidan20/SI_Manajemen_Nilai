@@ -18,7 +18,7 @@
             <div class="card mb-4">
               <div class="card-body">
                 <div class="row">
-                  <div class="col-md-3">
+                  <div class="col-lg-3 mb-3 mb-lg-0">
                     <!-- Profile Image -->
                     <div class="card card-primary card-outline">
                       <div class="card-body box-profile">
@@ -37,35 +37,35 @@
                     </div>
                     <!-- /.card -->
                   </div>
-                  <div class="col-md-9">
+                  <div class="col-lg-9">
                     <ol class="list-group">
                       <?php foreach ($dtadmin as $data) : ?>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                          <div class="ms-2 me-auto">
+                        <li class="list-group-item d-block d-sm-flex justify-content-between align-items-center">
+                          <div class="ms-sm-2 me-auto mb-2 mb-sm-0">
                             <div class="fw-bold">Username</div>
                             <?= $data['username']; ?>
                           </div>
                           <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#ubah_username">
                           <i class="fas fa-edit"></i> Ubah</button>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                          <div class="ms-2 me-auto">
+                        <li class="list-group-item d-block d-sm-flex justify-content-between align-items-center">
+                          <div class="ms-sm-2 me-auto mb-2 mb-sm-0">
                             <div class="fw-bold">Nama Admin</div>
                             <?= $data['nama_admin']; ?>
                           </div>
                           <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#ubah_nama">
                           <i class="fas fa-edit"></i> Ubah</button>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                          <div class="ms-2 me-auto">
+                        <li class="list-group-item d-block d-sm-flex justify-content-between align-items-center">
+                          <div class="ms-sm-2 me-auto mb-2 mb-sm-0">
                             <div class="fw-bold">Alamat</div>
                             <?= $data['alamat']; ?>
                           </div>
                           <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#ubah_alamat">
                           <i class="fas fa-edit"></i> Ubah</button>
                         </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                          <div class="ms-2 me-auto">
+                        <li class="list-group-item d-block d-sm-flex justify-content-between align-items-center">
+                          <div class="ms-sm-2 me-auto mb-2 mb-sm-0">
                             <div class="fw-bold">Email</div>
                             <?= $data['email']; ?>
                           </div>

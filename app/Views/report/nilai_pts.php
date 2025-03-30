@@ -25,7 +25,7 @@
                             <div>
                                 <a href="/cetak_laporan/cetak_pts/<?= $id_periode; ?>" class="btn btn-primary btn-sm">Kembali</a>
                             </div>
-                            <div>
+                            <div class="d-none d-sm-inline">
                                 <?php
                                 if ($jumlah > 0) {
                                 ?>
@@ -40,20 +40,42 @@
                                 }
                                 ?>
                             </div>
+
+                            <div class="d-sm-none">
+                                <div class="dropdown">
+                                  <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Opsi</button>
+
+                                  <ul class="dropdown-menu">
+                                    <?php  
+                                      if ($jumlah > 0) {
+                                    ?>
+                                      <li><a href="/laporan_nilai_pts/cetak_nilai_pts_pdf/<?= $kelas; ?>/<?= $id_jurusan; ?>/<?= $nama_mapel; ?>/<?= $id_mapel; ?>/<?= $id_periode; ?>/<?= $semester; ?>" class="btn btn-primary btn-sm dropdown-item"><i class="fas fa-file-pdf"></i> Cetak PDF</a></li>
+                                      <li><a href="/laporan_nilai_pts/cetak_nilai_pts_excel/<?= $kelas; ?>/<?= $id_jurusan; ?>/<?= $nama_mapel; ?>/<?= $id_mapel; ?>/<?= $id_periode; ?>/<?= $semester; ?>" class="btn btn-primary btn-sm dropdown-item"><i class="fas fa-file-excel"></i> Cetak Excel</a></li>
+                                    <?php  
+                                      } else {
+                                    ?>
+                                      <li><button href="/laporan_nilai_pts/cetak_nilai_pts_pdf/<?= $kelas; ?>/<?= $id_jurusan; ?>/<?= $nama_mapel; ?>/<?= $id_mapel; ?>/<?= $id_periode; ?>/<?= $semester; ?>" class="btn btn-primary btn-sm dropdown-item" disabled><i class="fas fa-file-pdf"></i> Cetak PDF</button></li>
+                                      <li><button href="/laporan_nilai_pts/cetak_nilai_pts_excel/<?= $kelas; ?>/<?= $id_jurusan; ?>/<?= $nama_mapel; ?>/<?= $id_mapel; ?>/<?= $id_periode; ?>/<?= $semester; ?>" class="btn btn-primary btn-sm dropdown-item" disabled><i class="fas fa-file-excel"></i> Cetak Excel</button></li>
+                                    <?php  
+                                      }
+                                    ?>
+                                  </ul>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body table-responsive">
                         <?php
                             if ($jumlah > 0) {          
                         ?>
-                            <table class="table table-bordered table-responsive" style="width:100%">
+                            <table class="table table-bordered" style="width:100%">
                                 <thead>
                                     <tr>
-                                        <th class="text-start">No</th>
-                                        <th class="text-start">NIS</th>
-                                        <th class="text-start">NISN</th>
-                                        <th class="text-start">Nama Peserta Didik</th>
-                                        <th class="text-start">Mata Pelajaran</th>
-                                        <th class="text-center">Nilai PTS</th>
+                                        <th class="text-start text-nowrap">No</th>
+                                        <th class="text-start text-nowrap">NIS</th>
+                                        <th class="text-start text-nowrap">NISN</th>
+                                        <th class="text-start text-nowrap">Nama Peserta Didik</th>
+                                        <th class="text-start text-nowrap">Mata Pelajaran</th>
+                                        <th class="text-center text-nowrap">Nilai PTS</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -63,12 +85,12 @@
                                         $no++;
                                     ?>
                                         <tr>
-                                            <td class="text-start"><?= $no; ?></td>
-                                            <td class="text-start"><?= $data['nis']; ?></td>
-                                            <td class="text-start"><?= $data['nisn']; ?></td>
-                                            <td><?= $data['nama_siswa']; ?></td>
-                                            <td><?= $data['nama_mapel']; ?></td>
-                                            <td class="text-center"><?= $data['pts']; ?></td>
+                                            <td class="text-start text-nowrap"><?= $no; ?></td>
+                                            <td class="text-start text-nowrap"><?= $data['nis']; ?></td>
+                                            <td class="text-start text-nowrap"><?= $data['nisn']; ?></td>
+                                            <td class="text-nowrap"><?= $data['nama_siswa']; ?></td>
+                                            <td class="text-nowrap"><?= $data['nama_mapel']; ?></td>
+                                            <td class="text-center text-nowrap"><?= $data['pts']; ?></td>
                                         </tr>
                                     <?php
                                     endforeach;
