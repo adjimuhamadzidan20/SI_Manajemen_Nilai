@@ -19,7 +19,8 @@ class Daftarmapel extends BaseController
         $data = [
             'periode' => $periodeModel->dataPeriode(),
             'linkActive' => 'daftar_mapel',   
-            'tab_name' => 'Daftar Mapel'
+            'tab_name' => 'Daftar Mapel',
+            'jumlah_data' => $periodeModel->jumlah()
         ];
         
         echo view('partials/header', $data);

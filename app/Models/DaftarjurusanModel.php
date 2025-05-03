@@ -16,6 +16,15 @@ class DaftarjurusanModel extends Model
        return $this->findAll();
     }
 
+    public function jumlah() {
+        $db = db_connect();
+        $query = "SELECT COUNT(*) jurusan FROM dt_jurusan";
+
+        $sql = $db->query($query);
+        $hasil = $sql->getRowArray();
+        return $hasil['jurusan'];
+    }
+
     public  function jurusan($idjurusan) {
         $db = db_connect();
         $query = "SELECT nama_jurusan FROM dt_jurusan WHERE id_jurusan = $idjurusan";

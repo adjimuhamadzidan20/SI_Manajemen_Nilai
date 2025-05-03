@@ -17,7 +17,12 @@
                     <div class="row">
                         <div class="col-xl-3 col-md-6">
                             <div class="card text-white mb-4 rounded-0 bg-primary">
-                                <div class="card-body"><i class="fas fa-list me-1"></i> Data Jurusan</div>
+                                <div class="card-body d-flex justify-content-between">
+                                    <div class="nama_hal">
+                                        <i class="fas fa-list me-1"></i> Data Jurusan
+                                    </div>
+                                    <div class="jumlah"><?= $jurusan; ?></div>
+                                </div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
                                     <a class="small text-white stretched-link" href="/daftar_jurusan">View Details</a>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -26,7 +31,12 @@
                         </div>
                         <div class="col-xl-3 col-md-6">
                             <div class="card text-white mb-4 rounded-0 bg-primary">
-                                <div class="card-body"><i class="fas fa-list me-1"></i> Data Kelas</div>
+                                <div class="card-body d-flex justify-content-between">
+                                    <div class="nama_hal">
+                                        <i class="fas fa-list me-1"></i> Data Kelas    
+                                    </div>
+                                    <div class="jumlah"><?= $kelas; ?></div>
+                                </div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
                                     <a class="small text-white stretched-link" href="/daftar_kelas">View Details</a>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -35,7 +45,12 @@
                         </div>
                         <div class="col-xl-3 col-md-6">
                             <div class="card text-white mb-4 rounded-0 bg-primary">
-                                <div class="card-body"><i class="fas fa-list me-1"></i> Data Mata Pelajaran</div>
+                                <div class="card-body d-flex justify-content-between">
+                                    <div class="nama_hal">
+                                        <i class="fas fa-list me-1"></i> Data Mata Pelajaran    
+                                    </div>
+                                    <div class="jumlah"><?= $mapel; ?></div>
+                                </div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
                                     <a class="small text-white stretched-link" href="/daftar_mapel">View Details</a>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>
@@ -44,7 +59,12 @@
                         </div>
                         <div class="col-xl-3 col-md-6">
                             <div class="card text-white mb-4 rounded-0 bg-primary">
-                                <div class="card-body"><i class="fas fa-users me-1"></i> Data Peserta Didik</div>
+                                <div class="card-body d-flex justify-content-between">
+                                    <div class="nama_hal">
+                                        <i class="fas fa-users me-1"></i> Data Peserta Didik    
+                                    </div>
+                                    <div class="jumlah"><?= $siswa; ?></div>
+                                </div>
                                 <div class="card-footer d-flex align-items-center justify-content-between">
                                     <a class="small text-white stretched-link" href="/daftar_siswa">View Details</a>
                                     <div class="small text-white"><i class="fas fa-angle-right"></i></div>

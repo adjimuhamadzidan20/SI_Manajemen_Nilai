@@ -24,6 +24,15 @@ class DaftarmapelModel extends Model
         return $hasil;
     }
 
+    public function jumlah() {
+        $db = db_connect();
+        $query = "SELECT COUNT(*) mapel FROM dt_mapel";
+
+        $sql = $db->query($query);
+        $hasil = $sql->getRowArray();
+        return $hasil['mapel'];
+    }
+
     public function jumlahData($thn_ajaran) {
         $db = db_connect();
         $query = "SELECT dt_mapel.id_mapel, dt_mapel.kd_mapel, dt_mapel.nama_mapel, dt_mapel.kelas, dt_mapel.id_jurusan, 

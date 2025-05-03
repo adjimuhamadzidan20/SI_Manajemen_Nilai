@@ -19,8 +19,8 @@ class Daftarkelas extends BaseController
         $data = [
             'periode' => $periodeModel->dataPeriode(),
             'linkActive' => 'daftar_kelas',
-            'tab_name' => 'Daftar Kelas' 
-
+            'tab_name' => 'Daftar Kelas', 
+            'jumlah_data' => $periodeModel->jumlah()
         ];
 
         echo view('partials/header', $data);   

@@ -14,6 +14,15 @@ class PeriodeajaranModel extends Model
 
       public function dataPeriode() {
          return $this->findAll();
+      }
+
+      public function jumlah() {
+         $db = db_connect();
+         $query = "SELECT COUNT(*) periode FROM dt_periode_ajaran";
+
+         $sql = $db->query($query);
+         $hasil = $sql->getRowArray();
+         return $hasil['periode'];
       }   
 
       public function tahunPeriode($periode) {

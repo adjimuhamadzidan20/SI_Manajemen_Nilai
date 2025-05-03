@@ -29,20 +29,30 @@
                                     </h2>
                                     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <ul class="list-group list-group-flush">
-                                                <?php
-                                                foreach ($periode as $data) :
-                                                ?>
-                                                    <li class="list-group-item d-block d-sm-flex justify-content-between">
-                                                        <div class="mb-2 mb-sm-0">
-                                                            <i class="far fa-calendar me-2"></i>Tahun Ajaran <?= $data['tahun_ajaran']; ?>
-                                                        </div>
-                                                        <a href="/cetak_laporan/cetak_pts/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Lihat Mapel</a>
-                                                    </li>
-                                                <?php
-                                                endforeach;
-                                                ?>
-                                            </ul>
+                                            <?php  
+                                                if ($jumlah_data == 0) {
+                                            ?>
+                                                <div>Data belum tersedia..</div>
+                                            <?php  
+                                                } else { 
+                                            ?>
+                                                <ul class="list-group list-group-flush">
+                                                    <?php
+                                                    foreach ($periode as $data) :
+                                                    ?>
+                                                        <li class="list-group-item d-block d-sm-flex justify-content-between">
+                                                            <div class="mb-2 mb-sm-0">
+                                                                <i class="far fa-calendar me-2"></i>Tahun Ajaran <?= $data['tahun_ajaran']; ?>
+                                                            </div>
+                                                            <a href="/cetak_laporan/cetak_pts/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Lihat Mapel</a>
+                                                        </li>
+                                                    <?php
+                                                    endforeach;
+                                                    ?>
+                                                </ul>
+                                            <?php  
+                                                }
+                                            ?>
                                         </div>
                                     </div>
                                 </div>
@@ -54,20 +64,30 @@
                                     </h2>
                                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <ul class="list-group list-group-flush">
-                                                <?php
-                                                foreach ($periode as $data) :
-                                                ?>
-                                                    <li class="list-group-item d-block d-sm-flex justify-content-between">
-                                                        <div class="mb-2 mb-sm-0">
-                                                            <i class="far fa-calendar me-2"></i>Tahun Ajaran <?= $data['tahun_ajaran']; ?>
-                                                        </div>
-                                                        <a href="/cetak_laporan/cetak_pas/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Lihat Mapel</a>
-                                                    </li>
-                                                <?php
-                                                endforeach;
-                                                ?>
-                                            </ul>
+                                            <?php  
+                                                if ($jumlah_data == 0) {
+                                            ?>
+                                                <div>Data belum tersedia..</div>
+                                            <?php  
+                                                } else { 
+                                            ?>
+                                                <ul class="list-group list-group-flush">
+                                                    <?php
+                                                    foreach ($periode as $data) :
+                                                    ?>
+                                                        <li class="list-group-item d-block d-sm-flex justify-content-between">
+                                                            <div class="mb-2 mb-sm-0">
+                                                                <i class="far fa-calendar me-2"></i>Tahun Ajaran <?= $data['tahun_ajaran']; ?>
+                                                            </div>
+                                                            <a href="/cetak_laporan/cetak_pas/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Lihat Mapel</a>
+                                                        </li>
+                                                    <?php
+                                                    endforeach;
+                                                    ?>
+                                                </ul>
+                                            <?php  
+                                                }
+                                            ?>
                                         </div>
                                     </div>
                                 </div>
@@ -79,20 +99,30 @@
                                     </h2>
                                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <ul class="list-group list-group-flush">
-                                                <?php
-                                                foreach ($periode as $data) :
-                                                ?>
-                                                    <li class="list-group-item d-block d-sm-flex justify-content-between">
-                                                        <div class="mb-2 mb-sm-0">
-                                                            <i class="far fa-calendar me-2"></i>Tahun Ajaran <?= $data['tahun_ajaran']; ?>
-                                                        </div>
-                                                        <a href="/cetak_laporan/cetak_semua/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Lihat Mapel</a>
-                                                    </li>
-                                                <?php
-                                                endforeach;
-                                                ?>
-                                            </ul>
+                                            <?php  
+                                                if ($jumlah_data == 0) {
+                                            ?>
+                                                <div>Data belum tersedia..</div>
+                                            <?php  
+                                                } else { 
+                                            ?>
+                                                <ul class="list-group list-group-flush">
+                                                    <?php
+                                                    foreach ($periode as $data) :
+                                                    ?>
+                                                        <li class="list-group-item d-block d-sm-flex justify-content-between">
+                                                            <div class="mb-2 mb-sm-0">
+                                                                <i class="far fa-calendar me-2"></i>Tahun Ajaran <?= $data['tahun_ajaran']; ?>
+                                                            </div>
+                                                            <a href="/cetak_laporan/cetak_semua/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Lihat Mapel</a>
+                                                        </li>
+                                                    <?php
+                                                    endforeach;
+                                                    ?>
+                                                </ul>
+                                            <?php  
+                                                }
+                                            ?>
                                         </div>
                                     </div>
                                 </div>

@@ -23,6 +23,15 @@ class DaftarsiswaModel extends Model
         $sql = $db->query($query);
         $hasil = $sql->getResultArray();
         return $hasil;
+    }
+
+    public function jumlah() {
+        $db = db_connect();
+        $query = "SELECT COUNT(*) siswa FROM dt_siswa";
+
+        $sql = $db->query($query);
+        $hasil = $sql->getRowArray();
+        return $hasil['siswa'];
     }   
 
     public function jumlahData($thn_ajaran, $kelas, $jurusan) {

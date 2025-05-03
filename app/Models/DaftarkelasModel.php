@@ -16,6 +16,15 @@ class DaftarkelasModel extends Model
       return $this->findAll();
    }
 
+   public function jumlah() {
+      $db = db_connect();
+      $query = "SELECT COUNT(*) kelas FROM dt_kelas";
+
+      $sql = $db->query($query);
+      $hasil = $sql->getRowArray();
+      return $hasil['kelas'];
+   }
+
    public  function kelas($kelas) {
       $db = db_connect();
       $query = "SELECT kelas FROM dt_kelas WHERE kelas = '$kelas'";

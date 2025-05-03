@@ -20,20 +20,30 @@
 							Daftar Nilai Peserta Didik
 						</div>
 						<div class="card-body">
-							<ul class="list-group list-group-flush">
-								<?php
-								foreach ($periode as $data) :
-								?>
-									<li class="list-group-item d-block d-sm-flex justify-content-between">
-										<div class="mb-2 mb-sm-0">
-											<i class="far fa-calendar me-2"></i>Tahun Ajaran <?= $data['tahun_ajaran']; ?>
-										</div>
-										<a href="/daftar_nilai/nilai_siswa_periode/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Lihat Mapel</a>
-									</li>
-								<?php
-								endforeach;
-								?>
-							</ul>
+							<?php  
+                                if ($jumlah_data == 0) {
+                            ?>
+                                <div>Data belum tersedia..</div>
+                            <?php  
+                                } else { 
+                            ?>
+								<ul class="list-group list-group-flush">
+									<?php
+									foreach ($periode as $data) :
+									?>
+										<li class="list-group-item d-block d-sm-flex justify-content-between">
+											<div class="mb-2 mb-sm-0">
+												<i class="far fa-calendar me-2"></i>Tahun Ajaran <?= $data['tahun_ajaran']; ?>
+											</div>
+											<a href="/daftar_nilai/nilai_siswa_periode/<?= $data['id_periode']; ?>" class="btn btn-primary btn-sm"><i class="fas fa-eye"></i> Lihat Mapel</a>
+										</li>
+									<?php
+									endforeach;
+									?>
+								</ul>
+							<?php  
+								}
+							?>
 						</div>
 					</div>
 				</div>

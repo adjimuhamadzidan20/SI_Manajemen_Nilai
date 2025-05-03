@@ -23,7 +23,8 @@ class Cetaklaporan_pas extends BaseController
         $data = [
             'periode' => $periodeModel->dataPeriode(),
             'linkActive' => 'cetak_laporan',
-            'tab_name' => 'Cetak Laporan' 
+            'tab_name' => 'Cetak Laporan',
+            'jumlah_data' => $periodeModel->jumlah() 
         ];
 
         echo view('partials/header', $data);
