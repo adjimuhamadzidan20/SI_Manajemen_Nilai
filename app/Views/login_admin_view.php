@@ -8,7 +8,7 @@
         <meta name="author" content="adji_muhamad_zidan" />
         <title>SI Manajemen Nilai | Login</title>
         <link href="<?= base_url('assets'); ?>/css/styles.css" rel="stylesheet" />
-        <link rel="icon" type="image/x-icon" href="<?= base_url('assets'); ?>/assets/img/smk_angkasa_1.ico">
+        <link rel="icon" type="image/x-icon" href="<?= base_url('assets'); ?>/assets/img/logo.ico">
 
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
@@ -21,7 +21,7 @@
                             <div class="col-lg-4">
                                 <div class="card shadow-lg border-0 rounded-lg" style="margin-top: 75px;">
                                     <div class="card-header text-center pt-3 pb-2">
-                                        <img src="<?= base_url('assets'); ?>/assets/img/smk_angkasa_1.png" alt="smk_angkasa_1" 
+                                        <img src="<?= base_url('assets'); ?>/assets/img/logo.png" alt="logo" 
                                         class="w-25 mb-3">
                                         <h5 class="text-center font-weight-light text-uppercase">SI Manajemen Nilai</h5>
                                     </div>

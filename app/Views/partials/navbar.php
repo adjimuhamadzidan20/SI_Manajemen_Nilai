@@ -1,6 +1,6 @@
 <!-- Navbar Brand-->
 <a class="navbar-brand ps-3 text-uppercase fs-6 d-flex align-items-center" href="/">
-    <img src="<?= base_url('assets'); ?>/assets/img/smk_angkasa_1.png" alt="smk_angkasa_1" class="me-2" style="width: 35px;">
+    <img src="<?= base_url('assets'); ?>/assets/img/logo.png" alt="smk_angkasa_1" class="me-2" style="width: 38px;">
     SI Manajemen Nilai
 </a>
 <!-- Sidebar Toggle-->

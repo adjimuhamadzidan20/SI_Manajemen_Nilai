@@ -1,0 +1,376 @@
+INFO - 2025-06-02 14:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:40:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-02 14:41:09 --> [DEPRECATED] htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Loginadmin.php on line 18.
+ 1 APPPATH\Controllers\Loginadmin.php(18): htmlspecialchars(null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loginadmin->masuk()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loginadmin))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+INFO - 2025-06-02 14:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:41:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:41:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:41:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:42:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:42:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:43:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:43:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:43:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:43:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:44:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:44:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:45:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:45:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:46:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:46:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2025-06-02 14:46:48 --> [DEPRECATED] substr(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Controllers\Daftarsiswa.php on line 54.
+ 1 APPPATH\Controllers\Daftarsiswa.php(54): substr(null, 2, 3)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarsiswa->rinci_siswa('1', '1', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarsiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+INFO - 2025-06-02 14:47:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:47:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:47:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:47:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:47:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-02 14:47:48 --> mysqli_sql_exception: Unknown column 'dt_nilai_murid.deskripsi' in 'field list' in C:\xampp\htdocs\SI_Manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\SI_Manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT dt_nilai...', 0)
+#1 C:\xampp\htdocs\SI_Manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT dt_nilai...')
+#2 C:\xampp\htdocs\SI_Manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT dt_nilai...')
+#3 C:\xampp\htdocs\SI_Manajemen_nilai\app\Models\DaftarnilaisiswaModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai...')
+#4 C:\xampp\htdocs\SI_Manajemen_nilai\app\Controllers\Daftarnilai_siswa.php(180): App\Models\DaftarnilaisiswaModel->dataNilai('Ganjil', '1', 'X', '1', '1')
+#5 C:\xampp\htdocs\SI_Manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Daftarnilai_siswa->peserta_didik('X', '1', 'Pemrograman Das...', '1', '1', 'Ganjil')
+#6 C:\xampp\htdocs\SI_Manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_siswa))
+#7 C:\xampp\htdocs\SI_Manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SI_Manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\SI_Manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\SI_Manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\SI_Manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-06-02 14:47:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dt_nilai_murid.deskripsi' in 'field list'
+[Method: GET, Route: daftar_nilai_siswa/peserta_didik/X/1/Pemrograman%20Dasar%202/1/1/Ganjil]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\DaftarnilaisiswaModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai_murid.id_nilai, dt_nilai_murid.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai_murid.id_mapel, dt_mapel.nama_mapel, dt_nilai_murid.kelas, dt_nilai_murid.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_murid.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_murid.semester, dt_nilai_murid.nilai_1, 
+        dt_nilai_murid.nilai_2, dt_nilai_murid.nilai_3, dt_nilai_murid.nilai_4, dt_nilai_murid.nilai_5, dt_nilai_murid.nilai_6,
+        dt_nilai_murid.nilai_7, dt_nilai_murid.nilai_8, dt_nilai_murid.nilai_9, dt_nilai_murid.na_materi, dt_nilai_murid.LM_1, 
+        dt_nilai_murid.LM_2, dt_nilai_murid.LM_3, dt_nilai_murid.na_sumatif, dt_nilai_murid.pts, dt_nilai_murid.pat, 
+        dt_nilai_murid.nilai_akhir, dt_nilai_murid.nilai_rapor, dt_nilai_murid.deskripsi FROM dt_nilai_murid 
+        INNER JOIN dt_siswa ON dt_nilai_murid.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_murid.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai_murid.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_murid.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai_murid.id_periode = 1 AND dt_nilai_murid.kelas = \'X\'
+        AND dt_nilai_murid.id_jurusan = 1 AND dt_nilai_murid.id_mapel = 1')
+ 2 APPPATH\Controllers\Daftarnilai_siswa.php(180): App\Models\DaftarnilaisiswaModel->dataNilai('Ganjil', '1', 'X', '1', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_siswa->peserta_didik('X', '1', 'Pemrograman Dasar 2', '1', '1', 'Ganjil')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_siswa))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-06-02 14:47:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dt_nilai_murid.deskripsi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT dt_nilai_murid.id_nilai, dt_nilai_murid.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai_murid.id_mapel, dt_mapel.nama_mapel, dt_nilai_murid.kelas, dt_nilai_murid.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_murid.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_murid.semester, dt_nilai_murid.nilai_1, 
+        dt_nilai_murid.nilai_2, dt_nilai_murid.nilai_3, dt_nilai_murid.nilai_4, dt_nilai_murid.nilai_5, dt_nilai_murid.nilai_6,
+        dt_nilai_murid.nilai_7, dt_nilai_murid.nilai_8, dt_nilai_murid.nilai_9, dt_nilai_murid.na_materi, dt_nilai_murid.LM_1, 
+        dt_nilai_murid.LM_2, dt_nilai_murid.LM_3, dt_nilai_murid.na_sumatif, dt_nilai_murid.pts, dt_nilai_murid.pat, 
+        dt_nilai_murid.nilai_akhir, dt_nilai_murid.nilai_rapor, dt_nilai_murid.deskripsi FROM dt_nilai_murid 
+        INNER JOIN dt_siswa ON dt_nilai_murid.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_murid.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai_murid.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_murid.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai_murid.id_periode = 1 AND dt_nilai_murid.kelas = \'X\'
+        AND dt_nilai_murid.id_jurusan = 1 AND dt_nilai_murid.id_mapel = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT dt_nilai_murid.id_nilai, dt_nilai_murid.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai_murid.id_mapel, dt_mapel.nama_mapel, dt_nilai_murid.kelas, dt_nilai_murid.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_murid.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_murid.semester, dt_nilai_murid.nilai_1, 
+        dt_nilai_murid.nilai_2, dt_nilai_murid.nilai_3, dt_nilai_murid.nilai_4, dt_nilai_murid.nilai_5, dt_nilai_murid.nilai_6,
+        dt_nilai_murid.nilai_7, dt_nilai_murid.nilai_8, dt_nilai_murid.nilai_9, dt_nilai_murid.na_materi, dt_nilai_murid.LM_1, 
+        dt_nilai_murid.LM_2, dt_nilai_murid.LM_3, dt_nilai_murid.na_sumatif, dt_nilai_murid.pts, dt_nilai_murid.pat, 
+        dt_nilai_murid.nilai_akhir, dt_nilai_murid.nilai_rapor, dt_nilai_murid.deskripsi FROM dt_nilai_murid 
+        INNER JOIN dt_siswa ON dt_nilai_murid.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_murid.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai_murid.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_murid.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai_murid.id_periode = 1 AND dt_nilai_murid.kelas = \'X\'
+        AND dt_nilai_murid.id_jurusan = 1 AND dt_nilai_murid.id_mapel = 1')
+ 3 APPPATH\Models\DaftarnilaisiswaModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai_murid.id_nilai, dt_nilai_murid.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai_murid.id_mapel, dt_mapel.nama_mapel, dt_nilai_murid.kelas, dt_nilai_murid.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_murid.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_murid.semester, dt_nilai_murid.nilai_1, 
+        dt_nilai_murid.nilai_2, dt_nilai_murid.nilai_3, dt_nilai_murid.nilai_4, dt_nilai_murid.nilai_5, dt_nilai_murid.nilai_6,
+        dt_nilai_murid.nilai_7, dt_nilai_murid.nilai_8, dt_nilai_murid.nilai_9, dt_nilai_murid.na_materi, dt_nilai_murid.LM_1, 
+        dt_nilai_murid.LM_2, dt_nilai_murid.LM_3, dt_nilai_murid.na_sumatif, dt_nilai_murid.pts, dt_nilai_murid.pat, 
+        dt_nilai_murid.nilai_akhir, dt_nilai_murid.nilai_rapor, dt_nilai_murid.deskripsi FROM dt_nilai_murid 
+        INNER JOIN dt_siswa ON dt_nilai_murid.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_murid.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai_murid.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_murid.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai_murid.id_periode = 1 AND dt_nilai_murid.kelas = \'X\'
+        AND dt_nilai_murid.id_jurusan = 1 AND dt_nilai_murid.id_mapel = 1')
+ 4 APPPATH\Controllers\Daftarnilai_siswa.php(180): App\Models\DaftarnilaisiswaModel->dataNilai('Ganjil', '1', 'X', '1', '1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_siswa->peserta_didik('X', '1', 'Pemrograman Dasar 2', '1', '1', 'Ganjil')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-06-02 14:47:48 --> [Caused by] mysqli_sql_exception: Unknown column 'dt_nilai_murid.deskripsi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT dt_nilai_murid.id_nilai, dt_nilai_murid.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai_murid.id_mapel, dt_mapel.nama_mapel, dt_nilai_murid.kelas, dt_nilai_murid.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_murid.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_murid.semester, dt_nilai_murid.nilai_1, 
+        dt_nilai_murid.nilai_2, dt_nilai_murid.nilai_3, dt_nilai_murid.nilai_4, dt_nilai_murid.nilai_5, dt_nilai_murid.nilai_6,
+        dt_nilai_murid.nilai_7, dt_nilai_murid.nilai_8, dt_nilai_murid.nilai_9, dt_nilai_murid.na_materi, dt_nilai_murid.LM_1, 
+        dt_nilai_murid.LM_2, dt_nilai_murid.LM_3, dt_nilai_murid.na_sumatif, dt_nilai_murid.pts, dt_nilai_murid.pat, 
+        dt_nilai_murid.nilai_akhir, dt_nilai_murid.nilai_rapor, dt_nilai_murid.deskripsi FROM dt_nilai_murid 
+        INNER JOIN dt_siswa ON dt_nilai_murid.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_murid.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai_murid.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_murid.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai_murid.id_periode = 1 AND dt_nilai_murid.kelas = \'X\'
+        AND dt_nilai_murid.id_jurusan = 1 AND dt_nilai_murid.id_mapel = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT dt_nilai_murid.id_nilai, dt_nilai_murid.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai_murid.id_mapel, dt_mapel.nama_mapel, dt_nilai_murid.kelas, dt_nilai_murid.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_murid.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_murid.semester, dt_nilai_murid.nilai_1, 
+        dt_nilai_murid.nilai_2, dt_nilai_murid.nilai_3, dt_nilai_murid.nilai_4, dt_nilai_murid.nilai_5, dt_nilai_murid.nilai_6,
+        dt_nilai_murid.nilai_7, dt_nilai_murid.nilai_8, dt_nilai_murid.nilai_9, dt_nilai_murid.na_materi, dt_nilai_murid.LM_1, 
+        dt_nilai_murid.LM_2, dt_nilai_murid.LM_3, dt_nilai_murid.na_sumatif, dt_nilai_murid.pts, dt_nilai_murid.pat, 
+        dt_nilai_murid.nilai_akhir, dt_nilai_murid.nilai_rapor, dt_nilai_murid.deskripsi FROM dt_nilai_murid 
+        INNER JOIN dt_siswa ON dt_nilai_murid.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_murid.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai_murid.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_murid.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai_murid.id_periode = 1 AND dt_nilai_murid.kelas = \'X\'
+        AND dt_nilai_murid.id_jurusan = 1 AND dt_nilai_murid.id_mapel = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT dt_nilai_murid.id_nilai, dt_nilai_murid.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai_murid.id_mapel, dt_mapel.nama_mapel, dt_nilai_murid.kelas, dt_nilai_murid.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_murid.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_murid.semester, dt_nilai_murid.nilai_1, 
+        dt_nilai_murid.nilai_2, dt_nilai_murid.nilai_3, dt_nilai_murid.nilai_4, dt_nilai_murid.nilai_5, dt_nilai_murid.nilai_6,
+        dt_nilai_murid.nilai_7, dt_nilai_murid.nilai_8, dt_nilai_murid.nilai_9, dt_nilai_murid.na_materi, dt_nilai_murid.LM_1, 
+        dt_nilai_murid.LM_2, dt_nilai_murid.LM_3, dt_nilai_murid.na_sumatif, dt_nilai_murid.pts, dt_nilai_murid.pat, 
+        dt_nilai_murid.nilai_akhir, dt_nilai_murid.nilai_rapor, dt_nilai_murid.deskripsi FROM dt_nilai_murid 
+        INNER JOIN dt_siswa ON dt_nilai_murid.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_murid.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai_murid.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_murid.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai_murid.id_periode = 1 AND dt_nilai_murid.kelas = \'X\'
+        AND dt_nilai_murid.id_jurusan = 1 AND dt_nilai_murid.id_mapel = 1')
+ 4 APPPATH\Models\DaftarnilaisiswaModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai_murid.id_nilai, dt_nilai_murid.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai_murid.id_mapel, dt_mapel.nama_mapel, dt_nilai_murid.kelas, dt_nilai_murid.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_murid.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_murid.semester, dt_nilai_murid.nilai_1, 
+        dt_nilai_murid.nilai_2, dt_nilai_murid.nilai_3, dt_nilai_murid.nilai_4, dt_nilai_murid.nilai_5, dt_nilai_murid.nilai_6,
+        dt_nilai_murid.nilai_7, dt_nilai_murid.nilai_8, dt_nilai_murid.nilai_9, dt_nilai_murid.na_materi, dt_nilai_murid.LM_1, 
+        dt_nilai_murid.LM_2, dt_nilai_murid.LM_3, dt_nilai_murid.na_sumatif, dt_nilai_murid.pts, dt_nilai_murid.pat, 
+        dt_nilai_murid.nilai_akhir, dt_nilai_murid.nilai_rapor, dt_nilai_murid.deskripsi FROM dt_nilai_murid 
+        INNER JOIN dt_siswa ON dt_nilai_murid.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_murid.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai_murid.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_murid.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Ganjil\' AND dt_nilai_murid.id_periode = 1 AND dt_nilai_murid.kelas = \'X\'
+        AND dt_nilai_murid.id_jurusan = 1 AND dt_nilai_murid.id_mapel = 1')
+ 5 APPPATH\Controllers\Daftarnilai_siswa.php(180): App\Models\DaftarnilaisiswaModel->dataNilai('Ganjil', '1', 'X', '1', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_siswa->peserta_didik('X', '1', 'Pemrograman Dasar 2', '1', '1', 'Ganjil')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+INFO - 2025-06-02 14:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-02 14:47:58 --> mysqli_sql_exception: Unknown column 'dt_nilai_murid.deskripsi' in 'field list' in C:\xampp\htdocs\SI_Manajemen_nilai\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\SI_Manajemen_nilai\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT dt_nilai...', 0)
+#1 C:\xampp\htdocs\SI_Manajemen_nilai\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT dt_nilai...')
+#2 C:\xampp\htdocs\SI_Manajemen_nilai\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT dt_nilai...')
+#3 C:\xampp\htdocs\SI_Manajemen_nilai\app\Models\DaftarnilaisiswaModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai...')
+#4 C:\xampp\htdocs\SI_Manajemen_nilai\app\Controllers\Daftarnilai_siswa.php(180): App\Models\DaftarnilaisiswaModel->dataNilai('Genap', '1', 'X', '1', '1')
+#5 C:\xampp\htdocs\SI_Manajemen_nilai\system\CodeIgniter.php(933): App\Controllers\Daftarnilai_siswa->peserta_didik('X', '1', 'Pemrograman Das...', '1', '1', 'Genap')
+#6 C:\xampp\htdocs\SI_Manajemen_nilai\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_siswa))
+#7 C:\xampp\htdocs\SI_Manajemen_nilai\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SI_Manajemen_nilai\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\SI_Manajemen_nilai\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\SI_Manajemen_nilai\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\SI_Manajemen_nilai\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2025-06-02 14:47:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dt_nilai_murid.deskripsi' in 'field list'
+[Method: GET, Route: daftar_nilai_siswa/peserta_didik/X/1/Pemrograman%20Dasar%202/1/1/Genap]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 APPPATH\Models\DaftarnilaisiswaModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai_murid.id_nilai, dt_nilai_murid.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai_murid.id_mapel, dt_mapel.nama_mapel, dt_nilai_murid.kelas, dt_nilai_murid.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_murid.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_murid.semester, dt_nilai_murid.nilai_1, 
+        dt_nilai_murid.nilai_2, dt_nilai_murid.nilai_3, dt_nilai_murid.nilai_4, dt_nilai_murid.nilai_5, dt_nilai_murid.nilai_6,
+        dt_nilai_murid.nilai_7, dt_nilai_murid.nilai_8, dt_nilai_murid.nilai_9, dt_nilai_murid.na_materi, dt_nilai_murid.LM_1, 
+        dt_nilai_murid.LM_2, dt_nilai_murid.LM_3, dt_nilai_murid.na_sumatif, dt_nilai_murid.pts, dt_nilai_murid.pat, 
+        dt_nilai_murid.nilai_akhir, dt_nilai_murid.nilai_rapor, dt_nilai_murid.deskripsi FROM dt_nilai_murid 
+        INNER JOIN dt_siswa ON dt_nilai_murid.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_murid.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai_murid.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_murid.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Genap\' AND dt_nilai_murid.id_periode = 1 AND dt_nilai_murid.kelas = \'X\'
+        AND dt_nilai_murid.id_jurusan = 1 AND dt_nilai_murid.id_mapel = 1')
+ 2 APPPATH\Controllers\Daftarnilai_siswa.php(180): App\Models\DaftarnilaisiswaModel->dataNilai('Genap', '1', 'X', '1', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_siswa->peserta_didik('X', '1', 'Pemrograman Dasar 2', '1', '1', 'Genap')
+ 4 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_siswa))
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-06-02 14:47:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'dt_nilai_murid.deskripsi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT dt_nilai_murid.id_nilai, dt_nilai_murid.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai_murid.id_mapel, dt_mapel.nama_mapel, dt_nilai_murid.kelas, dt_nilai_murid.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_murid.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_murid.semester, dt_nilai_murid.nilai_1, 
+        dt_nilai_murid.nilai_2, dt_nilai_murid.nilai_3, dt_nilai_murid.nilai_4, dt_nilai_murid.nilai_5, dt_nilai_murid.nilai_6,
+        dt_nilai_murid.nilai_7, dt_nilai_murid.nilai_8, dt_nilai_murid.nilai_9, dt_nilai_murid.na_materi, dt_nilai_murid.LM_1, 
+        dt_nilai_murid.LM_2, dt_nilai_murid.LM_3, dt_nilai_murid.na_sumatif, dt_nilai_murid.pts, dt_nilai_murid.pat, 
+        dt_nilai_murid.nilai_akhir, dt_nilai_murid.nilai_rapor, dt_nilai_murid.deskripsi FROM dt_nilai_murid 
+        INNER JOIN dt_siswa ON dt_nilai_murid.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_murid.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai_murid.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_murid.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Genap\' AND dt_nilai_murid.id_periode = 1 AND dt_nilai_murid.kelas = \'X\'
+        AND dt_nilai_murid.id_jurusan = 1 AND dt_nilai_murid.id_mapel = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT dt_nilai_murid.id_nilai, dt_nilai_murid.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai_murid.id_mapel, dt_mapel.nama_mapel, dt_nilai_murid.kelas, dt_nilai_murid.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_murid.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_murid.semester, dt_nilai_murid.nilai_1, 
+        dt_nilai_murid.nilai_2, dt_nilai_murid.nilai_3, dt_nilai_murid.nilai_4, dt_nilai_murid.nilai_5, dt_nilai_murid.nilai_6,
+        dt_nilai_murid.nilai_7, dt_nilai_murid.nilai_8, dt_nilai_murid.nilai_9, dt_nilai_murid.na_materi, dt_nilai_murid.LM_1, 
+        dt_nilai_murid.LM_2, dt_nilai_murid.LM_3, dt_nilai_murid.na_sumatif, dt_nilai_murid.pts, dt_nilai_murid.pat, 
+        dt_nilai_murid.nilai_akhir, dt_nilai_murid.nilai_rapor, dt_nilai_murid.deskripsi FROM dt_nilai_murid 
+        INNER JOIN dt_siswa ON dt_nilai_murid.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_murid.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai_murid.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_murid.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Genap\' AND dt_nilai_murid.id_periode = 1 AND dt_nilai_murid.kelas = \'X\'
+        AND dt_nilai_murid.id_jurusan = 1 AND dt_nilai_murid.id_mapel = 1')
+ 3 APPPATH\Models\DaftarnilaisiswaModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai_murid.id_nilai, dt_nilai_murid.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai_murid.id_mapel, dt_mapel.nama_mapel, dt_nilai_murid.kelas, dt_nilai_murid.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_murid.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_murid.semester, dt_nilai_murid.nilai_1, 
+        dt_nilai_murid.nilai_2, dt_nilai_murid.nilai_3, dt_nilai_murid.nilai_4, dt_nilai_murid.nilai_5, dt_nilai_murid.nilai_6,
+        dt_nilai_murid.nilai_7, dt_nilai_murid.nilai_8, dt_nilai_murid.nilai_9, dt_nilai_murid.na_materi, dt_nilai_murid.LM_1, 
+        dt_nilai_murid.LM_2, dt_nilai_murid.LM_3, dt_nilai_murid.na_sumatif, dt_nilai_murid.pts, dt_nilai_murid.pat, 
+        dt_nilai_murid.nilai_akhir, dt_nilai_murid.nilai_rapor, dt_nilai_murid.deskripsi FROM dt_nilai_murid 
+        INNER JOIN dt_siswa ON dt_nilai_murid.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_murid.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai_murid.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_murid.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Genap\' AND dt_nilai_murid.id_periode = 1 AND dt_nilai_murid.kelas = \'X\'
+        AND dt_nilai_murid.id_jurusan = 1 AND dt_nilai_murid.id_mapel = 1')
+ 4 APPPATH\Controllers\Daftarnilai_siswa.php(180): App\Models\DaftarnilaisiswaModel->dataNilai('Genap', '1', 'X', '1', '1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_siswa->peserta_didik('X', '1', 'Pemrograman Dasar 2', '1', '1', 'Genap')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+CRITICAL - 2025-06-02 14:47:58 --> [Caused by] mysqli_sql_exception: Unknown column 'dt_nilai_murid.deskripsi' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT dt_nilai_murid.id_nilai, dt_nilai_murid.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai_murid.id_mapel, dt_mapel.nama_mapel, dt_nilai_murid.kelas, dt_nilai_murid.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_murid.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_murid.semester, dt_nilai_murid.nilai_1, 
+        dt_nilai_murid.nilai_2, dt_nilai_murid.nilai_3, dt_nilai_murid.nilai_4, dt_nilai_murid.nilai_5, dt_nilai_murid.nilai_6,
+        dt_nilai_murid.nilai_7, dt_nilai_murid.nilai_8, dt_nilai_murid.nilai_9, dt_nilai_murid.na_materi, dt_nilai_murid.LM_1, 
+        dt_nilai_murid.LM_2, dt_nilai_murid.LM_3, dt_nilai_murid.na_sumatif, dt_nilai_murid.pts, dt_nilai_murid.pat, 
+        dt_nilai_murid.nilai_akhir, dt_nilai_murid.nilai_rapor, dt_nilai_murid.deskripsi FROM dt_nilai_murid 
+        INNER JOIN dt_siswa ON dt_nilai_murid.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_murid.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai_murid.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_murid.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Genap\' AND dt_nilai_murid.id_periode = 1 AND dt_nilai_murid.kelas = \'X\'
+        AND dt_nilai_murid.id_jurusan = 1 AND dt_nilai_murid.id_mapel = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT dt_nilai_murid.id_nilai, dt_nilai_murid.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai_murid.id_mapel, dt_mapel.nama_mapel, dt_nilai_murid.kelas, dt_nilai_murid.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_murid.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_murid.semester, dt_nilai_murid.nilai_1, 
+        dt_nilai_murid.nilai_2, dt_nilai_murid.nilai_3, dt_nilai_murid.nilai_4, dt_nilai_murid.nilai_5, dt_nilai_murid.nilai_6,
+        dt_nilai_murid.nilai_7, dt_nilai_murid.nilai_8, dt_nilai_murid.nilai_9, dt_nilai_murid.na_materi, dt_nilai_murid.LM_1, 
+        dt_nilai_murid.LM_2, dt_nilai_murid.LM_3, dt_nilai_murid.na_sumatif, dt_nilai_murid.pts, dt_nilai_murid.pat, 
+        dt_nilai_murid.nilai_akhir, dt_nilai_murid.nilai_rapor, dt_nilai_murid.deskripsi FROM dt_nilai_murid 
+        INNER JOIN dt_siswa ON dt_nilai_murid.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_murid.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai_murid.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_murid.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Genap\' AND dt_nilai_murid.id_periode = 1 AND dt_nilai_murid.kelas = \'X\'
+        AND dt_nilai_murid.id_jurusan = 1 AND dt_nilai_murid.id_mapel = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT dt_nilai_murid.id_nilai, dt_nilai_murid.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai_murid.id_mapel, dt_mapel.nama_mapel, dt_nilai_murid.kelas, dt_nilai_murid.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_murid.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_murid.semester, dt_nilai_murid.nilai_1, 
+        dt_nilai_murid.nilai_2, dt_nilai_murid.nilai_3, dt_nilai_murid.nilai_4, dt_nilai_murid.nilai_5, dt_nilai_murid.nilai_6,
+        dt_nilai_murid.nilai_7, dt_nilai_murid.nilai_8, dt_nilai_murid.nilai_9, dt_nilai_murid.na_materi, dt_nilai_murid.LM_1, 
+        dt_nilai_murid.LM_2, dt_nilai_murid.LM_3, dt_nilai_murid.na_sumatif, dt_nilai_murid.pts, dt_nilai_murid.pat, 
+        dt_nilai_murid.nilai_akhir, dt_nilai_murid.nilai_rapor, dt_nilai_murid.deskripsi FROM dt_nilai_murid 
+        INNER JOIN dt_siswa ON dt_nilai_murid.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_murid.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai_murid.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_murid.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Genap\' AND dt_nilai_murid.id_periode = 1 AND dt_nilai_murid.kelas = \'X\'
+        AND dt_nilai_murid.id_jurusan = 1 AND dt_nilai_murid.id_mapel = 1')
+ 4 APPPATH\Models\DaftarnilaisiswaModel.php(59): CodeIgniter\Database\BaseConnection->query('SELECT dt_nilai_murid.id_nilai, dt_nilai_murid.id_siswa, dt_siswa.nis, dt_siswa.nisn, dt_siswa.nama_siswa, 
+        dt_nilai_murid.id_mapel, dt_mapel.nama_mapel, dt_nilai_murid.kelas, dt_nilai_murid.id_jurusan, dt_jurusan.nama_jurusan, 
+        dt_nilai_murid.id_periode, dt_periode_ajaran.tahun_ajaran, dt_nilai_murid.semester, dt_nilai_murid.nilai_1, 
+        dt_nilai_murid.nilai_2, dt_nilai_murid.nilai_3, dt_nilai_murid.nilai_4, dt_nilai_murid.nilai_5, dt_nilai_murid.nilai_6,
+        dt_nilai_murid.nilai_7, dt_nilai_murid.nilai_8, dt_nilai_murid.nilai_9, dt_nilai_murid.na_materi, dt_nilai_murid.LM_1, 
+        dt_nilai_murid.LM_2, dt_nilai_murid.LM_3, dt_nilai_murid.na_sumatif, dt_nilai_murid.pts, dt_nilai_murid.pat, 
+        dt_nilai_murid.nilai_akhir, dt_nilai_murid.nilai_rapor, dt_nilai_murid.deskripsi FROM dt_nilai_murid 
+        INNER JOIN dt_siswa ON dt_nilai_murid.id_siswa = dt_siswa.id_siswa 
+        INNER JOIN dt_mapel ON dt_nilai_murid.id_mapel = dt_mapel.id_mapel 
+        INNER JOIN dt_jurusan ON dt_nilai_murid.id_jurusan = dt_jurusan.id_jurusan 
+        INNER JOIN dt_periode_ajaran ON dt_nilai_murid.id_periode = dt_periode_ajaran.id_periode 
+        WHERE semester = \'Genap\' AND dt_nilai_murid.id_periode = 1 AND dt_nilai_murid.kelas = \'X\'
+        AND dt_nilai_murid.id_jurusan = 1 AND dt_nilai_murid.id_mapel = 1')
+ 5 APPPATH\Controllers\Daftarnilai_siswa.php(180): App\Models\DaftarnilaisiswaModel->dataNilai('Genap', '1', 'X', '1', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Daftarnilai_siswa->peserta_didik('X', '1', 'Pemrograman Dasar 2', '1', '1', 'Genap')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Daftarnilai_siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\SI_Manajemen_nilai\\public\\index.php')
+INFO - 2025-06-02 14:48:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:48:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 14:48:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

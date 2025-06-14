@@ -12,7 +12,7 @@
         <link href="<?= base_url('assets'); ?>/plugin/toastr/toastr.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.bootstrap4.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/responsive/3.0.4/css/responsive.dataTables.css">
-        <link rel="icon" type="image/x-icon" href="<?= base_url('assets'); ?>/assets/img/smk_angkasa_1.ico">
+        <link rel="icon" type="image/x-icon" href="<?= base_url('assets'); ?>/assets/img/logo.ico">
         
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
