@@ -21,7 +21,7 @@
                             <div class="col-lg-4">
                                 <div class="card shadow-lg border-0 rounded-lg" style="margin-top: 75px;">
                                     <div class="card-header text-center pt-3 pb-2">
-                                        <img src="<?= base_url('assets'); ?>/assets/img/logo.png" alt="logo" 
+                                        <img src="<?= base_url('assets'); ?>/assets/img/logo.png" alt="si_manajemen_nilai" 
                                         class="w-25 mb-3">
                                         <h5 class="text-center font-weight-light text-uppercase">SI Manajemen Nilai</h5>
                                     </div>
